@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GET_INTAKES_MAIN</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_SEARCH_VALUE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_USER_TYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PAGE_NUMBER</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_AGE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_GENDER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_REFERRING_OFFICE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HEALTH</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_REFEERAL_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PENDING_HOURS</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DATE_ORR_APPROVED</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_ALIEN_NO</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROGRAM_TYPE_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROGRAM_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT1</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT2</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_GET_INTAKES_MAIN&quot; (&#10;v_Search_Value    VARCHAR2,&#10;v_User_Type   VARCHAR2,&#10;v_Page_Number Number :&#61; 1,&#10;v_Age Number :&#61; null,&#10;v_Gender VARCHAR2 :&#61; null,&#10;V_REFERRING_OFFICE Number :&#61; null,&#10;v_Health Number :&#61; null,&#10;v_REFEERAL_DATE Date :&#61; null,&#10;v_PENDING_HOURS Number :&#61; null,&#10;v_DATE_ORR_APPROVED Date :&#61; null,&#10;v_Alien_NO VARCHAR2 :&#61; null,&#10;v_PROGRAM_TYPE_ID Number :&#61; null,&#10;v_PROGRAM_ID Number :&#61; null,&#10;CUR_OUT1  OUT SYS_REFCURSOR,&#10;CUR_OUT2 OUT SYS_REFCURSOR&#10;)&#10;AS &#10;v_PageSize Number;&#10;BEGIN&#10;  SELECT to_number(PARAM_VALUE) into v_PageSize from UACPORTAL_APP_PARAMS where PARAM_NAME &#61; &#39;IntakesPageSize&#39;;&#10;&#9;Open CUR_OUT1 For&#10;&#9;&#9;Select * FROM (&#10;&#9;&#9;&#9;Select &#10;&#9;&#9;&#9;rownum as line_number,&#10;&#9;&#9;&#9;z.*&#10;&#9;&#9;&#9;FROM (&#10;&#9;&#9;&#9;&#9;&#9;&#9;Select Distinct &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_ID,                                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.ALIEN_NO,                                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FIRST_NAME,                                                                                                                       &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.LAST_NAME,                                                                                                                        &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.AKA,                                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DOB,                                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.COB,                                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_OF_ENTRY,                                                                                                                    &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.MANNER_OF_ENTRY,                                                                                                                  &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.CITY_OF_ENTRY,                                                                                                                    &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.SPECIFY_CITY_OF_ENTRY,                                                                                                            &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.STATE_OF_ENTRY,                                                                                                                   &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_OF_APPREHENSION,                                                                                                             &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.REFERRING_OFFICE,                                                                                                                 &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.NOTIFICATION_CITY,                                                                                                                &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.SPECIFY_NOT_CITY,                                                                                                                 &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.NOTIFICATION_STATE,                                                                                                               &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_ORR_NOTIFIED,                                                                                                                &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.TIME_ORR_NOTIFIED,                                                                                                                &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_ORR_APPROVED,                                                                                                                &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.TIME_ORR_APPROVED,                                                                                                                &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.PREGNANCY,                                                                                                                        &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.INJURY,                                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.ILLNESS,                                                                                                                          &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.BEHAVIOR_WO_MEDICATION,                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.BEHAVIOR_W_MEDICATION,                                                                                                            &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.IMMIGRATION_STATUS,                                                                                                               &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.REFERRING_AGENCY,                                                                                                                 &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_STATUS,                                                                                                                       &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_CREATED,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.USER_CREATED,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UPTIME,                                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UPUSER,                                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.GENDER,                                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_FAST_STATUS,                                                                                                                  &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.STATUS_ID,                                                                                                                        &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.AGENCY_ID,                                                                                                                        &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.MIDDLE_NAME,                                                                                                                      &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_HEALTH_CONCERN,                                                                                                               &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_CRIMINAL_CHARGE,                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_ADDITIONAL_INFO,                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.HC_OTHER,                                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.HC_ERGENT_CONDITION,                                                                                                              &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.UAC_FLAG,                                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.PROCESSING_POC,                                                                                                                   &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.PROCESSING_EMAIL,                                                                                                                 &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.PROCESSING_PHONE,                                                                                                                 &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_OF_CURRENT_LOCATION,                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.KNOWN_GANG_AFFILIATION,                                                                                                           &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.NAME_OF_GANG,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.CITY_OF_APPREHENSION,                                                                                                             &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.STATE_OF_APPREHENSION,                                                                                                            &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.CITY_OF_CURRENT_LOCATION,                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.STATE_OF_CURRENT_LOCATION,                                                                                                        &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DETENTION_TYPE_OF_FACILITY,                                                                                                       &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_NAME,                                                                                                                    &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_PHONE,                                                                                                                   &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_POC,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_FAX,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_ADMISSION_DATE,                                                                                                          &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FACILITY_DISCHARGED_DATE,                                                                                                         &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.DATE_CANCELLED,                                                                                                                   &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.CANCELLED_BY,                                                                                                                     &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.REFERRAL_DATE,                                                                                                                    &#10;&#9;&#9;&#9;&#9;&#9;&#9;A.FAMILYGROUP, REVIEWED_BY_ORR,&#10;&#9;&#9;&#9;&#9;&#9;  admin.role_type,&#10;&#9;&#9;&#9;&#9;&#9;  Trunc(months_between(sysdate, A.DOB) /12) as Age, &#10;&#9;&#9;&#9;&#9;&#9;  CASE When GENDER&#61;&#39;M&#39; Then &#39;Male&#39; When GENDER&#61;&#39;F&#39; Then &#39;Female&#39; Else &#39;&#39; End &quot;GENDER_&quot;, &#10;&#9;&#9;&#9;&#9;&#9;  CASE nvl(UAC_HEALTH_CONCERN,0) When 1 Then &#39;Yes&#39; Else &#39;No&#39; End Health,&#10;&#9;&#9;&#9;&#9;&#9;  Case When nvl(PREGNANCY,0) &#61; 1 Then &#39;Yes&#39; Else &#39;No&#39; End isPregnant,&#10;&#9;&#9;&#9;&#9;&#9;  Case When nvl(UAC_CRIMINAL_CHARGE, 0) &#61; 1 Then &#39;Yes&#39; Else &#39;No&#39; End CRIMINALCHARGE,&#10;&#9;&#9;&#9;&#9;&#9;  Case (Select Count(*) From UAC_APPREHENSION_INFO Where UAC_ID &#61; A.UAC_ID And APPREHENSION_TYPE&#61;&#39;APPREHENSION&#39;) When 0 Then &#39;No&#39; Else &#39;Yes&#39; End as Appr,&#10;&#9;&#9;&#9;&#9;&#9;  Case When nvl(A.REFERRING_OFFICE,0) &gt; 0 And A.REFERRING_OFFICE &lt;&#61; 19 Then &#10;&#9;&#9;&#9;&#9;&#9;&#9;Case When nvl(A.CITY_OF_CURRENT_LOCATION, &#39;&#39;) &#61; &#39;&#39; Then B.Description Else B.Description || &#39;/&#39; ||  A.CITY_OF_CURRENT_LOCATION End &#10;&#9;&#9;&#9;&#9;&#9;&#9;Else&#10;&#9;&#9;&#9;&#9;&#9;&#9;  A.CITY_OF_CURRENT_LOCATION&#10;&#9;&#9;&#9;&#9;&#9;  End as R_OFFICE, &#10;&#9;&#9;&#9;&#9;&#9;  Case When nvl(A.REFERRING_OFFICE, 0) &gt; 19 Then 0 Else A.REFERRING_OFFICE End as &quot;REFERRING_OFFICE_&quot;,AGENCY as R_AGENCY, A.DATE_CREATED as REFERRING_DATE, D.PROGRAM_ID, E.PROGRAM_TYPE_ID, &#10;&#9;&#9;&#9;&#9;&#9;  --TO_CHAR(A.DATE_CREATED, &#39;mm/dd/yyyy&#39;) as DATE_OF_REFERRING,&#10;&#9;&#9;&#9;&#9;&#9;  TO_CHAR(A.REFERRAL_DATE, &#39;mm/dd/yyyy&#39;) as REFERRAL_DATE_&#10;&#9;&#9;&#9;&#9;&#9;  , DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) as Pending_Hours,&#10;&#9;&#9;&#9;&#9;&#9;  E.PROGRAM_NAME,&#10;&#9;&#9;&#9;&#9;&#9;  CASE  WHEN NVL(A.FOOT_GUIDE, -1) &#61; -1 Then &#39;&#39; WHEN NVL(A.FOOT_GUIDE, -1) &#61; 0 Then &#39;No&#39; When NVL(A.FOOT_GUIDE, -1) &#61; 1 Then &#39;Yes&#39; End as FOOTGUIDE&#10;&#9;&#9;&#9;&#9;&#9;  From UAC_INFO A&#10;&#9;&#9;&#9;&#9;&#9;  Left join ADM_LIST_WEB_USER admin on a.USER_CREATED &#61; admin.user_id&#10;&#9;&#9;&#9;&#9;&#9;  Left Join (Select * from UAC_PROGRAM_INFO Where CURRENT_STATUS &#61; &#39;ENROUTE&#39;) D On A.UAC_ID &#61; D.UAC_ID&#10;&#9;&#9;&#9;&#9;&#9;  Left Join LIST_PROGRAMS E On D.PROGRAM_ID &#61; E.PROGRAM_ID&#10;&#9;&#9;&#9;&#9;&#9;  Left Join List_ICE_CBP B On A.REFERRING_OFFICE &#61; B.ICE_CBP_ID&#10;&#9;&#9;&#9;&#9;&#9;  Left Join List_Referring_Agency C on A.REFERRING_AGENCY &#61; C.AGENCY_ID&#10;&#9;&#9;&#9;&#9;&#9;  Where UAC_STATUS &#61; v_Search_Value&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Age is null OR (v_Age &#61; 1 AND (Trunc(months_between(sysdate, A.DOB) /12) &lt; 13))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;OR (v_Age &#61; 2 AND (Trunc(months_between(sysdate, A.DOB) /12) &gt; 12 AND Trunc(months_between(sysdate, A.DOB) /12) &lt; 18))&#10;&#9;&#9;&#9;&#9;&#9;  )&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Gender is null OR UPPER(A.GENDER) &#61; UPPER(v_Gender))&#10;&#9;&#9;&#9;&#9;&#9;  AND (V_REFERRING_OFFICE is null OR A.REFERRING_OFFICE &#61; V_REFERRING_OFFICE)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Health is null OR nvl(UAC_HEALTH_CONCERN,0) &#61; v_Health)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_REFEERAL_DATE is null OR (DateDiff(&#39;day&#39;, A.REFERRAL_DATE, v_REFEERAL_DATE) &#61; 0 and To_Char(A.REFERRAL_DATE, &#39;HH:mi:ss AM&#39;) &#61; To_Char(v_REFEERAL_DATE, &#39;HH:mi:ss AM&#39;)))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_DATE_ORR_APPROVED is null OR (DateDiff(&#39;day&#39;, A.DATE_ORR_APPROVED, v_DATE_ORR_APPROVED) &#61; 0 and To_Char(A.REFERRAL_DATE, &#39;HH:mi:ss AM&#39;) &#61; To_Char(v_DATE_ORR_APPROVED, &#39;HH:mi:ss AM&#39;)))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PENDING_HOURS is null Or (v_PENDING_HOURS &#61; 1 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 25 )&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 2 AND (DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 24 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 49))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 3 AND (DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 48 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 73))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 4 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 72 )&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Alien_NO is null Or UPPER(A.ALIEN_NO) LIKE  UPPER(&#39;%&#39; || v_Alien_NO || &#39;%&#39;))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PROGRAM_TYPE_ID is null Or E.PROGRAM_TYPE_ID &#61; v_PROGRAM_TYPE_ID)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PROGRAM_ID is null Or D.PROGRAM_ID &#61; v_PROGRAM_ID)&#10;&#9;&#9;&#9;&#9;&#9;  order by A.REFERRAL_DATE Desc &#10;&#9;&#9;&#9;)  z&#10;&#9;&#9;) &#10;&#9;&#9;Where line_number Between Case When v_Page_Number &gt; 1 Then ((v_Page_Number - 1) * v_PageSize) + 1 Else 1 End and &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Case When v_Page_Number &gt; 1 Then ((v_Page_Number - 1) * v_PageSize) + v_PageSize Else v_PageSize End&#10;&#9;&#9;order by line_number&#10;&#9;&#9;;&#10;&#9;OPEN CUR_OUT2 For&#9;&#10;&#9;&#9;Select Count(*) as v_count &#10;&#9;&#9;from UAC_INFO A &#10;    Left Join (Select * from UAC_PROGRAM_INFO Where CURRENT_STATUS &#61; &#39;ENROUTE&#39;) D On A.UAC_ID &#61; D.UAC_ID&#10;&#9;&#9;Left Join LIST_PROGRAMS E On D.PROGRAM_ID &#61; E.PROGRAM_ID&#10;    Where UAC_STATUS &#61; v_Search_Value&#10;&#9;&#9;AND (v_Age is null OR (v_Age &#61; 1 AND (Trunc(months_between(sysdate, A.DOB) /12) &lt; 13))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;OR (v_Age &#61; 2 AND (Trunc(months_between(sysdate, A.DOB) /12) &gt; 12 AND Trunc(months_between(sysdate, A.DOB) /12) &lt; 18))&#10;&#9;&#9;&#9;&#9;&#9;  )&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Gender is null OR UPPER(A.GENDER) &#61; UPPER(v_Gender))&#10;&#9;&#9;&#9;&#9;&#9;  AND (V_REFERRING_OFFICE is null OR A.REFERRING_OFFICE &#61; V_REFERRING_OFFICE)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Health is null OR nvl(UAC_HEALTH_CONCERN,0) &#61; v_Health)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_REFEERAL_DATE is null OR (DateDiff(&#39;day&#39;, A.REFERRAL_DATE, v_REFEERAL_DATE) &#61; 0 and To_Char(A.REFERRAL_DATE, &#39;HH:mi:ss AM&#39;) &#61; To_Char(v_REFEERAL_DATE, &#39;HH:mi:ss AM&#39;)))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_DATE_ORR_APPROVED is null OR (DateDiff(&#39;day&#39;, A.DATE_ORR_APPROVED, v_DATE_ORR_APPROVED) &#61; 0 and To_Char(A.REFERRAL_DATE, &#39;HH:mi:ss AM&#39;) &#61; To_Char(v_DATE_ORR_APPROVED, &#39;HH:mi:ss AM&#39;)))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PENDING_HOURS is null Or (v_PENDING_HOURS &#61; 1 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 25 )&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 2 AND (DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 24 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 49))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 3 AND (DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 48 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &lt; 73))&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Or (v_PENDING_HOURS &#61; 4 AND DateDiff(&#39;hour&#39;, A.DATE_CREATED, sysdate) &gt; 72 )&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_Alien_NO is null Or UPPER(A.ALIEN_NO) LIKE  UPPER(&#39;%&#39; || v_Alien_NO || &#39;%&#39;))&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PROGRAM_TYPE_ID is null Or E.PROGRAM_TYPE_ID &#61; v_PROGRAM_TYPE_ID)&#10;&#9;&#9;&#9;&#9;&#9;  AND (v_PROGRAM_ID is null Or D.PROGRAM_ID &#61; v_PROGRAM_ID)&#10;&#9;&#9;;&#10;&#10;END SP_GET_INTAKES_MAIN;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

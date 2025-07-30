@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LIST_STATES - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>LIST_STATES</h1><p><span id="recordNumber">53</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STATE">STATE</span></td>
+                                    <td>CHAR</td>
+                                    <td>2</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ADM_LIST_WEB_USER.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='ADM_LIST_WEB_USER.html'>ADM_LIST_WEB_USER</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="FACILITY_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='FACILITY_INFO.html'>FACILITY_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="FACILITY_INFO_ARC.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='FACILITY_INFO_ARC.html'>FACILITY_INFO_ARC</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="LIST_PROGRAMS.MAIL_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='LIST_PROGRAMS.html'>LIST_PROGRAMS</a><span class='relatedKey'>.MAIL_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="LIST_PROGRAMS.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='LIST_PROGRAMS.html'>LIST_PROGRAMS</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="SPONSOR_AFFIDAVITS_SUPPORT.EMP_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='SPONSOR_AFFIDAVITS_SUPPORT.html'>SPONSOR_AFFIDAVITS_SUPPORT</a><span class='relatedKey'>.EMP_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="SPONSOR_INFO.STATE references LIST_STATES.STATE via SPONSOR_INFO_LIST_STATES_FK"><a href='SPONSOR_INFO.html'>SPONSOR_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">SPONSOR_INFO_LIST_STATES_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="SPONSOR_INFO_ARCHIVE.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='SPONSOR_INFO_ARCHIVE.html'>SPONSOR_INFO_ARCHIVE</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="SPONSOR_INFO_BAK.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='SPONSOR_INFO_BAK.html'>SPONSOR_INFO_BAK</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_RELEASE_REQUESTS_FY21.PROGRAM_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TABLEAU_RELEASE_REQUESTS_FY21.html'>TABLEAU_RELEASE_REQUESTS_FY21</a><span class='relatedKey'>.PROGRAM_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SPONSOR_APPLICATIONS_FY21.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TABLEAU_SPONSOR_APPLICATIONS_FY21.html'>TABLEAU_SPONSOR_APPLICATIONS_FY21</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_UC_ASSESSMENTS_FY21.HEARING_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TABLEAU_UC_ASSESSMENTS_FY21.html'>TABLEAU_UC_ASSESSMENTS_FY21</a><span class='relatedKey'>.HEARING_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_UC_PROGRAMS_FY21.PROGRAM_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TABLEAU_UC_PROGRAMS_FY21.html'>TABLEAU_UC_PROGRAMS_FY21</a><span class='relatedKey'>.PROGRAM_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP1_3.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP1_3.html'>TEMP1_3</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP2.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP2.html'>TEMP2</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP3.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP3.html'>TEMP3</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP3.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP3.html'>TEMP3</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP7.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP7.html'>TEMP7</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP8.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP8.html'>TEMP8</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP9.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP9.html'>TEMP9</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP_3_ENR1.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP_3_ENR1.html'>TEMP_3_ENR1</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP_3_ENR2.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TEMP_3_ENR2.html'>TEMP_3_ENR2</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TT_FACILITY_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TT_FACILITY_INFO.html'>TT_FACILITY_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TT_FOR_UPLD_SPONSOR_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TT_FOR_UPLD_SPONSOR_INFO.html'>TT_FOR_UPLD_SPONSOR_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TT_SPONSOR_AFFIDAVITS_SUPPORT.EMP_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='TT_SPONSOR_AFFIDAVITS_SUPPORT.html'>TT_SPONSOR_AFFIDAVITS_SUPPORT</a><span class='relatedKey'>.EMP_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_ASSESSMENT.HEARING_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_ASSESSMENT.html'>UAC_ASSESSMENT</a><span class='relatedKey'>.HEARING_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_CHILD_LOCATION_HIST.LOCATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_CHILD_LOCATION_HIST.html'>UAC_CHILD_LOCATION_HIST</a><span class='relatedKey'>.LOCATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_DISCHARGE_NOTIFICATION.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_DISCHARGE_NOTIFICATION.html'>UAC_DISCHARGE_NOTIFICATION</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_HOTLINE_ALERT.PROG_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_HOTLINE_ALERT.html'>UAC_HOTLINE_ALERT</a><span class='relatedKey'>.PROG_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_HOTLINE_REPORTING.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_HOTLINE_REPORTING.html'>UAC_HOTLINE_REPORTING</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INFO.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_INFO.html'>UAC_INFO</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INFO_BAK.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_INFO_BAK.html'>UAC_INFO_BAK</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INFO_TMP.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_INFO_TMP.html'>UAC_INFO_TMP</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INFO_TMP_FROMXML.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_INFO_TMP_FROMXML.html'>UAC_INFO_TMP_FROMXML</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_RELEASE_REQUEST.PROGRAM_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_RELEASE_REQUEST.html'>UAC_RELEASE_REQUEST</a><span class='relatedKey'>.PROGRAM_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SCHEDULED_HEARING.HEARING_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_SCHEDULED_HEARING.html'>UAC_SCHEDULED_HEARING</a><span class='relatedKey'>.HEARING_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SPONSOR_ADDRESS_HISTORY.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_SPONSOR_ADDRESS_HISTORY.html'>UAC_SPONSOR_ADDRESS_HISTORY</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SPONSOR_LIST.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='UAC_SPONSOR_LIST.html'>UAC_SPONSOR_LIST</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SI.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SI.html'>V_ADRIANA_SPONSOR_SEARCH_SI</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SI.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SI.html'>V_ADRIANA_SPONSOR_SEARCH_SI</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SL.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SL.html'>V_ADRIANA_SPONSOR_SEARCH_SL</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SL.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SL.html'>V_ADRIANA_SPONSOR_SEARCH_SL</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ENROLLMENT_REPORT.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ENROLLMENT_REPORT.html'>V_ENROLLMENT_REPORT</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ENROLLMENT_REPORT_DUMMY.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ENROLLMENT_REPORT_DUMMY.html'>V_ENROLLMENT_REPORT_DUMMY</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ENTRY_STATES.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_ENTRY_STATES.html'>V_ENTRY_STATES</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_MEDICAL_RPT.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_MEDICAL_RPT.html'>V_MEDICAL_RPT</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_PC_UNDERWRITERS.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_PC_UNDERWRITERS.html'>V_PC_UNDERWRITERS</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SPONSOR_AFFIDAVITS_SUPPORT.EMP_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_SPONSOR_AFFIDAVITS_SUPPORT.html'>V_SPONSOR_AFFIDAVITS_SUPPORT</a><span class='relatedKey'>.EMP_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SPONSOR_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_SPONSOR_INFO.html'>V_SPONSOR_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SPONSOR_LEGAL_RPT.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_SPONSOR_LEGAL_RPT.html'>V_SPONSOR_LEGAL_RPT</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SPRTD_UAC_DATA_REFRESH_RPT.PROGRAM_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_SPRTD_UAC_DATA_REFRESH_RPT.html'>V_SPRTD_UAC_DATA_REFRESH_RPT</a><span class='relatedKey'>.PROGRAM_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.PROGRAM_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html'>V_SPRTD_UAC_DATA_RFRSH_APP_RPT</a><span class='relatedKey'>.PROGRAM_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ENROLLMENT_RPT.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_ENROLLMENT_RPT.html'>V_UAC_ENROLLMENT_RPT</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ENROLLMENT_RPT_DUMMY.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_ENROLLMENT_RPT_DUMMY.html'>V_UAC_ENROLLMENT_RPT_DUMMY</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_INACTIVE_ENROUTE.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_INACTIVE_ENROUTE.html'>V_UAC_INACTIVE_ENROUTE</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ORIG_SPONSOR_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_ORIG_SPONSOR_INFO.html'>V_UAC_ORIG_SPONSOR_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ORIG_SPONSOR_INFO_HS.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_ORIG_SPONSOR_INFO_HS.html'>V_UAC_ORIG_SPONSOR_INFO_HS</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_PROGRAM_INFO_MIR.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_PROGRAM_INFO_MIR.html'>V_UAC_PROGRAM_INFO_MIR</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_HOUSEHOLD.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_HOUSEHOLD.html'>V_UAC_SPONSOR_HOUSEHOLD</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_INFO.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_INFO.html'>V_UAC_SPONSOR_INFO</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_RPT.NOTIFICATION_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_RPT.html'>V_UAC_SPONSOR_RPT</a><span class='relatedKey'>.NOTIFICATION_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_RPT.SPONSOR_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_RPT.html'>V_UAC_SPONSOR_RPT</a><span class='relatedKey'>.SPONSOR_STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_USERLIST_NOTPROGRAMUSERS.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_USERLIST_NOTPROGRAMUSERS.html'>V_USERLIST_NOTPROGRAMUSERS</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_USERLIST_WPROGRAMS.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='V_USERLIST_WPROGRAMS.html'>V_USERLIST_WPROGRAMS</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="STATENAME">STATENAME</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> LIST_STATES_PK</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>STATE</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="323,5,677,357">
+<area shape="rect" id="node2" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,179,279,307">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/LIST_STATES.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="1175,40,1549,128">
+<area shape="rect" id="node2" href="SPONSOR_HOUSEHOLD_OCCUPANTS.html" target="_top" title="SPONSOR_HOUSEHOLD_OCCUPANTS" alt="" coords="721,5,1131,93">
+<area shape="rect" id="node3" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="323,303,677,655">
+<area shape="rect" id="node5" href="LIST_LEGAL_STATUS.html" target="_top" title="LIST_LEGAL_STATUS" alt="" coords="9,580,275,668">
+<area shape="rect" id="node6" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,435,279,563">
+<area shape="rect" id="node4" href="SPONSOR_CRIMINAL_HISTORY.html" target="_top" title="SPONSOR_CRIMINAL_HISTORY" alt="" coords="749,147,1103,235">
+<area shape="rect" id="node7" href="SPONSOR_INFO_HISTORY.html" target="_top" title="SPONSOR_INFO_HISTORY" alt="" coords="771,252,1081,340">
+<area shape="rect" id="node8" href="SPONSORFLAG.html" target="_top" title="SPONSORFLAG" alt="" coords="817,357,1035,445">
+<area shape="rect" id="node9" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="727,463,1125,551">
+<area shape="rect" id="node10" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="795,568,1057,656">
+<area shape="rect" id="node11" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="729,673,1123,761">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/LIST_STATES.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="410,1169,686,1433">
+<area shape="rect" id="node2" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,4097,279,4225">
+<area shape="rect" id="node3" href="FACILITY_INFO.html" target="_top" title="FACILITY_INFO" alt="" coords="913,4949,1167,5155">
+<area shape="rect" id="node4" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="431,3617,665,3852">
+<area shape="rect" id="node5" href="FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="911,1915,1169,2149">
+<area shape="rect" id="node6" href="SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="359,4445,737,4651">
+<area shape="rect" id="node7" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="371,721,725,1073">
+<area shape="rect" id="node8" href="SPONSOR_INFO_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ARCHIVE" alt="" coords="371,4668,725,4815">
+<area shape="rect" id="node9" href="SPONSOR_INFO_BAK.html" target="_top" title="SPONSOR_INFO_BAK" alt="" coords="371,4832,725,4979">
+<area shape="rect" id="node10" href="TABLEAU_RELEASE_REQUESTS_FY21.html" target="_top" title="TABLEAU_RELEASE_REQUESTS_FY21" alt="" coords="345,4996,751,5148">
+<area shape="rect" id="node11" href="TABLEAU_SPONSOR_APPLICATIONS_FY21.html" target="_top" title="TABLEAU_SPONSOR_APPLICATIONS_FY21" alt="" coords="323,5165,773,5259">
+<area shape="rect" id="node12" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="846,6085,1234,6237">
+<area shape="rect" id="node13" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="347,5276,749,5540">
+<area shape="rect" id="node14" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="829,2167,1251,2348">
+<area shape="rect" id="node15" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="361,2987,735,3456">
+<area shape="rect" id="node16" href="TEMP1_3.html" target="_top" title="TEMP1_3" alt="" coords="408,5629,688,5723">
+<area shape="rect" id="node17" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="931,2564,1149,2716">
+<area shape="rect" id="node18" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="863,915,1217,1125">
+<area shape="rect" id="node19" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="863,3132,1217,3313">
+<area shape="rect" id="node20" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="863,3331,1217,3512">
+<area shape="rect" id="node21" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="863,2365,1217,2547">
+<area shape="rect" id="node22" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="863,1143,1217,1265">
+<area shape="rect" id="node23" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="863,1283,1217,1405">
+<area shape="rect" id="node24" href="TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="1339,4949,1593,5125">
+<area shape="rect" id="node25" href="TT_FOR_UPLD_SPONSOR_INFO.html" target="_top" title="TT_FOR_UPLD_SPONSOR_INFO" alt="" coords="371,5740,725,5916">
+<area shape="rect" id="node26" href="TT_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="TT_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="344,5933,752,6051">
+<area shape="rect" id="node27" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="864,2733,1216,3115">
+<area shape="rect" id="node28" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="855,5540,1225,5804">
+<area shape="rect" id="node29" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="856,5,1224,181">
+<area shape="rect" id="node30" href="UAC_HOTLINE_REPORTING.html" target="_top" title="UAC_HOTLINE_REPORTING" alt="" coords="1307,68,1625,244">
+<area shape="rect" id="node31" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="853,1423,1227,1569">
+<area shape="rect" id="node32" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="853,1587,1227,1733">
+<area shape="rect" id="node33" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="853,1751,1227,1897">
+<area shape="rect" id="node34" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="354,6068,742,6332">
+<area shape="rect" id="node35" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="867,6255,1213,6431">
+<area shape="rect" id="node36" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="841,663,1239,897">
+<area shape="rect" id="node37" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="817,235,1263,645">
+<area shape="rect" id="node38" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="848,3529,1232,3740">
+<area shape="rect" id="node39" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="845,5172,1235,5383">
+<area shape="rect" id="node40" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="863,4353,1217,4476">
+<area shape="rect" id="node41" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="850,4493,1230,4616">
+<area shape="rect" id="node42" href="V_ENTRY_STATES.html" target="_top" title="V_ENTRY_STATES" alt="" coords="430,6349,666,6443">
+<area shape="rect" id="node43" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="383,6460,713,6583">
+<area shape="rect" id="node44" href="V_PC_UNDERWRITERS.html" target="_top" title="V_PC_UNDERWRITERS" alt="" coords="409,6600,687,6693">
+<area shape="rect" id="node45" href="V_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="V_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="350,6711,746,6804">
+<area shape="rect" id="node46" href="V_SPONSOR_INFO.html" target="_top" title="V_SPONSOR_INFO" alt="" coords="371,6821,725,6944">
+<area shape="rect" id="node47" href="V_SPONSOR_LEGAL_RPT.html" target="_top" title="V_SPONSOR_LEGAL_RPT" alt="" coords="371,6961,725,7084">
+<area shape="rect" id="node48" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="842,4633,1238,4756">
+<area shape="rect" id="node49" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="831,4773,1249,4896">
+<area shape="rect" id="node50" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="863,3956,1217,4137">
+<area shape="rect" id="node51" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="846,4155,1234,4336">
+<area shape="rect" id="node52" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="879,5400,1201,5523">
+<area shape="rect" id="node53" href="V_UAC_ORIG_SPONSOR_INFO.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO" alt="" coords="371,7101,725,7224">
+<area shape="rect" id="node54" href="V_UAC_ORIG_SPONSOR_INFO_HS.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO_HS" alt="" coords="362,7241,734,7364">
+<area shape="rect" id="node55" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="874,3757,1206,3939">
+<area shape="rect" id="node56" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="371,7381,725,7504">
+<area shape="rect" id="node57" href="V_UAC_SPONSOR_INFO.html" target="_top" title="V_UAC_SPONSOR_INFO" alt="" coords="371,7521,725,7644">
+<area shape="rect" id="node58" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="863,5821,1217,6032">
+<area shape="rect" id="node59" href="V_USERLIST_NOTPROGRAMUSERS.html" target="_top" title="V_USERLIST_NOTPROGRAMUSERS" alt="" coords="356,7661,740,7755">
+<area shape="rect" id="node60" href="V_USERLIST_WPROGRAMS.html" target="_top" title="V_USERLIST_WPROGRAMS" alt="" coords="390,7772,706,7865">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/LIST_STATES.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="890,1135,1166,1223">
+<area shape="rect" id="node2" href="LIST_AIHD_TECHS.html" target="_top" title="LIST_AIHD_TECHS" alt="" coords="429,352,670,440">
+<area shape="rect" id="node3" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="6,3933,279,4061">
+<area shape="rect" id="node4" href="ADM_USER_PROGRAM.html" target="_top" title="ADM_USER_PROGRAM" alt="" coords="888,1776,1168,1864">
+<area shape="rect" id="node5" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="433,2345,666,2433">
+<area shape="rect" id="node10" href="LIST_PROGRAM_TYPE.html" target="_top" title="LIST_PROGRAM_TYPE" alt="" coords="5,2343,280,2431">
+<area shape="rect" id="node6" href="FACILITY_BORDER_REGION.html" target="_top" title="FACILITY_BORDER_REGION" alt="" coords="1319,573,1641,661">
+<area shape="rect" id="node7" href="FACILITY_INFO.html" target="_top" title="FACILITY_INFO" alt="" coords="921,752,1135,840">
+<area shape="rect" id="node8" href="FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="899,2848,1157,2936">
+<area shape="rect" id="node9" href="LIST_FACILITY_BEDS_IN_RESERVE.html" target="_top" title="LIST_FACILITY_BEDS_IN_RESERVE" alt="" coords="1289,679,1671,767">
+<area shape="rect" id="node11" href="ORR_DECISION_HISTORY.html" target="_top" title="ORR_DECISION_HISTORY" alt="" coords="1769,111,2072,199">
+<area shape="rect" id="node12" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="1286,103,1674,367">
+<area shape="rect" id="node16" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="892,2203,1164,2291">
+<area shape="rect" id="node13" href="PROGRAM_LEVEL_EVENTS_INFO.html" target="_top" title="PROGRAM_LEVEL_EVENTS_INFO" alt="" coords="845,1881,1211,1969">
+<area shape="rect" id="node14" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1777,1053,2064,1141">
+<area shape="rect" id="node15" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="1307,1059,1653,1147">
+<area shape="rect" id="node22" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="445,4372,653,4460">
+<area shape="rect" id="node17" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="1764,941,2077,1029">
+<area shape="rect" id="node18" href="SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="360,981,739,1187">
+<area shape="rect" id="node19" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="1293,7904,1667,7992">
+<area shape="rect" id="node20" href="SPONSOR_HOUSEHOLD_OCCUPANTS.html" target="_top" title="SPONSOR_HOUSEHOLD_OCCUPANTS" alt="" coords="823,7904,1233,7992">
+<area shape="rect" id="node21" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="438,7855,661,7943">
+<area shape="rect" id="node24" href="LIST_LEGAL_STATUS.html" target="_top" title="LIST_LEGAL_STATUS" alt="" coords="10,7361,275,7449">
+<area shape="rect" id="node23" href="SPONSOR_CRIMINAL_HISTORY.html" target="_top" title="SPONSOR_CRIMINAL_HISTORY" alt="" coords="851,7799,1205,7887">
+<area shape="rect" id="node25" href="SPONSOR_INFO_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ARCHIVE" alt="" coords="372,6597,727,6744">
+<area shape="rect" id="node26" href="SPONSOR_INFO_BAK.html" target="_top" title="SPONSOR_INFO_BAK" alt="" coords="372,6761,727,6908">
+<area shape="rect" id="node27" href="SPONSOR_INFO_HISTORY.html" target="_top" title="SPONSOR_INFO_HISTORY" alt="" coords="873,7588,1183,7676">
+<area shape="rect" id="node28" href="SPONSORFLAG.html" target="_top" title="SPONSORFLAG" alt="" coords="919,7693,1137,7781">
+<area shape="rect" id="node29" href="TABLEAU_RELEASE_REQUESTS_FY21.html" target="_top" title="TABLEAU_RELEASE_REQUESTS_FY21" alt="" coords="825,893,1231,1045">
+<area shape="rect" id="node30" href="TABLEAU_SPONSOR_APPLICATIONS_FY21.html" target="_top" title="TABLEAU_SPONSOR_APPLICATIONS_FY21" alt="" coords="324,1328,775,1421">
+<area shape="rect" id="node31" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1727,2281,2115,2345">
+<area shape="rect" id="node32" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="1355,5180,1605,5268">
+<area shape="rect" id="node33" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="1301,1459,1659,1523">
+<area shape="rect" id="node34" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="1400,2628,1560,2692">
+<area shape="rect" id="node35" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="1400,2709,1560,2773">
+<area shape="rect" id="node36" href="TEMP1_3.html" target="_top" title="TEMP1_3" alt="" coords="409,2843,689,2936">
+<area shape="rect" id="node37" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="957,3317,1099,3381">
+<area shape="rect" id="node38" href="TEMP2_1.html" target="_top" title="TEMP2_1" alt="" coords="948,4615,1108,4679">
+<area shape="rect" id="node39" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1409,3384,1551,3448">
+<area shape="rect" id="node40" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1409,2791,1551,2855">
+<area shape="rect" id="node41" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1409,1924,1551,1988">
+<area shape="rect" id="node42" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1409,4689,1551,4753">
+<area shape="rect" id="node43" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1409,1540,1551,1604">
+<area shape="rect" id="node44" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1409,4771,1551,4835">
+<area shape="rect" id="node45" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="925,3695,1131,3759">
+<area shape="rect" id="node46" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="925,3776,1131,3840">
+<area shape="rect" id="node47" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="1378,2547,1582,2611">
+<area shape="rect" id="node48" href="TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="1357,468,1603,556">
+<area shape="rect" id="node49" href="TT_FOR_UPLD_SPONSOR_INFO.html" target="_top" title="TT_FOR_UPLD_SPONSOR_INFO" alt="" coords="372,6925,727,7101">
+<area shape="rect" id="node50" href="TT_INFLUX_RPT.html" target="_top" title="TT_INFLUX_RPT" alt="" coords="917,4732,1139,4820">
+<area shape="rect" id="node51" href="TT_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="TT_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="345,3647,753,3764">
+<area shape="rect" id="node52" href="TT_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_SUBSTANCE_USE_HISTORY" alt="" coords="1745,5799,2097,5887">
+<area shape="rect" id="node53" href="TT_UAC_CHILDREN.html" target="_top" title="TT_UAC_CHILDREN" alt="" coords="2205,4604,2455,4692">
+<area shape="rect" id="node54" href="UAC_CHILDREN.html" target="_top" title="UAC_CHILDREN" alt="" coords="1811,4631,2031,4719">
+<area shape="rect" id="node55" href="TT_UAC_CRIMINAL_HISTORY.html" target="_top" title="TT_UAC_CRIMINAL_HISTORY" alt="" coords="2163,4727,2497,4815">
+<area shape="rect" id="node56" href="UAC_CRIMINAL_HISTORY.html" target="_top" title="UAC_CRIMINAL_HISTORY" alt="" coords="1769,4772,2073,4860">
+<area shape="rect" id="node57" href="TT_UAC_FAMILY_RELATIONS.html" target="_top" title="TT_UAC_FAMILY_RELATIONS" alt="" coords="2163,4868,2497,4956">
+<area shape="rect" id="node58" href="UAC_FAMILY_RELATIONS.html" target="_top" title="UAC_FAMILY_RELATIONS" alt="" coords="1769,4913,2073,5001">
+<area shape="rect" id="node59" href="TT_UAC_INFO_NAMES_BACKUP.html" target="_top" title="TT_UAC_INFO_NAMES_BACKUP" alt="" coords="850,4873,1206,4961">
+<area shape="rect" id="node60" href="TT_UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1723,5019,2119,5107">
+<area shape="rect" id="node61" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="1788,1159,2053,1247">
+<area shape="rect" id="node62" href="UAC_CASE_MANAGERS.html" target="_top" title="UAC_CASE_MANAGERS" alt="" coords="885,4979,1171,5067">
+<area shape="rect" id="node63" href="UAC_CBP_2500_FORMS.html" target="_top" title="UAC_CBP_2500_FORMS" alt="" coords="883,5156,1173,5244">
+<area shape="rect" id="node64" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="862,2953,1194,3041">
+<area shape="rect" id="node65" href="LIST_CHILD_LOCATION_TYPE.html" target="_top" title="LIST_CHILD_LOCATION_TYPE" alt="" coords="381,2989,718,3077">
+<area shape="rect" id="node66" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="1295,4969,1665,5057">
+<area shape="rect" id="node67" href="UAC_FAST.html" target="_top" title="UAC_FAST" alt="" coords="938,3140,1118,3228">
+<area shape="rect" id="node68" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="1281,1200,1679,1288">
+<area shape="rect" id="node69" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="892,6384,1164,6472">
+<area shape="rect" id="node70" href="UAC_HOTLINE_REPORTING.html" target="_top" title="UAC_HOTLINE_REPORTING" alt="" coords="1321,6544,1639,6632">
+<area shape="rect" id="node71" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="882,5297,1174,5385">
+<area shape="rect" id="node72" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="919,3857,1137,3945">
+<area shape="rect" id="node73" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="919,3963,1137,4051">
+<area shape="rect" id="node74" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="869,4068,1187,4156">
+<area shape="rect" id="node75" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="1320,2405,1640,2493">
+<area shape="rect" id="node76" href="UAC_MEDICAL_SCREENING_NOTES.html" target="_top" title="UAC_MEDICAL_SCREENING_NOTES" alt="" coords="834,5403,1222,5491">
+<area shape="rect" id="node77" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="1303,2005,1657,2093">
+<area shape="rect" id="node78" href="UAC_REFERRAL_MEDICATION_INFO.html" target="_top" title="UAC_REFERRAL_MEDICATION_INFO" alt="" coords="831,5508,1225,5596">
+<area shape="rect" id="node79" href="UAC_RR_CCR_HISTORY.html" target="_top" title="UAC_RR_CCR_HISTORY" alt="" coords="1779,371,2063,459">
+<area shape="rect" id="node80" href="UAC_RR_CMR_HISTORY.html" target="_top" title="UAC_RR_CMR_HISTORY" alt="" coords="1777,5,2065,93">
+<area shape="rect" id="node81" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="1757,4177,2084,4265">
+<area shape="rect" id="node82" href="UAC_SIR_EVENT.html" target="_top" title="UAC_SIR_EVENT" alt="" coords="915,529,1141,617">
+<area shape="rect" id="node83" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="1281,5075,1679,5163">
+<area shape="rect" id="node84" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="897,6243,1159,6331">
+<area shape="rect" id="node85" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="831,6633,1225,6721">
+<area shape="rect" id="node86" href="UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1737,5124,2104,5212">
+<area shape="rect" id="node87" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="1323,2111,1637,2199">
+<area shape="rect" id="node88" href="UAC_UNIFICATION_SPECIALIST.html" target="_top" title="UAC_UNIFICATION_SPECIALIST" alt="" coords="1302,865,1658,953">
+<area shape="rect" id="node89" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="1353,3675,1607,3739">
+<area shape="rect" id="node90" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="1288,1761,1672,1825">
+<area shape="rect" id="node91" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="1285,4527,1675,4591">
+<area shape="rect" id="node92" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1789,2363,2053,2427">
+<area shape="rect" id="node93" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1751,3473,2090,3537">
+<area shape="rect" id="node94" href="V_ASSESSMENT_RPT_NF_PT2.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT2" alt="" coords="1751,5229,2090,5293">
+<area shape="rect" id="node95" href="V_ASSESSMENT_RPT_NF_PT3.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT3" alt="" coords="1751,5311,2090,5375">
+<area shape="rect" id="node96" href="V_ASSESSMENT_RPT_NF_PT4.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT4" alt="" coords="1751,5392,2090,5456">
+<area shape="rect" id="node97" href="V_ASSESSMENT_RPT_NF_PT5.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT5" alt="" coords="1751,5473,2090,5537">
+<area shape="rect" id="node98" href="V_ASSESSMENT_RPT_NF_PT6.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT6" alt="" coords="1751,5555,2090,5619">
+<area shape="rect" id="node99" href="V_ASSESSMENT_RPT_NF_PT7.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT7" alt="" coords="1751,5636,2090,5700">
+<area shape="rect" id="node100" href="V_ASSESSMENT_RPT_NF_PT8.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT8" alt="" coords="1751,5717,2090,5781">
+<area shape="rect" id="node101" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="877,5839,1179,5903">
+<area shape="rect" id="node102" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="838,5920,1218,5984">
+<area shape="rect" id="node103" href="V_ENTRY_STATES.html" target="_top" title="V_ENTRY_STATES" alt="" coords="431,4549,667,4643">
+<area shape="rect" id="node104" href="V_LANGUAGES.html" target="_top" title="V_LANGUAGES" alt="" coords="923,5685,1133,5749">
+<area shape="rect" id="node105" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="1756,2760,2085,2883">
+<area shape="rect" id="node106" href="V_PC_UNDERWRITERS.html" target="_top" title="V_PC_UNDERWRITERS" alt="" coords="411,4660,688,4753">
+<area shape="rect" id="node107" href="V_RELEASE_ANALYSIS.html" target="_top" title="V_RELEASE_ANALYSIS" alt="" coords="889,4497,1167,4561">
+<area shape="rect" id="node108" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1379,4172,1581,4236">
+<area shape="rect" id="node109" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1393,2872,1567,2936">
+<area shape="rect" id="node110" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1337,2953,1623,3017">
+<area shape="rect" id="node111" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1358,3035,1602,3099">
+<area shape="rect" id="node112" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1385,2216,1575,2280">
+<area shape="rect" id="node113" href="V_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="V_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="351,5905,747,5999">
+<area shape="rect" id="node114" href="V_SPONSOR_INFO.html" target="_top" title="V_SPONSOR_INFO" alt="" coords="372,7119,727,7241">
+<area shape="rect" id="node115" href="V_SPONSOR_LEGAL_RPT.html" target="_top" title="V_SPONSOR_LEGAL_RPT" alt="" coords="372,7679,727,7801">
+<area shape="rect" id="node116" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="830,6001,1226,6065">
+<area shape="rect" id="node117" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="819,3532,1237,3596">
+<area shape="rect" id="node118" href="V_TEMP_INCARE.html" target="_top" title="V_TEMP_INCARE" alt="" coords="915,635,1141,699">
+<area shape="rect" id="node119" href="V_TRAFFICKING_RPT.html" target="_top" title="V_TRAFFICKING_RPT" alt="" coords="896,3451,1160,3515">
+<area shape="rect" id="node120" href="V_TRANSFER_REQ_RPT.html" target="_top" title="V_TRANSFER_REQ_RPT" alt="" coords="886,3059,1170,3123">
+<area shape="rect" id="node121" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="1325,4608,1635,4672">
+<area shape="rect" id="node122" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="1286,4852,1674,4916">
+<area shape="rect" id="node123" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="867,3613,1189,3677">
+<area shape="rect" id="node124" href="V_UAC_ORIG_SPONSOR_INFO.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO" alt="" coords="372,7259,727,7381">
+<area shape="rect" id="node125" href="V_UAC_ORIG_SPONSOR_INFO_HS.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO_HS" alt="" coords="363,7399,735,7521">
+<area shape="rect" id="node126" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="1355,1843,1605,1907">
+<area shape="rect" id="node127" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="1314,784,1646,848">
+<area shape="rect" id="node128" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="1303,1621,1657,1744">
+<area shape="rect" id="node129" href="V_UAC_SPONSOR_INFO.html" target="_top" title="V_UAC_SPONSOR_INFO" alt="" coords="372,7539,727,7661">
+<area shape="rect" id="node130" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="1341,1341,1619,1405">
+<area shape="rect" id="node131" href="V_USERLIST_NOTPROGRAMUSERS.html" target="_top" title="V_USERLIST_NOTPROGRAMUSERS" alt="" coords="357,6268,741,6361">
+<area shape="rect" id="node132" href="V_USERLIST_WPROGRAMS.html" target="_top" title="V_USERLIST_WPROGRAMS" alt="" coords="391,6379,707,6472">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/LIST_STATES.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

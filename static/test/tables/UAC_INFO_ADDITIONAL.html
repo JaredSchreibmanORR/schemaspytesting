@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UAC_INFO_ADDITIONAL - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UAC_INFO_ADDITIONAL</h1><p><span id="recordNumber">0</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_PLUS_PK">UAC_PLUS_PK</span></td>
+                                    <td>NUMBER</td>
+                                    <td>0</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&quot;UACPORTAL&quot;.&quot;ISEQ$$_303109&quot;.nextval</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Primary Key for excess UC-related fields</p></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_ID">UAC_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>0</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="UAC_INFO_ADDITIONAL.UAC_ID references UAC_INFO.UAC_ID via SYS_C0036010"><a href='UAC_INFO.html'>UAC_INFO</a><span class='relatedKey'>.UAC_ID</span></td>
+                                                <td class="constraint detail">SYS_C0036010</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td><p>Foreign Key to UAC_Info table</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPTIME">UPTIME</span></td>
+                                    <td>TIMESTAMP(6)</td>
+                                    <td>11,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Latest time this table was edited</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPUSER">UPUSER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Latest user who edited this table</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CIVID">CIVID</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Civilian ID - Identifier Sent by CBP</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUBJECTID">SUBJECTID</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Subject ID - Identifier Sent by CBP</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="FAMILYUNITNUMBER">FAMILYUNITNUMBER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Identifier for a family unit</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUSPECTEDVICTIMHUMANTRAFFICKING">SUSPECTEDVICTIMHUMANTRAFFICKING</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Flag to indicate if a child is a suspected victim of human trafficking</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COUNTRYOFCITIZENSHIP">COUNTRYOFCITIZENSHIP</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Where a child is a citizen</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LANGUAGE">LANGUAGE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>The language that DHS believes a child speaks</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LOCALPLACEMENT">LOCALPLACEMENT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Boolean flag indicating that DHS is requesting local placement for a child</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LOCALPLACEMENTJUSTIFICATION">LOCALPLACEMENTJUSTIFICATION</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>1000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Explanation of the reason for a local placmement</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="EXPEDITEDPLACEMENT">EXPEDITEDPLACEMENT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Boolean flag indicating that DHS is requesting expedited placement for a child</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="EXPEDITEDPLACEMENTJUSTIFICATION">EXPEDITEDPLACEMENTJUSTIFICATION</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>1000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Explanation of the reason for an expedited placmement</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CBP2500STATUS">CBP2500STATUS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>500</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Status indiciating if the pull of a 2500 form was successful</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TRANSACTION_ID">TRANSACTION_ID</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>25</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Transaction ID is the pk used by CBP to track referrals</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CLAIMS_FEAR">CLAIMS_FEAR</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Optional Boolean flag yes/no to recieve data from UIP</p></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> SYS_C0036009</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UAC_PLUS_PK</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>IDX_UIA_UAC_ID</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UAC_ID</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="423,5,987,573">
+<area shape="rect" id="node2" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,37,379,507">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/UAC_INFO_ADDITIONAL.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="517,5,892,93">
+<area shape="rect" id="node2" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,840,379,1309">
+<area shape="rect" id="node3" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="572,111,837,199">
+<area shape="rect" id="node4" href="UAC_CBP_2500_FORMS.html" target="_top" title="UAC_CBP_2500_FORMS" alt="" coords="560,216,849,304">
+<area shape="rect" id="node5" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="539,321,871,409">
+<area shape="rect" id="node6" href="UAC_FAST.html" target="_top" title="UAC_FAST" alt="" coords="617,427,792,515">
+<area shape="rect" id="node7" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="423,532,987,1100">
+<area shape="rect" id="node8" href="UAC_MEDICAL_SCREENING_NOTES.html" target="_top" title="UAC_MEDICAL_SCREENING_NOTES" alt="" coords="511,1117,899,1205">
+<area shape="rect" id="node9" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="569,1223,841,1311">
+<area shape="rect" id="node10" href="UAC_REFERRAL_MEDICATION_INFO.html" target="_top" title="UAC_REFERRAL_MEDICATION_INFO" alt="" coords="507,1328,902,1416">
+<area shape="rect" id="node11" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="506,1433,903,1521">
+<area shape="rect" id="node12" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="573,1539,836,1627">
+<area shape="rect" id="node13" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="508,1644,901,1732">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/UAC_INFO_ADDITIONAL.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="423,5,987,573">
+<area shape="rect" id="node2" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,37,379,507">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/UAC_INFO_ADDITIONAL.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="760,612,1135,700">
+<area shape="rect" id="node2" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="248,2617,621,3087">
+<area shape="rect" id="node4" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,3973,204,4061">
+<area shape="rect" id="node3" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="1289,561,1647,625">
+<area shape="rect" id="node5" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="811,2656,1083,2744">
+<area shape="rect" id="node6" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="1388,1804,1548,1868">
+<area shape="rect" id="node7" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="1388,2184,1548,2248">
+<area shape="rect" id="node8" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="877,191,1018,255">
+<area shape="rect" id="node9" href="TEMP2_1.html" target="_top" title="TEMP2_1" alt="" coords="867,753,1027,817">
+<area shape="rect" id="node10" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1397,649,1539,713">
+<area shape="rect" id="node11" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1397,2416,1539,2480">
+<area shape="rect" id="node12" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1397,797,1539,861">
+<area shape="rect" id="node13" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1397,480,1539,544">
+<area shape="rect" id="node14" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1397,3148,1539,3212">
+<area shape="rect" id="node15" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="845,272,1050,336">
+<area shape="rect" id="node16" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="845,353,1050,417">
+<area shape="rect" id="node17" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="1366,2508,1570,2572">
+<area shape="rect" id="node18" href="TT_INFLUX_RPT.html" target="_top" title="TT_INFLUX_RPT" alt="" coords="837,907,1058,995">
+<area shape="rect" id="node19" href="TT_UAC_INFO_NAMES_BACKUP.html" target="_top" title="TT_UAC_INFO_NAMES_BACKUP" alt="" coords="769,1120,1125,1208">
+<area shape="rect" id="node20" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="815,1225,1080,1313">
+<area shape="rect" id="node21" href="UAC_CASE_MANAGERS.html" target="_top" title="UAC_CASE_MANAGERS" alt="" coords="805,1331,1090,1419">
+<area shape="rect" id="node22" href="UAC_CBP_2500_FORMS.html" target="_top" title="UAC_CBP_2500_FORMS" alt="" coords="803,1436,1092,1524">
+<area shape="rect" id="node23" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="781,435,1113,523">
+<area shape="rect" id="node24" href="UAC_FAST.html" target="_top" title="UAC_FAST" alt="" coords="860,1541,1035,1629">
+<area shape="rect" id="node25" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="811,3447,1083,3535">
+<area shape="rect" id="node26" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="665,1647,1229,2215">
+<area shape="rect" id="node27" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="839,3552,1056,3640">
+<area shape="rect" id="node28" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="838,3657,1057,3745">
+<area shape="rect" id="node29" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="788,3763,1107,3851">
+<area shape="rect" id="node30" href="UAC_MEDICAL_SCREENING_NOTES.html" target="_top" title="UAC_MEDICAL_SCREENING_NOTES" alt="" coords="753,2232,1141,2320">
+<area shape="rect" id="node31" href="UAC_REFERRAL_MEDICATION_INFO.html" target="_top" title="UAC_REFERRAL_MEDICATION_INFO" alt="" coords="750,2337,1145,2425">
+<area shape="rect" id="node32" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="749,3868,1146,3956">
+<area shape="rect" id="node33" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="816,3973,1079,4061">
+<area shape="rect" id="node34" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="751,2479,1144,2567">
+<area shape="rect" id="node35" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="1341,2589,1595,2653">
+<area shape="rect" id="node36" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="1276,3229,1660,3293">
+<area shape="rect" id="node37" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="1273,3311,1663,3375">
+<area shape="rect" id="node38" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1299,2671,1637,2735">
+<area shape="rect" id="node39" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="796,4079,1099,4143">
+<area shape="rect" id="node40" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="757,4160,1137,4224">
+<area shape="rect" id="node41" href="V_LANGUAGES.html" target="_top" title="V_LANGUAGES" alt="" coords="842,2869,1053,2933">
+<area shape="rect" id="node42" href="V_RELEASE_ANALYSIS.html" target="_top" title="V_RELEASE_ANALYSIS" alt="" coords="809,2951,1086,3015">
+<area shape="rect" id="node43" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1367,2752,1569,2816">
+<area shape="rect" id="node44" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1381,2833,1555,2897">
+<area shape="rect" id="node45" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1325,1185,1611,1249">
+<area shape="rect" id="node46" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1346,1573,1590,1637">
+<area shape="rect" id="node47" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="749,4241,1145,4305">
+<area shape="rect" id="node48" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="738,4323,1157,4387">
+<area shape="rect" id="node49" href="V_TRAFFICKING_RPT.html" target="_top" title="V_TRAFFICKING_RPT" alt="" coords="815,3068,1079,3132">
+<area shape="rect" id="node50" href="V_TRANSFER_REQ_RPT.html" target="_top" title="V_TRANSFER_REQ_RPT" alt="" coords="805,3149,1089,3213">
+<area shape="rect" id="node51" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="1313,3392,1623,3456">
+<area shape="rect" id="node52" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="1274,3473,1662,3537">
+<area shape="rect" id="node53" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="786,4404,1109,4468">
+<area shape="rect" id="node54" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="1302,2995,1634,3059">
+<area shape="rect" id="node55" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="1329,4129,1607,4193">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/UAC_INFO_ADDITIONAL.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

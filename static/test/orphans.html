@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower/html5shiv/html5shiv.min.js"></script>
+        <script src="bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>Utility Tables</h1>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 class="box-title">Orphan Tables</h3>
+                        </div>
+                        <div class="box-body">
+                            <div id="grid" data-columns>
+                                <div class="item">
+<img id="orphans" src="diagrams/orphans/orphans.png" usemap="#orphans" style="max-width:100%;" border="0" align="top">
+<map id="orphans" name="orphans">
+<area shape="rect" id="node1" href="tables/ADM_WEB_USER_PWD.html" target="_top" title="ADM_WEB_USER_PWD" alt="" coords="141,98928,585,99173">
+<area shape="rect" id="node2" href="tables/BWA_STAGING.html" target="_top" title="BWA_STAGING" alt="" coords="163,98343,563,98911">
+<area shape="rect" id="node3" href="tables/EXT_COUNTRY_MAPPING.html" target="_top" title="EXT_COUNTRY_MAPPING" alt="" coords="174,98168,553,98325">
+<area shape="rect" id="node4" href="tables/EXT_LOCATION_MAPPING.html" target="_top" title="EXT_LOCATION_MAPPING" alt="" coords="167,97964,560,98151">
+<area shape="rect" id="node5" href="tables/EXT_REFERRING_SECTOR.html" target="_top" title="EXT_REFERRING_SECTOR" alt="" coords="168,97789,559,97947">
+<area shape="rect" id="node6" href="tables/EXT_RELATIONSHIP_MAPPING.html" target="_top" title="EXT_RELATIONSHIP_MAPPING" alt="" coords="151,97615,576,97772">
+<area shape="rect" id="node7" href="tables/FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="157,96677,569,97597">
+<area shape="rect" id="node8" href="tables/flyway_schema_history.html" target="_top" title="flyway_schema_history" alt="" coords="156,96297,571,96660">
+<area shape="rect" id="node9" href="tables/FOLLOW_UP_CONTACT.html" target="_top" title="FOLLOW_UP_CONTACT" alt="" coords="179,96005,548,96280">
+<area shape="rect" id="node10" href="tables/HD_TRANSACTION_LOG.html" target="_top" title="HD_TRANSACTION_LOG" alt="" coords="155,95625,571,95988">
+<area shape="rect" id="node11" href="tables/INPROGRESS_CLE_ADDENDUM.html" target="_top" title="INPROGRESS_CLE_ADDENDUM" alt="" coords="153,95509,573,95608">
+<area shape="rect" id="node12" href="tables/INTAKE_CHECKBOXES.html" target="_top" title="INTAKE_CHECKBOXES" alt="" coords="149,95188,578,95492">
+<area shape="rect" id="node13" href="tables/INTAKE_POPULATION_TAG.html" target="_top" title="INTAKE_POPULATION_TAG" alt="" coords="129,94837,598,95171">
+<area shape="rect" id="node14" href="tables/LIST_ABUSE_PERPETRATOR.html" target="_top" title="LIST_ABUSE_PERPETRATOR" alt="" coords="157,94692,569,94820">
+<area shape="rect" id="node15" href="tables/LIST_AGENCY.html" target="_top" title="LIST_AGENCY" alt="" coords="213,94547,514,94675">
+<area shape="rect" id="node16" href="tables/LIST_AIHD_TECHS.html" target="_top" title="LIST_AIHD_TECHS" alt="" coords="205,94372,521,94529">
+<area shape="rect" id="node17" href="tables/LIST_CAREGIVER_TYPE.html" target="_top" title="LIST_CAREGIVER_TYPE" alt="" coords="159,94109,568,94355">
+<area shape="rect" id="node18" href="tables/LIST_CASE_MANAGER_ORGANIZATIONS.html" target="_top" title="LIST_CASE_MANAGER_ORGANIZATIONS" alt="" coords="101,93935,626,94092">
+<area shape="rect" id="node19" href="tables/LIST_CHILD_LOCATION_TYPE.html" target="_top" title="LIST_CHILD_LOCATION_TYPE" alt="" coords="133,93701,594,93917">
+<area shape="rect" id="node20" href="tables/LIST_COUNTRIES.html" target="_top" title="LIST_COUNTRIES" alt="" coords="209,93497,517,93684">
+<area shape="rect" id="node21" href="tables/LIST_CURRENT_LOCATION_TYPE.html" target="_top" title="LIST_CURRENT_LOCATION_TYPE" alt="" coords="117,93235,609,93480">
+<area shape="rect" id="node22" href="tables/LIST_DENY_REASON.html" target="_top" title="LIST_DENY_REASON" alt="" coords="191,93089,536,93217">
+<area shape="rect" id="node23" href="tables/LIST_DISCHARGE_TYPE.html" target="_top" title="LIST_DISCHARGE_TYPE" alt="" coords="126,92885,601,93072">
+<area shape="rect" id="node24" href="tables/LIST_DISCHARGE_TYPE_CHILD_LOCATION.html" target="_top" title="LIST_DISCHARGE_TYPE_CHILD_LOCATION" alt="" coords="96,92681,631,92868">
+<area shape="rect" id="node25" href="tables/LIST_DOCUMENT_TYPE.html" target="_top" title="LIST_DOCUMENT_TYPE" alt="" coords="179,92477,548,92664">
+<area shape="rect" id="node26" href="tables/LIST_ENTITLEMENTS.html" target="_top" title="LIST_ENTITLEMENTS" alt="" coords="133,92156,594,92460">
+<area shape="rect" id="node27" href="tables/LIST_ENTRY_LOCATIONS.html" target="_top" title="LIST_ENTRY_LOCATIONS" alt="" coords="176,91981,551,92139">
+<area shape="rect" id="node28" href="tables/LIST_EYE_COLOR.html" target="_top" title="LIST_EYE_COLOR" alt="" coords="209,91807,517,91964">
+<area shape="rect" id="node29" href="tables/LIST_FINGER_PRINT_METHOD.html" target="_top" title="LIST_FINGER_PRINT_METHOD" alt="" coords="129,91485,598,91789">
+<area shape="rect" id="node30" href="tables/LIST_HEARING_OUTCOME.html" target="_top" title="LIST_HEARING_OUTCOME" alt="" coords="155,91311,572,91468">
+<area shape="rect" id="node31" href="tables/LIST_HOMESTUDY_STATUS.html" target="_top" title="LIST_HOMESTUDY_STATUS" alt="" coords="156,91107,571,91293">
+<area shape="rect" id="node32" href="tables/LIST_HS_SPECIAL_INSTR.html" target="_top" title="LIST_HS_SPECIAL_INSTR" alt="" coords="167,90961,559,91089">
+<area shape="rect" id="node33" href="tables/LIST_HTML_COLOR.html" target="_top" title="LIST_HTML_COLOR" alt="" coords="201,90816,525,90944">
+<area shape="rect" id="node34" href="tables/LIST_HTMLCODES.html" target="_top" title="LIST_HTMLCODES" alt="" coords="205,90641,521,90799">
+<area shape="rect" id="node35" href="tables/LIST_ICE_CBP.html" target="_top" title="LIST_ICE_CBP" alt="" coords="217,90467,510,90624">
+<area shape="rect" id="node36" href="tables/LIST_IMMGRTN_STATUS_AT_REFERAL.html" target="_top" title="LIST_IMMGRTN_STATUS_AT_REFERAL" alt="" coords="114,90321,613,90449">
+<area shape="rect" id="node37" href="tables/LIST_IMMUNIZATIONS.html" target="_top" title="LIST_IMMUNIZATIONS" alt="" coords="181,90176,546,90304">
+<area shape="rect" id="node38" href="tables/LIST_LOCATION_EVENT.html" target="_top" title="LIST_LOCATION_EVENT" alt="" coords="163,89913,563,90159">
+<area shape="rect" id="node39" href="tables/LIST_LOCATION_EVENT_SPECIFY.html" target="_top" title="LIST_LOCATION_EVENT_SPECIFY" alt="" coords="127,89621,599,89896">
+<area shape="rect" id="node40" href="tables/LIST_MANNER_OF_ENTRY.html" target="_top" title="LIST_MANNER_OF_ENTRY" alt="" coords="172,89476,555,89604">
+<area shape="rect" id="node41" href="tables/LIST_MEDICAL_SCREENING_TYPE.html" target="_top" title="LIST_MEDICAL_SCREENING_TYPE" alt="" coords="134,89331,593,89459">
+<area shape="rect" id="node42" href="tables/LIST_PHONE_NUMBER_TYPE.html" target="_top" title="LIST_PHONE_NUMBER_TYPE" alt="" coords="151,89127,575,89313">
+<area shape="rect" id="node43" href="tables/LIST_PROOF_OF_ADDRESS.html" target="_top" title="LIST_PROOF_OF_ADDRESS" alt="" coords="129,88805,598,89109">
+<area shape="rect" id="node44" href="tables/LIST_PROOF_OF_IDENTITY.html" target="_top" title="LIST_PROOF_OF_IDENTITY" alt="" coords="130,88513,597,88788">
+<area shape="rect" id="node45" href="tables/LIST_PROOF_RELATIONSHIP_DOCUMENT.html" target="_top" title="LIST_PROOF_RELATIONSHIP_DOCUMENT" alt="" coords="66,88221,661,88496">
+<area shape="rect" id="node46" href="tables/LIST_PRS_LEVEL_CHANGE_REASON.html" target="_top" title="LIST_PRS_LEVEL_CHANGE_REASON" alt="" coords="107,88076,619,88204">
+<area shape="rect" id="node47" href="tables/LIST_REASON_EXPEDITED.html" target="_top" title="LIST_REASON_EXPEDITED" alt="" coords="161,87931,565,88059">
+<area shape="rect" id="node48" href="tables/LIST_REASON_FOR_UPDATE.html" target="_top" title="LIST_REASON_FOR_UPDATE" alt="" coords="133,87668,593,87913">
+<area shape="rect" id="node49" href="tables/LIST_REF_REASON.html" target="_top" title="LIST_REF_REASON" alt="" coords="194,87493,533,87651">
+<area shape="rect" id="node50" href="tables/LIST_REFERRAL_STATUS.html" target="_top" title="LIST_REFERRAL_STATUS" alt="" coords="167,87348,559,87476">
+<area shape="rect" id="node51" href="tables/LIST_REFERRING_AGENCY.html" target="_top" title="LIST_REFERRING_AGENCY" alt="" coords="165,87203,562,87331">
+<area shape="rect" id="node52" href="tables/LIST_REFERRING_FIELD_OFFICES.html" target="_top" title="LIST_REFERRING_FIELD_OFFICES" alt="" coords="139,87057,588,87185">
+<area shape="rect" id="node53" href="tables/LIST_RELEASE_DENY_REASONS.html" target="_top" title="LIST_RELEASE_DENY_REASONS" alt="" coords="141,86912,585,87040">
+<area shape="rect" id="node54" href="tables/LIST_REMAND_REASON.html" target="_top" title="LIST_REMAND_REASON" alt="" coords="172,86708,555,86895">
+<area shape="rect" id="node55" href="tables/LIST_ROLES.html" target="_top" title="LIST_ROLES" alt="" coords="171,86387,555,86691">
+<area shape="rect" id="node56" href="tables/LIST_SIR_NOTIFIED_ENTITIES.html" target="_top" title="LIST_SIR_NOTIFIED_ENTITIES" alt="" coords="151,86124,576,86369">
+<area shape="rect" id="node57" href="tables/LIST_SITES.html" target="_top" title="LIST_SITES" alt="" coords="230,85979,497,86107">
+<area shape="rect" id="node58" href="tables/LIST_SMSGATEWAY.html" target="_top" title="LIST_SMSGATEWAY" alt="" coords="193,85804,534,85961">
+<area shape="rect" id="node59" href="tables/LIST_TRANSPORTATION_MODE.html" target="_top" title="LIST_TRANSPORTATION_MODE" alt="" coords="147,85659,579,85787">
+<area shape="rect" id="node60" href="tables/LIST_TYPE_OF_ALLEGATION.html" target="_top" title="LIST_TYPE_OF_ALLEGATION" alt="" coords="123,85337,603,85641">
+<area shape="rect" id="node61" href="tables/LIST_UAC_IDENTITY.html" target="_top" title="LIST_UAC_IDENTITY" alt="" coords="173,85192,553,85320">
+<area shape="rect" id="node62" href="tables/LIST_UC_INVOLVED.html" target="_top" title="LIST_UC_INVOLVED" alt="" coords="160,84871,567,85175">
+<area shape="rect" id="node63" href="tables/LIST_UNLOCK_REASON.html" target="_top" title="LIST_UNLOCK_REASON" alt="" coords="168,84696,559,84853">
+<area shape="rect" id="node64" href="tables/LIST_VEHICLE_MAKE.html" target="_top" title="LIST_VEHICLE_MAKE" alt="" coords="157,84521,569,84679">
+<area shape="rect" id="node65" href="tables/MULE_DATASYNC_AUDIT_TABLE.html" target="_top" title="MULE_DATASYNC_AUDIT_TABLE" alt="" coords="118,84053,609,84504">
+<area shape="rect" id="node66" href="tables/MULE_EVENT_API.html" target="_top" title="MULE_EVENT_API" alt="" coords="167,83644,560,84036">
+<area shape="rect" id="node67" href="tables/MULE_EVENT_FLOW_TABLE.html" target="_top" title="MULE_EVENT_FLOW_TABLE" alt="" coords="131,83117,595,83627">
+<area shape="rect" id="node68" href="tables/MULE_LOOKUP_TABLE.html" target="_top" title="MULE_LOOKUP_TABLE" alt="" coords="149,82796,577,83100">
+<area shape="rect" id="node69" href="tables/ORR_NOTIFICATION.html" target="_top" title="ORR_NOTIFICATION" alt="" coords="192,82475,535,82779">
+<area shape="rect" id="node70" href="tables/PORTAL_AUDIT_TABLE.html" target="_top" title="PORTAL_AUDIT_TABLE" alt="" coords="160,82065,567,82457">
+<area shape="rect" id="node71" href="tables/PORTAL_EVENT_STAGING.html" target="_top" title="PORTAL_EVENT_STAGING" alt="" coords="147,81656,580,82048">
+<area shape="rect" id="node72" href="tables/PROGRAM_LEVEL_EVENTS_INFO.html" target="_top" title="PROGRAM_LEVEL_EVENTS_INFO" alt="" coords="102,80337,625,81639">
+<area shape="rect" id="node73" href="tables/PROGTYPES_USE_S3_FOR_DOCUMENTS.html" target="_top" title="PROGTYPES_USE_S3_FOR_DOCUMENTS" alt="" coords="119,80192,607,80320">
+<area shape="rect" id="node74" href="tables/SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="112,79577,615,80175">
+<area shape="rect" id="node75" href="tables/SPONSOR_ALTERNATE_CAREGIVER.html" target="_top" title="SPONSOR_ALTERNATE_CAREGIVER" alt="" coords="91,78933,636,79560">
+<area shape="rect" id="node76" href="tables/SPONSOR_ASSESS_TAB_HISTORY.html" target="_top" title="SPONSOR_ASSESS_TAB_HISTORY" alt="" coords="112,78671,615,78916">
+<area shape="rect" id="node77" href="tables/SPONSOR_CARE_PLAN.html" target="_top" title="SPONSOR_CARE_PLAN" alt="" coords="53,77851,674,78653">
+<area shape="rect" id="node78" href="tables/SPONSOR_EXPERIENCE_HISTORY.html" target="_top" title="SPONSOR_EXPERIENCE_HISTORY" alt="" coords="113,77559,614,77833">
+<area shape="rect" id="node79" href="tables/SPONSOR_EXPERIENCE_INFO.html" target="_top" title="SPONSOR_EXPERIENCE_INFO" alt="" coords="130,77267,597,77541">
+<area shape="rect" id="node80" href="tables/SPONSOR_FAMILY_FRIENDS.html" target="_top" title="SPONSOR_FAMILY_FRIENDS" alt="" coords="121,76857,605,77249">
+<area shape="rect" id="node81" href="tables/SPONSOR_FAMILY_RELATIONSHIPS.html" target="_top" title="SPONSOR_FAMILY_RELATIONSHIPS" alt="" coords="50,75979,677,76840">
+<area shape="rect" id="node82" href="tables/SPONSOR_FRAUD_TRAFFICKING.html" target="_top" title="SPONSOR_FRAUD_TRAFFICKING" alt="" coords="56,73633,671,75961">
+<area shape="rect" id="node83" href="tables/SPONSOR_HOUSEHOLD.html" target="_top" title="SPONSOR_HOUSEHOLD" alt="" coords="104,72549,623,73616">
+<area shape="rect" id="node84" href="tables/SPONSOR_HOUSEHOLD_SPONSORSHIPS.html" target="_top" title="SPONSOR_HOUSEHOLD_SPONSORSHIPS" alt="" coords="67,71905,660,72532">
+<area shape="rect" id="node85" href="tables/SPONSOR_INCARCERATION.html" target="_top" title="SPONSOR_INCARCERATION" alt="" coords="125,71467,602,71888">
+<area shape="rect" id="node86" href="tables/SPONSOR_INFO_ADDRESS_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ADDRESS_ARCHIVE" alt="" coords="102,71175,625,71449">
+<area shape="rect" id="node87" href="tables/SPONSOR_INFO_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ARCHIVE" alt="" coords="107,69651,620,71157">
+<area shape="rect" id="node88" href="tables/SPONSOR_INFO_BAK.html" target="_top" title="SPONSOR_INFO_BAK" alt="" coords="107,68097,620,69633">
+<area shape="rect" id="node89" href="tables/SPONSOR_INFO_PERMUTATIONS.html" target="_top" title="SPONSOR_INFO_PERMUTATIONS" alt="" coords="131,67923,596,68080">
+<area shape="rect" id="node90" href="tables/SPONSOR_INFO_SEARCH_TEMP.html" target="_top" title="SPONSOR_INFO_SEARCH_TEMP" alt="" coords="132,67220,595,67905">
+<area shape="rect" id="node91" href="tables/SPONSOR_PROOF_OF_ADDRESS.html" target="_top" title="SPONSOR_PROOF_OF_ADDRESS" alt="" coords="104,66811,623,67203">
+<area shape="rect" id="node92" href="tables/SPONSOR_PROOF_OF_IDENTITY.html" target="_top" title="SPONSOR_PROOF_OF_IDENTITY" alt="" coords="105,66284,621,66793">
+<area shape="rect" id="node93" href="tables/SPONSOR_PROOF_OF_RELATIONSHIP.html" target="_top" title="SPONSOR_PROOF_OF_RELATIONSHIP" alt="" coords="66,65845,661,66267">
+<area shape="rect" id="node94" href="tables/SPONSOR_SELF_RPT_SPONSORSHIPS.html" target="_top" title="SPONSOR_SELF_RPT_SPONSORSHIPS" alt="" coords="93,65260,633,65828">
+<area shape="rect" id="node95" href="tables/SPONSOR_SPONSORS_CHILDREN.html" target="_top" title="SPONSOR_SPONSORS_CHILDREN" alt="" coords="99,64763,628,65243">
+<area shape="rect" id="node96" href="tables/SSO_HISTORY.html" target="_top" title="SSO_HISTORY" alt="" coords="191,64471,535,64745">
+<area shape="rect" id="node97" href="tables/TEMP_DD_DATA.html" target="_top" title="TEMP_DD_DATA" alt="" coords="181,64267,545,64453">
+<area shape="rect" id="node98" href="tables/TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="197,63975,529,64249">
+<area shape="rect" id="node99" href="tables/TEMP_TABLE1.html" target="_top" title="TEMP_TABLE1" alt="" coords="197,63712,529,63957">
+<area shape="rect" id="node100" href="tables/TEMP_TABLE3.html" target="_top" title="TEMP_TABLE3" alt="" coords="197,63449,529,63695">
+<area shape="rect" id="node101" href="tables/TMP_DIR_CLEANUP.html" target="_top" title="TMP_DIR_CLEANUP" alt="" coords="175,63275,552,63432">
+<area shape="rect" id="node102" href="tables/TREEVIEW_DOC_LIST.html" target="_top" title="TREEVIEW_DOC_LIST" alt="" coords="187,62953,539,63257">
+<area shape="rect" id="node103" href="tables/TT_A_DOCS.html" target="_top" title="TT_A_DOCS" alt="" coords="218,62837,509,62936">
+<area shape="rect" id="node104" href="tables/TT_A_NOS.html" target="_top" title="TT_A_NOS" alt="" coords="219,62633,507,62820">
+<area shape="rect" id="node105" href="tables/TT_A_NOS2.html" target="_top" title="TT_A_NOS2" alt="" coords="219,62429,507,62616">
+<area shape="rect" id="node106" href="tables/TT_BK_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="TT_BK_HOMESTUDY_CASE_REFERRAL" alt="" coords="94,61580,633,62412">
+<area shape="rect" id="node107" href="tables/TT_BK_POST_RELEASE_SERVICE.html" target="_top" title="TT_BK_POST_RELEASE_SERVICE" alt="" coords="119,60701,607,61563">
+<area shape="rect" id="node108" href="tables/TT_BK_PWD_LSTCHNGD.html" target="_top" title="TT_BK_PWD_LSTCHNGD" alt="" coords="147,60527,580,60684">
+<area shape="rect" id="node109" href="tables/TT_BK_SPC.html" target="_top" title="TT_BK_SPC" alt="" coords="236,60381,491,60509">
+<area shape="rect" id="node110" href="tables/TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="157,59473,569,60364">
+<area shape="rect" id="node111" href="tables/TT_FOR_UPLD_SPONSOR_INFO.html" target="_top" title="TT_FOR_UPLD_SPONSOR_INFO" alt="" coords="123,58947,604,59456">
+<area shape="rect" id="node112" href="tables/TT_HHCOUNT.html" target="_top" title="TT_HHCOUNT" alt="" coords="234,58772,493,58929">
+<area shape="rect" id="node113" href="tables/TT_INFLUX_RPT.html" target="_top" title="TT_INFLUX_RPT" alt="" coords="139,57512,587,58755">
+<area shape="rect" id="node114" href="tables/TT_LASTPWDCHANGED.html" target="_top" title="TT_LASTPWDCHANGED" alt="" coords="141,57308,585,57495">
+<area shape="rect" id="node115" href="tables/TT_LIST_ICE_CBP.html" target="_top" title="TT_LIST_ICE_CBP" alt="" coords="205,57133,521,57291">
+<area shape="rect" id="node116" href="tables/TT_RECREATE_INDEXES.html" target="_top" title="TT_RECREATE_INDEXES" alt="" coords="175,56959,551,57116">
+<area shape="rect" id="node117" href="tables/TT_SIR_MEDIA_CONTACTS.html" target="_top" title="TT_SIR_MEDIA_CONTACTS" alt="" coords="145,56637,582,56941">
+<area shape="rect" id="node118" href="tables/TT_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="TT_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="97,56169,629,56620">
+<area shape="rect" id="node119" href="tables/TT_SPONSOR_HOUSEHOLD_OCCUPANTS.html" target="_top" title="TT_SPONSOR_HOUSEHOLD_OCCUPANTS" alt="" coords="81,55643,645,56152">
+<area shape="rect" id="node120" href="tables/TT_SPONSOR_INFO_NAMES_BACKUP.html" target="_top" title="TT_SPONSOR_INFO_NAMES_BACKUP" alt="" coords="114,55468,613,55625">
+<area shape="rect" id="node121" href="tables/TT_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_SUBSTANCE_USE_HISTORY" alt="" coords="141,55117,585,55451">
+<area shape="rect" id="node122" href="tables/TT_UAC_ASSESSMENT.html" target="_top" title="TT_UAC_ASSESSMENT" alt="" coords="83,48871,644,55100">
+<area shape="rect" id="node123" href="tables/TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="132,48315,595,48853">
+<area shape="rect" id="node124" href="tables/TT_UAC_CHILDREN.html" target="_top" title="TT_UAC_CHILDREN" alt="" coords="167,47993,559,48297">
+<area shape="rect" id="node125" href="tables/TT_UAC_CRIMINAL_HISTORY.html" target="_top" title="TT_UAC_CRIMINAL_HISTORY" alt="" coords="135,47584,592,47976">
+<area shape="rect" id="node126" href="tables/TT_UAC_FAMILY_RELATIONS.html" target="_top" title="TT_UAC_FAMILY_RELATIONS" alt="" coords="150,47263,577,47567">
+<area shape="rect" id="node127" href="tables/TT_UAC_IMMUNIZATION.html" target="_top" title="TT_UAC_IMMUNIZATION" alt="" coords="173,46971,553,47245">
+<area shape="rect" id="node128" href="tables/TT_UAC_INFO_NAMES_BACKUP.html" target="_top" title="TT_UAC_INFO_NAMES_BACKUP" alt="" coords="139,46708,587,46953">
+<area shape="rect" id="node129" href="tables/TT_UAC_ISP_SUB.html" target="_top" title="TT_UAC_ISP_SUB" alt="" coords="157,46299,570,46691">
+<area shape="rect" id="node130" href="tables/TT_UAC_MEDICAL_HISTORY.html" target="_top" title="TT_UAC_MEDICAL_HISTORY" alt="" coords="155,45977,572,46281">
+<area shape="rect" id="node131" href="tables/TT_UAC_MEDICATION_HISTORY.html" target="_top" title="TT_UAC_MEDICATION_HISTORY" alt="" coords="137,45627,589,45960">
+<area shape="rect" id="node132" href="tables/TT_UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_UAC_SUBSTANCE_USE_HISTORY" alt="" coords="119,45364,607,45609">
+<area shape="rect" id="node133" href="tables/TT_USER_DIFF_RPT.html" target="_top" title="TT_USER_DIFF_RPT" alt="" coords="175,44955,552,45347">
+<area shape="rect" id="node134" href="tables/TT_XMLDATA.html" target="_top" title="TT_XMLDATA" alt="" coords="195,44780,531,44937">
+<area shape="rect" id="node135" href="tables/UAC_APPREHENSION_INFO.html" target="_top" title="UAC_APPREHENSION_INFO" alt="" coords="141,44312,586,44763">
+<area shape="rect" id="node136" href="tables/UAC_APPREHENSION_INFO_ADDITIONAL.html" target="_top" title="UAC_APPREHENSION_INFO_ADDITIONAL" alt="" coords="81,43903,646,44295">
+<area shape="rect" id="node137" href="tables/UAC_AR_NOTIFICATION.html" target="_top" title="UAC_AR_NOTIFICATION" alt="" coords="143,43493,584,43885">
+<area shape="rect" id="node138" href="tables/UAC_BED_ASSIGNMENT_HISTORY.html" target="_top" title="UAC_BED_ASSIGNMENT_HISTORY" alt="" coords="98,43113,629,43476">
+<area shape="rect" id="node139" href="tables/UAC_CASE_MANAGERS.html" target="_top" title="UAC_CASE_MANAGERS" alt="" coords="179,42645,548,43096">
+<area shape="rect" id="node140" href="tables/UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="83,38511,643,42628">
+<area shape="rect" id="node141" href="tables/UAC_CHILDREN.html" target="_top" title="UAC_CHILDREN" alt="" coords="167,38219,559,38493">
+<area shape="rect" id="node142" href="tables/UAC_CR_MEDICAL_HISTORY.html" target="_top" title="UAC_CR_MEDICAL_HISTORY" alt="" coords="153,37927,573,38201">
+<area shape="rect" id="node143" href="tables/UAC_CR_MEDICATION_HISTORY.html" target="_top" title="UAC_CR_MEDICATION_HISTORY" alt="" coords="121,37547,606,37909">
+<area shape="rect" id="node144" href="tables/UAC_ENROLLMENT_RPTS_HISTORY.html" target="_top" title="UAC_ENROLLMENT_RPTS_HISTORY" alt="" coords="130,37372,597,37529">
+<area shape="rect" id="node145" href="tables/UAC_EVENT_REPORTS.html" target="_top" title="UAC_EVENT_REPORTS" alt="" coords="162,36933,565,37355">
+<area shape="rect" id="node146" href="tables/UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="90,35615,637,36916">
+<area shape="rect" id="node147" href="tables/UAC_GANG_DETERMINATION_BY.html" target="_top" title="UAC_GANG_DETERMINATION_BY" alt="" coords="150,35469,577,35597">
+<area shape="rect" id="node148" href="tables/UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="107,33505,620,35452">
+<area shape="rect" id="node149" href="tables/UAC_HOTLINE_REPORTING.html" target="_top" title="UAC_HOTLINE_REPORTING" alt="" coords="158,33037,569,33488">
+<area shape="rect" id="node150" href="tables/UAC_HSPRS_CAPACITY.html" target="_top" title="UAC_HSPRS_CAPACITY" alt="" coords="193,32804,534,33020">
+<area shape="rect" id="node151" href="tables/UAC_HSPRS_LOOKUP.html" target="_top" title="UAC_HSPRS_LOOKUP" alt="" coords="181,32600,545,32787">
+<area shape="rect" id="node152" href="tables/UAC_IDENTITY_INFO.html" target="_top" title="UAC_IDENTITY_INFO" alt="" coords="151,32367,575,32583">
+<area shape="rect" id="node153" href="tables/UAC_IMAGES.html" target="_top" title="UAC_IMAGES" alt="" coords="178,32045,549,32349">
+<area shape="rect" id="node154" href="tables/UAC_IMAGES_TMP.html" target="_top" title="UAC_IMAGES_TMP" alt="" coords="179,31753,548,32028">
+<area shape="rect" id="node155" href="tables/UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="97,29291,629,31736">
+<area shape="rect" id="node156" href="tables/UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="97,26828,629,29273">
+<area shape="rect" id="node157" href="tables/UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="97,24453,629,26811">
+<area shape="rect" id="node158" href="tables/UAC_INITIAL_ASSESSMENT_BAK.html" target="_top" title="UAC_INITIAL_ASSESSMENT_BAK" alt="" coords="91,20905,635,24436">
+<area shape="rect" id="node159" href="tables/UAC_INTAKES_DOC_LIST.html" target="_top" title="UAC_INTAKES_DOC_LIST" alt="" coords="152,20496,575,20888">
+<area shape="rect" id="node160" href="tables/UAC_JOBS.html" target="_top" title="UAC_JOBS" alt="" coords="199,20233,528,20479">
+<area shape="rect" id="node161" href="tables/UAC_LEVEL1_LOGGING.html" target="_top" title="UAC_LEVEL1_LOGGING" alt="" coords="159,19853,568,20216">
+<area shape="rect" id="node162" href="tables/UAC_LEVEL2_LOGGING.html" target="_top" title="UAC_LEVEL2_LOGGING" alt="" coords="159,19503,568,19836">
+<area shape="rect" id="node163" href="tables/UAC_LEVEL3_LOGGING.html" target="_top" title="UAC_LEVEL3_LOGGING" alt="" coords="159,19240,568,19485">
+<area shape="rect" id="node164" href="tables/UAC_LIST_SIR_TYPE.html" target="_top" title="UAC_LIST_SIR_TYPE" alt="" coords="173,18889,554,19223">
+<area shape="rect" id="node165" href="tables/UAC_MAINTENANCE_EVENT.html" target="_top" title="UAC_MAINTENANCE_EVENT" alt="" coords="138,18656,589,18872">
+<area shape="rect" id="node166" href="tables/UAC_MEDICAL_VISIT.html" target="_top" title="UAC_MEDICAL_VISIT" alt="" coords="133,18276,593,18639">
+<area shape="rect" id="node167" href="tables/UAC_MEDICAL_VISIT_DIAGNOSIS.html" target="_top" title="UAC_MEDICAL_VISIT_DIAGNOSIS" alt="" coords="145,18131,582,18259">
+<area shape="rect" id="node168" href="tables/UAC_MEDICAL_VISIT_REASON.html" target="_top" title="UAC_MEDICAL_VISIT_REASON" alt="" coords="158,17985,569,18113">
+<area shape="rect" id="node169" href="tables/UAC_MEDICAL_VISIT_TYPE.html" target="_top" title="UAC_MEDICAL_VISIT_TYPE" alt="" coords="172,17840,555,17968">
+<area shape="rect" id="node170" href="tables/UAC_MEDICATION_HISTORY.html" target="_top" title="UAC_MEDICATION_HISTORY" alt="" coords="153,17519,574,17823">
+<area shape="rect" id="node171" href="tables/UAC_MEDICATION_INFO.html" target="_top" title="UAC_MEDICATION_INFO" alt="" coords="154,17080,573,17501">
+<area shape="rect" id="node172" href="tables/UAC_OUT_OF_PROGRAM_ACCESS.html" target="_top" title="UAC_OUT_OF_PROGRAM_ACCESS" alt="" coords="100,16788,627,17063">
+<area shape="rect" id="node173" href="tables/UAC_POST_RELEASE_SERVICE_BAK.html" target="_top" title="UAC_POST_RELEASE_SERVICE_BAK" alt="" coords="105,15821,621,16771">
+<area shape="rect" id="node174" href="tables/UAC_PROGRAM_EXIT.html" target="_top" title="UAC_PROGRAM_EXIT" alt="" coords="163,15500,563,15804">
+<area shape="rect" id="node175" href="tables/UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="125,15061,602,15483">
+<area shape="rect" id="node176" href="tables/UAC_PRS_SERVICE_LVL_HISTORY_MET_1a6c8ea8.html" target="_top" title="UAC_PRS_SERVICE_LVL_HISTORY_METADATA_CHANGE_REASONS" alt="" coords="5,14916,721,15044">
+<area shape="rect" id="node177" href="tables/UAC_PSYCHOLOGICAL_EVAL.html" target="_top" title="UAC_PSYCHOLOGICAL_EVAL" alt="" coords="121,14419,605,14899">
+<area shape="rect" id="node178" href="tables/UAC_SIR_CATEGORY.html" target="_top" title="UAC_SIR_CATEGORY" alt="" coords="164,13951,563,14401">
+<area shape="rect" id="node179" href="tables/UAC_SIR_CATEGORY_MAP.html" target="_top" title="UAC_SIR_CATEGORY_MAP" alt="" coords="146,13571,581,13933">
+<area shape="rect" id="node180" href="tables/UAC_SIR_DOCUMENTS.html" target="_top" title="UAC_SIR_DOCUMENTS" alt="" coords="158,13073,569,13553">
+<area shape="rect" id="node181" href="tables/UAC_SIR_EVENT.html" target="_top" title="UAC_SIR_EVENT" alt="" coords="73,12488,654,13056">
+<area shape="rect" id="node182" href="tables/UAC_SIR_FIELDS_HISTORY.html" target="_top" title="UAC_SIR_FIELDS_HISTORY" alt="" coords="111,11903,616,12471">
+<area shape="rect" id="node183" href="tables/UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="80,6859,647,11885">
+<area shape="rect" id="node184" href="tables/UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="71,2607,655,6841">
+<area shape="rect" id="node185" href="tables/UAC_SIR_NOTIFICATION_LIST.html" target="_top" title="UAC_SIR_NOTIFICATION_LIST" alt="" coords="123,1933,603,2589">
+<area shape="rect" id="node186" href="tables/UAC_SIR_UCINVOLVED_LIST.html" target="_top" title="UAC_SIR_UCINVOLVED_LIST" alt="" coords="137,1407,590,1916">
+<area shape="rect" id="node187" href="tables/UAC_SPONSOR_LIST_ADDRESS_ARCHIVE.html" target="_top" title="UAC_SPONSOR_LIST_ADDRESS_ARCHIVE" alt="" coords="82,1056,645,1389">
+<area shape="rect" id="node188" href="tables/UAC_UIP_PLACEMENT_CALLS.html" target="_top" title="UAC_UIP_PLACEMENT_CALLS" alt="" coords="148,764,579,1039">
+<area shape="rect" id="node189" href="tables/UACPORTAL_APP_PARAMS.html" target="_top" title="UACPORTAL_APP_PARAMS" alt="" coords="157,560,569,747">
+<area shape="rect" id="node190" href="tables/UPD_REFERRAL_DATES_IN_UACINFO.html" target="_top" title="UPD_REFERRAL_DATES_IN_UACINFO" alt="" coords="133,415,594,543">
+<area shape="rect" id="node191" href="tables/XMLJOB_ACTIVITY_LOGS.html" target="_top" title="XMLJOB_ACTIVITY_LOGS" alt="" coords="163,5,564,397">
+</map>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="bower/pdfmake/pdfmake.min.js"></script>
+        <script src="bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="bower/codemirror/codemirror.js"></script>
+        <script src="bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="bower/admin-lte/dist/js/app.min.js"></script>
+        <script src=""></script>
+        <script src="schemaSpy.js"></script>
+    </body>
+</html>

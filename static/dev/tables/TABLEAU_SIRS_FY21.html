@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TABLEAU_SIRS_FY21 - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>TABLEAU_SIRS_FY21</h1><p><span id="recordNumber">0</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_PROGRAM_ID">UAC_PROGRAM_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_PROGRAM_INFO.html'>UAC_PROGRAM_INFO</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Event ID">Event ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Event Type">Event Type</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date of Event">Date of Event</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time of Event">Time of Event</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Event Date/Time Created">Event Date/Time Created</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SIR ID">SIR ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SIR Date/Time Created">SIR Date/Time Created</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SIR Type">SIR Type</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>13</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Category">Category</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Sub Category">Sub Category</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Other, specify">Other, specify</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Type of SA Incident">Type of SA Incident</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Type of SA Allegation">Type of SA Allegation</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Role in SA Incident">Role in SA Incident</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Were Other UAC Involved">Were Other UAC Involved</span></td>
+                                    <td>CHAR</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Alleged Perpetrator">Alleged Perpetrator</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Alleged Perpetrator (Other, specify)">Alleged Perpetrator (Other, specify)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Staff Present/Involved in SA Incident">Staff Present/Involved in SA Incident</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Incident at Another Facility">Incident at Another Facility</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Care Provider Name">Care Provider Name</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Care Provider City">Care Provider City</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Care Provider State">Care Provider State</span></td>
+                                    <td>CHAR</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Location of Incident">Location of Incident</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Location of Incident (Other, specify)">Location of Incident (Other, specify)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>2050</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date Reported to Care Provider">Date Reported to Care Provider</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time Reported to Care Provider">Time Reported to Care Provider</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date Reported to ORR">Date Reported to ORR</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time Reported to ORR">Time Reported to ORR</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Description of Incident">Description of Incident</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>32700</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UAC/Anyone Else Injured">UAC/Anyone Else Injured</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UAC/Anyone Else Injured (specify)">UAC/Anyone Else Injured (specify)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>2050</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Staff Response and Intervention">Staff Response and Intervention</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>32700</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Follow-up and/or Resolution">Follow-up and/or Resolution</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>32700</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Recommendations">Recommendations</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>32700</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Reported To SL">Reported To SL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date of Report (SL)">Date of Report (SL)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time of Report (SL)">Time of Report (SL)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Was the Incident Investigated (SL)">Was the Incident Investigated (SL)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date Notified (SL)">Date Notified (SL)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Case/Confirmation Number (SL)">Case/Confirmation Number (SL)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Explain (SL)">Explain (SL)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Results/Findings of Investigation (SL)">Results/Findings of Investigation (SL)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CPS Different From State Licensing">CPS Different From State Licensing</span></td>
+                                    <td>CHAR</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Reported To CPS">Reported To CPS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date of Report (CPS)">Date of Report (CPS)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time of Report (CPS)">Time of Report (CPS)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Was the Incident Investigated (CPS)">Was the Incident Investigated (CPS)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date Notified (CPS)">Date Notified (CPS)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Case/Confirmation Number (CPS)">Case/Confirmation Number (CPS)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Explain (CPS)">Explain (CPS)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Results/Findings of Investigation (CPS)">Results/Findings of Investigation (CPS)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Reported To LE">Reported To LE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date of Report (LE)">Date of Report (LE)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Time of Report (LE)">Time of Report (LE)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Officer Name">Officer Name</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Officer Badge">Officer Badge</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Was the Incident Investigated (LE)">Was the Incident Investigated (LE)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Date Notified (LE)">Date Notified (LE)</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Case/Confirmation Number (LE)">Case/Confirmation Number (LE)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Explain (LE)">Explain (LE)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Results/Findings of Investigation (LE)">Results/Findings of Investigation (LE)</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>8200</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="5,5,543,1869">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/TABLEAU_SIRS_FY21.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="321,5,859,1869">
+<area shape="rect" id="node2" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="5,8,277,272">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/TABLEAU_SIRS_FY21.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1231,1358,1517,1446">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="694,1413,1041,1501">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="283,2826,555,3090">
+<area shape="rect" id="node15" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="5,2887,239,2975">
+<area shape="rect" id="node16" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="18,598,226,686">
+<area shape="rect" id="node4" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="687,3314,1047,3402">
+<area shape="rect" id="node5" href="TABLEAU_SIRS_FULL.html" target="_top" title="TABLEAU_SIRS_FULL" alt="" coords="735,3419,999,3483">
+<area shape="rect" id="node6" href="TABLEAU_SIRS_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_FULL_FY21" alt="" coords="709,3501,1026,3565">
+<area shape="rect" id="node7" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="599,3582,1136,5446">
+<area shape="rect" id="node8" href="TABLEAU_SIRS_LEAN.html" target="_top" title="TABLEAU_SIRS_LEAN" alt="" coords="734,5463,1001,5527">
+<area shape="rect" id="node9" href="TABLEAU_SIRS_LEAN_FY21.html" target="_top" title="TABLEAU_SIRS_LEAN_FY21" alt="" coords="707,5545,1027,5609">
+<area shape="rect" id="node10" href="TABLEAU_SIRS_WITH_ADDENDA_FULL.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL" alt="" coords="659,5626,1076,5690">
+<area shape="rect" id="node11" href="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21" alt="" coords="633,5707,1102,5771">
+<area shape="rect" id="node12" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1180,6581,1568,6645">
+<area shape="rect" id="node13" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="743,6562,992,6650">
+<area shape="rect" id="node14" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="688,319,1047,383">
+<area shape="rect" id="node17" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="787,401,947,465">
+<area shape="rect" id="node18" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="787,482,947,546">
+<area shape="rect" id="node19" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="797,563,938,627">
+<area shape="rect" id="node20" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1303,2146,1445,2210">
+<area shape="rect" id="node21" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="768,2983,967,3071">
+<area shape="rect" id="node22" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1303,2938,1445,3002">
+<area shape="rect" id="node23" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="797,889,938,953">
+<area shape="rect" id="node24" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="797,970,938,1034">
+<area shape="rect" id="node25" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="797,1051,938,1115">
+<area shape="rect" id="node26" href="TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="739,5789,996,5877">
+<area shape="rect" id="node27" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="765,1133,969,1197">
+<area shape="rect" id="node28" href="TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="704,5894,1031,5982">
+<area shape="rect" id="node29" href="UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="741,5999,994,6087">
+<area shape="rect" id="node30" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="683,7007,1052,7095">
+<area shape="rect" id="node31" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="738,6105,997,6193">
+<area shape="rect" id="node32" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="746,6210,989,6298">
+<area shape="rect" id="node33" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="693,6315,1042,6403">
+<area shape="rect" id="node34" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="768,6421,967,6509">
+<area shape="rect" id="node35" href="UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="656,1590,1079,1678">
+<area shape="rect" id="node36" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="669,1695,1066,1783">
+<area shape="rect" id="node37" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="734,1801,1001,1889">
+<area shape="rect" id="node38" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="681,1906,1054,1994">
+<area shape="rect" id="node39" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="707,2011,1028,2099">
+<area shape="rect" id="node40" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="707,2117,1027,2205">
+<area shape="rect" id="node41" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="691,7113,1044,7201">
+<area shape="rect" id="node42" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="718,2222,1017,2310">
+<area shape="rect" id="node43" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="718,2327,1017,2415">
+<area shape="rect" id="node44" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="729,2433,1006,2521">
+<area shape="rect" id="node45" href="UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="712,2538,1023,2626">
+<area shape="rect" id="node46" href="UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="1270,2813,1478,2901">
+<area shape="rect" id="node47" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="710,6821,1025,6909">
+<area shape="rect" id="node48" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="729,2643,1006,2731">
+<area shape="rect" id="node49" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="741,238,994,302">
+<area shape="rect" id="node50" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="675,1214,1059,1278">
+<area shape="rect" id="node51" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="673,1295,1062,1359">
+<area shape="rect" id="node52" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1242,6666,1506,6730">
+<area shape="rect" id="node53" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1205,6495,1543,6559">
+<area shape="rect" id="node54" href="V_CR_MEDICAL_HISTORY.html" target="_top" title="V_CR_MEDICAL_HISTORY" alt="" coords="717,2749,1018,2813">
+<area shape="rect" id="node55" href="V_CR_MEDICATION_HISTORY.html" target="_top" title="V_CR_MEDICATION_HISTORY" alt="" coords="700,2866,1035,2930">
+<area shape="rect" id="node56" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1273,1481,1475,1545">
+<area shape="rect" id="node57" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1287,3019,1461,3083">
+<area shape="rect" id="node58" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1231,3101,1517,3165">
+<area shape="rect" id="node59" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1252,3182,1496,3246">
+<area shape="rect" id="node60" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1279,3263,1469,3327">
+<area shape="rect" id="node61" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="712,645,1023,709">
+<area shape="rect" id="node62" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="673,726,1061,790">
+<area shape="rect" id="node63" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="743,6926,992,6990">
+<area shape="rect" id="node64" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="701,807,1033,871">
+<area shape="rect" id="node65" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="690,3089,1045,3153">
+<area shape="rect" id="node66" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="729,6739,1006,6803">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/TABLEAU_SIRS_FY21.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="ViewDefinition" class="box-title">View Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">with sirs as (&#10;-- BEGIN: [1] Abuse/Neglect in ORR Care SIRs (excluding Event info)&#10;    select &#10;        sir.uac_program_id, &#10;        sir.event_id, &#10;        sir.event_type, &#10;        event.date_of_event, &#10;        event.time_of_event, &#10;        event.date_created as event_date_created, &#10;        sir.sir_id, &#10;        sir.uac_sir_id, &#10;        sir.date_created as sir_date_created, &#10;        &#39;SIR&#39; as sir_type, &#10;        sir.er_death_in_care_provider, &#10;        sir.er_death_in_cp_other, &#10;        sir.er_immediate_hospitalization, &#10;        sir.er_other_exp, &#10;        &#39;Abuse/Neglect in ORR Care&#39; as category, &#10;        sir.abuse_neglect_type as sub_category, &#10;        null as other_specify, &#10;        sir.pregnancy_termination_exp, &#10;        sir.sa_type_of_incident, &#10;        sir.sa_type_of_allegation, &#10;        sir.sa_how_uac_involved, &#10;        sir.sa_were_other_uac_involved, &#10;        sir.alleged_perpetrator, &#10;        sir.alleged_perpetrator_other, &#10;        case &#10;            when sir.sa_were_staff_present_at_inc &#61; 0 then &#39;No&#39; &#10;            when sir.sa_were_staff_present_at_inc &#61; 1 then &#39;Yes&#39; &#10;        end as sa_were_staff_present_at_inc, &#10;        case &#10;            when sir.incident_at_another_facility &#61; 0 then &#39;No&#39; &#10;            when sir.incident_at_another_facility &#61; 1 then &#39;Yes&#39; &#10;        end as incident_at_another_facility, &#10;        prog.program_name as care_provider_name, &#10;        prog.city as care_provider_city,&#10;        prog.state as care_provider_state, &#10;        sir.location_of_incident, &#10;        sir.location_of_incident_specify, &#10;        sir.date_reported_to_care_provider, &#10;        sir.date_reported_to_orr, &#10;        sir.description_of_incident, &#10;        case &#10;            when sir.uac_or_anyone_injured &#61; 0 then &#39;No&#39; &#10;            when sir.uac_or_anyone_injured &#61; 1 then &#39;Yes&#39; &#10;        end as uac_or_anyone_injured, &#10;        sir.uac_or_anyone_injured_specify, &#10;        sir.staff_response_intervention, &#10;        sir.sa_action_for_victim, &#10;        sir.sa_action_for_allegedperp, &#10;        sir.sa_action_for_indinvolved, &#10;        sir.follow_up_resolution, &#10;        sir.updated_recommendations, &#10;&#10;        -- Reporting to State Licensing &#10;        case &#10;            when sir.reported_to_state_licensing &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_state_licensing &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_state_licensing, &#10;        sir.date_of_state_lic_report, &#10;        case &#10;            when sir.was_state_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_state_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_state_inc_investigated, &#10;        sir.date_notify_state_inci_invest, &#10;        sir.state_case_confirmation_number, &#10;        sir.progress_of_sl_investigation, &#10;        sir.state_incident_explain, &#10;        sir.results_of_sl_investigation, &#10;&#10;        sir.cps_different_from_state_lic, &#10;&#10;        -- Reporting to CPS &#10;        case &#10;            when sir.reported_to_cps &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_cps &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_cps, &#10;        sir.date_reported_to_cps, &#10;        case &#10;            when sir.was_cps_incident_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_cps_incident_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_cps_incident_investigated, &#10;        sir.date_notify_cps_inc_invest, &#10;        sir.cps_case_confirmation_number, &#10;        sir.progress_of_cps_investigation, &#10;        sir.cps_incident_explain, &#10;        sir.results_of_cps_investigation, &#10;&#10;        -- Reporting to Local Law Enforcement &#10;        case &#10;            when sir.reported_to_law_enforcement &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_law_enforcement &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_law_enforcement, &#10;        sir.date_report_to_law_enforce, &#10;        sir.le_officers_name, &#10;        sir.le_officers_badge_number, &#10;        case &#10;            when sir.was_le_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_le_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_le_inc_investigated, &#10;        sir.date_notify_le_inc_invest, &#10;        sir.le_case_confirmation_number, &#10;        sir.progress_of_le_investigation, &#10;        sir.le_incident_explain, &#10;        sir.results_of_le_investigation, &#10;        sir.reported_to_doj, &#10;        sir.doj_report_notes &#10;&#10;    from &#10;        (&#10;            select * &#10;            from uacportal.uac_sir_new &#10;            where &#10;                isdeleted &#61; 0 &#10;            and (addendum_id is null or addendum_id &#61; 0) &#10;            and sir_type_id &#61; 2 --&lt;&lt;&lt; Standard SIR &#10;            and abuse_neglect_type is not null --&lt;&lt;&lt; Abuse/Neglect in ORR Care SIR &#10;            and date_created &gt;&#61; date &#39;2020-10-01&#39; --&lt;&lt;&lt; FY21 data only &#10;        ) sir &#10;        left outer join uacportal.uac_sir_event event on &#10;                event.event_id &#61; sir.event_id &#10;            and event.isdeleted &#61; 0  &#10;        left join uacportal.list_programs prog on prog.program_id &#61; sir.care_provider_name &#10;    -- END: [1] Abuse/Neglect in ORR Care SIRs (excluding Event info)&#10;&#10;    union all &#10;&#10;    -- BEGIN: [2] Emergency SIRs (excluding Event info)&#10;    select &#10;        sir.uac_program_id, &#10;        sir.event_id, &#10;        sir.event_type, &#10;        event.date_of_event, &#10;        event.time_of_event, &#10;        event.date_created as event_date_created, &#10;        sir.sir_id, &#10;        sir.uac_sir_id, &#10;        sir.date_created as sir_date_created, &#10;        &#39;Emergency SIR&#39; as sir_type, &#10;        sir.er_death_in_care_provider, &#10;        sir.er_death_in_cp_other, &#10;        sir.er_immediate_hospitalization, &#10;        sir.er_other_exp, &#10;        null as category, &#10;        sir.abuse_neglect_type as sub_category, &#10;        null as other_specify, &#10;        sir.pregnancy_termination_exp, &#10;        null as sa_type_of_incident, &#10;        null as sa_type_of_allegation, &#10;        null as sa_how_uac_involved, &#10;        null as sa_were_other_uac_involved, &#10;        null as alleged_perpetrator, &#10;        null as alleged_perpetrator_other, &#10;        null as sa_were_staff_present_at_inc, &#10;        case &#10;            when sir.incident_at_another_facility &#61; 0 then &#39;No&#39; &#10;            when sir.incident_at_another_facility &#61; 1 then &#39;Yes&#39; &#10;        end as incident_at_another_facility, &#10;        prog.program_name as care_provider_name, &#10;        prog.city as care_provider_city,&#10;        prog.state as care_provider_state, &#10;        sir.location_of_incident, &#10;        sir.location_of_incident_specify, &#10;        sir.date_reported_to_care_provider, &#10;        sir.date_reported_to_orr, &#10;        sir.description_of_incident, &#10;        case &#10;            when sir.uac_or_anyone_injured &#61; 0 then &#39;No&#39; &#10;            when sir.uac_or_anyone_injured &#61; 1 then &#39;Yes&#39; &#10;        end as uac_or_anyone_injured, &#10;        sir.uac_or_anyone_injured_specify, &#10;        sir.staff_response_intervention, &#10;        sir.sa_action_for_victim, &#10;        sir.sa_action_for_allegedperp, &#10;        sir.sa_action_for_indinvolved, &#10;        sir.follow_up_resolution, &#10;        sir.updated_recommendations, &#10;&#10;        -- Reporting to State Licensing &#10;        case &#10;            when sir.reported_to_state_licensing &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_state_licensing &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_state_licensing, &#10;        sir.date_of_state_lic_report, &#10;        case &#10;            when sir.was_state_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_state_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_state_inc_investigated, &#10;        sir.date_notify_state_inci_invest, &#10;        sir.state_case_confirmation_number, &#10;        sir.progress_of_sl_investigation, &#10;        sir.state_incident_explain, &#10;        sir.results_of_sl_investigation, &#10;&#10;        sir.cps_different_from_state_lic, &#10;&#10;        -- Reporting to CPS &#10;        case &#10;            when sir.reported_to_cps &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_cps &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_cps, &#10;        sir.date_reported_to_cps, &#10;        case &#10;            when sir.was_cps_incident_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_cps_incident_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_cps_incident_investigated, &#10;        sir.date_notify_cps_inc_invest, &#10;        sir.cps_case_confirmation_number, &#10;        sir.progress_of_cps_investigation, &#10;        sir.cps_incident_explain, &#10;        sir.results_of_cps_investigation, &#10;&#10;        -- Reporting to Local Law Enforcement &#10;        case &#10;            when sir.reported_to_law_enforcement &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_law_enforcement &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_law_enforcement, &#10;        sir.date_report_to_law_enforce, &#10;        sir.le_officers_name, &#10;        sir.le_officers_badge_number, &#10;        case &#10;            when sir.was_le_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_le_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_le_inc_investigated, &#10;        sir.date_notify_le_inc_invest, &#10;        sir.le_case_confirmation_number, &#10;        sir.progress_of_le_investigation, &#10;        sir.le_incident_explain, &#10;        sir.results_of_le_investigation, &#10;        sir.reported_to_doj, &#10;        sir.doj_report_notes &#10;&#10;    from &#10;        (&#10;            select * &#10;            from uacportal.uac_sir_new &#10;            where &#10;                isdeleted &#61; 0 &#10;            and (addendum_id is null or addendum_id &#61; 0) &#10;            and sir_type_id &#61; 1 --&lt;&lt;&lt; Emergency SIR &#10;            and date_created &gt;&#61; date &#39;2020-10-01&#39; --&lt;&lt;&lt; FY21 data only &#10;        ) sir &#10;        left outer join uacportal.uac_sir_event event on &#10;                event.event_id &#61; sir.event_id &#10;            and event.isdeleted &#61; 0  &#10;        left join uacportal.list_programs prog on prog.program_id &#61; sir.care_provider_name &#10;    -- END: [2] Emergency SIRs (excluding Event info)&#10;&#10;    union all &#10;&#10;    -- BEGIN: [3] Other Categories of SIRs (excluding Event info)&#10;    select &#10;        sir.uac_program_id, &#10;        sir.event_id, &#10;        sir.event_type, &#10;        event.date_of_event, &#10;        event.time_of_event, &#10;        event.date_created as event_date_created, &#10;        sir.sir_id, &#10;        sir.uac_sir_id, &#10;        sir.date_created as sir_date_created, &#10;        &#39;SIR&#39; as sir_type, &#10;        sir.er_death_in_care_provider, &#10;        sir.er_death_in_cp_other, &#10;        sir.er_immediate_hospitalization, &#10;        sir.er_other_exp, &#10;        sircat.category as category, &#10;        sircat.subcategory as sub_category, &#10;        case &#10;            when sircat.category &#61; &#39;Past Abuse/Neglect Not in ORR Care&#39; and sircat.subcategory &#61; &#39;Other&#39; then sir.past_abuse_other_exp &#10;            when sircat.category &#61; &#39;Abuse In DHS Custody&#39; and sircat.subcategory &#61; &#39;Other&#39; then sir.past_abuse_dhs_cust_other_exp &#10;            when sircat.category &#61; &#39;Major Behavioral Incidents that threaten safety&#39; and sircat.subcategory &#61; &#39;Other&#39; then sir.past_abuse_mbi_other_exp &#10;            when sircat.category &#61; &#39;Incidents Involving Law Enforcement&#39; and sircat.subcategory &#61; &#39;Other&#39; then sir.past_abuse_iile_other_exp &#10;            when sircat.category &#61; &#39;Criminal History&#39; and sircat.subcategory &#61; &#39;Other&#39; then sir.past_abuse_ch_other_exp &#10;            when sircat.category &#61; &#39;Other&#39; and sircat.subcategory &#61; &#39;Other&#39; then other_threats_to_uc_other_exp &#10;            else null &#10;        end as other_specify, &#10;        sir.pregnancy_termination_exp, &#10;        null as sa_type_of_incident, &#10;        null as sa_type_of_allegation, &#10;        null as sa_how_uac_involved, &#10;        null as sa_were_other_uac_involved, &#10;        null as alleged_perpetrator, &#10;        sir.alleged_perpetrator_other, &#10;        null as sa_were_staff_present_at_inc, &#10;        case &#10;            when sir.incident_at_another_facility &#61; 0 then &#39;No&#39; &#10;            when sir.incident_at_another_facility &#61; 1 then &#39;Yes&#39; &#10;        end as incident_at_another_facility, &#10;        prog1.program_name as care_provider_name, &#10;        prog1.city as care_provider_city,&#10;        prog1.state as care_provider_state, &#10;        sir.location_of_incident, &#10;        sir.location_of_incident_specify, &#10;        sir.date_reported_to_care_provider, &#10;        sir.date_reported_to_orr, &#10;        sir.description_of_incident, &#10;        case &#10;            when sir.uac_or_anyone_injured &#61; 0 then &#39;No&#39; &#10;            when sir.uac_or_anyone_injured &#61; 1 then &#39;Yes&#39; &#10;        end as uac_or_anyone_injured, &#10;        sir.uac_or_anyone_injured_specify, &#10;        sir.staff_response_intervention, &#10;        sir.sa_action_for_victim, &#10;        sir.sa_action_for_allegedperp, &#10;        sir.sa_action_for_indinvolved, &#10;        sir.follow_up_resolution, &#10;        sir.updated_recommendations, &#10;&#10;        -- Reporting to State Licensing &#10;        case &#10;            when sir.reported_to_state_licensing &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_state_licensing &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_state_licensing, &#10;        sir.date_of_state_lic_report, &#10;        case &#10;            when sir.was_state_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_state_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_state_inc_investigated, &#10;        sir.date_notify_state_inci_invest, &#10;        sir.state_case_confirmation_number, &#10;        sir.progress_of_sl_investigation, &#10;        sir.state_incident_explain, &#10;        sir.results_of_sl_investigation, &#10;&#10;        sir.cps_different_from_state_lic, &#10;&#10;        -- Reporting to CPS &#10;        case &#10;            when sir.reported_to_cps &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_cps &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_cps, &#10;        sir.date_reported_to_cps, &#10;        case &#10;            when sir.was_cps_incident_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_cps_incident_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_cps_incident_investigated, &#10;        sir.date_notify_cps_inc_invest, &#10;        sir.cps_case_confirmation_number, &#10;        sir.progress_of_cps_investigation, &#10;        sir.cps_incident_explain, &#10;        sir.results_of_cps_investigation, &#10;&#10;        -- Reporting to Local Law Enforcement &#10;        case &#10;            when sir.reported_to_law_enforcement &#61; 0 then &#39;No&#39; &#10;            when sir.reported_to_law_enforcement &#61; 1 then &#39;Yes&#39; &#10;        end as reported_to_law_enforcement, &#10;        sir.date_report_to_law_enforce, &#10;        sir.le_officers_name, &#10;        sir.le_officers_badge_number, &#10;        case &#10;            when sir.was_le_inc_investigated &#61; 0 then &#39;No&#39; &#10;            when sir.was_le_inc_investigated &#61; 1 then &#39;Yes&#39; &#10;        end as was_le_inc_investigated, &#10;        sir.date_notify_le_inc_invest, &#10;        sir.le_case_confirmation_number, &#10;        sir.progress_of_le_investigation, &#10;        sir.le_incident_explain, &#10;        sir.results_of_le_investigation, &#10;        sir.reported_to_doj, &#10;        sir.doj_report_notes &#10;&#10;    from &#10;        (&#10;            select * &#10;            from uacportal.uac_sir_new &#10;            where &#10;                isdeleted &#61; 0 &#10;            and (addendum_id is null or addendum_id &#61; 0) &#10;            and sir_type_id &#61; 2 --&lt;&lt;&lt; Standard SIR &#10;            and abuse_neglect_type is null --&lt;&lt;&lt; Not an Abuse/Neglect in ORR Care SIR &#10;            and date_created &gt;&#61; date &#39;2020-10-01&#39; --&lt;&lt;&lt; FY21 data only &#10;        ) sir &#10;&#10;        inner join (select * from uacportal.uac_sir_category_map where isdeleted &#61; 0 and addendum_id is null) catmap on catmap.sir_id &#61; sir.sir_id &#10;        inner join &#10;            -- BEGIN: SIR Category/Sub-Category&#10;            (&#10;                select &#10;                    cat1.category_id, &#10;                    cat1.description category, &#10;                    case &#10;                        when cat1.parent_id is null then 1&#10;                        else 2 &#10;                    end as cat_level, &#10;                    cat1.parent_id, &#10;                    cat2.category_id subcategory_id, &#10;                    cat2.description subcategory&#10;                from &#10;                    uacportal.uac_sir_category cat1&#10;                    join uacportal.uac_sir_category cat2 on cat2.parent_id &#61; cat1.category_id &#10;            ) sircat on sircat.subcategory_id &#61; catmap.category_id &#10;&#10;        left outer join uacportal.uac_sir_event event on event.event_id &#61; sir.event_id &#10;            and event.isdeleted &#61; 0  &#10;&#10;        left join uacportal.list_programs prog1 on prog1.program_id &#61; sir.care_provider_name &#10;            -- END: SIR Category/Sub-Category&#10;    -- END: [3] Other Categories of SIRs (excluding Event info)&#10;    ) &#10;&#10;    /***** BEGIN: Main Query *****/ &#10;    select &#10;        uac_program_id, &#10;        event_id as &quot;Event ID&quot;, &#10;        event_type as &quot;Event Type&quot;, &#10;        date_of_event as &quot;Date of Event&quot;, &#10;        time_of_event as &quot;Time of Event&quot;, &#10;        event_date_created as &quot;Event Date/Time Created&quot;,  &#10;        sir_id as &quot;SIR ID&quot;, &#10;        sir_date_created as &quot;SIR Date/Time Created&quot;, &#10;        sir_type as &quot;SIR Type&quot;, &#10;        category as &quot;Category&quot;, &#10;        sub_category as &quot;Sub Category&quot;, &#10;        other_specify as &quot;Other, specify&quot;, &#10;        sa_type_of_incident as &quot;Type of SA Incident&quot;, &#10;        sa_type_of_allegation as &quot;Type of SA Allegation&quot;, &#10;        sa_how_uac_involved as &quot;Role in SA Incident&quot;, &#10;        sa_were_other_uac_involved as &quot;Were Other UAC Involved&quot;, &#10;        alleged_perpetrator as &quot;Alleged Perpetrator&quot;, &#10;        alleged_perpetrator_other as &quot;Alleged Perpetrator (Other, specify)&quot;, &#10;        sa_were_staff_present_at_inc as &quot;Staff Present/Involved in SA Incident&quot;, &#10;        incident_at_another_facility as &quot;Incident at Another Facility&quot;, &#10;        care_provider_name as &quot;Care Provider Name&quot;, &#10;        care_provider_city as &quot;Care Provider City&quot;, &#10;        care_provider_state as &quot;Care Provider State&quot;, &#10;        location_of_incident as &quot;Location of Incident&quot;, &#10;        location_of_incident_specify as &quot;Location of Incident (Other, specify)&quot;, &#10;        date_reported_to_care_provider as &quot;Date Reported to Care Provider&quot;, &#10;        to_char(date_reported_to_care_provider, &#39;HH:MI AM&#39;) as &quot;Time Reported to Care Provider&quot;, &#10;        date_reported_to_orr as &quot;Date Reported to ORR&quot;, &#10;        to_char(date_reported_to_orr, &#39;HH:MI AM&#39;) as &quot;Time Reported to ORR&quot;, &#10;        description_of_incident as &quot;Description of Incident&quot;, &#10;        uac_or_anyone_injured as &quot;UAC/Anyone Else Injured&quot;, &#10;        uac_or_anyone_injured_specify as &quot;UAC/Anyone Else Injured (specify)&quot;, &#10;        staff_response_intervention as &quot;Staff Response and Intervention&quot;, &#10;        follow_up_resolution as &quot;Follow-up and/or Resolution&quot;, &#10;        updated_recommendations as &quot;Recommendations&quot;, &#10;&#10;        -- Reporting to State Licensing &#10;        reported_to_state_licensing as &quot;Reported To SL&quot;, &#10;        date_of_state_lic_report as &quot;Date of Report (SL)&quot;, &#10;        to_char(date_of_state_lic_report, &#39;HH:MI AM&#39;) as &quot;Time of Report (SL)&quot;, &#10;        was_state_inc_investigated as &quot;Was the Incident Investigated (SL)&quot;, &#10;        date_notify_state_inci_invest as &quot;Date Notified (SL)&quot;, &#10;        state_case_confirmation_number as &quot;Case/Confirmation Number (SL)&quot;, &#10;        state_incident_explain as &quot;Explain (SL)&quot;, &#10;        results_of_sl_investigation  as &quot;Results/Findings of Investigation (SL)&quot;, &#10;&#10;        cps_different_from_state_lic as &quot;CPS Different From State Licensing&quot;, &#10;&#10;        -- Reporting to CPS &#10;        reported_to_cps as &quot;Reported To CPS&quot;, &#10;        date_reported_to_cps as &quot;Date of Report (CPS)&quot;, &#10;        to_char(date_reported_to_cps, &#39;HH:MI AM&#39;) as &quot;Time of Report (CPS)&quot;, &#10;        was_cps_incident_investigated as &quot;Was the Incident Investigated (CPS)&quot;, &#10;        date_notify_cps_inc_invest as &quot;Date Notified (CPS)&quot;, &#10;        cps_case_confirmation_number as &quot;Case/Confirmation Number (CPS)&quot;, &#10;        cps_incident_explain as &quot;Explain (CPS)&quot;, &#10;        results_of_cps_investigation as &quot;Results/Findings of Investigation (CPS)&quot;, &#10;&#10;        -- Reporting to Local Law Enforecement  &#10;        reported_to_law_enforcement as &quot;Reported To LE&quot;, &#10;        date_report_to_law_enforce as &quot;Date of Report (LE)&quot;, &#10;        to_char(date_report_to_law_enforce, &#39;HH:MI AM&#39;) as &quot;Time of Report (LE)&quot;, &#10;        le_officers_name as &quot;Officer Name&quot;, &#10;        le_officers_badge_number as &quot;Officer Badge&quot;, &#10;        was_le_inc_investigated as &quot;Was the Incident Investigated (LE)&quot;, &#10;        date_notify_le_inc_invest as &quot;Date Notified (LE)&quot;, &#10;        le_case_confirmation_number as &quot;Case/Confirmation Number (LE)&quot;, &#10;        le_incident_explain as &quot;Explain (LE)&quot;, &#10;        results_of_le_investigation as &quot;Results/Findings of Investigation (LE)&quot; &#10;&#10;    from sirs &#10;    /***** END: Main Query *****/</textarea>
+                            <div style="padding-top: 5px;"><hr></div>
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <i class="fa fa-puzzle-piece"></i>
+                                    <h3 class="box-title">Possibly Referenced Tables/Views</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div><!-- /.box-body -->
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

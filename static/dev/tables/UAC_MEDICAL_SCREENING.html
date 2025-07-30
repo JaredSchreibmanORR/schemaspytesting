@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UAC_MEDICAL_SCREENING - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UAC_MEDICAL_SCREENING</h1><p><span id="recordNumber">132148</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="SCREENING_ID">SCREENING_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="V_MEDICAL_RPT.SCREENING_ID&#39;s name implies that it&#39;s a child of UAC_MEDICAL_SCREENING.SCREENING_ID, but it doesn&#39;t reference that column."><a href='V_MEDICAL_RPT.html'>V_MEDICAL_RPT</a><span class='relatedKey'>.SCREENING_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_PROGRAM_ID">UAC_PROGRAM_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="UAC_MEDICAL_SCREENING.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_MEDICAL_SCREENING_FK1"><a href='UAC_PROGRAM_INFO.html'>UAC_PROGRAM_INFO</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_MEDICAL_SCREENING_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MEDICAL_EXAM_DATE">MEDICAL_EXAM_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PREGNANCY">PREGNANCY</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MEDICAL_EXAMINER_NAME">MEDICAL_EXAMINER_NAME</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DENTAL_EXAM_DATE">DENTAL_EXAM_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TST_DATE_APPLIED">TST_DATE_APPLIED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TST_RESULT">TST_RESULT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPECITY_IF_NAGATIVE">SPECITY_IF_NAGATIVE</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IGRA_DATE_DRAWN">IGRA_DATE_DRAWN</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IGRA_TYPE">IGRA_TYPE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IGRA_RESULT">IGRA_RESULT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_XRAY">DATE_XRAY</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="XRAY_FINDINGS">XRAY_FINDINGS</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="XRAY_SCPECIFY_IF_ABNORMAL">XRAY_SCPECIFY_IF_ABNORMAL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUGGESTIVE_TB">SUGGESTIVE_TB</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SMEARS_RESULT">SMEARS_RESULT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="NUCLEICACID_RESULT">NUCLEICACID_RESULT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CALTURES_RESULTS">CALTURES_RESULTS</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DRUG_SUSCEPTIBILITY_RESUTL">DRUG_SUSCEPTIBILITY_RESUTL</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUSCEP_CPECIFY_IF_OTHER">SUSCEP_CPECIFY_IF_OTHER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="COMMUNICABLE_DISEASE_ID">COMMUNICABLE_DISEASE_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>8</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="UAC_MEDICAL_SCREENING.COMMUNICABLE_DISEASE_ID references LIST_COMM_DISEASES.DISEASE_ID via UAC_MED_SCREEN_COMM_DISEASE_FK"><a href='LIST_COMM_DISEASES.html'>LIST_COMM_DISEASES</a><span class='relatedKey'>.DISEASE_ID</span></td>
+                                                <td class="constraint detail">UAC_MED_SCREEN_COMM_DISEASE_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COMM_DISEASE_CPECIFY_IF_OTHER">COMM_DISEASE_CPECIFY_IF_OTHER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="INTAKES_INTERRUPTED">INTAKES_INTERRUPTED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="RELEASE_DELAYED">RELEASE_DELAYED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="QUARANTINE">QUARANTINE</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="NUMBER_OF_UAC_QUARANTINED">NUMBER_OF_UAC_QUARANTINED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LTBI_TREATMENT_STARTED">LTBI_TREATMENT_STARTED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="3MONTHS_REHINMENT">3MONTHS_REHINMENT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_CREATED">DATE_CREATED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="USER_CREATED">USER_CREATED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPTIME">UPTIME</span></td>
+                                    <td>TIMESTAMP(6)</td>
+                                    <td>11,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="UPUSER">UPUSER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DISEASE_CLASSIFICATION_ID">DISEASE_CLASSIFICATION_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>0</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ISDELETED">ISDELETED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>0</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> UAC_MEDICAL_SCREENING_PK</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>SCREENING_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_MEDICAL_SCREENING_INDEX1</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UAC_PROGRAM_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_MEDICAL_SCREENING_INDEX2</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UPUSER</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_MEDICAL_SCREENING_INDEX3</td>
+                                    <td>Performance</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="332,5,857,1101">
+<area shape="rect" id="node2" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="5,624,288,741">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="11,37,283,301">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/UAC_MEDICAL_SCREENING.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1179,637,1465,725">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="699,673,1045,761">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="288,987,560,1251">
+<area shape="rect" id="node7" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="5,1301,239,1389">
+<area shape="rect" id="node18" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="26,1019,218,1107">
+<area shape="rect" id="node4" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="692,779,1052,867">
+<area shape="rect" id="node5" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="747,884,997,972">
+<area shape="rect" id="node6" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="687,1832,1057,1920">
+<area shape="rect" id="node8" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="743,989,1001,1077">
+<area shape="rect" id="node9" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="751,1095,993,1183">
+<area shape="rect" id="node10" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="697,1200,1047,1288">
+<area shape="rect" id="node11" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="773,1305,971,1393">
+<area shape="rect" id="node12" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="673,1411,1071,1499">
+<area shape="rect" id="node13" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="739,1516,1005,1604">
+<area shape="rect" id="node14" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="685,1621,1059,1709">
+<area shape="rect" id="node15" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="711,1727,1033,1815">
+<area shape="rect" id="node16" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="609,1937,1135,3033">
+<area shape="rect" id="node17" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="283,2556,565,2673">
+<area shape="rect" id="node19" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="723,5,1021,93">
+<area shape="rect" id="node20" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="723,111,1021,199">
+<area shape="rect" id="node21" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="733,216,1011,304">
+<area shape="rect" id="node22" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="777,321,967,409">
+<area shape="rect" id="node23" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="715,427,1029,515">
+<area shape="rect" id="node24" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="733,532,1011,620">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/UAC_MEDICAL_SCREENING.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="332,5,857,1101">
+<area shape="rect" id="node2" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="5,624,288,741">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="11,37,283,301">
+<area shape="rect" id="node4" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="901,8,1231,131">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/UAC_MEDICAL_SCREENING.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="248,1002,481,1090">
+<area shape="rect" id="node2" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,4530,204,4618">
+<area shape="rect" id="node3" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1472,1435,1759,1523">
+<area shape="rect" id="node4" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="941,1471,1288,1559">
+<area shape="rect" id="node5" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="531,3034,803,3298">
+<area shape="rect" id="node17" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="261,4583,469,4671">
+<area shape="rect" id="node6" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="935,2687,1295,2775">
+<area shape="rect" id="node7" href="TABLEAU_SIRS_FULL.html" target="_top" title="TABLEAU_SIRS_FULL" alt="" coords="983,2793,1247,2857">
+<area shape="rect" id="node8" href="TABLEAU_SIRS_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_FULL_FY21" alt="" coords="956,2874,1273,2938">
+<area shape="rect" id="node9" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="982,2955,1247,3019">
+<area shape="rect" id="node10" href="TABLEAU_SIRS_LEAN.html" target="_top" title="TABLEAU_SIRS_LEAN" alt="" coords="981,3037,1248,3101">
+<area shape="rect" id="node11" href="TABLEAU_SIRS_LEAN_FY21.html" target="_top" title="TABLEAU_SIRS_LEAN_FY21" alt="" coords="955,3118,1275,3182">
+<area shape="rect" id="node12" href="TABLEAU_SIRS_WITH_ADDENDA_FULL.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL" alt="" coords="906,3199,1323,3263">
+<area shape="rect" id="node13" href="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21" alt="" coords="880,3281,1349,3345">
+<area shape="rect" id="node14" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1421,45,1809,109">
+<area shape="rect" id="node15" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="990,85,1239,173">
+<area shape="rect" id="node16" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="935,710,1294,774">
+<area shape="rect" id="node18" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="1035,1083,1195,1147">
+<area shape="rect" id="node19" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="1035,1165,1195,1229">
+<area shape="rect" id="node20" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1044,367,1185,431">
+<area shape="rect" id="node21" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1545,4191,1686,4255">
+<area shape="rect" id="node22" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="1015,4138,1214,4226">
+<area shape="rect" id="node23" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1545,3923,1686,3987">
+<area shape="rect" id="node24" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1044,629,1185,693">
+<area shape="rect" id="node25" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1044,4493,1185,4557">
+<area shape="rect" id="node26" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1044,4818,1185,4882">
+<area shape="rect" id="node27" href="TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="986,3398,1243,3486">
+<area shape="rect" id="node28" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="1013,1246,1217,1310">
+<area shape="rect" id="node29" href="TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="951,3503,1278,3591">
+<area shape="rect" id="node30" href="UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="988,3609,1241,3697">
+<area shape="rect" id="node31" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="930,226,1299,314">
+<area shape="rect" id="node32" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="985,3714,1244,3802">
+<area shape="rect" id="node33" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="993,3819,1236,3907">
+<area shape="rect" id="node34" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="940,3925,1289,4013">
+<area shape="rect" id="node35" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="1015,4315,1214,4403">
+<area shape="rect" id="node36" href="UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="903,1577,1326,1665">
+<area shape="rect" id="node37" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="916,1682,1313,1770">
+<area shape="rect" id="node38" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="981,1787,1248,1875">
+<area shape="rect" id="node39" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="928,1893,1301,1981">
+<area shape="rect" id="node40" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="954,1998,1275,2086">
+<area shape="rect" id="node41" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="852,5627,1377,6723">
+<area shape="rect" id="node42" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="525,6246,808,6363">
+<area shape="rect" id="node43" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="938,791,1291,879">
+<area shape="rect" id="node44" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="965,5405,1264,5493">
+<area shape="rect" id="node45" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="965,2103,1264,2191">
+<area shape="rect" id="node46" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="976,2209,1253,2297">
+<area shape="rect" id="node47" href="UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="959,2314,1270,2402">
+<area shape="rect" id="node48" href="UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="1511,4005,1719,4093">
+<area shape="rect" id="node49" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="957,897,1272,985">
+<area shape="rect" id="node50" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="976,2419,1253,2507">
+<area shape="rect" id="node51" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="988,4574,1241,4638">
+<area shape="rect" id="node52" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="923,5287,1307,5351">
+<area shape="rect" id="node53" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="920,5053,1309,5117">
+<area shape="rect" id="node54" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1483,126,1747,190">
+<area shape="rect" id="node55" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1446,785,1785,849">
+<area shape="rect" id="node56" href="V_CR_MEDICAL_HISTORY.html" target="_top" title="V_CR_MEDICAL_HISTORY" alt="" coords="964,2525,1265,2589">
+<area shape="rect" id="node57" href="V_CR_MEDICATION_HISTORY.html" target="_top" title="V_CR_MEDICATION_HISTORY" alt="" coords="947,2606,1282,2670">
+<area shape="rect" id="node58" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="1451,6150,1780,6273">
+<area shape="rect" id="node59" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1514,4435,1717,4499">
+<area shape="rect" id="node60" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1529,4273,1702,4337">
+<area shape="rect" id="node61" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1473,4354,1758,4418">
+<area shape="rect" id="node62" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1493,4110,1737,4174">
+<area shape="rect" id="node63" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1520,3325,1711,3389">
+<area shape="rect" id="node64" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="959,4899,1270,4963">
+<area shape="rect" id="node65" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="921,4737,1309,4801">
+<area shape="rect" id="node66" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="990,1002,1239,1066">
+<area shape="rect" id="node67" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="949,4655,1281,4719">
+<area shape="rect" id="node68" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="937,5546,1292,5610">
+<area shape="rect" id="node69" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="976,5206,1253,5270">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/UAC_MEDICAL_SCREENING.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

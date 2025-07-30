@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GETUACINFO</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>INFOTYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>UAC_PROGRAM_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>HISTORYINFO</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE             &quot;SP_GETUACINFO&quot; (&#10;infoType    VARCHAR2,&#10;UAC_PROGRAM_ID    NUMBER,&#10;HistoryInfo NUMBER,&#10;cur_Out  OUT SYS_REFCURSOR&#10;)&#10;AS &#10;infoType_   VARCHAR2(30) :&#61; Upper(infoType);&#10;uacProgId_       NUMBER(10,0) :&#61; UAC_PROGRAM_ID;&#10;isHist_      NUMBER(1) :&#61; HistoryInfo;   -- 1 is to select all the info. included historical data.&#10;uacId_    NUMBER(10,0);&#10;loc_      NUMBER(10) :&#61;0;&#10;n         NUMBER(4);&#10;uacImage  VARCHAR2(112) :&#61; &#39;NOIMAGE&#39;;&#10;BEGIN&#10;  If infoType_ &#61; &#39;BASIC&#39; Then&#10;    select count(*) into n from (&#10;      Select 1 from UAC_PROGRAM_INFO Where UAC_PROGRAM_ID &#61; uacProgId_&#10;      Union&#10;      Select 0 from dual&#10;    );&#10;    if n &gt; 1 then&#10;      select UAC_ID into uacId_ from UAC_PROGRAM_INFO Where UAC_PROGRAM_ID &#61; uacProgId_;&#10;      Select &#10;        CASE &#10;          WHEN B.UAC_STATUS &#61; &#39;ADMITTED&#39; THEN DateDiff(&#39;day&#39;, A.DATE_ADMITTED, SysDate)&#10;          WHEN B.UAC_STATUS &#61; &#39;DISCHARGED&#39; THEN DateDiff(&#39;day&#39;, A.DAte_ADMITTED, DATE_DISCHARGED)&#10;          WHEN B.UAC_STATUS &#61; &#39;IN-TRANSFER&#39; THEN DateDiff(&#39;day&#39;, A.DATE_ADMITTED, SysDate)&#10;          ELSE 0&#10;        END AS LOC into loc_&#10;        From (Select UAC_ID, MIN(DATE_ADMITTED) as DATE_ADMITTED, MAX(DATE_DISCHARGED) as DATE_DISCHARGED FROM UAC_PROGRAM_INFO A WHERE UAC_ID &#61; uacId_ GROUP By UAC_ID) A  &#10;        INNER JOIN UAC_INFO B On A.UAC_ID &#61; B.UAC_ID&#10;        WHERE B.UAC_ID &#61; uacId_;&#10;    else&#10;      uacId_ :&#61; -1;&#10;    End if;&#10;&#10;    Select count(*) into n from (&#10;      Select DISTINCT FILE_NAME from UAC_IMAGES A &#10;      Inner Join UAC_PROGRAM_INFO B On A.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;      Inner Join UAC_INFO C On B.UAC_ID &#61; C.UAC_ID&#10;      Where C.UAC_ID &#61; uacId_&#10;    );&#10;    if n &gt; 0 Then&#10;      Select FILE_NAME into uacImage From (&#10;        Select DISTINCT FILE_NAME, DATE_UPLOADED from UAC_IMAGES A &#10;        Inner Join UAC_PROGRAM_INFO B On A.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;        Inner Join UAC_INFO C On B.UAC_ID &#61; C.UAC_ID&#10;        Where C.UAC_ID &#61; uacId_ Order by A.DATE_UPLOADED Desc&#10;      ) where rownum &#61; 1;&#10;    end if;&#10;    Open cur_Out For&#10;    Select A.UAC_ID,A.ALIEN_NO, A.FIRST_NAME, A.LAST_NAME, A.AKA, A.DOB, Trunc(months_between(sysdate, A.DOB) /12) as Age, A.COB, A.GENDER, CURRENT_STATUS as UAC_STATUS,DATE_ADMITTED, B.PROGRAM_ID, C.PROGRAM_NAME, D.PROGRAM_TYPE,&#10;      E.OFFICE_NAME as APPROVED_FIELD_OFFICE, DATE_ORR_APPROVED as ORR_APPROVED_DATE, &#10;      Case When CURRENT_STATUS &#61; &#39;ADMITTED&#39;  Or CURRENT_STATUS &#61; &#39;IN-TRANSFER&#39; Then DateDiff(&#39;day&#39;,DATE_ADMITTED, SysDate)&#10;        When  CURRENT_STATUS &#61; &#39;ENROUTE&#39; Then 0&#10;        When  CURRENT_STATUS &#61; &#39;DISCHARGED&#39; Then DateDiff(&#39;day&#39;,DATE_ADMITTED, DATE_DISCHARGED)&#10;      End&#10;      as LOS, B.DATE_DISCHARGED, C.PROGRAM_TYPE_ID, G.IMAGE_PATH || G.FILE_NAME as UAC_PHOTO,&#10;      F.FIRST_NAME || &#39; &#39; || F.LAST_NAME as Sponsor_NAME, F.SSN as Sponsor_SSN, F.ALIEN_NO as Sponsor_ANo, &#10;      F.SPONSOR_ADDRESS, --|| &#39; &#39; || F.ADDRESS_SECONDARY AS SPONSOR_ADDRESS , &#10;      F.Sponsor_City, F.Sponsor_State,&#10;      F.Sponsor_ZipCode, F.Sponsor_Home_Phone as Sponsor_Phone, F.Relationship, A.DATE_ORR_APPROVED, C.CITY, C.STATE, loc_ as LOC,&#10;      uacImage as ImageName&#10;      From UAC_INFO A &#10;      Inner Join UAC_PROGRAM_INFO B On A.UAC_ID &#61; B.UAC_ID&#10;      Inner join LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;      Left Join LIST_PROGRAM_TYPE D On C.PROGRAM_TYPE_ID &#61; D.PROGRAM_TYPE_ID&#10;      Left Join List_REFERRING_FIELD_OFFICES E On A.REFERRING_OFFICE &#61; E.OFFICE_ID&#10;      Left Join (&#10;        Select B.UAC_ID, CONCAT(CONCAT(B.SPONSOR_ADDRESS, &#39; &#39;), B.SPONSOR_ADDRESS_SECONDARY) as Sponsor_Address, B.Sponsor_City, B.Sponsor_State,&#10;        B.Sponsor_ZipCode, B.Sponsor_Home_Phone, A.*, C.Relationship &#10;        From SPONSOR_INFO A &#10;        Inner Join UAC_SPONSOR_LIST B On A.SPONSOR_ID &#61; B.SPONSOR_ID and a.is_deleted &#61; 0 and b.is_deleted &#61; 0&#10;        Left Join LIST_RELATIONSHIP C On B.SPONSOR_RELATIONSHIP_TO_UAC &#61; C.RELATIONSHIP_ID&#10;        Where B.CURRENT_SPONSOR &#61; 1&#10;      ) F On A.UAC_ID &#61; F.UAC_ID&#10;      Left Join UAC_IMAGES G On B.UAC_PROGRAM_ID &#61; G.UAC_PROGRAM_ID&#10;      Where B.UAC_PROGRAM_ID &#61; uacProgId_;&#10;  Elsif infoType_ &#61; &#39;ASSESSMENT&#39; Then&#10;    Open cur_Out For&#10;    Select UAC_ASSESSMENT_ID, To_Char(DATE_OF_INTAKE, &#39;mm/dd/yyyy&#39;) as DATE_COMPLETED, To_Char(A.UPTIME, &#39;mm/dd/yyyy&#39;) as LAST_UPDATED, CASE_MGT_NAME as STAFF, B.Program_ID, PROGRAM_NAME &#10;    From UAC_ASSESSMENT A&#10;    INNER JOIN UAC_PROGRAM_INFO B On A.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID &#10;    INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID Where B.UAC_PROGRAM_ID &#61; uacProgId_ And A.ISDELETED &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;SERVICEPLAN&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID, SERVICE_PLAN_ID as ISP_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, PROGRAM_NAME&#10;    From UAC_INDIVIDUAL_SERVICE_PLAN A&#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join LIST_PROGRAMS B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0 Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;SIR&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID,C.UAC_ID, SIR_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff, &#10;    B.Program_ID, PROGRAM_NAME &#10;    From UAC_SIR A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &lt;&gt; 1&#10;    Order by DATE_COMPLETED DESC,LAST_UPDATED DESC;&#10;&#10;  Elsif infoType_ &#61; &#39;EDUCATIONPLAN&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID, PLACEMENT_ID, To_Char(A.UPTIME, &#39;mm/dd/yyyy&#39;) as LAST_UPDATED, UPLOADED_BY as STAFF, FILE_NAME, ORG_FILE_NAME, &#10;    REPORT_TYPE as FILE_TYPE, nvl(Round(FILE_SIZE/1024,0), null) as FILE_SIZE, B.Program_ID, PROGRAM_NAME &#10;    From UAC_EDUCATION_PLACEMENT A &#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;KYR&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID, EFFORT_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff, &#10;    B.Program_ID, PROGRAM_NAME &#10;    From UAC_EFFORT A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And A.EFFORT_TYPE_ID &#61; 1  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;DISCHARGENOTIFICATION&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID, DISCHARGE_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff, &#10;    B.Program_ID, PROGRAM_NAME, A.TYPE_OF_DISCHARGE&#10;    From UAC_DISCHARGE_NOTIFICATION A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;TRANSFER&#39; Or infoType_ &#61; &#39;RPTTRANSFER&#39; Then&#10;    Open cur_Out For&#10;    Select C.UAC_PROGRAM_ID, TRANSFER_REQUEST_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED,A.PROPOSED_PROGRAM_ID, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff, &#10;    B.Program_ID, PROGRAM_NAME &#10;    From UAC_TRANSFER_REQUEST A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;SPONSOR&#39; Then&#10;    Open cur_Out For&#10;    Select E.UAC_ID, C.UAC_PROGRAM_ID, A.SPONSOR_ID, A.FIRST_NAME, A.LAST_NAME, A.SSN, &#10;    /*&#10;    CASE When E.SPONSOR_ADDRESS is null then A.Address ELSE E.SPONSOR_ADDRESS End as Address, &#10;    CASE WHEN E.SPONSOR_CITY is null Then A.City Else E.SPONSOR_CITY End as City, &#10;    CASE WHEN E.SPONSOR_STATE is null Then A.STATE Else E.SPONSOR_STATE End as State, &#10;    */&#10;    CONCAT(CONCAT(E.SPONSOR_ADDRESS, &#39; &#39;), E.SPONSOR_ADDRESS_SECONDARY) as ADDRESS, E.SPONSOR_CITY as city, E.SPONSOR_STATE as state,&#10;    CASE WHEN nvl(E.CURRENT_SPONSOR,0) &#61; 1 Then &#39;Yes&#39; Else &#39;No&#39; End as Curr_Sponsor,&#10;    P_Counter, A_Counter,&#10;    B.Program_ID, PROGRAM_NAME , &#10;    &#10;    -- CASE WHEN nvl(A.FLAG,0) &#61; 1 Then &#39;Yes&#39; Else &#39;No&#39; End as Flag, /*FLAG_NOTE,*/&#10;    -- CASE WHEN nvl(A.FLAG_ADDRESS,0) &#61; 1 Then &#39;Yes&#39; Else &#39;No&#39; End as Flag_Address, /*FLAG_ADDRESS_NOTE,*/&#10;&#10;    CASE &#10;        WHEN NVL(A.FLAG, 0) &#61; 1 &#10;            OR NVL(A.FLAG_ADDRESS, 0) &#61; 1 &#10;            OR EXISTS (&#10;                SELECT 1 FROM SPONSORFLAG SF WHERE SF.SPONSORID &#61; A.SPONSOR_ID&#10;            ) &#10;        THEN &#39;YES&#39; &#10;        ELSE &#39;NO&#39;&#10;    END AS FLAG,&#10;    &#10;&#9;CASE WHEN &#10;&#9;&#9;  TO_DATE(E.DATE_CREATED, &#39;DD-MON-RR&#39;) &lt;&#61; &#10;&#9;&#9;  (SELECT TO_DATE(PARAM_VALUE, &#39;DD-MON-RR&#39;) FROm UACPORTAL_APP_PARAMS WHERE PARAM_NAME &#61; &#39;OLD_SPONSOR_FORM_DATE&#39;) OR&#10;&#9;&#9;&#9;E.DATE_CREATED IS NULL&#10;&#9;&#9;  THEN &#39;YES&#39; &#10;&#9;&#9;  ELSE &#39;NO&#39;&#10;&#9;&#9;  END AS SHOW_OLD_SPONSOR_FORM&#10;    From SPONSOR_INFO A &#10;    Inner Join UAC_SPONSOR_LIST E On A.SPONSOR_ID &#61; E.SPONSOR_ID and a.is_deleted &#61; 0 and e.is_deleted &#61; 0&#10;    Inner Join UAC_PROGRAM_INFO C On E.UAC_ID &#61; C.UAC_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where C.UAC_PROGRAM_ID &#61; uacProgId_  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;DCS&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.UAC_ASSESSMENT_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, PROGRAM_NAME &#10;    From UAC_ASSESSMENT A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And ISDELETED &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;RELEASEREQUEST&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.RELEASE_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME, E.Reason Cancellation_Reason,&#10;&#9;(SELECT nvl(Max(1),0) FROM UAC_HOMESTUDY_CASE_REFERRAL HS WHERE HS.RELEASE_ID &#61; A.RELEASE_ID) as HAS_HS&#10;    From UAC_RELEASE_REQUEST A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Left Join List_Deny_Reason E on A.CW_Cancellation_Reason_ID&#61;E.Reason_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;HOMESTUDYCASEREFERRAL&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.HOMESTUDY_ID, A.REFERRAL_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, E.FIRST_NAME || &#39; &#39; || E.LAST_NAME as SPONSOR_NAME,&#10;    CASE WHEN e.is_Deleted &#61; 0 THEN CONCAT(CONCAT(F.SPONSOR_ADDRESS, &#39; &#39;), F.SPONSOR_ADDRESS_SECONDARY)  ELSE &#39;&#39; END as SPONSOR_ADDRESS, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_CITY  ELSE &#39;&#39; END as SPONSOR_CITY, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_STATE  ELSE &#39;&#39; END as SPONSOR_STATE, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_ZIPCODE  ELSE &#39;&#39; END as SPONSOR_ZIPCODE, &#10;&#9;G.REFERRAL_STATUS&#10;    From UAC_HOMESTUDY_CASE_REFERRAL A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    INNER JOIN LIST_REFERRAL_STATUS G ON G.REFERRAL_STATUS_ID &#61; A.REFERRAL_STATUS&#10;&#9;LEFt JOIN UAC_SPONSOR_LIST F On F.UAC_ID &#61; C.UAC_ID and F.SPONSOR_ID &#61; A.ORIG_SPONSOR_ID and f.is_deleted &#61; 0&#10;    LEFT JOIN SPONSOR_INFO E ON F.SPONSOR_ID &#61; E.SPONSOR_ID and e.is_deleted &#61; 0&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ &#10;&#9;--AND (F.CURRENT_SPONSOR &#61; 1 OR F.SPONSOR_ID Is NUll) &#10;&#9;Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;POSTRELEASESERVICESREFERRAL&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.PRS_ID, A.REFERRAL_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, &#10;    TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, E.FIRST_NAME || &#39; &#39; || E.LAST_NAME as SPONSOR_NAME,&#10;    CASE WHEN e.is_Deleted &#61; 0 THEN CONCAT(CONCAT(F.SPONSOR_ADDRESS, &#39; &#39;), F.SPONSOR_ADDRESS_SECONDARY)  ELSE &#39;&#39; END as SPONSOR_ADDRESS, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_CITY  ELSE &#39;&#39; END as SPONSOR_CITY, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_STATE  ELSE &#39;&#39; END as SPONSOR_STATE, &#10;    CASE WHEN e.is_Deleted &#61; 0 THEN F.SPONSOR_ZIPCODE  ELSE &#39;&#39; END as SPONSOR_ZIPCODE,&#10;&#9;G.REFERRAL_STATUS&#10;    From UAC_POST_RELEASE_SERVICE A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    INNER JOIN LIST_REFERRAL_STATUS G ON G.REFERRAL_STATUS_ID &#61; A.REFERRAL_STATUS&#10;    LEFt JOIN UAC_SPONSOR_LIST F On F.UAC_ID &#61; C.UAC_ID and F.SPONSOR_ID &#61; A.ORIG_SPONSOR_ID and f.is_deleted &#61; 0&#10;    LEFT JOIN SPONSOR_INFO E ON F.SPONSOR_ID &#61; E.SPONSOR_ID and e.is_deleted &#61; 0 &#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ &#10;    --AND (F.CURRENT_SPONSOR &#61; 1 OR F.SPONSOR_ID Is NUll)&#10;    Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;ARNOTIFICATION&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.AR_NOTIFICATION_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME &#10;    From UAC_AR_NOTIFICATION A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;MEDICALEXAM&#39; Then&#10;    Open cur_Out For&#10;    Select A.UAC_PROGRAM_ID, A.SCREENING_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME &#10;    From UAC_MEDICAL_SCREENING A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;NEWASSESSMENT&#39; Then&#10;    Open cur_OUT For&#10;    Select A.UAC_PROGRAM_ID, A.INITIAL_INTAKES_ID, To_Char(A.DATE_CREATED, &#39;mm/dd/yyyy&#39;) as DATE_COMPLETED, To_Char(A.UPTIME, &#39;mm/dd/yyyy&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME&#10;    From UAC_INITIAL_ASSESSMENT A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And nvl(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;RISKASSESSMENT&#39; Then&#10;    Open cur_OUT For&#10;    Select A.UAC_PROGRAM_ID, A.RISK_ASSESSMENT_ID, To_Char(A.DATE_CREATED, &#39;mm/dd/yyyy&#39;) as DATE_COMPLETED, To_Char(A.UPTIME, &#39;mm/dd/yyyy&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME&#10;    From UAC_RISK_ASSESSMENT A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And nvl(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;TRAVELREQUEST&#39; Then&#10;    Open cur_OUT For&#10;    Select A.UAC_PROGRAM_ID, A.TRAVEL_REQUEST_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME&#10;    From UAC_FOSTER_CARE_TRAVEL_REQUEST A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;CASEREVIEW&#39; Then&#10;    Open cur_OUT For&#10;    Select A.UAC_PROGRAM_ID, A.UAC_CASE_REVIEW_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME&#10;    From UAC_CASE_REVIEW A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO E on A.UAC_PROGRAM_ID &#61; E.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On E.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;SECUREREVIEW&#39; Then&#10;    Open cur_OUT For&#10;    Select A.UAC_PROGRAM_ID, A.SECURE_REVIEW_ID, TO_CHAR(A.DATE_CREATED,&#39;MM/DD/YYYY&#39;) as DATE_COMPLETED, TO_CHAR(A.UPTIME,&#39;MM/DD/YYYY&#39;) as LAST_UPDATED, D.LAST_NAME || &#39;, &#39; || D.First_Name as Staff,&#10;    B.Program_ID, B.PROGRAM_NAME&#10;    From UAC_SECURE_REVIEW A &#10;    Inner Join ADM_LIST_WEB_USER D ON Upper(A.UPUSER) &#61; Upper(D.User_ID)&#10;    Inner Join UAC_PROGRAM_INFO E on A.UAC_PROGRAM_ID &#61; E.UAC_PROGRAM_ID&#10;    Inner Join List_Programs B On E.PROGRAM_ID &#61; B.PROGRAM_ID&#10;    Where A.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  Order by A.Uptime Desc;&#10;  Elsif infoType_ &#61; &#39;UACDOCUMENTS&#39; Then&#10;    Open cur_OUT For&#10;    Select &#10;&#9;&#9;C.UAC_PROGRAM_ID, A.DOC_ID, To_Char(A.UPTIME, &#39;mm/dd/yyyy&#39;) as LAST_UPDATED, &#10;&#9;&#9;UPLOADED_BY as STAFF, FILE_NAME, A.FILE_TYPE, A.FILE_SIZE, &#10;&#9;&#9;B.Program_ID, PROGRAM_NAME, A.ORG_FILE_NAME, A.Remarks,&#10;&#9;&#9;dt.document_type&#10;&#9;From &#10;&#9;&#9;UAC_DOCUMENTS A &#10;&#9;&#9;Inner Join UAC_PROGRAM_INFO C On A.UAC_PROGRAM_ID &#61; C.UAC_PROGRAM_ID&#10;&#9;&#9;Inner Join List_Programs B On C.PROGRAM_ID &#61; B.PROGRAM_ID&#10;&#9;&#9;LEFT JOIN LIST_DOCUMENT_TYPE dt on A.document_type_id &#61; dt.document_type_id&#10;&#9;Where &#10;&#9;&#9;C.UAC_PROGRAM_ID &#61; uacProgId_ And NVL(A.ISDELETED,0) &#61; 0  &#10;&#9;Order by &#10;&#9;&#9;A.Uptime Desc;&#10;  End If;&#10;&#10;END SP_GETUACINFO;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

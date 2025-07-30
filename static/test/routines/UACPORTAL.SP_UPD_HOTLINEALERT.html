@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_UPD_HOTLINEALERT</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_UPUSER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CMD_TYPE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HOTLINE_ALERT_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DATE_OF_CALL</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PHONE_REPORTER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_LANGUAGE_REPORTER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_TRANSCR_TRANSL_NEEDED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FIRST_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_LAST_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_TYPE_OF_REPORTER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CONTACT_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CONTACT_PHONE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_DESC</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_STAFF_PRESENT</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_STAFF_PRESENT_INFO</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_REPORTED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_REPORTED_INFO</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_REPORTED_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROG_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROG_CITY</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROG_STATE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROG_DESC</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_TYPE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_ALLEGATION_TYPE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INCIDENT_SYNOPSIS</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_REPORTED_TO_CPS</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_REPORTED_TO_LAW_ENFORCEMENT</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HOTLINE_REP_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HOTLINE_REP_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HOTLINE_REP_PHONE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INTAKES_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INTAKES_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INTAKES_PHONE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PSA_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PSA_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PSA_PHONE</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_NOT_ENOUGHINFO_TO_IDENTIFY</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_SUP_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_SUP_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_SUP_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PO_NAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PO_EMAIL</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PO_DATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_A_NUMBER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_FIRSTNAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_LASTNAME</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_GENDER</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_AGE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_COB</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_OTHERDESC</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_OTHERUCINVOLVED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_OTHERUCINVOLVEDDESC</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_COMMENTS</td>
+                                    <td>NVARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SENTTOORR</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SENTTOORRDATE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_HOTLINE_ALERT_NEW</td>
+                                    <td>NUMBER</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_UPD_HOTLINEALERT&quot;&#10;(&#10;  v_UPUSER IN NVARCHAR2,&#10;  V_CMD_TYPE IN NVARCHAR2,&#10;  v_HOTLINE_ALERT_ID IN NUMBER,&#10;  v_DATE_OF_CALL IN DATE,&#10;  v_PHONE_REPORTER IN NVARCHAR2,&#10;  v_LANGUAGE_REPORTER IN NVARCHAR2,&#10;  v_TRANSCR_TRANSL_NEEDED IN NUMBER,&#10;  v_FIRST_NAME IN NVARCHAR2,&#10;  v_LAST_NAME IN NVARCHAR2,&#10;  v_TYPE_OF_REPORTER IN NVARCHAR2,&#10;  v_CONTACT_EMAIL IN NVARCHAR2,&#10;  v_CONTACT_PHONE IN NVARCHAR2,&#10;  &#10;  v_INCIDENT_DESC IN NVARCHAR2,&#10;  v_INCIDENT_DATE IN DATE,&#10;  v_STAFF_PRESENT IN NUMBER,&#10;  v_STAFF_PRESENT_INFO IN NVARCHAR2,&#10;  v_INCIDENT_REPORTED IN NUMBER,&#10;  v_INCIDENT_REPORTED_INFO IN NVARCHAR2,&#10;  v_INCIDENT_REPORTED_DATE IN DATE,&#10;  v_PROG_ID IN NUMBER,&#10;  v_PROG_CITY IN NVARCHAR2,&#10;  v_PROG_STATE IN NVARCHAR2,&#10;  v_PROG_DESC IN NVARCHAR2,&#10;  v_INCIDENT_TYPE IN NVARCHAR2,&#10;  v_INCIDENT_ALLEGATION_TYPE IN NVARCHAR2,&#10;  v_INCIDENT_SYNOPSIS IN NVARCHAR2,&#10;  v_REPORTED_TO_CPS IN NUMBER,&#10;  v_REPORTED_TO_LAW_ENFORCEMENT IN NUMBER,&#10;  v_HOTLINE_REP_NAME IN NVARCHAR2,&#10;  v_HOTLINE_REP_EMAIL IN NVARCHAR2,&#10;  v_HOTLINE_REP_PHONE IN NVARCHAR2,&#10;  v_INTAKES_NAME IN NVARCHAR2,&#10;  v_INTAKES_EMAIL IN NVARCHAR2,&#10;  v_INTAKES_PHONE IN NVARCHAR2,&#10;  v_PSA_NAME IN NVARCHAR2,&#10;  v_PSA_EMAIL IN NVARCHAR2,&#10;  v_PSA_PHONE IN NVARCHAR2,&#10;  v_NOT_ENOUGHINFO_TO_IDENTIFY IN NUMBER,&#10;  v_FFS_NAME IN NVARCHAR2,&#10;  v_FFS_EMAIL IN NVARCHAR2,&#10;  v_FFS_DATE IN DATE,&#10;   v_FFS_SUP_NAME IN NVARCHAR2,&#10;  v_FFS_SUP_EMAIL IN NVARCHAR2,&#10;  v_FFS_SUP_DATE IN DATE,&#10;  v_PO_NAME IN NVARCHAR2,&#10;  v_PO_EMAIL IN NVARCHAR2,&#10;  v_PO_DATE IN DATE,&#10;  v_UAC_A_NUMBER IN NVARCHAR2,&#10;  v_UAC_FIRSTNAME IN NVARCHAR2,&#10;  v_UAC_LASTNAME IN NVARCHAR2,&#10;  v_UAC_GENDER IN NVARCHAR2,&#10;  v_UAC_AGE IN NUMBER,&#10;  v_UAC_COB IN NVARCHAR2,&#10;  v_UAC_OTHERDESC IN NVARCHAR2,&#10;  v_UAC_OTHERUCINVOLVED IN NUMBER,&#10;  v_UAC_OTHERUCINVOLVEDDESC IN NVARCHAR2,&#10;  v_COMMENTS IN NVARCHAR2,&#10;  v_SENTTOORR IN NUMBER,&#10;  v_SENTTOORRDATE DATE,&#10;  V_HOTLINE_ALERT_NEW OUT NUMBER&#10; ) AS &#10;BEGIN&#10;   if UPPER(v_CMD_TYPE) &#61; &#39;INSERT&#39; Then&#10;   INSERT INTO UAC_HOTLINE_ALERT&#10;    (&#10;      HOTLINE_ALERT_ID,&#10;      DATE_OF_CALL,&#10;      PHONE_REPORTER,&#10;      LANGUAGE_REPORTER,&#10;      TRANSCR_TRANSL_NEEDED,&#10;      FIRST_NAME,&#10;      LAST_NAME,&#10;      TYPE_OF_REPORTER,&#10;      CONTACT_EMAIL,&#10;      CONTACT_PHONE,&#10;      INCIDENT_DESC,&#10;      INCIDENT_DATE,&#10;      STAFF_PRESENT,&#10;      STAFF_PRESENT_INFO,&#10;      INCIDENT_REPORTED,&#10;      INCIDENT_REPORTED_INFO,&#10;      INCIDENT_REPORTED_DATE,&#10;      PROG_ID,&#10;      PROG_CITY,&#10;      PROG_STATE,&#10;      PROG_DESC,&#10;       INCIDENT_TYPE,&#10;      INCIDENT_ALLEGATION_TYPE,&#10;      INCIDENT_SYNOPSIS,&#10;      REPORTED_TO_CPS,&#10;      REPORTED_TO_LAW_ENFORCEMENT,&#10;      HOTLINE_REP_NAME,&#10;      HOTLINE_REP_EMAIL,&#10;      HOTLINE_REP_PHONE,&#10;      INTAKES_NAME,&#10;      INTAKES_EMAIL,&#10;      INTAKES_PHONE,&#10;      PSA_NAME,&#10;      PSA_EMAIL,&#10;      PSA_PHONE,&#10;      NOT_ENOUGHINFO_TO_IDENTIFY,&#10;      FFS_NAME,&#10;      FFS_EMAIL,&#10;      FFS_DATE,&#10;      FFS_SUP_NAME,&#10;      FFS_SUP_EMAIL,&#10;      FFS_SUP_DATE,&#10;      PO_NAME,&#10;      PO_EMAIL,&#10;      PO_DATE,&#10;      DATE_CREATED,&#10;      USER_CREATED,&#10;      DATE_UPDATED,&#10;      USER_UPDATED,&#10;      UAC_A_NUMBER,&#10;      UAC_FIRSTNAME,&#10;      UAC_LASTNAME,&#10;      UAC_GENDER,&#10;      UAC_AGE,&#10;      UAC_COB,&#10;      UAC_OTHERDESC,&#10;      UAC_OTHERUCINVOLVED,&#10;      UAC_OTHERUCINVOLVEDDESC,&#10;      COMMENTS,&#10;      SENTTOORR,&#10;      SENTTOORRDATE&#10;      &#10;    )&#10;    VALUES&#10;    (&#10;      SEQ_HOTLINE_ALERT.NEXTVAL,&#10;      v_DATE_OF_CALL,&#10;      v_PHONE_REPORTER,&#10;      v_LANGUAGE_REPORTER,&#10;      v_TRANSCR_TRANSL_NEEDED,&#10;      v_FIRST_NAME,&#10;      v_LAST_NAME,&#10;      v_TYPE_OF_REPORTER,&#10;      v_CONTACT_EMAIL,&#10;      v_CONTACT_PHONE,&#10;      v_INCIDENT_DESC,&#10;      v_INCIDENT_DATE,&#10;      v_STAFF_PRESENT,&#10;      v_STAFF_PRESENT_INFO,&#10;      v_INCIDENT_REPORTED,&#10;      v_INCIDENT_REPORTED_INFO,&#10;      v_INCIDENT_REPORTED_DATE,&#10;      v_PROG_ID,&#10;      v_PROG_CITY,&#10;      v_PROG_STATE,&#10;      v_PROG_DESC,&#10;      v_INCIDENT_TYPE,&#10;      v_INCIDENT_ALLEGATION_TYPE,&#10;      v_INCIDENT_SYNOPSIS,&#10;      v_REPORTED_TO_CPS,&#10;      v_REPORTED_TO_LAW_ENFORCEMENT,&#10;      v_HOTLINE_REP_NAME,&#10;      v_HOTLINE_REP_EMAIL,&#10;      v_HOTLINE_REP_PHONE,&#10;      v_INTAKES_NAME,&#10;      v_INTAKES_EMAIL,&#10;      v_INTAKES_PHONE,&#10;      v_PSA_NAME,&#10;      v_PSA_EMAIL,&#10;      v_PSA_PHONE,&#10;      v_NOT_ENOUGHINFO_TO_IDENTIFY,&#10;      v_FFS_NAME,&#10;      v_FFS_EMAIL,&#10;      v_FFS_DATE,&#10;      v_FFS_SUP_NAME,&#10;      v_FFS_SUP_EMAIL,&#10;      v_FFS_SUP_DATE,&#10;      v_PO_NAME,&#10;      v_PO_EMAIL,&#10;      v_PO_DATE,&#10;      sysdate,&#10;      v_UPUSER,&#10;      sysdate,&#10;      v_UPUSER,&#10;      v_UAC_A_NUMBER,&#10;      v_UAC_FIRSTNAME,&#10;      v_UAC_LASTNAME,&#10;      v_UAC_GENDER,&#10;      v_UAC_AGE,&#10;      v_UAC_COB,&#10;      v_UAC_OTHERDESC,&#10;      v_UAC_OTHERUCINVOLVED,&#10;      v_UAC_OTHERUCINVOLVEDDESC,&#10;      v_COMMENTS,&#10;      v_SENTTOORR,&#10;      v_SENTTOORRDATE&#10;    )&#10;     RETURNING  HOTLINE_ALERT_ID INTO V_HOTLINE_ALERT_NEW;&#10;     DECLARE x NUMBER :&#61; 0;reportedToLaw NUMBER :&#61; 0;&#10;     BEGIN&#10;     LOOP&#10;     &#10;     IF x &gt; 2 THEN &#10;     reportedToLaw :&#61; 1;&#10;     else &#10;      reportedToLaw :&#61; 0; &#10;     END IF;&#10;    INSERT INTO UAC_HOTLINE_REPORTING&#10;    (&#10;      HOTLINE_ALERT_ID,&#10;      REPORTED_TO_LAW,&#10;      DATE_CREATED,&#10;      USER_CREATED,&#10;      DATE_UPDATED,&#10;      USER_UPDATED&#10;    )&#10;     VALUES&#10;    (&#10;      V_HOTLINE_ALERT_NEW,&#10;      reportedToLaw,&#10;       sysdate,&#10;      v_UPUSER,&#10;      sysdate,&#10;      v_UPUSER&#10;    );&#10;    x :&#61; x + 1;&#10;    IF x &gt; 5 THEN&#10;      EXIT;&#10;    END IF;&#10;    END LOOP;&#10;    END;&#10;   &#10;   elsif UPPER(v_CMD_TYPE) &#61; &#39;UPDATE&#39; Then&#10;    update UAC_HOTLINE_ALERT&#10;     set &#10;     DATE_OF_CALL &#61; v_DATE_OF_CALL,&#10;      PHONE_REPORTER &#61; v_PHONE_REPORTER,&#10;      LANGUAGE_REPORTER &#61; v_LANGUAGE_REPORTER,&#10;      TRANSCR_TRANSL_NEEDED &#61; v_TRANSCR_TRANSL_NEEDED,&#10;      FIRST_NAME &#61; v_FIRST_NAME,&#10;      LAST_NAME &#61; v_LAST_NAME,&#10;      TYPE_OF_REPORTER &#61; v_TYPE_OF_REPORTER,&#10;      CONTACT_EMAIL &#61; v_CONTACT_EMAIL,&#10;      CONTACT_PHONE &#61; v_CONTACT_PHONE,&#10;      INCIDENT_DESC &#61; v_INCIDENT_DESC,&#10;      INCIDENT_DATE &#61; v_INCIDENT_DATE,&#10;      STAFF_PRESENT &#61; v_STAFF_PRESENT,&#10;      STAFF_PRESENT_INFO &#61; v_STAFF_PRESENT_INFO,&#10;      INCIDENT_REPORTED &#61; v_INCIDENT_REPORTED,&#10;      INCIDENT_REPORTED_INFO &#61; v_INCIDENT_REPORTED_INFO,&#10;      INCIDENT_REPORTED_DATE &#61; v_INCIDENT_REPORTED_DATE,&#10;      PROG_ID &#61; v_PROG_ID,&#10;      PROG_CITY &#61; v_PROG_CITY,&#10;      PROG_STATE &#61; v_PROG_STATE,&#10;      PROG_DESC &#61; v_PROG_DESC,&#10;      INCIDENT_TYPE &#61; v_INCIDENT_TYPE,&#10;      INCIDENT_ALLEGATION_TYPE &#61; v_INCIDENT_ALLEGATION_TYPE,&#10;      INCIDENT_SYNOPSIS &#61; v_INCIDENT_SYNOPSIS,&#10;      REPORTED_TO_CPS &#61; v_REPORTED_TO_CPS,&#10;      REPORTED_TO_LAW_ENFORCEMENT &#61; v_REPORTED_TO_LAW_ENFORCEMENT,&#10;      HOTLINE_REP_NAME &#61; v_HOTLINE_REP_NAME,&#10;      HOTLINE_REP_EMAIL &#61; v_HOTLINE_REP_EMAIL,&#10;      HOTLINE_REP_PHONE &#61; v_HOTLINE_REP_PHONE,&#10;      INTAKES_NAME &#61; v_INTAKES_NAME,&#10;      INTAKES_EMAIL &#61; v_INTAKES_EMAIL,&#10;      INTAKES_PHONE &#61; v_INTAKES_PHONE,&#10;      PSA_NAME &#61; v_PSA_NAME,&#10;      PSA_EMAIL &#61; v_PSA_EMAIL,&#10;      PSA_PHONE &#61; v_PSA_PHONE,&#10;      NOT_ENOUGHINFO_TO_IDENTIFY &#61; v_NOT_ENOUGHINFO_TO_IDENTIFY,&#10;      FFS_NAME &#61; v_FFS_NAME,&#10;      FFS_EMAIL &#61; v_FFS_EMAIL,&#10;      FFS_DATE &#61; v_FFS_DATE,&#10;      FFS_SUP_NAME &#61; v_FFS_SUP_NAME,&#10;      FFS_SUP_EMAIL &#61; v_FFS_SUP_EMAIL,&#10;      FFS_SUP_DATE &#61; v_FFS_SUP_DATE,&#10;      PO_NAME &#61; v_PO_NAME,&#10;      PO_EMAIL &#61; v_PO_EMAIL,&#10;      PO_DATE &#61; v_PO_DATE,&#10;      DATE_UPDATED &#61; sysdate, &#10;      USER_UPDATED &#61; v_UPUSER,&#10;      UAC_A_NUMBER &#61; v_UAC_A_NUMBER,&#10;      UAC_FIRSTNAME &#61; v_UAC_FIRSTNAME,&#10;      UAC_LASTNAME &#61; v_UAC_LASTNAME,&#10;      UAC_GENDER &#61; v_UAC_GENDER,&#10;      UAC_AGE &#61; v_UAC_AGE,&#10;      UAC_COB &#61; v_UAC_COB,&#10;      UAC_OTHERDESC &#61; v_UAC_OTHERDESC,&#10;      UAC_OTHERUCINVOLVED &#61; v_UAC_OTHERUCINVOLVED,&#10;      UAC_OTHERUCINVOLVEDDESC &#61; v_UAC_OTHERUCINVOLVEDDESC,&#10;      COMMENTS &#61; v_COMMENTS,&#10;      SENTTOORR &#61; v_SENTTOORR,&#10;      SENTTOORRDATE &#61; v_SENTTOORRDATE&#10;      where hotline_alert_id &#61; V_HOTLINE_ALERT_ID;&#10;     &#10;   &#10;     &#10;   end if;&#10;END SP_UPD_HOTLINEALERT;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

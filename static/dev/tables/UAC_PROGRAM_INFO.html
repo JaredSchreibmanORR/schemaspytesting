@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UAC_PROGRAM_INFO - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UAC_PROGRAM_INFO</h1><p><span id="recordNumber">443102</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_PROGRAM_ID">UAC_PROGRAM_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="PRS_CNRE_DOCUMENT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via PRS_CNRE_DOCUMENT__UAC_ID_FK"><a href='PRS_CNRE_DOCUMENT.html'>PRS_CNRE_DOCUMENT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">PRS_CNRE_DOCUMENT__UAC_ID_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="REASON_FOR_TYPEOFFACILITY.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via REASONFACILITY_UACPROG_INFO_FK"><a href='REASON_FOR_TYPEOFFACILITY.html'>REASON_FOR_TYPEOFFACILITY</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">REASONFACILITY_UACPROG_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_FULL.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_FULL.html'>TABLEAU_SIRS_FULL</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_FULL_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_FULL_FY21.html'>TABLEAU_SIRS_FULL_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_FY21.html'>TABLEAU_SIRS_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_LEAN.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_LEAN.html'>TABLEAU_SIRS_LEAN</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_LEAN_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_LEAN_FY21.html'>TABLEAU_SIRS_LEAN_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_WITH_ADDENDA_FULL.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_WITH_ADDENDA_FULL.html'>TABLEAU_SIRS_WITH_ADDENDA_FULL</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html'>TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_UC_ASSESSMENTS_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_UC_ASSESSMENTS_FY21.html'>TABLEAU_UC_ASSESSMENTS_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TABLEAU_UC_PROGRAMS_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TABLEAU_UC_PROGRAMS_FY21.html'>TABLEAU_UC_PROGRAMS_FY21</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP1_1.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP1_1.html'>TEMP1_1</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP1_2.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP1_2.html'>TEMP1_2</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP3.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP3.html'>TEMP3</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP4.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP4.html'>TEMP4</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP6.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP6.html'>TEMP6</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP7.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP7.html'>TEMP7</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP8.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP8.html'>TEMP8</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP9.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP9.html'>TEMP9</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMP_DD_IMPORT2.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMP_DD_IMPORT2.html'>TEMP_DD_IMPORT2</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TEMPORARY1.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TEMPORARY1.html'>TEMPORARY1</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="TT_UAC_CASESTATUS_INFO.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='TT_UAC_CASESTATUS_INFO.html'>TT_UAC_CASESTATUS_INFO</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_ASSESSMENT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_ASSESMENT_UAC_INFO_FK"><a href='UAC_ASSESSMENT.html'>UAC_ASSESSMENT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_ASSESMENT_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_CASE_REVIEW.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_CASE_REVIEW.html'>UAC_CASE_REVIEW</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_DISCHARGE_NOTIFICATION.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_DISCHARGE_NOTIF_INFO_FK"><a href='UAC_DISCHARGE_NOTIFICATION.html'>UAC_DISCHARGE_NOTIFICATION</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_DISCHARGE_NOTIF_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_DOCTOR_VISIT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_DOCTOR_VISIT_UAC_INFO_FK"><a href='UAC_DOCTOR_VISIT.html'>UAC_DOCTOR_VISIT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_DOCTOR_VISIT_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_DOCUMENTS.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_DOCUMENTS_FK1"><a href='UAC_DOCUMENTS.html'>UAC_DOCUMENTS</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_DOCUMENTS_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_EDUCATION_PLACEMENT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_EDUCATION_PLCMENT_INFO_FK"><a href='UAC_EDUCATION_PLACEMENT.html'>UAC_EDUCATION_PLACEMENT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_EDUCATION_PLCMENT_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_EFFORT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_EFFORT_LIST_PROGRAMS_FK"><a href='UAC_EFFORT.html'>UAC_EFFORT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_EFFORT_LIST_PROGRAMS_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_FOSTER_CARE_TRAVEL_REQUEST.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_FOSTER_CARE_TRAVEL_REQUEST.html'>UAC_FOSTER_CARE_TRAVEL_REQUEST</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_HOMESTUDY_CASE_REFERRAL.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_HOMESTUDY_CASE_REFERR_FK1"><a href='UAC_HOMESTUDY_CASE_REFERRAL.html'>UAC_HOMESTUDY_CASE_REFERRAL</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_HOMESTUDY_CASE_REFERR_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_IMMUNIZATION.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_IMMUNIZATION_UAC_INFO_FK"><a href='UAC_IMMUNIZATION.html'>UAC_IMMUNIZATION</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_IMMUNIZATION_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INDIVIDUAL_SERVICE_PLAN.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_ISP_FK"><a href='UAC_INDIVIDUAL_SERVICE_PLAN.html'>UAC_INDIVIDUAL_SERVICE_PLAN</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_ISP_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_INITIAL_ASSESSMENT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_INITIAL_ASSESSMENT_UA_FK1"><a href='UAC_INITIAL_ASSESSMENT.html'>UAC_INITIAL_ASSESSMENT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_INITIAL_ASSESSMENT_UA_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_MEDICAL_SCREENING.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_MEDICAL_SCREENING_FK1"><a href='UAC_MEDICAL_SCREENING.html'>UAC_MEDICAL_SCREENING</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_MEDICAL_SCREENING_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_POST_RELEASE_SERVICE.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_POST_RELEASE_SERVICE_FK1"><a href='UAC_POST_RELEASE_SERVICE.html'>UAC_POST_RELEASE_SERVICE</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_POST_RELEASE_SERVICE_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_PROGRAM_INFO_BACKUP.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_PROGRAM_INFO_BACKUP.html'>UAC_PROGRAM_INFO_BACKUP</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_RELEASE_REQUEST.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via RELEASE_REQUEST_UAC_INFO_FK"><a href='UAC_RELEASE_REQUEST.html'>UAC_RELEASE_REQUEST</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">RELEASE_REQUEST_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_RISK_ASSESSMENT.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_RISK_ASSESSMENT_UA_FK1"><a href='UAC_RISK_ASSESSMENT.html'>UAC_RISK_ASSESSMENT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_RISK_ASSESSMENT_UA_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SECURE_REVIEW.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_SECURE_REVIEW_FK1"><a href='UAC_SECURE_REVIEW.html'>UAC_SECURE_REVIEW</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_SECURE_REVIEW_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SIR.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_SRI_UAC_INFO_FK"><a href='UAC_SIR.html'>UAC_SIR</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_SRI_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SIR_FOLLOWUP_RPT.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_SIR_FOLLOWUP_RPT.html'>UAC_SIR_FOLLOWUP_RPT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SIR_NEW.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_SIR_NEW.html'>UAC_SIR_NEW</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_TRANSFER_REQUEST.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_TRANSFER_REQUEST_INFO_FK"><a href='UAC_TRANSFER_REQUEST.html'>UAC_TRANSFER_REQUEST</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_TRANSFER_REQUEST_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_UNLOCKED_HIST.UAC_PROGRAM_ID references UAC_PROGRAM_INFO.UAC_PROGRAM_ID via UAC_UNLOCKED_HIST_FK1"><a href='UAC_UNLOCKED_HIST.html'>UAC_UNLOCKED_HIST</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_UNLOCKED_HIST_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_15DAY_ENROUTE.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_15DAY_ENROUTE.html'>V_15DAY_ENROUTE</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SI.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SI.html'>V_ADRIANA_SPONSOR_SEARCH_SI</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ADRIANA_SPONSOR_SEARCH_SL.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_ADRIANA_SPONSOR_SEARCH_SL.html'>V_ADRIANA_SPONSOR_SEARCH_SL</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ASSESSMENT_RPT.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_ASSESSMENT_RPT.html'>V_ASSESSMENT_RPT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_ASSESSMENT_RPT_NF_PT1.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_ASSESSMENT_RPT_NF_PT1.html'>V_ASSESSMENT_RPT_NF_PT1</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_CR_MEDICAL_HISTORY.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_CR_MEDICAL_HISTORY.html'>V_CR_MEDICAL_HISTORY</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_CR_MEDICATION_HISTORY.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_CR_MEDICATION_HISTORY.html'>V_CR_MEDICATION_HISTORY</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SIR_ALEXIS.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_SIR_ALEXIS.html'>V_SIR_ALEXIS</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SIR_RPT.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_SIR_RPT.html'>V_SIR_RPT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SIR_RPT_ALL_FIELDS.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_SIR_RPT_ALL_FIELDS.html'>V_SIR_RPT_ALL_FIELDS</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SIR_RPT_SYNOP.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_SIR_RPT_SYNOP.html'>V_SIR_RPT_SYNOP</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_SIR_SOHN.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_SIR_SOHN.html'>V_SIR_SOHN</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ENROLLMENT_RPT.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_ENROLLMENT_RPT.html'>V_UAC_ENROLLMENT_RPT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_ENROLLMENT_RPT_DUMMY.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_ENROLLMENT_RPT_DUMMY.html'>V_UAC_ENROLLMENT_RPT_DUMMY</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_PROG_INFO.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_PROG_INFO.html'>V_UAC_PROG_INFO</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_PROGRAM_INFO_MIR.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_PROGRAM_INFO_MIR.html'>V_UAC_PROGRAM_INFO_MIR</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_HOUSEHOLD.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_HOUSEHOLD.html'>V_UAC_SPONSOR_HOUSEHOLD</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="V_UAC_SPONSOR_RPT.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='V_UAC_SPONSOR_RPT.html'>V_UAC_SPONSOR_RPT</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_ID">UAC_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="UAC_PROGRAM_INFO.UAC_ID references UAC_INFO.UAC_ID via UAC_PROG_INFO_UAC_INFO_FK"><a href='UAC_INFO.html'>UAC_INFO</a><span class='relatedKey'>.UAC_ID</span></td>
+                                                <td class="constraint detail">UAC_PROG_INFO_UAC_INFO_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="PROGRAM_ID">PROGRAM_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>3</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="UAC_PROGRAM_INFO.PROGRAM_ID references LIST_PROGRAMS.PROGRAM_ID via UAC_PROG_INFO_LIST_PROG_FK"><a href='LIST_PROGRAMS.html'>LIST_PROGRAMS</a><span class='relatedKey'>.PROGRAM_ID</span></td>
+                                                <td class="constraint detail">UAC_PROG_INFO_LIST_PROG_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_REFERRED">DATE_REFERRED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="BIO_VERIFIED">BIO_VERIFIED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="DATE_ADMITTED">DATE_ADMITTED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="CURRENT_STATUS">CURRENT_STATUS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="DATE_DISCHARGED">DATE_DISCHARGED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_CREATED">DATE_CREATED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="USER_CREATED">USER_CREATED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPUSER">UPUSER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPTIME">UPTIME</span></td>
+                                    <td>TIMESTAMP(6)</td>
+                                    <td>11,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> UAC_PROGRAM_INFO_PK</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UAC_PROGRAM_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX1</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>UAC_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX2</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>PROGRAM_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX3</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>DATE_ADMITTED</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX4</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>DATE_DISCHARGED</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX5</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>CURRENT_STATUS</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>UAC_PROGRAM_INFO_INDEX6</td>
+                                    <td>Performance</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1309,247,1596,481">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="891,199,1237,463">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="423,2283,819,2704">
+<area shape="rect" id="node7" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="75,3144,309,3379">
+<area shape="rect" id="node17" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,2315,379,2784">
+<area shape="rect" id="node4" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="884,516,1244,639">
+<area shape="rect" id="node5" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="863,656,1265,920">
+<area shape="rect" id="node6" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="879,4113,1249,4377">
+<area shape="rect" id="node8" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="928,937,1200,1172">
+<area shape="rect" id="node9" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="943,1189,1185,1453">
+<area shape="rect" id="node10" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="889,1471,1239,1676">
+<area shape="rect" id="node11" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="925,1693,1203,1899">
+<area shape="rect" id="node12" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="865,1916,1263,2239">
+<area shape="rect" id="node13" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="931,2256,1197,2403">
+<area shape="rect" id="node14" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="877,2420,1251,2567">
+<area shape="rect" id="node15" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="871,2584,1257,2760">
+<area shape="rect" id="node16" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="881,2777,1247,2983">
+<area shape="rect" id="node18" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="870,3000,1258,3264">
+<area shape="rect" id="node19" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="877,3281,1251,3487">
+<area shape="rect" id="node20" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="925,3504,1203,3709">
+<area shape="rect" id="node21" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="918,3727,1210,3873">
+<area shape="rect" id="node22" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="867,3891,1261,4096">
+<area shape="rect" id="node23" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="923,5,1205,181">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/UAC_PROGRAM_INFO.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="ADM_USER_PROGRAM.html" target="_top" title="ADM_USER_PROGRAM" alt="" coords="799,892,1079,980">
+<area shape="rect" id="node2" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="394,963,627,1051">
+<area shape="rect" id="node3" href="LIST_PROGRAM_TYPE.html" target="_top" title="LIST_PROGRAM_TYPE" alt="" coords="5,960,280,1048">
+<area shape="rect" id="node4" href="ORR_DECISION_HISTORY.html" target="_top" title="ORR_DECISION_HISTORY" alt="" coords="1665,1411,1967,1499">
+<area shape="rect" id="node5" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="1189,1513,1577,1777">
+<area shape="rect" id="node9" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="741,1835,1137,2256">
+<area shape="rect" id="node6" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1673,3804,1959,3892">
+<area shape="rect" id="node7" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="1209,3752,1556,3840">
+<area shape="rect" id="node8" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="801,4187,1077,4275">
+<area shape="rect" id="node19" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="324,2849,697,3319">
+<area shape="rect" id="node10" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="1659,4173,1973,4261">
+<area shape="rect" id="node11" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="1203,2915,1563,3037">
+<area shape="rect" id="node12" href="LIST_REASON_TYPEOFFACILITY.html" target="_top" title="LIST_REASON_TYPEOFFACILITY" alt="" coords="759,2379,1120,2467">
+<area shape="rect" id="node13" href="SIR_ABUSE_ALLEGATIONS.html" target="_top" title="SIR_ABUSE_ALLEGATIONS" alt="" coords="1659,2495,1973,2583">
+<area shape="rect" id="node14" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="1237,2433,1529,2580">
+<area shape="rect" id="node15" href="SIR_MEDICAL_MENTAL_ISSUES.html" target="_top" title="SIR_MEDICAL_MENTAL_ISSUES" alt="" coords="1638,2073,1994,2161">
+<area shape="rect" id="node16" href="SIR_OTHER_INCIDENT_TYPES.html" target="_top" title="SIR_OTHER_INCIDENT_TYPES" alt="" coords="1646,2179,1986,2267">
+<area shape="rect" id="node17" href="SIR_UAC_BEHAVIOR.html" target="_top" title="SIR_UAC_BEHAVIOR" alt="" coords="1686,2284,1946,2372">
+<area shape="rect" id="node18" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="752,2273,1127,2361">
+<area shape="rect" id="node20" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="1181,2597,1584,2861">
+<area shape="rect" id="node21" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="1683,4279,1949,4367">
+<area shape="rect" id="node22" href="UAC_CBP_2500_FORMS.html" target="_top" title="UAC_CBP_2500_FORMS" alt="" coords="795,2484,1084,2572">
+<area shape="rect" id="node23" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="773,2589,1105,2677">
+<area shape="rect" id="node24" href="UAC_CRIMINAL_HISTORY.html" target="_top" title="UAC_CRIMINAL_HISTORY" alt="" coords="1664,2811,1968,2899">
+<area shape="rect" id="node25" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="1198,160,1567,248">
+<area shape="rect" id="node26" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="1247,3055,1519,3289">
+<area shape="rect" id="node27" href="LIST_DOC_DIAGNOSIS.html" target="_top" title="LIST_DOC_DIAGNOSIS" alt="" coords="801,3537,1078,3625">
+<area shape="rect" id="node28" href="LIST_DOC_VISIT_REASON.html" target="_top" title="LIST_DOC_VISIT_REASON" alt="" coords="787,3432,1092,3520">
+<area shape="rect" id="node29" href="LIST_DOC_VISIT_TYPE.html" target="_top" title="LIST_DOC_VISIT_TYPE" alt="" coords="801,3116,1077,3204">
+<area shape="rect" id="node30" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="1261,459,1504,723">
+<area shape="rect" id="node31" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="1208,740,1557,945">
+<area shape="rect" id="node32" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="1244,3307,1521,3512">
+<area shape="rect" id="node33" href="LIST_EFFORT_TYPE.html" target="_top" title="LIST_EFFORT_TYPE" alt="" coords="813,3643,1066,3731">
+<area shape="rect" id="node34" href="UAC_EMOTIONAL_CONCERNS.html" target="_top" title="UAC_EMOTIONAL_CONCERNS" alt="" coords="1645,321,1987,409">
+<area shape="rect" id="node35" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="1190,265,1575,441">
+<area shape="rect" id="node36" href="UAC_FAMILY_INFO.html" target="_top" title="UAC_FAMILY_INFO" alt="" coords="1693,427,1939,515">
+<area shape="rect" id="node37" href="UAC_FAMILY_RELATIONS.html" target="_top" title="UAC_FAMILY_RELATIONS" alt="" coords="1664,2916,1968,3004">
+<area shape="rect" id="node38" href="UAC_FAST.html" target="_top" title="UAC_FAST" alt="" coords="852,2695,1027,2783">
+<area shape="rect" id="node39" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="1184,3857,1581,4180">
+<area shape="rect" id="node40" href="LIST_REFERRAL_SUB_STATUS.html" target="_top" title="LIST_REFERRAL_SUB_STATUS" alt="" coords="767,4065,1112,4153">
+<area shape="rect" id="node41" href="UAC_IIA_SUMMARY.html" target="_top" title="UAC_IIA_SUMMARY" alt="" coords="1689,532,1943,620">
+<area shape="rect" id="node42" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="1249,1127,1516,1273">
+<area shape="rect" id="node43" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="1196,963,1569,1109">
+<area shape="rect" id="node44" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="793,2800,1085,2888">
+<area shape="rect" id="node45" href="UAC_INI_DOCUMENTS.html" target="_top" title="UAC_INI_DOCUMENTS" alt="" coords="1678,1293,1954,1381">
+<area shape="rect" id="node46" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="1196,1291,1569,1496">
+<area shape="rect" id="node47" href="UAC_INIT_LANGUAGES.html" target="_top" title="UAC_INIT_LANGUAGES" alt="" coords="1675,5,1957,93">
+<area shape="rect" id="node48" href="UAC_ISP_CERTIFICATE.html" target="_top" title="UAC_ISP_CERTIFICATE" alt="" coords="1676,1019,1956,1107">
+<area shape="rect" id="node49" href="UAC_ISP_SUB.html" target="_top" title="UAC_ISP_SUB" alt="" coords="1715,913,1917,1001">
+<area shape="rect" id="node50" href="UAC_MEDICAL_CONCERN.html" target="_top" title="UAC_MEDICAL_CONCERN" alt="" coords="1664,111,1968,199">
+<area shape="rect" id="node51" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="1199,3529,1566,3735">
+<area shape="rect" id="node52" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="798,3748,1081,3836">
+<area shape="rect" id="node53" href="UAC_MEDICAL_SCREENING_NOTES.html" target="_top" title="UAC_MEDICAL_SCREENING_NOTES" alt="" coords="745,2905,1133,2993">
+<area shape="rect" id="node54" href="UAC_MENTAL_ISSUES.html" target="_top" title="UAC_MENTAL_ISSUES" alt="" coords="1679,216,1953,304">
+<area shape="rect" id="node55" href="UAC_PRS_SERVICE_LVL_HISTORY.html" target="_top" title="UAC_PRS_SERVICE_LVL_HISTORY" alt="" coords="1628,3699,2004,3787">
+<area shape="rect" id="node56" href="UAC_REFERRAL_MEDICATION_INFO.html" target="_top" title="UAC_REFERRAL_MEDICATION_INFO" alt="" coords="742,3011,1137,3099">
+<area shape="rect" id="node57" href="UAC_RR_CCR_HISTORY.html" target="_top" title="UAC_RR_CCR_HISTORY" alt="" coords="1674,1516,1958,1604">
+<area shape="rect" id="node58" href="UAC_RR_CMR_HISTORY.html" target="_top" title="UAC_RR_CMR_HISTORY" alt="" coords="1672,1621,1960,1709">
+<area shape="rect" id="node59" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="1653,2600,1979,2688">
+<area shape="rect" id="node60" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="1244,1795,1521,2000">
+<area shape="rect" id="node61" href="UAC_SIR_MEDIA_CONTACTS.html" target="_top" title="UAC_SIR_MEDIA_CONTACTS" alt="" coords="1651,2389,1981,2477">
+<area shape="rect" id="node62" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="1184,4321,1581,4409">
+<area shape="rect" id="node63" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="808,3221,1071,3309">
+<area shape="rect" id="node64" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="743,3327,1136,3415">
+<area shape="rect" id="node65" href="UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1633,2705,1999,2793">
+<area shape="rect" id="node66" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="1186,2017,1579,2223">
+<area shape="rect" id="node67" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="1241,2240,1524,2416">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/UAC_PROGRAM_INFO.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1445,3206,1732,3441">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="924,3222,1271,3486">
+<area shape="rect" id="node3" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="423,6087,819,6509">
+<area shape="rect" id="node15" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="75,3082,309,3317">
+<area shape="rect" id="node16" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,1063,379,1533">
+<area shape="rect" id="node4" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="917,7551,1277,7674">
+<area shape="rect" id="node5" href="TABLEAU_SIRS_FULL.html" target="_top" title="TABLEAU_SIRS_FULL" alt="" coords="894,7691,1301,7785">
+<area shape="rect" id="node6" href="TABLEAU_SIRS_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_FULL_FY21" alt="" coords="894,7802,1301,7895">
+<area shape="rect" id="node7" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="897,7913,1298,8006">
+<area shape="rect" id="node8" href="TABLEAU_SIRS_LEAN.html" target="_top" title="TABLEAU_SIRS_LEAN" alt="" coords="907,8223,1288,8317">
+<area shape="rect" id="node9" href="TABLEAU_SIRS_LEAN_FY21.html" target="_top" title="TABLEAU_SIRS_LEAN_FY21" alt="" coords="907,8334,1288,8427">
+<area shape="rect" id="node10" href="TABLEAU_SIRS_WITH_ADDENDA_FULL.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL" alt="" coords="889,8445,1306,8538">
+<area shape="rect" id="node11" href="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21" alt="" coords="863,8555,1332,8649">
+<area shape="rect" id="node12" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1395,6099,1783,6251">
+<area shape="rect" id="node13" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="896,6061,1299,6325">
+<area shape="rect" id="node14" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="887,382,1308,563">
+<area shape="rect" id="node17" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="957,581,1237,762">
+<area shape="rect" id="node18" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="958,779,1237,931">
+<area shape="rect" id="node19" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="920,949,1275,1159">
+<area shape="rect" id="node20" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1437,8715,1740,8985">
+<area shape="rect" id="node21" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="951,8023,1243,8170">
+<area shape="rect" id="node22" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1455,9509,1723,9661">
+<area shape="rect" id="node23" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="920,1574,1275,1755">
+<area shape="rect" id="node24" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="920,1773,1275,1954">
+<area shape="rect" id="node25" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="920,1971,1275,2153">
+<area shape="rect" id="node26" href="TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="969,8666,1226,8783">
+<area shape="rect" id="node27" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="958,2170,1237,2322">
+<area shape="rect" id="node28" href="TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="921,8801,1274,8918">
+<area shape="rect" id="node29" href="UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="897,8935,1298,9170">
+<area shape="rect" id="node30" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="913,9547,1282,9811">
+<area shape="rect" id="node31" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="961,9187,1233,9422">
+<area shape="rect" id="node32" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="976,3611,1219,3875">
+<area shape="rect" id="node33" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="923,3893,1272,4098">
+<area shape="rect" id="node34" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="959,4115,1236,4321">
+<area shape="rect" id="node35" href="UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="886,4338,1309,4455">
+<area shape="rect" id="node36" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="899,4473,1296,4795">
+<area shape="rect" id="node37" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="964,4813,1231,4959">
+<area shape="rect" id="node38" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="911,4977,1284,5123">
+<area shape="rect" id="node39" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="905,5141,1290,5317">
+<area shape="rect" id="node40" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="914,5334,1281,5539">
+<area shape="rect" id="node41" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="921,9829,1274,9975">
+<area shape="rect" id="node42" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="903,5557,1291,5821">
+<area shape="rect" id="node43" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="911,5838,1284,6043">
+<area shape="rect" id="node44" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="959,6522,1236,6727">
+<area shape="rect" id="node45" href="UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="893,6745,1301,6921">
+<area shape="rect" id="node46" href="UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="1376,6961,1801,7225">
+<area shape="rect" id="node47" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="901,9993,1294,10198">
+<area shape="rect" id="node48" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="956,6938,1239,7114">
+<area shape="rect" id="node49" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="971,242,1224,365">
+<area shape="rect" id="node50" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="905,2538,1289,2749">
+<area shape="rect" id="node51" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="903,2766,1292,2977">
+<area shape="rect" id="node52" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1397,6595,1780,6747">
+<area shape="rect" id="node53" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1397,4814,1780,4995">
+<area shape="rect" id="node54" href="V_CR_MEDICAL_HISTORY.html" target="_top" title="V_CR_MEDICAL_HISTORY" alt="" coords="947,7131,1248,7283">
+<area shape="rect" id="node55" href="V_CR_MEDICATION_HISTORY.html" target="_top" title="V_CR_MEDICATION_HISTORY" alt="" coords="930,7301,1265,7394">
+<area shape="rect" id="node56" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1437,3470,1740,3710">
+<area shape="rect" id="node57" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1437,6309,1740,6578">
+<area shape="rect" id="node58" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1437,8071,1740,8341">
+<area shape="rect" id="node59" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1437,7634,1740,7903">
+<area shape="rect" id="node60" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1395,9339,1783,9491">
+<area shape="rect" id="node61" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="920,1177,1275,1358">
+<area shape="rect" id="node62" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="903,1375,1291,1557">
+<area shape="rect" id="node63" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="973,10215,1222,10338">
+<area shape="rect" id="node64" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="931,2339,1263,2521">
+<area shape="rect" id="node65" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="920,7411,1275,7534">
+<area shape="rect" id="node66" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="920,2994,1275,3205">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/UAC_PROGRAM_INFO.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="1329,8538,1605,8626">
+<area shape="rect" id="node2" href="LIST_AIHD_TECHS.html" target="_top" title="LIST_AIHD_TECHS" alt="" coords="858,9694,1099,9782">
+<area shape="rect" id="node3" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="43,6786,242,6874">
+<area shape="rect" id="node4" href="ADM_USER_PROGRAM.html" target="_top" title="ADM_USER_PROGRAM" alt="" coords="839,1869,1119,1957">
+<area shape="rect" id="node5" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="408,4121,641,4209">
+<area shape="rect" id="node8" href="LIST_PROGRAM_TYPE.html" target="_top" title="LIST_PROGRAM_TYPE" alt="" coords="5,4118,280,4206">
+<area shape="rect" id="node6" href="FACILITY_INFO.html" target="_top" title="FACILITY_INFO" alt="" coords="871,219,1086,307">
+<area shape="rect" id="node7" href="FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="849,4443,1108,4531">
+<area shape="rect" id="node9" href="LIST_SIR_NOTIFIED_ENTITIES.html" target="_top" title="LIST_SIR_NOTIFIED_ENTITIES" alt="" coords="1773,4665,2115,4753">
+<area shape="rect" id="node10" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="1367,4773,1566,4861">
+<area shape="rect" id="node16" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="781,3681,1177,4102">
+<area shape="rect" id="node11" href="ORR_DECISION_HISTORY.html" target="_top" title="ORR_DECISION_HISTORY" alt="" coords="1793,9429,2095,9517">
+<area shape="rect" id="node12" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="1273,9426,1661,9690">
+<area shape="rect" id="node13" href="PROGRAM_LEVEL_EVENTS_INFO.html" target="_top" title="PROGRAM_LEVEL_EVENTS_INFO" alt="" coords="795,1974,1162,2062">
+<area shape="rect" id="node14" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="2231,7963,2518,8051">
+<area shape="rect" id="node15" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="1771,8071,2117,8159">
+<area shape="rect" id="node28" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="421,5942,629,6030">
+<area shape="rect" id="node17" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="2218,8559,2531,8647">
+<area shape="rect" id="node18" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="1287,6479,1647,6602">
+<area shape="rect" id="node19" href="LIST_REASON_TYPEOFFACILITY.html" target="_top" title="LIST_REASON_TYPEOFFACILITY" alt="" coords="798,6258,1159,6346">
+<area shape="rect" id="node20" href="SIR_ABUSE_ALLEGATIONS.html" target="_top" title="SIR_ABUSE_ALLEGATIONS" alt="" coords="1787,2182,2101,2270">
+<area shape="rect" id="node21" href="LIST_ABUSE_ALLEGATIONS.html" target="_top" title="LIST_ABUSE_ALLEGATIONS" alt="" coords="1305,1619,1628,1707">
+<area shape="rect" id="node22" href="SIR_MEDICAL_MENTAL_ISSUES.html" target="_top" title="SIR_MEDICAL_MENTAL_ISSUES" alt="" coords="1766,4770,2122,4858">
+<area shape="rect" id="node23" href="SIR_OTHER_INCIDENT_TYPES.html" target="_top" title="SIR_OTHER_INCIDENT_TYPES" alt="" coords="1774,2955,2114,3043">
+<area shape="rect" id="node24" href="LIST_OTHER_INCIDENT_TYPES.html" target="_top" title="LIST_OTHER_INCIDENT_TYPES" alt="" coords="1292,1830,1641,1918">
+<area shape="rect" id="node25" href="SIR_UAC_BEHAVIOR.html" target="_top" title="SIR_UAC_BEHAVIOR" alt="" coords="1814,2475,2074,2563">
+<area shape="rect" id="node26" href="LIST_UAC_BEHAVIOR.html" target="_top" title="LIST_UAC_BEHAVIOR" alt="" coords="1333,1725,1601,1813">
+<area shape="rect" id="node27" href="SPONSOR_BACKGROUND_CHECK.html" target="_top" title="SPONSOR_BACKGROUND_CHECK" alt="" coords="791,7031,1166,7119">
+<area shape="rect" id="node29" href="TABLEAU_SIRS_FULL.html" target="_top" title="TABLEAU_SIRS_FULL" alt="" coords="1263,2730,1670,2823">
+<area shape="rect" id="node30" href="TABLEAU_SIRS_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_FULL_FY21" alt="" coords="1263,2841,1670,2934">
+<area shape="rect" id="node31" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="1266,2951,1667,3045">
+<area shape="rect" id="node32" href="TABLEAU_SIRS_LEAN.html" target="_top" title="TABLEAU_SIRS_LEAN" alt="" coords="1276,3062,1657,3155">
+<area shape="rect" id="node33" href="TABLEAU_SIRS_LEAN_FY21.html" target="_top" title="TABLEAU_SIRS_LEAN_FY21" alt="" coords="1276,3667,1657,3761">
+<area shape="rect" id="node34" href="TABLEAU_SIRS_WITH_ADDENDA_FULL.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL" alt="" coords="1258,3778,1675,3871">
+<area shape="rect" id="node35" href="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21" alt="" coords="1232,3889,1701,3982">
+<area shape="rect" id="node36" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1750,6539,2138,6603">
+<area shape="rect" id="node37" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="1342,7361,1591,7449">
+<area shape="rect" id="node38" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="1287,645,1646,709">
+<area shape="rect" id="node39" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="1387,843,1547,907">
+<area shape="rect" id="node40" href="LIST_MEDICAL_CONCERN.html" target="_top" title="LIST_MEDICAL_CONCERN" alt="" coords="826,1682,1131,1770">
+<area shape="rect" id="node41" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="1387,5537,1547,5601">
+<area shape="rect" id="node42" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="908,4889,1049,4953">
+<area shape="rect" id="node43" href="TEMP2_1.html" target="_top" title="TEMP2_1" alt="" coords="899,5506,1059,5570">
+<area shape="rect" id="node44" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1396,726,1537,790">
+<area shape="rect" id="node45" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1873,1715,2015,1779">
+<area shape="rect" id="node46" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1873,5143,2015,5207">
+<area shape="rect" id="node47" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1396,5991,1537,6055">
+<area shape="rect" id="node48" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1396,6073,1537,6137">
+<area shape="rect" id="node49" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1396,6154,1537,6218">
+<area shape="rect" id="node50" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="876,5094,1081,5158">
+<area shape="rect" id="node51" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="876,5175,1081,5239">
+<area shape="rect" id="node52" href="TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="1338,3999,1595,4117">
+<area shape="rect" id="node53" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="1365,2115,1569,2179">
+<area shape="rect" id="node54" href="TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="1344,69,1589,157">
+<area shape="rect" id="node55" href="TT_INFLUX_RPT.html" target="_top" title="TT_INFLUX_RPT" alt="" coords="868,7290,1089,7378">
+<area shape="rect" id="node56" href="TT_SIR_MEDIA_CONTACTS.html" target="_top" title="TT_SIR_MEDIA_CONTACTS" alt="" coords="1787,4349,2101,4437">
+<area shape="rect" id="node57" href="TT_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_SUBSTANCE_USE_HISTORY" alt="" coords="1768,7683,2120,7771">
+<area shape="rect" id="node58" href="TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="1290,4134,1643,4251">
+<area shape="rect" id="node59" href="TT_UAC_CHILDREN.html" target="_top" title="TT_UAC_CHILDREN" alt="" coords="2250,7823,2499,7911">
+<area shape="rect" id="node60" href="UAC_CHILDREN.html" target="_top" title="UAC_CHILDREN" alt="" coords="1834,7789,2054,7877">
+<area shape="rect" id="node61" href="TT_UAC_CRIMINAL_HISTORY.html" target="_top" title="TT_UAC_CRIMINAL_HISTORY" alt="" coords="2208,6621,2541,6709">
+<area shape="rect" id="node62" href="UAC_CRIMINAL_HISTORY.html" target="_top" title="UAC_CRIMINAL_HISTORY" alt="" coords="1792,6657,2096,6745">
+<area shape="rect" id="node63" href="TT_UAC_FAMILY_RELATIONS.html" target="_top" title="TT_UAC_FAMILY_RELATIONS" alt="" coords="2207,6971,2542,7059">
+<area shape="rect" id="node64" href="UAC_FAMILY_RELATIONS.html" target="_top" title="UAC_FAMILY_RELATIONS" alt="" coords="1792,7009,2096,7097">
+<area shape="rect" id="node65" href="TT_UAC_INFO_NAMES_BACKUP.html" target="_top" title="TT_UAC_INFO_NAMES_BACKUP" alt="" coords="801,5401,1157,5489">
+<area shape="rect" id="node66" href="TT_UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1746,6762,2142,6850">
+<area shape="rect" id="node67" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="2242,8174,2507,8262">
+<area shape="rect" id="node68" href="UAC_CASE_MANAGERS.html" target="_top" title="UAC_CASE_MANAGERS" alt="" coords="836,5587,1121,5675">
+<area shape="rect" id="node69" href="UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="1266,4914,1667,5149">
+<area shape="rect" id="node70" href="UAC_CBP_2500_FORMS.html" target="_top" title="UAC_CBP_2500_FORMS" alt="" coords="834,5729,1123,5817">
+<area shape="rect" id="node71" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="1301,8997,1633,9085">
+<area shape="rect" id="node72" href="UAC_CR_MEDICAL_HISTORY.html" target="_top" title="UAC_CR_MEDICAL_HISTORY" alt="" coords="815,8951,1143,9039">
+<area shape="rect" id="node73" href="LIST_MEDICAL_MENTAL_CONDITION.html" target="_top" title="LIST_MEDICAL_MENTAL_CONDITION" alt="" coords="324,8970,725,9058">
+<area shape="rect" id="node74" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="1282,6899,1651,6987">
+<area shape="rect" id="node75" href="LIST_LEGAL_STATUS.html" target="_top" title="LIST_LEGAL_STATUS" alt="" coords="846,6890,1111,6978">
+<area shape="rect" id="node76" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="1331,9138,1603,9373">
+<area shape="rect" id="node77" href="LIST_DOC_DIAGNOSIS.html" target="_top" title="LIST_DOC_DIAGNOSIS" alt="" coords="840,9343,1117,9431">
+<area shape="rect" id="node78" href="LIST_DOC_VISIT_REASON.html" target="_top" title="LIST_DOC_VISIT_REASON" alt="" coords="826,9234,1131,9322">
+<area shape="rect" id="node79" href="LIST_DOC_VISIT_TYPE.html" target="_top" title="LIST_DOC_VISIT_TYPE" alt="" coords="841,9129,1117,9217">
+<area shape="rect" id="node80" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="1345,4269,1588,4533">
+<area shape="rect" id="node81" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="1292,4550,1641,4755">
+<area shape="rect" id="node82" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="1328,7785,1605,7990">
+<area shape="rect" id="node83" href="LIST_ENTRY_LOCATIONS.html" target="_top" title="LIST_ENTRY_LOCATIONS" alt="" coords="829,7907,1129,7995">
+<area shape="rect" id="node84" href="LIST_EFFORT_TYPE.html" target="_top" title="LIST_EFFORT_TYPE" alt="" coords="852,7697,1105,7785">
+<area shape="rect" id="node85" href="UAC_EMOTIONAL_CONCERNS.html" target="_top" title="UAC_EMOTIONAL_CONCERNS" alt="" coords="1773,5573,2115,5661">
+<area shape="rect" id="node86" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="1274,5690,1659,5866">
+<area shape="rect" id="node87" href="UAC_FAMILY_INFO.html" target="_top" title="UAC_FAMILY_INFO" alt="" coords="1821,5678,2067,5766">
+<area shape="rect" id="node88" href="UAC_FAST.html" target="_top" title="UAC_FAST" alt="" coords="889,4702,1069,4790">
+<area shape="rect" id="node89" href="UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="1255,5202,1678,5319">
+<area shape="rect" id="node90" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="1745,8213,2143,8535">
+<area shape="rect" id="node91" href="LIST_REFERRAL_SUB_STATUS.html" target="_top" title="LIST_REFERRAL_SUB_STATUS" alt="" coords="1294,7679,1639,7767">
+<area shape="rect" id="node92" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="843,7431,1115,7519">
+<area shape="rect" id="node93" href="UAC_IIA_SUMMARY.html" target="_top" title="UAC_IIA_SUMMARY" alt="" coords="1817,5783,2071,5871">
+<area shape="rect" id="node94" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="1333,5337,1600,5483">
+<area shape="rect" id="node95" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="1280,3245,1653,3391">
+<area shape="rect" id="node96" href="UAC_INFO_ADDITIONAL.html" target="_top" title="UAC_INFO_ADDITIONAL" alt="" coords="833,5834,1125,5922">
+<area shape="rect" id="node97" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="870,7802,1087,7890">
+<area shape="rect" id="node98" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="869,8121,1088,8209">
+<area shape="rect" id="node99" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="819,8226,1138,8314">
+<area shape="rect" id="node100" href="UAC_INI_DOCUMENTS.html" target="_top" title="UAC_INI_DOCUMENTS" alt="" coords="1806,3434,2082,3522">
+<area shape="rect" id="node101" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="1280,3409,1653,3614">
+<area shape="rect" id="node102" href="UAC_INIT_LANGUAGES.html" target="_top" title="UAC_INIT_LANGUAGES" alt="" coords="1803,5889,2085,5977">
+<area shape="rect" id="node103" href="UAC_ISP_CERTIFICATE.html" target="_top" title="UAC_ISP_CERTIFICATE" alt="" coords="1804,3223,2084,3311">
+<area shape="rect" id="node104" href="UAC_ISP_SUB.html" target="_top" title="UAC_ISP_SUB" alt="" coords="1843,3329,2045,3417">
+<area shape="rect" id="node105" href="UAC_MEDICAL_CONCERN.html" target="_top" title="UAC_MEDICAL_CONCERN" alt="" coords="1792,4454,2096,4542">
+<area shape="rect" id="node106" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="1283,174,1650,379">
+<area shape="rect" id="node107" href="LIST_COMM_DISEASES.html" target="_top" title="LIST_COMM_DISEASES" alt="" coords="837,325,1120,413">
+<area shape="rect" id="node108" href="UAC_MEDICAL_SCREENING_NOTES.html" target="_top" title="UAC_MEDICAL_SCREENING_NOTES" alt="" coords="785,5975,1173,6063">
+<area shape="rect" id="node109" href="UAC_MEDICAL_VISIT_DIAGNOSIS.html" target="_top" title="UAC_MEDICAL_VISIT_DIAGNOSIS" alt="" coords="1758,9299,2130,9387">
+<area shape="rect" id="node110" href="UAC_MEDICAL_VISIT_REASON.html" target="_top" title="UAC_MEDICAL_VISIT_REASON" alt="" coords="1771,9170,2117,9258">
+<area shape="rect" id="node111" href="UAC_MEDICAL_VISIT_TYPE.html" target="_top" title="UAC_MEDICAL_VISIT_TYPE" alt="" coords="1785,9065,2103,9153">
+<area shape="rect" id="node112" href="UAC_MENTAL_ISSUES.html" target="_top" title="UAC_MENTAL_ISSUES" alt="" coords="1807,5994,2081,6082">
+<area shape="rect" id="node113" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="1290,1111,1643,1199">
+<area shape="rect" id="node114" href="UAC_PRS_SERVICE_LVL_HISTORY.html" target="_top" title="UAC_PRS_SERVICE_LVL_HISTORY" alt="" coords="2187,8069,2563,8157">
+<area shape="rect" id="node115" href="UAC_PSYCHOLOGICAL_EVAL.html" target="_top" title="UAC_PSYCHOLOGICAL_EVAL" alt="" coords="1777,4981,2111,5069">
+<area shape="rect" id="node116" href="UAC_REFERRAL_MEDICATION_INFO.html" target="_top" title="UAC_REFERRAL_MEDICATION_INFO" alt="" coords="781,6081,1176,6169">
+<area shape="rect" id="node117" href="UAC_RR_CCR_HISTORY.html" target="_top" title="UAC_RR_CCR_HISTORY" alt="" coords="1802,9778,2086,9866">
+<area shape="rect" id="node118" href="UAC_RR_CMR_HISTORY.html" target="_top" title="UAC_RR_CMR_HISTORY" alt="" coords="1800,9673,2088,9761">
+<area shape="rect" id="node119" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="1781,7930,2107,8018">
+<area shape="rect" id="node120" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="1328,1397,1605,1602">
+<area shape="rect" id="node121" href="UAC_SIR_EVENT.html" target="_top" title="UAC_SIR_EVENT" alt="" coords="866,631,1091,719">
+<area shape="rect" id="node122" href="UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="1263,2197,1671,2373">
+<area shape="rect" id="node123" href="UAC_SIR_MEDIA_CONTACTS.html" target="_top" title="UAC_SIR_MEDIA_CONTACTS" alt="" coords="1779,4559,2109,4647">
+<area shape="rect" id="node124" href="UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="1840,4875,2048,4963">
+<area shape="rect" id="node125" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="1745,8641,2143,8729">
+<area shape="rect" id="node126" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="847,8331,1110,8419">
+<area shape="rect" id="node127" href="UAC_SPONSOR_SPONSORED_UACS.html" target="_top" title="UAC_SPONSOR_SPONSORED_UACS" alt="" coords="782,6543,1175,6631">
+<area shape="rect" id="node128" href="UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1761,6867,2127,6955">
+<area shape="rect" id="node129" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="1309,925,1624,1013">
+<area shape="rect" id="node130" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="1325,2390,1608,2566">
+<area shape="rect" id="node131" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="1340,6655,1593,6719">
+<area shape="rect" id="node132" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="1275,6317,1659,6381">
+<area shape="rect" id="node133" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="1272,7243,1661,7307">
+<area shape="rect" id="node134" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1812,5491,2076,5555">
+<area shape="rect" id="node135" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1775,6458,2113,6522">
+<area shape="rect" id="node136" href="V_ASSESSMENT_RPT_NF_PT2.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT2" alt="" coords="1775,7114,2113,7178">
+<area shape="rect" id="node137" href="V_ASSESSMENT_RPT_NF_PT3.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT3" alt="" coords="1775,7195,2113,7259">
+<area shape="rect" id="node138" href="V_ASSESSMENT_RPT_NF_PT4.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT4" alt="" coords="1775,7277,2113,7341">
+<area shape="rect" id="node139" href="V_ASSESSMENT_RPT_NF_PT5.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT5" alt="" coords="1775,7358,2113,7422">
+<area shape="rect" id="node140" href="V_ASSESSMENT_RPT_NF_PT6.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT6" alt="" coords="1775,7439,2113,7503">
+<area shape="rect" id="node141" href="V_ASSESSMENT_RPT_NF_PT7.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT7" alt="" coords="1775,7521,2113,7585">
+<area shape="rect" id="node142" href="V_ASSESSMENT_RPT_NF_PT8.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT8" alt="" coords="1775,7602,2113,7666">
+<area shape="rect" id="node143" href="V_CR_MEDICAL_HISTORY.html" target="_top" title="V_CR_MEDICAL_HISTORY" alt="" coords="1316,8827,1617,8979">
+<area shape="rect" id="node144" href="V_CR_MEDICATION_HISTORY.html" target="_top" title="V_CR_MEDICATION_HISTORY" alt="" coords="1299,2619,1634,2713">
+<area shape="rect" id="node145" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="827,8437,1130,8501">
+<area shape="rect" id="node146" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="789,8518,1169,8582">
+<area shape="rect" id="node147" href="V_LANGUAGES.html" target="_top" title="V_LANGUAGES" alt="" coords="873,6721,1084,6785">
+<area shape="rect" id="node148" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="1832,86,2056,150">
+<area shape="rect" id="node149" href="V_RELEASE_ANALYSIS.html" target="_top" title="V_RELEASE_ANALYSIS" alt="" coords="840,7137,1117,7201">
+<area shape="rect" id="node150" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1843,2007,2045,2071">
+<area shape="rect" id="node151" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1857,1913,2031,1977">
+<area shape="rect" id="node152" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1801,1553,2087,1617">
+<area shape="rect" id="node153" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1822,1634,2066,1698">
+<area shape="rect" id="node154" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1849,3142,2039,3206">
+<area shape="rect" id="node155" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="781,8599,1177,8663">
+<area shape="rect" id="node156" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="769,8681,1188,8745">
+<area shape="rect" id="node157" href="V_TEMP_INCARE.html" target="_top" title="V_TEMP_INCARE" alt="" coords="866,1787,1091,1851">
+<area shape="rect" id="node158" href="V_TRAFFICKING_RPT.html" target="_top" title="V_TRAFFICKING_RPT" alt="" coords="847,4807,1111,4871">
+<area shape="rect" id="node159" href="V_TRANSFER_REQ_RPT.html" target="_top" title="V_TRANSFER_REQ_RPT" alt="" coords="837,4549,1121,4613">
+<area shape="rect" id="node160" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="1311,6235,1622,6299">
+<area shape="rect" id="node161" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="1273,6737,1661,6801">
+<area shape="rect" id="node162" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="817,8762,1140,8826">
+<area shape="rect" id="node163" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="1342,1030,1591,1094">
+<area shape="rect" id="node164" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="1301,6398,1633,6462">
+<area shape="rect" id="node165" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="1289,505,1644,627">
+<area shape="rect" id="node166" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="1328,6818,1605,6882">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/UAC_PROGRAM_INFO.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

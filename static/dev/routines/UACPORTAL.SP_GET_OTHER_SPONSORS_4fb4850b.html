@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GET_OTHER_SPONSORS_ADDRESSES</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>VSPONSORID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PAGE_NUMBER</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE SP_GET_OTHER_SPONSORS_ADDRESSES&#10;(&#10;  vSponsorId IN NUMBER,               -- Input: Sponsor ID&#10;  v_Page_Number IN NUMBER :&#61; 1,       -- Input: Page number (default is 1)&#10;  CUR_OUT OUT SYS_REFCURSOR           -- Output: Ref Cursor for the result set&#10;) AS &#10;  v_PageSize NUMBER;                  -- Variable to store page size&#10;&#10;BEGIN&#10;  -- Retrieve the page size from the application parameters&#10;  SELECT TO_NUMBER(PARAM_VALUE) &#10;  INTO v_PageSize &#10;  FROM UACPORTAL_APP_PARAMS &#10;  WHERE PARAM_NAME &#61; &#39;OTHER_SPONSORS_ADDR_PAGE_SIZE&#39;;&#10;&#10;  -- Open the cursor to fetch the sponsor addresses based on the page number and page size&#10;  OPEN CUR_OUT FOR&#10;    SELECT * FROM (&#10;      SELECT &#10;        z.*,                           -- Select all fields from the inner query&#10;        rownum AS line_number,          -- Add a row number for pagination&#10;        COUNT(*) OVER () AS V_COUNT     -- Total count of records for pagination&#10;      FROM (&#10;        -- Main query to get sponsor address information&#10;        SELECT &#10;          B.SPONSOR_ID, &#10;          C.FIRST_NAME, &#10;          C.LAST_NAME, &#10;          (C.FIRST_NAME || &#39; &#39; || C.LAST_NAME) AS FULL_NAME,&#10;          B.UAC_ID, &#10;          B.ADDRESS || &#39; &#39; || ADDRESS_SECONDARY AS ADDRESS, &#10;          B.CITY, &#10;          B.STATE, &#10;          B.ZIP_CODE, &#10;          TRIM(B.ADDRESS || &#39; &#39; || ADDRESS_SECONDARY) || &#39;, &#39; || B.CITY || &#39;, &#39; || B.STATE || &#39; &#39; || B.ZIP_CODE AS FULL_ADDRESS,&#10;          R.RELATIONSHIP,&#10;          H.HOUSEHOLD_COUNT,&#10;          TO_CHAR(D.DATE_CREATED, &#39;MM/DD/YYYY&#39;) AS SPONSORSHIP_DATE,&#10;          &#10;          -- Determine the flag status of the sponsor&#10;          CASE &#10;            WHEN C.FLAG &#61; 1 OR C.FLAG_ADDRESS &#61; 1 THEN &#39;Flag&#39;&#10;            WHEN EXISTS (&#10;                SELECT 1 &#10;                FROM SponsorFlag SF&#10;                WHERE SF.SPONSORID &#61; C.SPONSOR_ID&#10;            ) THEN &#39;Flag&#39;&#10;            ELSE &#39;No Flags&#39;&#10;          END AS SPONSOR_FLAG,&#10;          &#10;          -- Determine sponsorship type&#10;          CASE &#10;            WHEN UI.UAC_STATUS &#61; &#39;DISCHARGED&#39; AND UPE.TYPE_OF_DISCHARGE &#61; 3 THEN &#39;Actual Sponsorship&#39; &#10;            ELSE &#39;Potential Sponsorship&#39; &#10;          END AS SPONSORSHIP_TYPE&#10;        FROM (&#10;          -- Subquery to fetch other sponsors who share the same addresses&#10;          SELECT &#10;            SPONSOR_ID, &#10;            NULL AS UAC_ID, &#10;            TRIM(ADDRESS || &#39; &#39; || ADDRESS_SECONDARY) AS ADDRESS, &#10;            CITY, &#10;            STATE, &#10;            ZIP_CODE&#10;          FROM SPONSOR_INFO &#10;          WHERE IS_DELETED &#61; 0&#10;          &#10;          UNION&#10;  &#10;          SELECT &#10;            SPONSOR_ID, &#10;            UAC_ID, &#10;            TRIM(CONCAT(CONCAT(SPONSOR_ADDRESS, &#39; &#39;), SPONSOR_ADDRESS_SECONDARY)) AS ADDRESS, &#10;            SPONSOR_CITY AS CITY, &#10;            SPONSOR_STATE AS STATE, &#10;            SPONSOR_ZIPCODE AS ZIP_CODE&#10;          FROM UAC_SPONSOR_LIST &#10;          WHERE IS_DELETED &#61; 0&#10;        ) B&#10;        INNER JOIN SPONSOR_INFO C ON B.SPONSOR_ID &#61; C.SPONSOR_ID&#10;        LEFT JOIN UAC_SPONSOR_LIST D ON B.SPONSOR_ID &#61; D.SPONSOR_ID AND B.UAC_ID &#61; D.UAC_ID&#10;        LEFT JOIN LIST_RELATIONSHIP R ON R.RELATIONSHIP_ID &#61; D.SPONSOR_RELATIONSHIP_TO_UAC&#10;        LEFT JOIN (&#10;          -- Subquery to get household occupant count&#10;          SELECT &#10;            SPONSOR_ID, &#10;            UAC_ID, &#10;            COUNT(*) AS HOUSEHOLD_COUNT&#10;          FROM SPONSOR_HOUSEHOLD_OCCUPANTS&#10;          GROUP BY SPONSOR_ID, UAC_ID&#10;        ) H ON H.SPONSOR_ID &#61; D.SPONSOR_ID AND H.UAC_ID &#61; D.UAC_ID&#10;        LEFT JOIN UAC_INFO UI ON D.UAC_ID &#61; UI.UAC_ID&#10;        LEFT JOIN UAC_PROGRAM_INFO UPI ON D.UAC_ID &#61; UPI.UAC_ID &#10;          AND UPI.UAC_PROGRAM_ID &#61; (&#10;            SELECT MAX(UPI1.UAC_PROGRAM_ID) &#10;            FROM UAC_PROGRAM_INFO UPI1 &#10;            WHERE D.UAC_ID &#61; UPI1.UAC_ID&#10;          )&#10;        LEFT JOIN UAC_PROGRAM_EXIT UPE ON UPI.UAC_PROGRAM_ID &#61; UPE.UAC_PROGRAM_ID&#10;        &#10;        WHERE EXISTS (&#10;          -- Subquery to match the addresses of other sponsors&#10;          SELECT 1   &#10;          FROM (&#10;            -- Get all addresses for the specified sponsor&#10;            SELECT &#10;              TRIM(ADDRESS || &#39; &#39; || ADDRESS_SECONDARY) AS ADDRESS, &#10;              CITY, &#10;              STATE, &#10;              ZIP_CODE &#10;            FROM SPONSOR_INFO &#10;            WHERE SPONSOR_ID &#61; vSponsorId &#10;              AND IS_DELETED &#61; 0&#10;            UNION&#10;            SELECT &#10;              TRIM(CONCAT(CONCAT(SPONSOR_ADDRESS, &#39; &#39;), SPONSOR_ADDRESS_SECONDARY)) AS ADDRESS, &#10;              SPONSOR_CITY AS CITY, &#10;              SPONSOR_STATE AS STATE, &#10;              SPONSOR_ZIPCODE AS ZIP_CODE&#10;            FROM UAC_SPONSOR_LIST &#10;            WHERE SPONSOR_ID &#61; vSponsorId &#10;              AND IS_DELETED &#61; 0&#10;          ) A&#10;          WHERE TRIM(UPPER(B.ADDRESS)) &#61; TRIM(UPPER(A.ADDRESS)) &#10;            AND TRIM(UPPER(B.CITY)) &#61; TRIM(UPPER(A.CITY)) &#10;            AND TRIM(UPPER(NVL(B.STATE, &#39;xxx&#39;))) &#61; TRIM(UPPER(NVL(A.STATE, &#39;xxx&#39;)))&#10;            AND TRIM(UPPER(B.ZIP_CODE)) &#61; TRIM(UPPER(A.ZIP_CODE))&#10;            AND B.SPONSOR_ID &lt;&gt; vSponsorId  -- Exclude the specified sponsor&#10;        )&#10;      ) Z&#10;    )&#10;    WHERE line_number BETWEEN &#10;      CASE &#10;        WHEN v_Page_Number &gt; 1 THEN ((v_Page_Number - 1) * v_PageSize) + 1 &#10;        ELSE 1 &#10;      END &#10;      AND &#10;      CASE &#10;        WHEN v_Page_Number &gt; 1 THEN ((v_Page_Number - 1) * v_PageSize) + v_PageSize &#10;        ELSE v_PageSize &#10;      END&#10;    ORDER BY line_number;  -- Order by line number for pagination&#10;END SP_GET_OTHER_SPONSORS_ADDRESSES;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

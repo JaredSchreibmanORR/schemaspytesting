@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_UPDATE_UAC_FAST</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_FAST_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INTAKE_STAFF_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FAC_CONTACTINFO</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_LOCATION_AT_REF</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DETENTION_FACILITY_IF_ANY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UNACCOMPANIED_STATUS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UAC_BEHAVEIOR_HIST</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_ADDITIONAL_INFO</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PLACEMENT_CONSULTATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_COMMENTS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_COMMENTS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_COMMENTS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_COMMENTS_ON_GANG_VIOLATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_COMMENTS_ON_GANG_VIOLATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_COMMENTS_ON_GANG_VIOLATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_OTHER_RIST_FACTOR</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_OTHER_RIST_FACTOR</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_OTHER_RIST_FACTOR</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_OTHER_RIST_FACTOR_SCORE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_OTHER_RIST_FACTOR_SCORE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_OTHER_RIST_FACTOR_SCORE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_OTHER_RISK_COMMENT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_OTHER_RISK_COMMENT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_OTHER_RISK_COMMENT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_MENTAL_HELTH_ISSUE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CONFIRM_MENTAL_HELTH_ISSUE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_COMMENT_YES_TO_MENTAL_ISSUE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_IS_SERVICE_REQUIRED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_COMMENT_YES_TO_SERVICE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_COMMENT_NO_TO_SERVICE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_THER_NEED_IDENTIFIED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_THER_NEED_IDENTIFIED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_THER_NEED_REQUIRE_CHANGE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_THER_NEED_REQUIRE_CHANGE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_COMMENT_ON_MENTAL_ISSUE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_COMMENT_ON_MENTAL_ISSUE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_COMMENT_ON_MENTAL_ISSUE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_EVIDENCE_OF_CHILD_BEHAVIOR</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_EVIDENCE_OF_CHILD_BEHAVIOR</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_REASON_IN_LEGAL_PROCESS</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_REASON_IN_LEGAL_PROCESS</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_REASON_IN_REUNIFICATION</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_REASON_IN_REUNIFICATION</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_COM_THER_NEED_IDENTIFIED</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_COM_THER_NEED_IDENTIFIED</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_COM_THER_NEED_IDENTIFIED</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_ATTONEY_LETTER_PROVIDED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_ATTONEY_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_C_STAFF_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_RECOMMENTED_PROG_TYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FFS_SCORE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_DUCS_SUPERVISOR_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_STAFF_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_IS_PLACEMENT_DIFFERENT</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DID_FSS_OVERRIDE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_DATE_OVERRIDE_APPROVED</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_TIME_OVERRIDE_APPROVED</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_F_OVERRIDE_JUSTIFICATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_ALERT_TYPE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_STAFF_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_DUCS_SUPERVISOR_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_DATE_OVERRIDE_APPROVED</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_TIME_OVERRIDE_APPROVED</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_OVERRIDE_JUSTIFICATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_IS_FAST_PLACEMENT</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_MORE_SERVICE_REQUIRED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_IS_OVERRIDE_OF_PM</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_INTAKES_OVERRIDE_PLACEMENT</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_I_ALERT_TYPE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UPUSER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CMD_TYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PAGETYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q1_INT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q1_FAC</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q1_FFS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q2_INT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q2_FAC</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q2_FFS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q3_INT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q3_FAC</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q3_FFS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q4_INT</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q4_FAC</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_Q4_FFS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_THERAPEUTICNEED</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CHILDBEHAVIOR</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_LEGALPROCESS</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FAMILYREUNION</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DATE_OF_FINALPLACEMENT</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FINAL_PROGRAM_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FINAL_PROGRAM_TYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_IPSCORE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE           &quot;SP_UPDATE_UAC_FAST&quot; &#10;(&#10;  v_FAST_ID NUMBER, &#10;&#9;v_UAC_ID NUMBER, &#10;&#9;v_INTAKE_STAFF_NAME VARCHAR2, &#10;&#9;--v_FAST_STATUS CHAR, &#10;  v_FAC_CONTACTINFO VARCHAR2, &#10;&#9;v_UAC_LOCATION_AT_REF VARCHAR2, &#10;&#9;v_DETENTION_FACILITY_IF_ANY VARCHAR2, &#10;&#9;v_UNACCOMPANIED_STATUS VARCHAR2, &#10;&#9;v_UAC_BEHAVEIOR_HIST VARCHAR2, &#10;&#9;v_ADDITIONAL_INFO VARCHAR2, &#10;&#9;v_PLACEMENT_CONSULTATION VARCHAR2,&#10;&#9;/*v_INTAKES_INDICATION NUMBER, &#10;&#9;v_CARE_PROVIDER_INDICATION NUMBER, &#10;&#9;v_FFS_INDICATION NUMBER, &#10;&#9;v_I_PETTY_OFFENSES NUMBER, &#10;&#9;v_C_PETTY_OFFENSES NUMBER, &#10;&#9;v_F_PETTY_OFFENSES NUMBER,&#10;  v_I_NON_PETTY_OFFENSES NUMBER,&#10;  v_C_NON_PETTY_OFFENSES NUMBER,&#10;  v_F_NON_PETTY_OFFENSES NUMBER,&#10;  v_I_NON_FIREARM_VIOLENCE NUMBER,&#10;  v_C_NON_FIREARM_VIOLENCE NUMBER,&#10;  v_F_NON_FIREARM_VIOLENCE NUMBER,&#10;  v_I_VIOLENT_OFFENSES NUMBER, &#10;  v_C_VIOLENT_OFFENSES NUMBER, &#10;  v_F_VIOLENT_OFFENSES NUMBER,&#10;  v_I_WEAPON1_VIOLENCES NUMBER,&#10;  v_C_WEAPON1_VIOLENCES NUMBER,&#10;  v_F_WEAPON1_VIOLENCES NUMBER,&#10;  v_I_WEAPON2_VIOLENCES NUMBER, &#10;  v_C_WEAPON2_VIOLENCES NUMBER, &#10;  v_F_WEAPON2_VIOLENCES NUMBER, &#10;  v_I_WEAPON3_VIOLATION NUMBER,&#10;  v_C_WEAPON3_VIOLENCES NUMBER,&#10;  v_F_WEAPON3_VIOLENCES NUMBER,&#10;  v_I_VOIW3_VIOLENCE NUMBER, &#10;  v_C_VOIW3_VIOLENCES NUMBER, &#10;  v_F_VOIW3_VIOLENCES NUMBER, &#10;  v_I_SEXUAL_ASSAULT NUMBER, &#10;  v_C_SEXUAL_ASSAULT NUMBER, &#10;  v_F_SEXUAL_ASSAULT NUMBER, &#10;  v_I_SERIOUS_VIOLENT_OFFENSES NUMBER,&#10;  v_C_SERIOUS_VIOLENT_OFFENSES NUMBER,&#10;  v_F_SERIOUS_VIOLENT_OFFENSES NUMBER,&#10;  */&#10;  v_I_COMMENTS VARCHAR2, &#10;  v_C_COMMENTS VARCHAR2,&#10;  v_F_COMMENTS VARCHAR2,&#10;&#9;/*v_I_VT_GOV_CUSTODY NUMBER, &#10;&#9;v_C_VT_GOV_CUSTODY NUMBER, &#10;&#9;v_F_VT_GOV_CUSTODY NUMBER, &#10;  v_I_GANG_VIOLATION NUMBER, &#10;&#9;v_C_GANG_VIOLATION NUMBER, &#10;&#9;v_F_GANG_VIOLATION NUMBER, &#10;  */&#10;&#9;v_I_COMMENTS_ON_GANG_VIOLATION VARCHAR2, &#10;&#9;v_C_COMMENTS_ON_GANG_VIOLATION VARCHAR2, &#10;&#9;v_F_COMMENTS_ON_GANG_VIOLATION VARCHAR2,&#10;&#9;/*&#10;  v_I_ESCAPES_FROM_GOV_CUSTODY NUMBER, &#10;&#9;v_C_ESCAPES_FROM_GOV_CUSTODY NUMBER, &#10;&#9;v_F_ESCAPES_FROM_GOV_CUSTODY NUMBER,&#10;  */&#10;  v_I_OTHER_RIST_FACTOR VARCHAR2, &#10;&#9;v_C_OTHER_RIST_FACTOR VARCHAR2, &#10;&#9;v_F_OTHER_RIST_FACTOR VARCHAR2,&#10;  v_I_OTHER_RIST_FACTOR_SCORE NUMBER, &#10;&#9;v_C_OTHER_RIST_FACTOR_SCORE NUMBER, &#10;&#9;v_F_OTHER_RIST_FACTOR_SCORE NUMBER,&#10;  v_I_OTHER_RISK_COMMENT VARCHAR2, &#10;&#9;v_C_OTHER_RISK_COMMENT VARCHAR2, &#10;&#9;v_F_OTHER_RISK_COMMENT VARCHAR2, &#10;&#9;v_MENTAL_HELTH_ISSUE NUMBER, &#10;&#9;v_CONFIRM_MENTAL_HELTH_ISSUE NUMBER, &#10;&#9;v_COMMENT_YES_TO_MENTAL_ISSUE VARCHAR2,&#10;  v_IS_SERVICE_REQUIRED NUMBER, &#10;&#9;v_COMMENT_YES_TO_SERVICE VARCHAR2, &#10;&#9;v_COMMENT_NO_TO_SERVICE VARCHAR2,  &#10;&#9;v_C_THER_NEED_IDENTIFIED NUMBER, &#10;&#9;v_F_THER_NEED_IDENTIFIED NUMBER, &#10;&#9;v_C_THER_NEED_REQUIRE_CHANGE NUMBER, &#10;&#9;v_F_THER_NEED_REQUIRE_CHANGE NUMBER, &#10;  v_I_COMMENT_ON_MENTAL_ISSUE VARCHAR2, &#10;&#9;v_C_COMMENT_ON_MENTAL_ISSUE VARCHAR2, &#10;&#9;v_F_COMMENT_ON_MENTAL_ISSUE VARCHAR2,&#10;  v_C_EVIDENCE_OF_CHILD_BEHAVIOR NUMBER, &#10;&#9;v_F_EVIDENCE_OF_CHILD_BEHAVIOR NUMBER, &#10;&#9;v_C_REASON_IN_LEGAL_PROCESS NUMBER, &#10;&#9;v_F_REASON_IN_LEGAL_PROCESS NUMBER, &#10;&#9;v_C_REASON_IN_REUNIFICATION NUMBER, &#10;&#9;v_F_REASON_IN_REUNIFICATION NUMBER,&#10;&#9;v_I_COM_THER_NEED_IDENTIFIED VARCHAR2, &#10;&#9;v_C_COM_THER_NEED_IDENTIFIED VARCHAR2, &#10;&#9;v_F_COM_THER_NEED_IDENTIFIED VARCHAR2, &#10;&#9;v_ATTONEY_LETTER_PROVIDED NUMBER, &#10;&#9;v_ATTONEY_NAME VARCHAR2, &#10;&#9;v_FFS_NAME VARCHAR2, &#10;&#9;v_C_STAFF_NAME VARCHAR2,&#10;&#9;v_I_RECOMMENTED_PROG_TYPE VARCHAR2, &#10;  v_FFS_SCORE NUMBER, &#10;&#9;v_F_DUCS_SUPERVISOR_NAME VARCHAR2,&#10;&#9;v_F_STAFF_NAME VARCHAR2, &#10;&#9;v_IS_PLACEMENT_DIFFERENT NUMBER, &#10;&#9;v_DID_FSS_OVERRIDE NUMBER,&#10;&#9;v_F_DATE_OVERRIDE_APPROVED DATE, &#10;&#9;v_F_TIME_OVERRIDE_APPROVED DATE, &#10;&#9;v_F_OVERRIDE_JUSTIFICATION VARCHAR2, &#10;&#9;v_ALERT_TYPE NUMBER,&#10;  &#10;  &#10;   v_I_STAFF_NAME VARCHAR2, &#10;&#9;v_I_DUCS_SUPERVISOR_NAME VARCHAR2, &#10;  v_I_DATE_OVERRIDE_APPROVED DATE, &#10;  v_I_TIME_OVERRIDE_APPROVED DATE, &#10;&#9;v_I_OVERRIDE_JUSTIFICATION VARCHAR2,&#10;  v_I_IS_FAST_PLACEMENT NUMBER, &#10;&#9;v_I_MORE_SERVICE_REQUIRED NUMBER,&#10;  v_IS_OVERRIDE_OF_PM NUMBER,&#10;  v_INTAKES_OVERRIDE_PLACEMENT NUMBER,&#10; /*&#10;  v_I_IS_FAST_PLACEMENT NUMBER, &#10;&#9;v_I_MORE_SERVICE_REQUIRED NUMBER,&#10;&#10;&#9;&#10;  */&#10;  v_I_ALERT_TYPE NUMBER,&#10;&#9;v_UPUSER VARCHAR2, &#10;  v_CMD_TYPE VARCHAR2,&#10;  v_PageType  VARCHAR2,&#10;  v_Q1_INT VARCHAR2,&#10;  v_Q1_FAC VARCHAR2,&#10;  v_Q1_FFS VARCHAR2,&#10;   v_Q2_INT VARCHAR2,&#10;  v_Q2_FAC VARCHAR2,&#10;  v_Q2_FFS VARCHAR2,&#10;   v_Q3_INT VARCHAR2,&#10;  v_Q3_FAC VARCHAR2,&#10;  v_Q3_FFS VARCHAR2,&#10;   v_Q4_INT VARCHAR2,&#10;  v_Q4_FAC VARCHAR2,&#10;  v_Q4_FFS VARCHAR2,&#10;  v_TherapeuticNeed NUMBER,&#10;  v_ChildBehavior NUMBER,&#10;  v_LegalProcess NUMBER,&#10;  v_FamilyReunion NUMBER,&#10;  v_DATE_OF_FINALPLACEMENT DATE,&#10;  v_FINAL_PROGRAM_NAME VARCHAR2,&#10;   v_FINAL_PROGRAM_TYPE  VARCHAR2,&#10;   v_IPScore NUMBER&#10;) AS &#10;&#10;BEGIN&#10;  update UAC_INFO set UAC_FAST_STATUS &#61; v_PageType where UAC_ID&#61;v_UAC_ID;&#10;  if UPPER(v_CMD_TYPE) &#61; &#39;INSERT&#39; Then&#10;    Insert into UAC_FAST (&#10;      FAST_ID, &#10;      UAC_ID, &#10;      INTAKE_STAFF_NAME, &#10;      --FAST_STATUS, &#10;      FAC_CONTACTINFO, &#10;    UAC_LOCATION_AT_REF, &#10;    DETENTION_FACILITY_IF_ANY, &#10;    UNACCOMPANIED_STATUS, &#10;    UAC_BEHAVEIOR_HIST, &#10;    ADDITIONAL_INFO, &#10;    PLACEMENT_CONSULTATION,&#10;    /*  INTAKES_INDICATION, &#10;      CARE_PROVIDER_INDICATION, &#10;      FFS_INDICATION, &#10;     I_PETTY_OFFENSES, &#10;    I_NON_PETTY_OFFENSES, &#10;    I_NON_FIREARM_VIOLENCE, &#10;    I_VIOLENT_OFFENSES, &#10;    I_WEAPON1_VIOLENCES, &#10;    I_WEAPON2_VIOLENCES, &#10;    I_WEAPON3_VIOLATION, &#10;    I_VOIW3_VIOLENCE, &#10;    I_SEXUAL_ASSAULT, &#10;    I_SERIOUS_VIOLENT_OFFENSES,&#10;    */&#10;    I_COMMENTS, &#10;    /*C_PETTY_OFFENSES, &#10;    C_NON_PETTY_OFFENSES, &#10;    C_NON_FIREARM_VIOLENCE, &#10;    C_VIOLENT_OFFENSES, &#10;    C_WEAPON1_VIOLENCES, &#10;    C_WEAPON2_VIOLENCES, &#10;    C_WEAPON3_VIOLENCES, &#10;    C_VOIW3_VIOLENCES, &#10;    C_SEXUAL_ASSAULT, &#10;    C_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    C_COMMENTS, &#10;   /* F_PETTY_OFFENSES, &#10;    F_NON_PETTY_OFFENSES, &#10;    F_NON_FIREARM_VIOLENCE, &#10;    F_VIOLENT_OFFENSES, &#10;    F_WEAPON1_VIOLENCES, &#10;    F_WEAPON2_VIOLENCES, &#10;    F_WEAPON3_VIOLENCES, &#10;    F_VOIW3_VIOLENCES, &#10;    F_SEXUAL_ASSAULT, &#10;    F_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    F_COMMENTS, &#10;      &#10;   /*   &#10;      I_VT_GOV_CUSTODY, &#10;      C_VT_GOV_CUSTODY, &#10;      F_VT_GOV_CUSTODY, &#10;      I_GANG_VIOLATION, &#10;    C_GANG_VIOLATION, &#10;    F_GANG_VIOLATION, &#10;    */&#10;    I_COMMENTS_ON_GANG_VIOLATION, &#10;    C_COMMENTS_ON_GANG_VIOLATION, &#10;    F_COMMENTS_ON_GANG_VIOLATION, &#10;    /*  I_ESCAPES_FROM_GOV_CUSTODY, &#10;      C_ESCAPES_FROM_GOV_CUSTODY, &#10;      F_ESCAPES_FROM_GOV_CUSTODY,&#10;      */&#10;      I_OTHER_RIST_FACTORS, &#10;    C_OTHER_RIST_FACTORS, &#10;    F_OTHER_RIST_FACTORS,&#10;    I_OTHER_RIST_FACTOR_SCORE, &#10;    C_OTHER_RIST_FACTOR_SCORE, &#10;    F_OTHER_RIST_FACTOR_SCORE,&#10;    I_OTHER_RISK_COMMENT, &#10;    C_OTHER_RISK_COMMENT, &#10;    F_OTHER_RISK_COMMENT, &#10;    MENTAL_HELTH_ISSUE, &#10;    CONFIRM_MENTAL_HELTH_ISSUE, &#10;    COMMENT_IF_YES_TO_MENTAL_ISSUE, &#10;    IS_SERVICE_REQUIRED, &#10;    COMMENT_IF_YES_TO_SERVICE, &#10;    COMMENT_IF_NO_TO_SERVICE, &#10;    C_THERAPEUTIC_NEED_IDENTIFIED, &#10;    F_THERAPEUTIC_NEED_IDENTIFIED, &#10;    C_THER_NEED_REQUIRE_CHANGE, &#10;    F_THER_NEED_REQUIRE_CHANGE,&#10;    I_COMMENT_ON_MENTAL_ISSUE, &#10;    C_COMMENT_ON_MENTAL_ISSUE, &#10;    F_COMMENT_ON_MENTAL_ISSUE, &#10;    &#10;    C_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    F_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    C_HAS_REASON_IN_LEGAL_PROCESS, &#10;    F_HAS_REASON_IN_LEGAL_PROCESS, &#10;    C_HAS_REASON_IN_REUNIFICATION, &#10;    F_HAS_REASON_IN_REUNIFICATION,&#10;    I_COMMENT_THER_NEED_IDENTIFIED, &#10;    C_COMMENT_THER_NEED_IDENTIFIED, &#10;    F_COMMENT_THER_NEED_IDENTIFIED, &#10;    ATTONEY_LETTER_PROVIDED, &#10;    ATTONEY_NAME, &#10;    FFS_NAME,&#10;    C_STAFF_NAME,&#10;    I_RECOMMENTED_PROG_TYPE,&#10;    FFS_SCORE,&#10;    F_DUCS_SUPERVISOR_NAME,&#10;    F_STAFF_NAME,&#10;    IS_PLACEMENT_DIFFERENT,&#10;    DID_FSS_OVERRIDE, &#10;    F_DATE_OVERRIDE_APPROVED,&#10;    F_TIME_OVERRIDE_APPROVED, &#10;    F_OVERRIDE_JUSTIFICATION,&#10;    ALERT_TYPE,&#10;    I_STAFF_NAME, &#10;    I_DUCS_SUPERVISOR_NAME, &#10;    I_DATE_OVERRIDE_APPROVED, &#10;    I_TIME_OVERRIDE_APPROVED, &#10;    I_OVERRIDE_JUSTIFICATION,&#10;    I_IS_FAST_PLACEMENT, &#10;    I_ADDITIONAL_SERVICE_REQUIRED,&#10;    IS_OVERRIDE_OF_PM,&#10;       DID_INTAKES_OVERRIDE_PLACEMENT,&#10;      I_ALERT_TYPE,&#10;     /*&#10;   &#10;     I_ALERT_TYPE,&#10;    &#10; &#10;   &#10;    &#10;    &#10;    */&#10;      UPTIME, &#10;      UPUSER,&#10;      Q1_INT,&#10;      Q1_FAC,&#10;      Q1_FFS,&#10;      Q2_INT,&#10;      Q2_FAC,&#10;      Q2_FFS,&#10;      Q3_INT,&#10;      Q3_FAC,&#10;      Q3_FFS,&#10;      Q4_INT,&#10;      Q4_FAC,&#10;      Q4_FFS,&#10;      PM_TherapeuticNeed,&#10;      PM_ChildBehavior,&#10;      PM_LegalProcess,&#10;      PM_FamilyReunion,&#10;      DATE_OF_FINALPLACEMENT,&#10;      FINAL_PROGRAM_NAME,&#10;      FINAL_PROGRAM_TYPE,&#10;      IPSCORE&#10;    )&#10;    Values (SEQ_UAC_FAST.nextval, &#10;      v_UAC_ID, &#10;    v_INTAKE_STAFF_NAME, &#10;    --v_FAST_STATUS, &#10;    --v_INTAKES_INDICATION, &#10;    v_FAC_CONTACTINFO, &#10;    v_UAC_LOCATION_AT_REF, &#10;    v_DETENTION_FACILITY_IF_ANY, &#10;    v_UNACCOMPANIED_STATUS, &#10;    v_UAC_BEHAVEIOR_HIST, &#10;    v_ADDITIONAL_INFO, &#10;    v_PLACEMENT_CONSULTATION,&#10;   /* v_CARE_PROVIDER_INDICATION, &#10;    v_FFS_INDICATION, &#10;    v_I_PETTY_OFFENSES, &#10;    v_I_NON_PETTY_OFFENSES, &#10;    v_I_NON_FIREARM_VIOLENCE, &#10;    v_I_VIOLENT_OFFENSES, &#10;    v_I_WEAPON1_VIOLENCES, &#10;    v_I_WEAPON2_VIOLENCES, &#10;    v_I_WEAPON3_VIOLATION, &#10;    v_I_VOIW3_VIOLENCE, &#10;    v_I_SEXUAL_ASSAULT, &#10;    v_I_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    v_I_COMMENTS, &#10;    /*&#10;    v_C_PETTY_OFFENSES, &#10;    v_C_NON_PETTY_OFFENSES, &#10;    v_C_NON_FIREARM_VIOLENCE, &#10;    v_C_VIOLENT_OFFENSES, &#10;    v_C_WEAPON1_VIOLENCES, &#10;    v_C_WEAPON2_VIOLENCES, &#10;    v_C_WEAPON3_VIOLENCES, &#10;    v_C_VOIW3_VIOLENCES, &#10;    v_C_SEXUAL_ASSAULT, &#10;    v_C_SERIOUS_VIOLENT_OFFENSES,&#10;    */&#10;    v_C_COMMENTS, &#10;    /*&#10;    v_F_PETTY_OFFENSES, &#10;    v_F_NON_PETTY_OFFENSES, &#10;    v_F_NON_FIREARM_VIOLENCE, &#10;    v_F_VIOLENT_OFFENSES, &#10;    v_F_WEAPON1_VIOLENCES, &#10;    v_F_WEAPON2_VIOLENCES, &#10;    v_F_WEAPON3_VIOLENCES, &#10;    v_F_VOIW3_VIOLENCES, &#10;    v_F_SEXUAL_ASSAULT, &#10;    v_F_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    v_F_COMMENTS,  &#10;   /* v_I_VT_GOV_CUSTODY, &#10;    v_C_VT_GOV_CUSTODY, &#10;    v_F_VT_GOV_CUSTODY, &#10;    v_I_GANG_VIOLATION, &#10;    v_C_GANG_VIOLATION, &#10;    v_F_GANG_VIOLATION, &#10;    */&#10;    v_I_COMMENTS_ON_GANG_VIOLATION, &#10;    v_C_COMMENTS_ON_GANG_VIOLATION, &#10;    v_F_COMMENTS_ON_GANG_VIOLATION,&#10;    /*v_I_ESCAPES_FROM_GOV_CUSTODY, &#10;    v_C_ESCAPES_FROM_GOV_CUSTODY, &#10;    v_F_ESCAPES_FROM_GOV_CUSTODY, &#10;    */&#10;    v_I_OTHER_RIST_FACTOR, &#10;    v_C_OTHER_RIST_FACTOR, &#10;    v_F_OTHER_RIST_FACTOR,&#10;    v_I_OTHER_RIST_FACTOR_SCORE, &#10;    v_C_OTHER_RIST_FACTOR_SCORE, &#10;    v_F_OTHER_RIST_FACTOR_SCORE,    &#10;    v_I_OTHER_RISK_COMMENT, &#10;    v_C_OTHER_RISK_COMMENT, &#10;    v_F_OTHER_RISK_COMMENT, &#10;    v_MENTAL_HELTH_ISSUE, &#10;    v_CONFIRM_MENTAL_HELTH_ISSUE, &#10;    v_COMMENT_YES_TO_MENTAL_ISSUE,&#10;    v_IS_SERVICE_REQUIRED, &#10;    v_COMMENT_YES_TO_SERVICE, &#10;    v_COMMENT_NO_TO_SERVICE, &#10;    v_C_THER_NEED_IDENTIFIED, &#10;    v_F_THER_NEED_IDENTIFIED, &#10;    v_C_THER_NEED_REQUIRE_CHANGE, &#10;    v_F_THER_NEED_REQUIRE_CHANGE,&#10;    v_I_COMMENT_ON_MENTAL_ISSUE, &#10;    v_C_COMMENT_ON_MENTAL_ISSUE, &#10;    v_F_COMMENT_ON_MENTAL_ISSUE,&#10;    v_C_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    v_F_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    v_C_REASON_IN_LEGAL_PROCESS, &#10;    v_F_REASON_IN_LEGAL_PROCESS, &#10;    v_C_REASON_IN_REUNIFICATION, &#10;    v_F_REASON_IN_REUNIFICATION,&#10;    v_I_COM_THER_NEED_IDENTIFIED, &#10;    v_C_COM_THER_NEED_IDENTIFIED, &#10;    v_F_COM_THER_NEED_IDENTIFIED, &#10;    v_ATTONEY_LETTER_PROVIDED, &#10;    v_ATTONEY_NAME, &#10;    v_FFS_NAME,&#10;    v_C_STAFF_NAME,&#10;    v_I_RECOMMENTED_PROG_TYPE,&#10;    v_FFS_SCORE,&#10;    v_F_DUCS_SUPERVISOR_NAME,&#10;    v_F_STAFF_NAME,&#10;    v_IS_PLACEMENT_DIFFERENT,&#10;    v_DID_FSS_OVERRIDE, &#10;    v_F_DATE_OVERRIDE_APPROVED,&#10;    v_F_TIME_OVERRIDE_APPROVED, &#10;    v_F_OVERRIDE_JUSTIFICATION,&#10;    v_ALERT_TYPE,&#10;      v_I_STAFF_NAME, &#10;    v_I_DUCS_SUPERVISOR_NAME, &#10;    v_I_DATE_OVERRIDE_APPROVED, &#10;    v_I_TIME_OVERRIDE_APPROVED, &#10;    v_I_OVERRIDE_JUSTIFICATION,&#10;    v_I_IS_FAST_PLACEMENT, &#10;    v_I_MORE_SERVICE_REQUIRED,&#10;    v_IS_OVERRIDE_OF_PM,&#10;    v_INTAKES_OVERRIDE_PLACEMENT,&#10;     v_I_ALERT_TYPE,&#10;      /*&#10;     v_I_IS_FAST_PLACEMENT, &#10;    v_I_MORE_SERVICE_REQUIRED,&#10;  v_I_ALERT_TYPE,&#10;    &#10;    v_INTAKES_OVERRIDE_PLACEMENT,&#10;   &#10;    &#10;    &#10;    */&#10;      SYSDATE,      &#10;    v_UPUSER,&#10;     v_Q1_INT,&#10;      v_Q1_FAC,&#10;      v_Q1_FFS,&#10;      v_Q2_INT,&#10;      v_Q2_FAC,&#10;      v_Q2_FFS,&#10;      v_Q3_INT,&#10;      v_Q3_FAC,&#10;      v_Q3_FFS,&#10;      v_Q4_INT,&#10;      v_Q4_FAC,&#10;      v_Q4_FFS,&#10;      v_TherapeuticNeed,&#10;      v_ChildBehavior,&#10;      v_LegalProcess,&#10;      v_FamilyReunion,&#10;      v_DATE_OF_FINALPLACEMENT,&#10;      v_FINAL_PROGRAM_NAME,&#10;      v_FINAL_PROGRAM_TYPE,&#10;      v_IPScore&#10;      );&#10;  &#10;  --update UAC_INFO set UAC_FAST_STATUS &#61; v_PageType where UAC_ID&#61;v_UAC_ID;&#10;  commit;&#10;  elsif UPPER(v_CMD_TYPE) &#61; &#39;UPDATE&#39; Then&#10;    update UAC_FAST set  &#10;    INTAKE_STAFF_NAME&#61;v_INTAKE_STAFF_NAME, &#10;    --FAST_STATUS&#61;v_FAST_STATUS, &#10;    FAC_CONTACTINFO&#61;v_FAC_CONTACTINFO, &#10;    UAC_LOCATION_AT_REF&#61;v_UAC_LOCATION_AT_REF, &#10;    DETENTION_FACILITY_IF_ANY&#61;v_DETENTION_FACILITY_IF_ANY, &#10;    UNACCOMPANIED_STATUS&#61;v_UNACCOMPANIED_STATUS, &#10;    UAC_BEHAVEIOR_HIST&#61;v_UAC_BEHAVEIOR_HIST, &#10;    ADDITIONAL_INFO&#61;v_ADDITIONAL_INFO, &#10;    PLACEMENT_CONSULTATION&#61;v_PLACEMENT_CONSULTATION, &#10;   /* INTAKES_INDICATION&#61;v_INTAKES_INDICATION, &#10;    CARE_PROVIDER_INDICATION&#61;v_CARE_PROVIDER_INDICATION, &#10;    FFS_INDICATION&#61;v_FFS_INDICATION, &#10;    I_PETTY_OFFENSES&#61;v_I_PETTY_OFFENSES, &#10;    I_NON_PETTY_OFFENSES&#61;v_I_NON_PETTY_OFFENSES, &#10;    I_NON_FIREARM_VIOLENCE&#61;v_I_NON_FIREARM_VIOLENCE, &#10;    I_VIOLENT_OFFENSES&#61;v_I_VIOLENT_OFFENSES, &#10;    I_WEAPON1_VIOLENCES&#61;v_I_WEAPON1_VIOLENCES, &#10;    I_WEAPON2_VIOLENCES&#61;v_I_WEAPON2_VIOLENCES, &#10;    I_WEAPON3_VIOLATION&#61;v_I_WEAPON3_VIOLATION, &#10;    I_VOIW3_VIOLENCE&#61;v_I_VOIW3_VIOLENCE, &#10;    I_SEXUAL_ASSAULT&#61;v_I_SEXUAL_ASSAULT, &#10;    I_SERIOUS_VIOLENT_OFFENSES&#61;v_I_SERIOUS_VIOLENT_OFFENSES, &#10;      */&#10;   I_COMMENTS&#61;v_I_COMMENTS, &#10;   /* C_PETTY_OFFENSES&#61;v_C_PETTY_OFFENSES, &#10;    C_NON_PETTY_OFFENSES&#61;v_C_NON_PETTY_OFFENSES, &#10;    C_NON_FIREARM_VIOLENCE&#61;v_C_NON_FIREARM_VIOLENCE, &#10;    C_VIOLENT_OFFENSES&#61;v_C_VIOLENT_OFFENSES, &#10;    C_WEAPON1_VIOLENCES&#61;v_C_WEAPON1_VIOLENCES, &#10;    C_WEAPON2_VIOLENCES&#61;v_C_WEAPON2_VIOLENCES, &#10;    C_WEAPON3_VIOLENCES&#61;v_C_WEAPON3_VIOLENCES,&#10;    C_VOIW3_VIOLENCES&#61;v_C_VOIW3_VIOLENCES, &#10;    C_SEXUAL_ASSAULT&#61;v_C_SEXUAL_ASSAULT, &#10;    C_SERIOUS_VIOLENT_OFFENSES&#61;v_C_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    C_COMMENTS&#61;v_C_COMMENTS, &#10;    /*F_PETTY_OFFENSES&#61;v_F_PETTY_OFFENSES, &#10;    F_NON_PETTY_OFFENSES&#61;v_F_NON_PETTY_OFFENSES, &#10;    F_NON_FIREARM_VIOLENCE&#61;v_F_NON_FIREARM_VIOLENCE, &#10;    F_VIOLENT_OFFENSES&#61;v_F_VIOLENT_OFFENSES, &#10;    F_WEAPON1_VIOLENCES&#61;v_F_WEAPON1_VIOLENCES, &#10;    F_WEAPON2_VIOLENCES&#61;v_F_WEAPON2_VIOLENCES, &#10;    F_WEAPON3_VIOLENCES&#61;v_F_WEAPON3_VIOLENCES, &#10;    F_VOIW3_VIOLENCES&#61;v_F_VOIW3_VIOLENCES, &#10;    F_SEXUAL_ASSAULT&#61;v_F_SEXUAL_ASSAULT, &#10;    F_SERIOUS_VIOLENT_OFFENSES&#61;v_F_SERIOUS_VIOLENT_OFFENSES, &#10;    */&#10;    F_COMMENTS&#61;v_F_COMMENTS,  &#10;    /*I_VT_GOV_CUSTODY&#61;v_I_VT_GOV_CUSTODY, &#10;    C_VT_GOV_CUSTODY&#61;v_C_VT_GOV_CUSTODY, &#10;    F_VT_GOV_CUSTODY&#61;v_F_VT_GOV_CUSTODY, &#10;    I_GANG_VIOLATION&#61;v_I_GANG_VIOLATION, &#10;    C_GANG_VIOLATION&#61;v_C_GANG_VIOLATION, &#10;    F_GANG_VIOLATION&#61;v_F_GANG_VIOLATION, &#10;    */&#10;    I_COMMENTS_ON_GANG_VIOLATION&#61;v_I_COMMENTS_ON_GANG_VIOLATION, &#10;    C_COMMENTS_ON_GANG_VIOLATION&#61;v_C_COMMENTS_ON_GANG_VIOLATION, &#10;    F_COMMENTS_ON_GANG_VIOLATION&#61;v_F_COMMENTS_ON_GANG_VIOLATION,&#10;   /*&#10;    I_ESCAPES_FROM_GOV_CUSTODY&#61;v_I_ESCAPES_FROM_GOV_CUSTODY, &#10;    C_ESCAPES_FROM_GOV_CUSTODY&#61;v_C_ESCAPES_FROM_GOV_CUSTODY, &#10;    F_ESCAPES_FROM_GOV_CUSTODY&#61;v_F_ESCAPES_FROM_GOV_CUSTODY, &#10;    */&#10;    I_OTHER_RIST_FACTORS&#61;v_I_OTHER_RIST_FACTOR, &#10;    C_OTHER_RIST_FACTORS&#61;v_C_OTHER_RIST_FACTOR, &#10;    F_OTHER_RIST_FACTORS&#61;v_F_OTHER_RIST_FACTOR, &#10;    I_OTHER_RIST_FACTOR_SCORE&#61;v_I_OTHER_RIST_FACTOR_SCORE, &#10;    C_OTHER_RIST_FACTOR_SCORE&#61;v_C_OTHER_RIST_FACTOR_SCORE, &#10;    F_OTHER_RIST_FACTOR_SCORE&#61;v_F_OTHER_RIST_FACTOR_SCORE, &#10;    I_OTHER_RISK_COMMENT&#61;v_I_OTHER_RISK_COMMENT, &#10;    C_OTHER_RISK_COMMENT&#61;v_C_OTHER_RISK_COMMENT, &#10;    F_OTHER_RISK_COMMENT&#61;v_F_OTHER_RISK_COMMENT, &#10;    MENTAL_HELTH_ISSUE&#61;v_MENTAL_HELTH_ISSUE, &#10;    CONFIRM_MENTAL_HELTH_ISSUE&#61;v_CONFIRM_MENTAL_HELTH_ISSUE, &#10;    COMMENT_IF_YES_TO_MENTAL_ISSUE&#61;v_COMMENT_YES_TO_MENTAL_ISSUE,&#10;    IS_SERVICE_REQUIRED&#61;v_IS_SERVICE_REQUIRED, &#10;    COMMENT_IF_YES_TO_SERVICE&#61;v_COMMENT_YES_TO_SERVICE, &#10;    COMMENT_IF_NO_TO_SERVICE&#61;v_COMMENT_NO_TO_SERVICE, &#10;    I_COMMENT_ON_MENTAL_ISSUE&#61;v_I_COMMENT_ON_MENTAL_ISSUE, &#10;    C_COMMENT_ON_MENTAL_ISSUE&#61;v_C_COMMENT_ON_MENTAL_ISSUE, &#10;    F_COMMENT_ON_MENTAL_ISSUE&#61;v_F_COMMENT_ON_MENTAL_ISSUE, &#10;    C_THERAPEUTIC_NEED_IDENTIFIED&#61;v_C_THER_NEED_IDENTIFIED, &#10;    F_THERAPEUTIC_NEED_IDENTIFIED&#61;v_F_THER_NEED_IDENTIFIED, &#10;    C_THER_NEED_REQUIRE_CHANGE&#61;v_C_THER_NEED_REQUIRE_CHANGE, &#10;    F_THER_NEED_REQUIRE_CHANGE&#61;v_F_THER_NEED_REQUIRE_CHANGE, &#10;     &#10;    C_EVIDENCE_OF_CHILD_BEHAVIOR&#61;v_C_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    F_EVIDENCE_OF_CHILD_BEHAVIOR&#61;v_F_EVIDENCE_OF_CHILD_BEHAVIOR, &#10;    C_HAS_REASON_IN_LEGAL_PROCESS&#61;v_C_REASON_IN_LEGAL_PROCESS, &#10;    F_HAS_REASON_IN_LEGAL_PROCESS&#61;v_F_REASON_IN_LEGAL_PROCESS, &#10;    C_HAS_REASON_IN_REUNIFICATION&#61;v_C_REASON_IN_REUNIFICATION, &#10;    F_HAS_REASON_IN_REUNIFICATION&#61;v_F_REASON_IN_REUNIFICATION,&#10;    I_COMMENT_THER_NEED_IDENTIFIED&#61;v_I_COM_THER_NEED_IDENTIFIED, &#10;    C_COMMENT_THER_NEED_IDENTIFIED&#61;v_C_COM_THER_NEED_IDENTIFIED, &#10;    F_COMMENT_THER_NEED_IDENTIFIED&#61;v_F_COM_THER_NEED_IDENTIFIED,&#10;    &#10;    ATTONEY_LETTER_PROVIDED&#61;v_ATTONEY_LETTER_PROVIDED, &#10;    ATTONEY_NAME&#61;v_ATTONEY_NAME, &#10;    FFS_NAME&#61;v_FFS_NAME,&#10;    C_STAFF_NAME&#61;v_C_STAFF_NAME,&#10;    I_RECOMMENTED_PROG_TYPE&#61;v_I_RECOMMENTED_PROG_TYPE,&#10;    &#10;    FFS_SCORE&#61;v_FFS_SCORE,&#10;    F_DUCS_SUPERVISOR_NAME&#61;v_F_DUCS_SUPERVISOR_NAME,&#10;    F_STAFF_NAME&#61;v_F_STAFF_NAME,&#10;    IS_PLACEMENT_DIFFERENT&#61;v_IS_PLACEMENT_DIFFERENT, &#10;    DID_FSS_OVERRIDE&#61;v_DID_FSS_OVERRIDE,&#10;    F_DATE_OVERRIDE_APPROVED&#61;v_F_DATE_OVERRIDE_APPROVED, &#10;    F_TIME_OVERRIDE_APPROVED&#61;v_F_TIME_OVERRIDE_APPROVED, &#10;    F_OVERRIDE_JUSTIFICATION&#61;v_F_OVERRIDE_JUSTIFICATION,&#10;    ALERT_TYPE&#61;v_ALERT_TYPE,&#10;    I_STAFF_NAME&#61;v_I_STAFF_NAME, &#10;    I_DUCS_SUPERVISOR_NAME&#61;v_I_DUCS_SUPERVISOR_NAME, &#10;    I_DATE_OVERRIDE_APPROVED&#61;v_I_DATE_OVERRIDE_APPROVED,&#10;    I_TIME_OVERRIDE_APPROVED&#61;v_I_TIME_OVERRIDE_APPROVED, &#10;    I_OVERRIDE_JUSTIFICATION&#61;v_I_OVERRIDE_JUSTIFICATION,&#10;    I_IS_FAST_PLACEMENT&#61;v_I_IS_FAST_PLACEMENT, &#10;    I_ADDITIONAL_SERVICE_REQUIRED&#61;v_I_MORE_SERVICE_REQUIRED,&#10;    IS_OVERRIDE_OF_PM &#61; v_IS_OVERRIDE_OF_PM,&#10;    DID_INTAKES_OVERRIDE_PLACEMENT&#61;v_INTAKES_OVERRIDE_PLACEMENT,&#10;    I_ALERT_TYPE&#61;v_I_ALERT_TYPE,&#10;    &#10;    /*&#10;    I_IS_FAST_PLACEMENT&#61;v_I_IS_FAST_PLACEMENT, &#10;    I_ADDITIONAL_SERVICE_REQUIRED&#61;v_I_MORE_SERVICE_REQUIRED,&#10;       I_ALERT_TYPE&#61;v_I_ALERT_TYPE,&#10;      &#10;    &#10;    &#10;    &#10;    &#10;    */&#10;    UPTIME&#61;sysdate,     &#10;    UPUSER&#61;v_UPUSER,&#10;    Q1_INT&#61; v_Q1_INT,&#10;    Q1_FAC&#61; v_Q1_FAC,&#10;    Q1_FFS &#61; v_Q1_FFS,&#10;     Q2_INT&#61; v_Q2_INT,&#10;    Q2_FAC&#61; v_Q2_FAC,&#10;    Q2_FFS &#61; v_Q2_FFS,&#10;     Q3_INT&#61; v_Q3_INT,&#10;    Q3_FAC&#61; v_Q3_FAC,&#10;    Q3_FFS &#61; v_Q3_FFS,&#10;     Q4_INT&#61; v_Q4_INT,&#10;    Q4_FAC&#61; v_Q4_FAC,&#10;    Q4_FFS &#61; v_Q4_FFS,    &#10;    PM_TherapeuticNeed &#61;  v_TherapeuticNeed,&#10;    PM_ChildBehavior &#61; v_ChildBehavior,&#10;    PM_LegalProcess &#61; v_LegalProcess,&#10;    PM_FamilyReunion &#61; v_FamilyReunion,&#10;    DATE_OF_FINALPLACEMENT &#61; v_DATE_OF_FINALPLACEMENT,&#10;    FINAL_PROGRAM_NAME &#61; v_FINAL_PROGRAM_NAME,      &#10;    FINAL_PROGRAM_TYPE &#61; v_FINAL_PROGRAM_TYPE,&#10;    IPSCORE&#61; v_IPScore&#10;    where FAST_ID&#61;v_FAST_ID;&#10;  --if v_FAST_STATUS &#61; &#39;1&#39; then &#10;  --  update UAC_INFO set UAC_FAST_STATUS &#61; &#39;F&#39; where UAC_ID&#61;v_UAC_ID;&#10;  --else&#10;  --  update UAC_INFO set UAC_FAST_STATUS &#61; &#39;N&#39; where UAC_ID&#61;v_UAC_ID;&#10;  --end if;&#10;  &#10;   &#10;  commit;&#10;  end if;&#10;&#10;END SP_UPDATE_UAC_FAST;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

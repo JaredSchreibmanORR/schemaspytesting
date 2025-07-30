@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GET_CHILD_CURRENT_LOCATION</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>VUAC_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE             &quot;SP_GET_CHILD_CURRENT_LOCATION&quot; (&#10;vUAC_ID NUMBER,&#10;cur_Out  OUT SYS_REFCURSOR&#10;)&#10;AS&#10;uacId_    NUMBER(10,0) :&#61; vUAC_ID;&#10;uacProgId_       NUMBER(10,0);&#10;n NUMBER(4);&#10;uacStatus_  VARCHAR2(112);&#10;currentStatus_  VARCHAR2(112);&#10;programExitID_    NUMBER(10,0);&#10;dischargeID_ NUMBER(4);&#10;livingWithSponsor_ NUMBER(4);&#10;BEGIN&#10;&#9;/*&#10;&#9;-- Used to get row for Current Location of Child section on DischargeDetail.aspx page&#10;&#9;*/&#10;    select count(*) into n from (&#10;      Select 1 from UAC_CHILD_LOCATION_HIST Where UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0&#10;      Union&#10;      Select 0 from dual&#10;    );&#10;    if n &gt; 1 then&#10;&#9;&#9;Select LIVING_WITH_SPONSOR into livingWithSponsor_ from UAC_CHILD_LOCATION_HIST Where UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0;&#10;&#9;&#9;--If UC is currently living with Sponsor&#10;&#9;&#9;if livingWithSponsor_ &#61; 1 then&#10;&#9;&#9;&#9;-- Look up and display Current Sponsor Info&#10;&#9;&#9;&#9;Open cur_Out For&#10;&#9;&#9;&#9;&#9;SELECT &#10;&#9;&#9;&#9;&#9;UCLH.CHILD_LCTN_HIST_ID,&#10;                &#39;Sponsor&#39; as LOCATION_TYPE,&#10;                E.FIRST_NAME || &#39; &#39; || E.LAST_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;                CASE WHEN D.SPONSOR_ADDRESS is null then &#39;&#39; Else D.SPONSOR_ADDRESS || &#39;, &#39; END || CASE WHEN D.SPONSOR_ADDRESS_SECONDARY is null THEN &#39;&#39; ELSE D.SPONSOR_ADDRESS_SECONDARY || &#39;, &#39; END || CASE WHEN D.SPONSOR_CITY is null Then &#39;&#39; Else D.SPONSOR_CITY || &#39;, &#39; END || D.SPONSOR_STATE || &#39; &#39; || D.SPONSOR_ZIPCODE as ADDRESS,&#10;                --CASE WHEN SATH.UPDATE_DATE IS NULL THEN U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(D.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) ELSE U1.FIRST_NAME || &#39; &#39; || U1.LAST_NAME || &#39; &#39; || to_char(SATH.UPDATE_DATE, &#39;MM/DD/YYYY HH12:MI AM&#39;) END as LAST_UPDATED,&#10;                --U2.FIRST_NAME || &#39; &#39;  || U2.LAST_NAME || to_char(UCLH.DATE_LAST_UPDATED, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED,&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; UCLH.DATE_LAST_UPDATED&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;THEN U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(D.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;ELSE U2.FIRST_NAME || &#39; &#39; || U2.LAST_NAME || &#39; &#39; || to_char(UCLH.DATE_LAST_UPDATED, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; UCLH.DATE_LAST_UPDATED&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;THEN U1.FIRST_NAME || &#39; &#39; || U1.LAST_NAME || &#39; &#39; || to_char(SATH.UPDATE_DATE, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;ELSE U2.FIRST_NAME || &#39; &#39; || U2.LAST_NAME || &#39; &#39; || to_char(UCLH.DATE_LAST_UPDATED, &#39;MM/DD/YYYY HH12:MI AM&#39;)&#10;&#9;&#9;&#9;&#9;&#9;&#9;END&#10;&#9;&#9;&#9;&#9;END  as LAST_UPDATED,&#10;                UCLH.DISCHARGE_TYPE_ID, nvl(UCLH.REASON_FOR_UPDATE_ID,1) AS REASON_FOR_UPDATE_ID&#10;&#9;&#9;&#9;&#9;FROM UAC_SPONSOR_LIST D&#10;                  LEFT JOIN SPONSOR_INFO E On D.SPONSOR_ID &#61; E.SPONSOR_ID and d.is_deleted &#61; 0 and e.is_deleted &#61; 0&#10;                  LEFT JOIN SPONSOR_ASSESS_TAB_HISTORY SATH ON D.UAC_ID &#61; SATH.UAC_ID AND D.SPONSOR_ID &#61; SATH.SPONSOR_ID AND SATH.ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U On UPPER(D.UPUSER) &#61; UPPER(U.USER_ID)&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U1 On UPPER(SATH.UPUSER) &#61; UPPER(U1.USER_ID)&#10;&#9;&#9;&#9;&#9;  LEFT JOIN UAC_CHILD_LOCATION_HIST UCLH ON D.UAC_ID &#61; UCLH.UAC_ID AND UCLH.IS_CURRENT &#61; 1 AND UCLH.ISDELETED &#61; 0&#10;                  LEFT JOIN ADM_LIST_WEB_USER U2 ON UPPER(UCLH.USER_LAST_UPDATED) &#61; UPPER(U2.USER_ID)&#10;                WHERE D.UAC_ID &#61; uacId_ AND D.CURRENT_SPONSOR &#61; 1 ;&#10;&#9;&#9;Else&#10;&#9;&#9;--Else display Current Location&#10;&#9;&#9;&#9;Open cur_Out For&#10;&#9;&#9;&#9;&#9;SELECT &#10;&#9;&#9;&#9;&#9;A.CHILD_LCTN_HIST_ID,&#10;&#9;&#9;&#9;&#9;/*C.CAREGIVER_TYPE as LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;A.CAREGIVER_FIRST_NAME || &#39; &#39;  || A.CAREGIVER_LAST_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;&#9;&#9;&#9;&#9;CASE WHEN A.LOCATION_ADDRESS is null then &#39;&#39; ELSE A.LOCATION_ADDRESS || &#39;, &#39; END &#10;&#9;&#9;&#9;&#9;&#9;|| CASE WHEN A.LOCATION_ADDRESS_SECONDARY is null then &#39;&#39; else A.LOCATION_ADDRESS_SECONDARY || &#39;, &#39; END&#10;&#9;&#9;&#9;&#9;&#9;|| CASE WHEN A.LOCATION_CITY is null then &#39;&#39; else A.LOCATION_CITY || &#39;, &#39; END &#10;&#9;&#9;&#9;&#9;&#9;|| Case when A.LOCATION_STATE is null then &#39;&#39; else A.LOCATION_STATE || &#39; &#39; END &#10;&#9;&#9;&#9;&#9;&#9;|| A.LOCATION_ZIPCODE as ADDRESS,&#10;&#9;&#9;&#9;&#9;&#9;U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(A.DATE_LAST_UPDATED, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED*/&#10;&#9;&#9;&#9;&#9;CASE WHEN A.PRIMARY_CAREGIVER_TYPE is not null then C.CAREGIVER_TYPE ELSE A.LOCATION_TYPE END as LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;CASE WHEN A.PRIMARY_CAREGIVER_TYPE is not null then A.CAREGIVER_FIRST_NAME || &#39; &#39;  || A.CAREGIVER_LAST_NAME Else A.LOCATION_NAME END as SPONSOR_OR_PROGRAM_NAME,&#10;&#9;&#9;&#9;&#9;CASE WHEN A.LOCATION_ADDRESS is null then &#39;&#39; ELSE A.LOCATION_ADDRESS || &#39;, &#39; END || CASE WHEN A.LOCATION_ADDRESS_SECONDARY is null then &#39;&#39; else A.LOCATION_ADDRESS_SECONDARY || &#39;, &#39; END || CASE WHEN A.LOCATION_CITY is null then &#39;&#39; else A.LOCATION_CITY || &#39;, &#39; END || Case when A.LOCATION_STATE is null then &#39;&#39; else A.LOCATION_STATE || &#39; &#39; END || A.LOCATION_ZIPCODE as ADDRESS,&#10;&#9;&#9;&#9;&#9;U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(A.DATE_LAST_UPDATED, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;A.DISCHARGE_TYPE_ID, nvl(A.REASON_FOR_UPDATE_ID,1) AS REASON_FOR_UPDATE_ID, RFU.REASON_FOR_UPDATE_TYPE&#10;&#9;&#9;&#9;&#9;FROM UAC_CHILD_LOCATION_HIST A&#10;&#9;&#9;&#9;&#9;LEFT JOIN LIST_CURRENT_LOCATION_TYPE B On A.CHILD_LOCATION_TYPE &#61; B.CURRENT_LCTN_TYPE_ID&#10;&#9;&#9;&#9;&#9;LEFT JOIN LIST_CAREGIVER_TYPE C On A.PRIMARY_CAREGIVER_TYPE &#61; C.CAREGIVER_TYPE_ID&#10;&#9;&#9;&#9;&#9;LEFT JOIN ADM_LIST_WEB_USER U On UPPER(A.USER_LAST_UPDATED) &#61; UPPER(U.USER_ID)&#10;                LEFT JOIN LIST_REASON_FOR_UPDATE RFU ON A.REASON_FOR_UPDATE_ID &#61; RFU.REASON_FOR_UPDATE_ID&#10;&#9;&#9;&#9;&#9;Where UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1;&#10;&#9;&#9;End If;&#10;    ELSE&#10;      select count(*) into n from (&#10;        Select 1 from UAC_PROGRAM_INFO Where UAC_ID &#61; uacId_&#10;        Union&#10;        Select 0 from dual&#10;      );&#10;      if n &gt; 1 then&#10;&#10;      -- Get latest UAC_PROGRAM_INFO record for UCs&#10;      SELECT max(UAC_PROGRAM_ID) into uacProgId_&#10;      FROM UAC_PROGRAM_INFO&#10;      WHERE UAC_ID &#61; uacId_ AND CURRENT_STATUS &lt;&gt; &#39;ENROUTE&#39;;&#10;&#10;        Select UAC_STATUS, CURRENT_STATUS into uacStatus_, currentStatus_&#10;        FROM UAC_INFO A&#10;        INNER JOIN UAC_PROGRAM_INFO B On A.UAC_ID &#61; B.UAC_ID&#10;        WHERE B.UAC_PROGRAM_ID &#61; uacProgId_;&#10;&#10;        -- currently admitted in program or in-transfer&#10;        if currentStatus_ &#61; &#39;ADMITTED&#39; OR currentStatus_ &#61; &#39;IN-TRANSFER&#39; then&#10;          Open cur_Out For&#10;            SELECT&#10;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;            &#39;Currently admitted in program&#39; as ADMISSION_DISCHARGE_STATUS,&#10;            &#39;Program&#39; as LOCATION_TYPE,&#10;            C.PROGRAM_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;            CASE WHEN C.ADDRESS is null then &#39;&#39; ELSE C.ADDRESS || &#39;, &#39; END || CASE WHEN C.CITY is null then &#39;&#39; else C.CITY || &#39;, &#39; END || Case when C.STATE is null then &#39;&#39; else C.STATE || &#39; &#39; END || C.ZIPCODE as ADDRESS,&#10;            U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(B.DATE_ADMITTED, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;            FROM UAC_PROGRAM_INFO B&#10;            INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;        LEFT JOIN ADM_LIST_WEB_USER U On UPPER(B.UPUSER) &#61; UPPER(U.USER_ID)&#10;            WHERE B.UAC_PROGRAM_ID &#61; uacProgId_;&#10;        Elsif currentStatus_ &#61; &#39;DISCHARGED&#39; then&#10;&#10;          select count(*) into n from (&#10;            Select 1 from UAC_PROGRAM_EXIT Where UAC_PROGRAM_ID &#61; uacProgId_&#10;            Union&#10;            Select 0 from dual&#10;          );&#10;&#10;          if n &gt; 1 then&#10;            SELECT PROGRAM_EXIT_ID, TYPE_OF_DISCHARGE into programExitID_, dischargeID_&#10;            FROM UAC_PROGRAM_EXIT&#10;            WHERE UAC_PROGRAM_ID &#61; uacProgId_&#10;            ORDER BY PROGRAM_EXIT_ID DESC FETCH first 1 row only;&#10;&#10;            if dischargeID_ &#61; 1 then&#10;        -- Discharged to Program/Facility&#10;              Open cur_Out For&#10;                SELECT&#10;&#9;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;                DT.DISCHARGE_TYPE as ADMISSION_DISCHARGE_STATUS,&#10;                F.LOCATION_TYPE,&#10;                 RR.PROGRAM_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;                 Case When RR.PROGRAM_ADDRESS1 is null Then &#39;&#39; Else RR.PROGRAM_ADDRESS1 || &#39;, &#39; End || CASE WHEN RR.PROGRAM_ADDRESS2 is null THEN &#39;&#39; ELSE RR.PROGRAM_ADDRESS2 || &#39;, &#39; END || Case When RR.PROGRAM_CITY is null then &#39;&#39; Else RR.PROGRAM_CITY || &#39;, &#39; End || RR.PROGRAM_STATE || &#39; &#39; || RR.PROGRAM_ZIPCODE as ADDRESS,&#10;                 U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(PE.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;                FROM UAC_PROGRAM_INFO B&#10;                INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;                INNER JOIN UACPORTAL.UAC_RELEASE_REQUEST RR On RR.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;                INNER JOIN (SELECT RR1.UAC_PROGRAM_ID, MAX(RR1.RELEASE_ID) as MAX_RR_ID&#10;                  FROM UACPORTAL.UAC_RELEASE_REQUEST RR1&#10;                  WHERE (RR1.ISDELETED &#61; 0 OR RR1.ISDELETED Is NUll)&#10;&#9;&#9;&#9;&#9;  AND RR1.UAC_PROGRAM_ID &#61; uacProgId_&#10;                  GROUP BY RR1.UAC_PROGRAM_ID&#10;                ) Z On RR.RELEASE_ID &#61; Z.MAX_RR_ID&#10;          LEFT JOIN ADM_LIST_WEB_USER U On UPPER(PE.UPUSER) &#61; UPPER(U.USER_ID)&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;            ELSIF dischargeID_ in (2,4,7,8,13,14,15,16) then&#10;              Open cur_Out For&#10;                SELECT &#10;&#9;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE as ADMISSION_DISCHARGE_STATUS,&#10;                F.LOCATION_TYPE,&#10;                F.LOCATION as SPONSOR_OR_PROGRAM_NAME,&#10;                F.LOCATION as ADDRESS,&#10;                U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(PE.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;                FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;          LEFT JOIN ADM_LIST_WEB_USER U On UPPER(PE.UPUSER) &#61; UPPER(U.USER_ID)&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;            ELSIF dischargeID_ &#61; 3 then&#10;        -- Reunification (Individual Sponsor)&#10;              Open cur_Out For&#10;                SELECT &#10;&#9;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE as ADMISSION_DISCHARGE_STATUS,&#10;                F.LOCATION_TYPE,&#10;                E.FIRST_NAME || &#39; &#39; || E.LAST_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;                CASE WHEN D.SPONSOR_ADDRESS is null then &#39;&#39; Else D.SPONSOR_ADDRESS || &#39;, &#39; END || CASE WHEN D.SPONSOR_ADDRESS_SECONDARY is null THEN &#39;&#39; ELSE D.SPONSOR_ADDRESS_SECONDARY || &#39;, &#39; END || CASE WHEN D.SPONSOR_CITY is null Then &#39;&#39; Else D.SPONSOR_CITY || &#39;, &#39; END || D.SPONSOR_STATE || &#39; &#39; || D.SPONSOR_ZIPCODE as ADDRESS,&#10;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;THEN U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(D.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;ELSE UPE.FIRST_NAME || &#39; &#39; || UPE.LAST_NAME || &#39; &#39; || to_char(PE.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;THEN U1.FIRST_NAME || &#39; &#39; || U1.LAST_NAME || &#39; &#39; || to_char(SATH.UPDATE_DATE, &#39;MM/DD/YYYY HH12:MI AM&#39;) &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;ELSE UPE.FIRST_NAME || &#39; &#39; || UPE.LAST_NAME || &#39; &#39; || to_char(PE.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;)&#10;&#9;&#9;&#9;&#9;&#9;&#9;END&#10;&#9;&#9;&#9;&#9;END as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;&#9;&#9;&#9;&#9;FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION DTCL ON DT.DISCHARGE_TYPE_ID &#61; DTCL.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON DTCL.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;                  LEFT JOIN UAC_SPONSOR_LIST D on B.UAC_ID &#61; D.UAC_ID AND D.CURRENT_SPONSOR &#61; 1 and d.is_deleted &#61; 0&#10;                  LEFT JOIN SPONSOR_INFO E On D.SPONSOR_ID &#61; E.SPONSOR_ID&#10;                  LEFT JOIN ( SELECT UPE1.PROGRAM_EXIT_ID, UPE1.UAC_PROGRAM_ID, UPE1.TYPE_OF_DISCHARGE, DT1.DISCHARGE_TYPE&#10;                            FROM UAC_PROGRAM_EXIT UPE1&#10;                            INNER JOIN LIST_DISCHARGE_TYPE DT1 On UPE1.TYPE_OF_DISCHARGE &#61; DT1.DISCHARGE_TYPE_ID&#10;&#10;                  ) PE1 ON B.UAC_PROGRAM_ID &#61; PE1.UAC_PROGRAM_ID&#10;                  LEFT JOIN SPONSOR_ASSESS_TAB_HISTORY SATH ON D.UAC_ID &#61; SATH.UAC_ID AND D.SPONSOR_ID &#61; SATH.SPONSOR_ID AND SATH.ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;&#10;          LEFT JOIN ADM_LIST_WEB_USER U On UPPER(D.UPUSER) &#61; UPPER(U.USER_ID)&#10;          LEFT JOIN ADM_LIST_WEB_USER U1 On UPPER(SATH.UPUSER) &#61; UPPER(U1.USER_ID)&#10;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER UPE On UPPER(PE.UPUSER) &#61; UPPER(UPE.USER_ID)&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;            ELSIF dischargeID_  IN (6,10,11,12) then&#10;              Open cur_Out For&#10;                SELECT &#10;&#9;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE as ADMISSION_DISCHARGE_STATUS,&#10;                  F.LOCATION_TYPE,&#10;                  F.LOCATION as SPONSOR_OR_PROGRAM_NAME,&#10;                  &#39;&#39; as ADDRESS,&#10;                U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(PE.UPTIME, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;                FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;          LEFT JOIN ADM_LIST_WEB_USER U On UPPER(PE.UPUSER) &#61; UPPER(U.USER_ID)&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;        ELSIF dischargeID_  &#61; 9 then&#10;        Open cur_Out For&#10;          SELECT&#10;&#9;&#9;&#9;null as CHILD_LCTN_HIST_ID,&#10;            &#39;Transferred&#39; as ADMISSION_DISCHARGE_STATUS,&#10;            &#39;Program&#39; as LOCATION_TYPE,&#10;            C.PROGRAM_NAME as SPONSOR_OR_PROGRAM_NAME,&#10;            C.ADDRESS || &#39;, &#39; || C.CITY || &#39;, &#39; || C.STATE || &#39; &#39; || C.ZIPCODE as ADDRESS,&#10;            U.FIRST_NAME || &#39; &#39; || U.LAST_NAME || &#39; &#39; || to_char(B.DATE_ADMITTED, &#39;MM/DD/YYYY HH12:MI AM&#39;) as LAST_UPDATED, 0 AS REASON_FOR_UPDATE_ID, null as REASON_FOR_UPDATE_TYPE&#10;            FROM UAC_PROGRAM_INFO B&#10;            INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;            LEFT JOIN ADM_LIST_WEB_USER U On UPPER(B.UPUSER) &#61; UPPER(U.USER_ID)&#10;            WHERE B.UAC_PROGRAM_ID &#61; uacProgId_;&#10;        ELSE&#10;        Open cur_Out For&#10;          SELECT&#10;            &#39;&#39; as ADMISSION_DISCHARGE_STATUS,&#10;            &#39;&#39; as LOCATION_TYPE,&#10;            &#39;&#39; as SPONSOR_OR_PROGRAM_NAME,&#10;            &#39;&#39; as ADDRESS,&#10;            &#39;&#39; as LAST_UPDATED&#10;            FROM DUAL;&#10;            End If;&#10;          End if;&#10;        End if;&#10;      End if;&#10;    End if;&#10;END SP_GET_CHILD_CURRENT_LOCATION;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

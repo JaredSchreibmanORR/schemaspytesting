@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GET_VOR</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>UAC_PROGRAM_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_GET_VOR&quot; (&#10;UAC_PROGRAM_ID    NUMBER,&#10;cur_Out  OUT SYS_REFCURSOR&#10;)&#10;AS &#10;uacProgId_       NUMBER(10,0) :&#61; UAC_PROGRAM_ID;&#10;uacId_    NUMBER(10,0);&#10;uacImage  VARCHAR2(112) :&#61; &#39;NOIMAGE&#39;;&#10;n         NUMBER(4);&#10;BEGIN&#10;  select UAC_ID into uacId_ from UAC_PROGRAM_INFO Where UAC_PROGRAM_ID &#61; uacProgId_;&#10;  Select count(*) into n from (&#10;      Select DISTINCT FILE_NAME from UAC_IMAGES A1 &#10;      Inner Join UAC_PROGRAM_INFO B1 On A1.UAC_PROGRAM_ID &#61; B1.UAC_PROGRAM_ID&#10;      Inner Join UAC_INFO C1 On B1.UAC_ID &#61; C1.UAC_ID&#10;      Where C1.UAC_ID &#61; uacId_&#10;    );&#10;    if n &gt; 0 Then&#10;      Select FILE_NAME into uacImage From (&#10;        Select DISTINCT FILE_NAME, DATE_UPLOADED from UAC_IMAGES A2&#10;        Inner Join UAC_PROGRAM_INFO B2 On A2.UAC_PROGRAM_ID &#61; B2.UAC_PROGRAM_ID&#10;        Inner Join UAC_INFO C2 On B2.UAC_ID &#61; C2.UAC_ID&#10;        Where C2.UAC_ID &#61; uacId_ Order by A2.DATE_UPLOADED Desc&#10;      ) where rownum &#61; 1;&#10;    end if;&#10;  Open cur_Out For&#10;    Select UACI.UAC_ID,UACI.ALIEN_NO, UACI.FIRST_NAME, UACI.LAST_NAME, UACI.AKA, UACI.DOB, Trunc(months_between(sysdate, UACI.DOB) /12) as Age, UACI.COB, UACI.GENDER, CURRENT_STATUS as UAC_STATUS,DATE_ADMITTED, &#10;    UACP.PROGRAM_ID, &#10;&#9;UACP.DATE_DISCHARGED,&#10;    LP.PROGRAM_NAME, &#10;    F.FIRST_NAME || &#39; &#39; || F.LAST_NAME as Sponsor_NAME, F.SSN as Sponsor_SSN, F.ALIEN_NO as Sponsor_ANo, &#10;    F.SPONSOR_ADDRESS,&#10;    F.Sponsor_City, F.Sponsor_State,&#10;    F.Sponsor_ZipCode, F.Sponsor_Home_Phone as Sponsor_Phone, F.Relationship,&#10;    UACIA.UAC_PRIMARY_LANG_DDL,&#10;    CASE WHEN UACIA.UAC_PRIMARY_LANG_DDL is null Then UACIA.UAC_PRIMARY_LANGUAGE ELSE LL.LANGUAGE END AS PRIMARY_LANGUAGE,&#10;    UACIA.EYE_COLOR_ID,&#10;    LE.COLOR_NAME AS EYE_COLOR,&#10;&#9;G.IMAGE_PATH || G.FILE_NAME as UAC_PHOTO,&#10;&#9;uacImage as ImageName&#10;    FROM UAC_INFO UACI&#10;    LEFT JOIN UAC_PROGRAM_INFO UACP ON UACI.UAC_ID &#61; UACP.UAC_ID&#10;    LEFT JOIN UAC_INITIAL_ASSESSMENT UACIA On UACP.UAC_PROGRAM_ID &#61; UACIA.UAC_PROGRAM_ID&#10;    LEFT JOIN LIST_PROGRAMS LP On UACP.PROGRAM_ID &#61; LP.PROGRAM_ID&#10;    LEFT JOIN LIST_LANGUAGES LL On UACIA.UAC_PRIMARY_LANG_DDL &#61; LL.LANGUAGE_ID&#10;    LEFT JOIN LIST_EYE_COLOR LE ON UACIA.EYE_COLOR_ID &#61; LE.COLOR_ID&#10;    Left Join (&#10;          Select B.UAC_ID, CONCAT(CONCAT(B.SPONSOR_ADDRESS, &#39; &#39;), B.SPONSOR_ADDRESS_SECONDARY) as Sponsor_Address, B.Sponsor_City, B.Sponsor_State,&#10;          B.Sponsor_ZipCode, B.Sponsor_Home_Phone, A.*, C.Relationship &#10;          From SPONSOR_INFO A &#10;          Inner Join UAC_SPONSOR_LIST B On A.SPONSOR_ID &#61; B.SPONSOR_ID and a.is_deleted&#61;0 and b.is_deleted &#61; 0&#10;          Left Join LIST_RELATIONSHIP C On B.SPONSOR_RELATIONSHIP_TO_UAC &#61; C.RELATIONSHIP_ID&#10;          Where B.CURRENT_SPONSOR &#61; 1&#10;        ) F On UACI.UAC_ID &#61; F.UAC_ID&#10;&#9;Left Join UAC_IMAGES G On UACP.UAC_PROGRAM_ID &#61; G.UAC_PROGRAM_ID&#10;    Where UACP.UAC_PROGRAM_ID &#61; uacProgId_;&#10;END SP_GET_VOR;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

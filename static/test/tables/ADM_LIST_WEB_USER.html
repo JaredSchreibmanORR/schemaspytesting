@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ADM_LIST_WEB_USER - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>ADM_LIST_WEB_USER</h1><p><span id="recordNumber">42716</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="USER_ID">USER_ID</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="PRS_CNRE_DOCUMENT.REVIEWER_USER_ID references ADM_LIST_WEB_USER.USER_ID via PRS_CNRE_DOCUMENT__ADM_LIST_WEB_USER_ID_FK"><a href='PRS_CNRE_DOCUMENT.html'>PRS_CNRE_DOCUMENT</a><span class='relatedKey'>.REVIEWER_USER_ID</span></td>
+                                                <td class="constraint detail">PRS_CNRE_DOCUMENT__ADM_LIST_WEB_USER_ID_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="PRS_TRANSFER_REQUEST.REQUEST_USER references ADM_LIST_WEB_USER.USER_ID via REQUEST_USER_ADM_LIST_WEB_USER_FK"><a href='PRS_TRANSFER_REQUEST.html'>PRS_TRANSFER_REQUEST</a><span class='relatedKey'>.REQUEST_USER</span></td>
+                                                <td class="constraint detail">REQUEST_USER_ADM_LIST_WEB_USER_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="PRS_TRANSFER_REQUEST.UPUSER references ADM_LIST_WEB_USER.USER_ID via UPUSER_ADM_LIST_WEB_USER_FK"><a href='PRS_TRANSFER_REQUEST.html'>PRS_TRANSFER_REQUEST</a><span class='relatedKey'>.UPUSER</span></td>
+                                                <td class="constraint detail">UPUSER_ADM_LIST_WEB_USER_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_CASE_ACTIVITY.UPUSER references ADM_LIST_WEB_USER.USER_ID via UAC_CASE_ACTIVITY_UPUSER_ADM_LIST_WEB_USER_FK"><a href='UAC_CASE_ACTIVITY.html'>UAC_CASE_ACTIVITY</a><span class='relatedKey'>.UPUSER</span></td>
+                                                <td class="constraint detail">UAC_CASE_ACTIVITY_UPUSER_ADM_LIST_WEB_USER_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_HOMESTUDY_CASE_REFERRAL.ASSIGNED_SUPERVISOR_USERID references ADM_LIST_WEB_USER.USER_ID via UAC_HOMESTUDY_CASE_REFERRAL__ASSIGNED_SUPERVISOR_USERID_FK"><a href='UAC_HOMESTUDY_CASE_REFERRAL.html'>UAC_HOMESTUDY_CASE_REFERRAL</a><span class='relatedKey'>.ASSIGNED_SUPERVISOR_USERID</span></td>
+                                                <td class="constraint detail">UAC_HOMESTUDY_CASE_REFERRAL__ASSIGNED_SUPERVISOR_USERID_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_HOMESTUDY_CASE_REFERRAL.ASSIGNED_USERID references ADM_LIST_WEB_USER.USER_ID via UAC_HOMESTUDY_CASE_REFERRAL__ASSIGNED_USERID_FK"><a href='UAC_HOMESTUDY_CASE_REFERRAL.html'>UAC_HOMESTUDY_CASE_REFERRAL</a><span class='relatedKey'>.ASSIGNED_USERID</span></td>
+                                                <td class="constraint detail">UAC_HOMESTUDY_CASE_REFERRAL__ASSIGNED_USERID_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_POST_RELEASE_SERVICE.ASSIGNED_USERID references ADM_LIST_WEB_USER.USER_ID via ASSIGNED_USERID_ADM_LIST_WEB_USER_FK"><a href='UAC_POST_RELEASE_SERVICE.html'>UAC_POST_RELEASE_SERVICE</a><span class='relatedKey'>.ASSIGNED_USERID</span></td>
+                                                <td class="constraint detail">ASSIGNED_USERID_ADM_LIST_WEB_USER_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_SPONSOR_ADDRESS_HISTORY.USER_CREATED references ADM_LIST_WEB_USER.USER_ID via SPNSR_ADDR_USER_CREATED_FK"><a href='UAC_SPONSOR_ADDRESS_HISTORY.html'>UAC_SPONSOR_ADDRESS_HISTORY</a><span class='relatedKey'>.USER_CREATED</span></td>
+                                                <td class="constraint detail">SPNSR_ADDR_USER_CREATED_FK</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_UNIFICATION_SPECIALIST.UPUSER references ADM_LIST_WEB_USER.USER_ID via UAC_UNIFICATION_SPECIALIST_FK2"><a href='UAC_UNIFICATION_SPECIALIST.html'>UAC_UNIFICATION_SPECIALIST</a><span class='relatedKey'>.UPUSER</span></td>
+                                                <td class="constraint detail">UAC_UNIFICATION_SPECIALIST_FK2</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UAC_UNIFICATION_SPECIALIST.USER_CREATED references ADM_LIST_WEB_USER.USER_ID via UAC_UNIFICATION_SPECIALIST_FK1"><a href='UAC_UNIFICATION_SPECIALIST.html'>UAC_UNIFICATION_SPECIALIST</a><span class='relatedKey'>.USER_CREATED</span></td>
+                                                <td class="constraint detail">UAC_UNIFICATION_SPECIALIST_FK1</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PASSWORD">PASSWORD</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>512</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="FIRST_NAME">FIRST_NAME</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>30</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="LAST_NAME">LAST_NAME</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ADDRESS">ADDRESS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CITY">CITY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STATE">STATE</span></td>
+                                    <td>CHAR</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ADM_LIST_WEB_USER.STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='LIST_STATES.html'>LIST_STATES</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ZIP_CODE">ZIP_CODE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PHONE">PHONE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>22</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="WORK_PHONE">WORK_PHONE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>22</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="WORK_FAX">WORK_FAX</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>22</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="EMAIL">EMAIL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUSPENDED">SUSPENDED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>(0) </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ROLE_TYPE">ROLE_TYPE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>50</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="USER_PRIVELEGE">USER_PRIVELEGE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>20</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_CREATED">DATE_CREATED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="USER_CREATED">USER_CREATED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPTIME">UPTIME</span></td>
+                                    <td>TIMESTAMP(6)</td>
+                                    <td>11,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPUSER">UPUSER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="GROUPEMAILS">GROUPEMAILS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>2000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PASSWORDRESET">PASSWORDRESET</span></td>
+                                    <td>NUMBER</td>
+                                    <td>0</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LOGINCOUNT">LOGINCOUNT</span></td>
+                                    <td>NUMBER</td>
+                                    <td>0</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LASTLOGIN">LASTLOGIN</span></td>
+                                    <td>TIMESTAMP(6)</td>
+                                    <td>11,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="CARRIER_ID">CARRIER_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ADM_LIST_WEB_USER.CARRIER_ID&#39;s name implies that it&#39;s a child of LIST_AIHD_TECHS.ID, but it doesn&#39;t reference that column."><a href='LIST_AIHD_TECHS.html'>LIST_AIHD_TECHS</a><span class='relatedKey'>.ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PROVIDER">PROVIDER</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>2000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="BLOCKED">BLOCKED</span></td>
+                                    <td>NUMBER</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>(0) </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> PK_ADM_LIST_WEB_USER</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>USER_ID</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>ADM_LIST_WEB_USER_INDEX1</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>FIRST_NAME</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>ADM_LIST_WEB_USER_INDEX2</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>LAST_NAME</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>ADM_LIST_WEB_USER_INDEX3</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>EMAIL</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="check_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>CONS_PASSWORDRESET</td>
+                                    <td>&quot;PASSWORDRESET&quot; IS NOT NULL</td>
+                                </tr>
+                                <tr>
+                                    <td>CONS_LOGINCOUNT</td>
+                                    <td>&quot;LOGINCOUNT&quot; IS NOT NULL</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="936,5,1223,240">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="475,169,821,433">
+<area shape="rect" id="node3" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="5,592,405,1424">
+<area shape="rect" id="node4" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="891,257,1268,492">
+<area shape="rect" id="node5" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="947,509,1212,744">
+<area shape="rect" id="node6" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="449,559,847,881">
+<area shape="rect" id="node7" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="449,899,847,1133">
+<area shape="rect" id="node8" href="UAC_UNIFICATION_SPECIALIST.html" target="_top" title="UAC_UNIFICATION_SPECIALIST" alt="" coords="470,1151,826,1356">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/ADM_LIST_WEB_USER.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1171,24,1458,112">
+<area shape="rect" id="node2" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="711,112,1057,200">
+<area shape="rect" id="node3" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="241,562,641,1394">
+<area shape="rect" id="node4" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="305,263,577,351">
+<area shape="rect" id="node10" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="5,1374,197,1462">
+<area shape="rect" id="node5" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="1158,603,1471,691">
+<area shape="rect" id="node6" href="LIST_HOMESTUDY_PROVIDER.html" target="_top" title="LIST_HOMESTUDY_PROVIDER" alt="" coords="712,218,1056,306">
+<area shape="rect" id="node7" href="PRS_TRANSFER_REQUEST__LIST_PRS__1a9866f2.html" target="_top" title="PRS_TRANSFER_REQUEST__LIST_PRS_TRANSFER_REASON" alt="" coords="1547,600,2143,688">
+<area shape="rect" id="node8" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="1182,714,1447,802">
+<area shape="rect" id="node9" href="LIST_CASE_ACTIVITY_TYPES.html" target="_top" title="LIST_CASE_ACTIVITY_TYPES" alt="" coords="719,751,1049,839">
+<area shape="rect" id="node11" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="685,323,1083,646">
+<area shape="rect" id="node12" href="LIST_REFERRAL_SUB_STATUS.html" target="_top" title="LIST_REFERRAL_SUB_STATUS" alt="" coords="269,456,614,544">
+<area shape="rect" id="node13" href="UAC_PRS_SERVICE_LVL_HISTORY.html" target="_top" title="UAC_PRS_SERVICE_LVL_HISTORY" alt="" coords="1127,130,1503,218">
+<area shape="rect" id="node14" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="685,1300,1083,1535">
+<area shape="rect" id="node15" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="330,1447,553,1535">
+<area shape="rect" id="node16" href="UAC_UNIFICATION_SPECIALIST.html" target="_top" title="UAC_UNIFICATION_SPECIALIST" alt="" coords="706,856,1062,1062">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/ADM_LIST_WEB_USER.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="291,423,691,1255">
+<area shape="rect" id="node2" href="LIST_AIHD_TECHS.html" target="_top" title="LIST_AIHD_TECHS" alt="" coords="5,424,247,541">
+<area shape="rect" id="node3" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="27,1008,225,1125">
+<area shape="rect" id="node4" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1221,575,1508,809">
+<area shape="rect" id="node5" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="760,604,1107,868">
+<area shape="rect" id="node6" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="1176,827,1553,1061">
+<area shape="rect" id="node7" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="1232,227,1497,461">
+<area shape="rect" id="node8" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="735,264,1132,587">
+<area shape="rect" id="node9" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="735,1061,1132,1296">
+<area shape="rect" id="node10" href="UAC_UNIFICATION_SPECIALIST.html" target="_top" title="UAC_UNIFICATION_SPECIALIST" alt="" coords="755,5,1111,211">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/ADM_LIST_WEB_USER.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="752,3451,1152,4283">
+<area shape="rect" id="node2" href="LIST_AIHD_TECHS.html" target="_top" title="LIST_AIHD_TECHS" alt="" coords="353,4512,594,4600">
+<area shape="rect" id="node3" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,2652,204,2740">
+<area shape="rect" id="node4" href="FACILITY_INFO.html" target="_top" title="FACILITY_INFO" alt="" coords="845,3273,1059,3361">
+<area shape="rect" id="node5" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="357,2439,590,2527">
+<area shape="rect" id="node6" href="FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="823,2117,1081,2205">
+<area shape="rect" id="node7" href="LIST_DENY_REASON.html" target="_top" title="LIST_DENY_REASON" alt="" coords="821,4719,1083,4807">
+<area shape="rect" id="node8" href="LIST_HEARING_OUTCOME.html" target="_top" title="LIST_HEARING_OUTCOME" alt="" coords="797,4824,1107,4912">
+<area shape="rect" id="node9" href="LIST_UAC_IDENTITY.html" target="_top" title="LIST_UAC_IDENTITY" alt="" coords="823,4929,1081,5017">
+<area shape="rect" id="node10" href="LIST_UNLOCK_REASON.html" target="_top" title="LIST_UNLOCK_REASON" alt="" coords="809,5035,1095,5123">
+<area shape="rect" id="node11" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1697,3417,1984,3505">
+<area shape="rect" id="node12" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="1231,3383,1577,3471">
+<area shape="rect" id="node13" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="816,2616,1088,2704">
+<area shape="rect" id="node26" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="369,1431,577,1519">
+<area shape="rect" id="node14" href="PRS_TRANSFER_REQUEST.html" target="_top" title="PRS_TRANSFER_REQUEST" alt="" coords="1684,3837,1997,3925">
+<area shape="rect" id="node15" href="LIST_HOMESTUDY_PROVIDER.html" target="_top" title="LIST_HOMESTUDY_PROVIDER" alt="" coords="1232,3916,1576,4004">
+<area shape="rect" id="node16" href="PRS_TRANSFER_REQUEST__LIST_PRS__1a9866f2.html" target="_top" title="PRS_TRANSFER_REQUEST__LIST_PRS_TRANSFER_REASON" alt="" coords="2079,3835,2675,3923">
+<area shape="rect" id="node17" href="SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="284,4689,663,4777">
+<area shape="rect" id="node18" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="362,469,585,557">
+<area shape="rect" id="node19" href="SPONSOR_INFO_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ARCHIVE" alt="" coords="319,4795,628,4883">
+<area shape="rect" id="node20" href="SPONSOR_INFO_BAK.html" target="_top" title="SPONSOR_INFO_BAK" alt="" coords="339,4900,607,4988">
+<area shape="rect" id="node21" href="TABLEAU_RELEASE_REQUESTS_FY21.html" target="_top" title="TABLEAU_RELEASE_REQUESTS_FY21" alt="" coords="749,5224,1155,5288">
+<area shape="rect" id="node22" href="TABLEAU_SPONSOR_APPLICATIONS_FY21.html" target="_top" title="TABLEAU_SPONSOR_APPLICATIONS_FY21" alt="" coords="248,5005,699,5069">
+<area shape="rect" id="node23" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1647,2328,2035,2392">
+<area shape="rect" id="node24" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="1279,3136,1529,3224">
+<area shape="rect" id="node25" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="1225,2169,1583,2233">
+<area shape="rect" id="node27" href="TEMP1_3.html" target="_top" title="TEMP1_3" alt="" coords="393,5087,553,5151">
+<area shape="rect" id="node28" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="881,2036,1023,2100">
+<area shape="rect" id="node29" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1333,1173,1475,1237">
+<area shape="rect" id="node30" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1333,2031,1475,2095">
+<area shape="rect" id="node31" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1333,1920,1475,1984">
+<area shape="rect" id="node32" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1333,1659,1475,1723">
+<area shape="rect" id="node33" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="849,647,1055,711">
+<area shape="rect" id="node34" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="849,728,1055,792">
+<area shape="rect" id="node35" href="TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="1281,3241,1527,3329">
+<area shape="rect" id="node36" href="TT_FOR_UPLD_SPONSOR_INFO.html" target="_top" title="TT_FOR_UPLD_SPONSOR_INFO" alt="" coords="297,5168,650,5256">
+<area shape="rect" id="node37" href="TT_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="TT_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="269,5273,677,5361">
+<area shape="rect" id="node38" href="UAC_CASE_ACTIVITY.html" target="_top" title="UAC_CASE_ACTIVITY" alt="" coords="1708,2791,1973,2879">
+<area shape="rect" id="node39" href="LIST_CASE_ACTIVITY_TYPES.html" target="_top" title="LIST_CASE_ACTIVITY_TYPES" alt="" coords="1239,2401,1569,2489">
+<area shape="rect" id="node40" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="786,2223,1118,2311">
+<area shape="rect" id="node41" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="1219,3031,1589,3119">
+<area shape="rect" id="node42" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="1205,3524,1603,3847">
+<area shape="rect" id="node43" href="LIST_REFERRAL_SUB_STATUS.html" target="_top" title="LIST_REFERRAL_SUB_STATUS" alt="" coords="779,4300,1125,4388">
+<area shape="rect" id="node44" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="816,240,1088,328">
+<area shape="rect" id="node45" href="UAC_HOTLINE_REPORTING.html" target="_top" title="UAC_HOTLINE_REPORTING" alt="" coords="1245,221,1563,309">
+<area shape="rect" id="node46" href="UAC_IDENTITY_INFO.html" target="_top" title="UAC_IDENTITY_INFO" alt="" coords="821,4441,1083,4529">
+<area shape="rect" id="node47" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="843,809,1061,897">
+<area shape="rect" id="node48" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="843,915,1061,1003">
+<area shape="rect" id="node49" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="793,1020,1111,1108">
+<area shape="rect" id="node50" href="UAC_PRS_SERVICE_LVL_HISTORY.html" target="_top" title="UAC_PRS_SERVICE_LVL_HISTORY" alt="" coords="1653,3312,2029,3400">
+<area shape="rect" id="node51" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="1255,4667,1553,4755">
+<area shape="rect" id="node52" href="UAC_RR_CCR_HISTORY.html" target="_top" title="UAC_RR_CCR_HISTORY" alt="" coords="1699,4569,1983,4657">
+<area shape="rect" id="node53" href="UAC_RR_CMR_HISTORY.html" target="_top" title="UAC_RR_CMR_HISTORY" alt="" coords="1697,5127,1985,5215">
+<area shape="rect" id="node54" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="1677,4155,2004,4243">
+<area shape="rect" id="node55" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="1205,1255,1603,1343">
+<area shape="rect" id="node56" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="821,505,1083,593">
+<area shape="rect" id="node57" href="UAC_UNIFICATION_SPECIALIST.html" target="_top" title="UAC_UNIFICATION_SPECIALIST" alt="" coords="1226,4021,1582,4109">
+<area shape="rect" id="node58" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="1212,2868,1596,2932">
+<area shape="rect" id="node59" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="1209,2787,1599,2851">
+<area shape="rect" id="node60" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="801,1125,1103,1189">
+<area shape="rect" id="node61" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="762,1207,1142,1271">
+<area shape="rect" id="node62" href="V_ENTRY_STATES.html" target="_top" title="V_ENTRY_STATES" alt="" coords="355,5379,591,5443">
+<area shape="rect" id="node63" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="361,5460,585,5524">
+<area shape="rect" id="node64" href="V_PC_UNDERWRITERS.html" target="_top" title="V_PC_UNDERWRITERS" alt="" coords="335,5541,612,5605">
+<area shape="rect" id="node65" href="V_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="V_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="275,5623,671,5687">
+<area shape="rect" id="node66" href="V_SPONSOR_INFO.html" target="_top" title="V_SPONSOR_INFO" alt="" coords="353,5704,593,5768">
+<area shape="rect" id="node67" href="V_SPONSOR_LEGAL_RPT.html" target="_top" title="V_SPONSOR_LEGAL_RPT" alt="" coords="325,5785,621,5849">
+<area shape="rect" id="node68" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="754,1684,1150,1748">
+<area shape="rect" id="node69" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="743,1765,1161,1829">
+<area shape="rect" id="node70" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="1249,1487,1559,1551">
+<area shape="rect" id="node71" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="1210,2507,1598,2571">
+<area shape="rect" id="node72" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="791,1847,1113,1911">
+<area shape="rect" id="node73" href="V_UAC_ORIG_SPONSOR_INFO.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO" alt="" coords="304,5867,643,5931">
+<area shape="rect" id="node74" href="V_UAC_ORIG_SPONSOR_INFO_HS.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO_HS" alt="" coords="287,5948,659,6012">
+<area shape="rect" id="node75" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="1238,2588,1570,2652">
+<area shape="rect" id="node76" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="1227,2949,1581,3013">
+<area shape="rect" id="node77" href="V_UAC_SPONSOR_INFO.html" target="_top" title="V_UAC_SPONSOR_INFO" alt="" coords="331,6029,616,6093">
+<area shape="rect" id="node78" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="1265,2705,1543,2769">
+<area shape="rect" id="node79" href="V_USERLIST_NOTPROGRAMUSERS.html" target="_top" title="V_USERLIST_NOTPROGRAMUSERS" alt="" coords="281,5,665,69">
+<area shape="rect" id="node80" href="V_USERLIST_WPROGRAMS.html" target="_top" title="V_USERLIST_WPROGRAMS" alt="" coords="315,87,631,151">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/ADM_LIST_WEB_USER.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_HD_DELETE_SIR_EVENT</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_EVENT_ID</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_USER_ID</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_HD_DELETE_SIR_EVENT&quot;&#10;(&#10;&#9;v_EVENT_ID VARCHAR2, &#10;  v_USER_ID VARCHAR2&#10;) AS &#10;oldValue_ VARCHAR2(255) :&#61; &#39;&#39;;&#10;eventID_  NUMBER(10) :&#61; 0;&#10;errorMsg_  VARCHAR2(100) :&#61; &#39;&#39;;&#10;errorLocation_  VARCHAR2(50) :&#61; &#39;&#39;;&#10;sqlString_ VARCHAR2(500) :&#61; &#39;&#39;;&#10;userId_ VARCHAR2(255) :&#61; &#39;&#39;;&#10;backString_ VARCHAR2(32767) :&#61; &#39;&#39;;&#10;n         NUMBER :&#61; 0;&#10;BEGIN&#10;&#10;  SAVEPOINT save1;&#10;&#10;  userId_ :&#61; v_USER_ID;&#10;  eventID_ :&#61; v_EVENT_ID;&#10;  if userId_ &#61; &#39;001&#39; OR userId_ &#61; &#39;002&#39; OR userId_ &#61;  &#39;007&#39; Then&#10;&#10;    -- +-------------------------------------------------------------+&#10;&#9;&#9;&#9;-- | Check if GENERAL_INFO_ID is valid                                |&#10;&#9;&#9;&#9;-- +-------------------------------------------------------------+&#10;&#9;&#9;&#9;BEGIN&#10;&#9;&#9;&#9;  sqlString_ :&#61; &#39;Select EVENT_ID FROM UAC_SIR_EVENT WHERE EVENT_ID &#61; &#39; ||  v_EVENT_ID;&#10;&#9;&#9;&#9;  execute immediate sqlString_ into oldValue_;&#10;&#9;&#9;&#9;EXCEPTION&#10;&#9;&#9;&#9;  WHEN no_data_found&#10;&#9;&#9;&#9;  THEN&#10;&#9;&#9;&#9;&#9;eventID_ :&#61; 0;&#10;&#9;&#9;&#9;&#9;errorMsg_ :&#61; &#39;NO UAC_SIR_EVENT records were found for EVENT_ID: &#39; || v_EVENT_ID || &#39;!&#39;;&#10;&#9;&#9;&#9;&#9;dbms_output.put_line(errorMsg_);&#10;&#9;&#9;&#9;&#9;RETURN;&#10;&#9;&#9;&#9;END;&#10;&#10;      BEGIN&#10;        Select count(*) into n from (&#10;          SELECT 1 from UAC_SIR_NEW WHERE (ISDELETED &#61; 0 OR ISDELETED is NUll) AND EVENT_ID &#61; eventID_&#10;          UNION&#10;          Select 0 from dual&#10;          );&#10;        if n &gt; 1 Then&#10;          --SELECT &#39;Please delete the SIR&#39;&#39;s using this EVENT_ID first.&#39; as ERROR_MSSGE from dual;&#10;          errorMsg_ :&#61; &#39;Please delete the SIR&#39;&#39;s using this EVENT_ID first.&#39;;&#10;          dbms_output.put_line(errorMsg_);&#10;          RETURN;&#10;        end if;&#10;      END;&#10;&#10;&#10;       -- +-------------------------------------------------------------+&#10;&#9;&#9;&#9;-- | BACKUP DATA, THEN DELETE                 |&#10;&#9;&#9;&#9;-- +-------------------------------------------------------------+&#10;    BEGIN&#10;      FOR ind IN &#10;        (SELECT EVENT_ID &#10;          FROm UAC_SIR_EVENT Where EVENT_ID &#61;  eventID_)&#10;      LOOP     &#10;        SELECT &#10;        &#39;Insert into UAC_SIR_EVENT (&#10;          EVENT_ID,&#10;          DATE_OF_EVENT,&#10;          SYNOPSIS_OF_EVENT,&#10;          DATE_CREATED,&#10;          USER_CREATED,&#10;          UPTIME,&#10;          UPUSER,&#10;          ISDELETED,&#10;          TIME_OF_EVENT,PROGRAM_ID)&#10;        Values(&#39; &#10;&#9;&#9;&#9;|| EVENT_ID || &#39;,&#39; || &#10;&#9;&#9;&#9;&#39;to_date(&#39;&#39;&#39; || DATE_OF_EVENT || &#39;&#39;&#39;,&#39;&#39;DD-MON-RR&#39;&#39;),&#39; ||&#10;          CASE WHEN SYNOPSIS_OF_EVENT Is Null THEN &#39;null,&#39; ELSE &#39;&#39;&#39;&#39; || SYNOPSIS_OF_EVENT || &#39;&#39;&#39;&#39; || &#39;,&#39; END ||&#10;          &#39;to_date(&#39;&#39;&#39; || DATE_CREATED || &#39;&#39;&#39;,&#39;&#39;DD-MON-RR&#39;&#39;),&#39; ||&#10;          CASE WHEN USER_CREATED Is Null THEN &#39;null,&#39; ELSE &#39;&#39;&#39;&#39; || USER_CREATED || &#39;&#39;&#39;&#39; || &#39;,&#39; END ||&#10;          &#39;to_timestamp(&#39;&#39;&#39; || UPTIME || &#39;&#39;&#39;,&#39;&#39;DD-MON-RR HH.MI.SSXFF AM&#39;&#39;),&#39; ||&#10;          CASE WHEN UPUSER Is Null THEN &#39;null,&#39; ELSE &#39;&#39;&#39;&#39; || UPUSER || &#39;&#39;&#39;&#39; || &#39;,&#39; END ||&#10;          CASE WHEN ISDELETED Is Null THEN &#39;null,&#39; ELSE &#39;&#39;&#39;&#39; || ISDELETED || &#39;&#39;&#39;&#39; || &#39;,&#39; END ||&#10;          CASE WHEN TIME_OF_EVENT Is Null THEN &#39;null,&#39; ELSE &#39;&#39;&#39;&#39; || TIME_OF_EVENT || &#39;&#39;&#39;&#39; || &#39;,&#39; END ||&#10;          PROGRAM_ID ||  &#39;);&#39; INTO backString_&#10;        FROM UAC_SIR_EVENT&#10;        Where EVENT_ID &#61; ind.EVENT_ID;&#10;&#10;        Delete From UAC_SIR_EVENT&#10;        Where EVENT_ID &#61; ind.EVENT_ID;&#10;&#10;        INSERT INTO UACPORTAL.HD_TRANSACTION_LOG(&#10;          USER_ID,&#10;          TIME_STAMP,&#10;          TRANS_TYPE,&#10;          SP_NAME,&#10;          TABLE_NAME,&#10;          RECORD_ID,&#10;          COLUMN_NAME,&#10;          COLUMN_NEW_VALUE,&#10;          COLUMN_OLD_VALUE&#10;        )&#10;        VALUES&#10;        (&#10;          userId_,&#10;          SYSDATE,&#10;          &#39;DELETE&#39;,&#10;          &#39;SP_HD_DELETE_SIR_EVENT&#39;,&#10;          &#39;UAC_SIR_EVENT&#39;,&#10;          eventID_,&#10;          null,&#10;          null,&#10;          backString_&#10;        );&#10;&#10;    END LOOP;&#10;    END;&#10;&#10;    COMMIT;&#10;&#10;  else&#10;    errorMsg_ :&#61; &#39;The USER_ID is invalid!&#39;;&#10;    dbms_output.put_line(errorMsg_);&#10;    RETURN;&#10;  end if;&#10;&#10;EXCEPTION&#10;  WHEN OTHERS THEN&#10;    --errorMsg_ :&#61; &#39;Unable to complete delete operation!&#39;;&#10;    errorMsg_ :&#61; &#39;Unable to complete delete operation! Error when deleting &#39; || errorLocation_;&#10;    dbms_output.put_line(errorMsg_ || &#39;. &#39; || SUBSTR(SQLERRM, 1, 150));&#10;    -- Rollback everything which was made after &#96;SAVEPOINT save1&#96;&#10;    ROLLBACK TO save1;&#10;    RAISE;&#10;&#10;END SP_HD_DELETE_SIR_EVENT;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

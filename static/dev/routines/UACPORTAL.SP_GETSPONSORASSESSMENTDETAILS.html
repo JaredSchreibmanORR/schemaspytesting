@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GETSPONSORASSESSMENTDETAILS</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>P_SPONSORID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>P_UACID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>P_UACPROGID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE sp_GetSponsorAssessmentDetails (&#10;    p_SponsorId IN NUMBER,&#10;    p_UacId IN NUMBER,&#10;    p_UacProgId IN NUMBER,&#10;    cur_Out  OUT SYS_REFCURSOR&#10;)&#10;AS&#10;BEGIN&#10;    Open cur_Out For&#10;    &#10;    select&#10;        -- Tab 1 Demographic Information&#10;        s.sponsor_id, s.formtype, s.ASSESSMENT_STARTED, s.upuser, s.uptime,&#10;        si.alien_no, si.first_name, si.last_name, si.dob, si.cob, si.gender,&#10;        h.update_date, h.full_name, &#10;        s.SPONSOR_HOME_PHONE, s.SPONSOR_WORK_PHONE, s.SPONSOR_EMAIL, s.LEGAL_STATUS_VERIFIED,&#10;        si.home_phone, si.work_phone, lp.phone_type_id, lp.phone_type, si.email,&#10;        si.legal_status_id, lls.legal_status, si.immigration_status,&#10;        s.sponsor_identity_verified, s.ADDITIONAL_IDENTITY,&#10;        si.PRIMARY_LANGUAGE, si.OTHER_LANGUAGES, si.RELIGIOUS_AFFILIATION, s.ADDITIONAL_INFORMATION,&#10;        -- Tab 2 Contact Information&#10;        ci.update_date as tab2_update_date, ci.full_name as tab2_full_name,&#10;        s.sponsor_address, s.sponsor_address_secondary, s.SPONSOR_CITY, s.SPONSOR_STATE, &#10;        s.SPONSOR_ZIPCODE, si.cor, s.how_long_at_current_address,&#10;        s.ADDRESS_VERIFIED_GOOGLE_MAPS, s.ADDRESS_VERIFIED_GOOGLE_EARTH,&#10;        s.VERIFIED_SMARTY_STREETS, s.ADDITIONAL_ADDRESS_INFORMATION,&#10;        -- Tab 3 Relationship to Child&#10;        hRC.update_date as tab3_update_date, hRC.full_name as tab3_full_name, &#10;        (u.first_name || &#39; &#39; || u.last_name) as child_name,&#10;        lr.relationship as sponsor_child_relationship, s.sponsor_category, &#10;        s.CURRENT_SPONSOR, s.SPONSOR_KNOW_CHILD, s.RELATIONSHIP_VERIFIED, s.HAS_DNA_BEEN_USED,&#10;        s.WHY_CHILD_LEAVE_COUNTRY, s.CHILD_JOURNEY, s.OWE_MONEY, s.add_rel_to_child,&#10;        -- Tab 4 Background Checks&#10;        hBC.update_date as tab4_update_date, hBC.full_name as tab4_full_name,&#10;        sch.sponsor_disclose_criminal_history, sch.EXPLAIN_CRIMINAL_HISTORY, sch.felony,&#10;        sch.MISDEMEANOR, sch.PROBATION_PAROLE, sch.CHILD_ABUSE_NEGLECT, sch.SUBSTANCE_ABUSE,&#10;        sch.DOMESTIC_VIOLENCE, sch.CRIMINAL_ADDITIONAL_INFORMATION, sch.BACKGROUND_ADDITIONAL_INFORMATION,&#10;        -- Tab 5 Sponsorships&#10;        hs.update_date as tab5_update_date, hs.full_name as tab5_full_name,&#10;        s.SPONSOR_ATTEMPT_SPONSOR_ORR, s.CHILD_STILL_RESIDING_WITH_SPONSOR,&#10;        s.WHY_CHILD_NOT_RESIDING_WITH_SPONSOR, s.SPONSOR_UNDERGO_HOME_STUDY, &#10;        s.CHILD_POSTRELEASE_SERVICE, s.CHILD_ENROLLED_ATTENDING_SCHOOL, &#10;        s.SPONSOR_ATTEND_LOPC, s.SPONSOR_WITHDRAW_APP, s.WHY_WITHDRAW, s.WHY_DENIED,&#10;        s.SPONSOR_DENIED_SPOSORSHIP, s.CHILD_COURT_DATE, S.ADD_INFO_SPONSORSHIPS,&#10;        -- Tab 6 Family Relationships&#10;        hfr.update_date as tab6_update_date, hfr.full_name as tab6_full_name,&#10;        fr.SPONSOR_PARTNER, fr.LEAGLLY_MARRIED_COHABITATION, fr.SPONSOR_HAVE_CHILDREN, si.MARRIAGE_STATUS,&#10;        fr.CHILDREN_BEEN_IN_ORR_CARE, fr.WHO_CARING_FOR_CHILDREN, fr.COURT_ORDERED_FINANCIAL_SUPPORT,&#10;        fr.SPONSOR_PARTNER_INTERACTED_CPS, fr.SPONSOR_PARTNER_CPS_INTERACTION,&#10;        fr.CHILD_REMOVED_FROM_CUSTODY, fr.CHILD_REMOVED_EXPLAIN,&#10;        fr.INVOLVED_IN_CHILD_SUPPORT, fr.INVOLVED_IN_CHILD_SUPPORT_EXPLAIN,&#10;        fr.FAMILY_FRIENDS_IN_USA, fr.HAVE_FAMILY_HOME_COUNTRY, fr.RELATIONSHIP_WITH_FAMILY_HOME_COUNTRY,&#10;        fr.FAMILY_RELATIONSHIPS_ADDITION_INFO, fr.HOW_SPONSOR_DISCIPLINE,&#10;        fr.ANY_RELATIVES_IN_ORR_CARE, fr.WHERE_IN_ORR_CARE,&#10;        -- Tab 7 Household&#10;        hm.update_date as tab7_update_date, hm.full_name as tab7_full_name,&#10;        SH.DESCRIBE_HOME, SH.WHERE_SLEEP, SH.CONTRIBUTE_TO_HOUSEHOLD,&#10;        SH.HOUSING_CONDITIONS, SH.ADEQUATE_HOUSING, SH.ANYONE_ELSE_LIVE,&#10;        SH.CONTAGIOUS_DISEASE, SH.CONTAGIOUS_DISEASE_YES, SH.CRIMINAL_CONVICTIONS,&#10;        SH.CRIMINAL_CONVICTIONS_YES, SH.CHILD_REMOVED, SH.CHILD_REMOVED_YES,&#10;        SH.ATTEMPT_TO_SPONSOR, SH.RESIDE_WITH_HOUSEHOLD, SH.RESIDE_WITH_HOUSEHOLD_NO,&#10;        SH.UNDERGO_HS, SH.RECEIVED_PRS, SH.ENROLLED_SCHOOL, SH.ATTEND_LOPC,&#10;        TO_CHAR(SH.COURT_DATE, &#39;MM/DD/YYYY&#39;) as COURT_DATE,&#10;        SH.WITHDRAWN_APPLICATION, SH.WITHDRAWN_APPLICATION_YES, SH.DENY_SPONSORSHIP,&#10;        SH.DENY_SPONSORSHIP_YES, SH.HOUSEHOLD_IDENTITIES_VERIFIED, SH.ADDITIONAL_INFO_HOUSEHOLD,&#10;        -- Tab 8 Employment&#10;        e.update_date as tab8_update_date, e.full_name as tab8_full_name,&#10;        s.HAVE_JOB, s.WORK_SCHEDULE, s.MEET_MONTHLY_EXPENSES, s.ADDITIONAL_FINANCIAL,&#10;        -- Tab 9 Care Plan&#10;        cp.update_date as tab9_update_date, cp.full_name as tab9_full_name,&#10;        SCP.SCHOOL_TO_ATTEND, SCP.UNDERSTAND_ENROLLMENT_PROCESS, SCP.SPONSOR_AWARE_MEDICAL_CONDITIONS,&#10;        SCP.PLANS_TO_ADDRESS_MEDICAL_NEEDS, SCP.PLANS_TO_ADDRESS_MENTAL_HEALTH_NEEDS, SCP.SPONSOR_AWARE_CRIMINAL_BEHAVIOR,&#10;        SCP.CHILD_DISCIPLINE_PLAN, SCP.CONCERNS_DISCIPLINE_PRACTICE, SCP.READ_SPONSOR_HANDBOOK,&#10;        SCP.PLAN_TO_KEEP_SAFE, SCP.SPONSOR_SPECIAL_NEEDS_MENTAL_HEALTH, SCP.SPONSOR_FAMILY_COMMUNITY_SUPPOT,&#10;        SCP.DESCRIBE_CHILD_SUPERVISION, SCP.FAMILY_FRIENDS_HELP_CHILDCARE, SCP.CARE_PLAN_ADDITIONAL_INFORMATION,&#10;        SCP.ALTERNATE_CAREGIVER_VERIFIED, SCP.WHO_TRANSPORT_CHILD_SCHOOL,&#10;        -- Tab 10 Trafficking And Fraud&#10;        tf.update_date as tab10_update_date, tf.full_name as tab10_full_name,&#10;        FT.FIRST_DECIDE_TO_US, FT.ADDITIONAL_INFO_ON_COERCION, FT.ADDITIONAL_INFO_ON_DEBT,&#10;        FT.ADDITIONAL_INFO_ON_JOURNEY, FT.PRESENT_ABUSE_RISK, FT.PRESENT_ABUSE_RISK_YES,&#10;        FT.PRESENT_BEING_ABUSED, FT.PRESENT_BEING_ABUSED_YES, FT.HOW_MUCH_DEBT_INCREASE,&#10;        FT.ARRANGE_WORK, FT.ARRANGE_WORK_YES, FT.KEEP_DESTROY_DOCUMENTS,&#10;        FT.KEEP_DESTROY_DOCUMENTS_YES, FT.THREATEN_TO_REPORT, FT.THREATEN_TO_REPORT_YES,&#10;        FT.ANYONE_PAY_FOR_TRAVEL, FT.THREATEN_SPONSOR_FAMILY, FT.THREATEN_SPONSOR_FAMILY_YES,&#10;        FT.ANYTHING_BAD_IF_LEAVE, FT.ANYTHING_BAD_IF_LEAVE_YES, FT.ARRANGEMENTS_CHANGE,&#10;        FT.ARRANGEMENTS_CHANGE_YES, FT.DEPEND_UPON_NON_FAMILY_MEMBERS, FT.EXPERIENCE_ANY_CHALLENGES,&#10;        FT.PERFORM_WORK, FT.RECEIVE_PAY, FT.WORK_CONDITIONS_CHANGE, FT.PAY_BACK,&#10;        FT.FAMILY_FRIEND_OWE_MONEY, FT.FAMILY_FRIEND_OWE_MONEY_YES, FT.DEBT_AMOUNT_INCREASE, &#10;        FT.PAY_WITHOUT_REPORT_ORR, FT.PAY_WITHOUT_REPORT_ORR_YES, FT.PAY_ON_RELEASE,&#10;        FT.PAY_ON_RELEASE_YES, FT.THREATEN_OVER_PAYMENT, FT.TRAVELED_BACK,&#10;        FT.HOW_ARRIVE_WORK_SITE, FT.PERFORM_WORK_FREQUENCY, FT.THREATEN_OVER_PAYMENT_YES,&#10;        FT.WORRY_FIND, FT.WORRY_FIND_YES, FT.HAS_DEBT, FT.PLAN_FOR_PAY_BACK,&#10;        FT.REFERRED_TO_OTIP, FT.ANYONE_AROUND_PHYSICALLY_HARMED, FT.ANYONE_AROUND_PHYSICALLY_HARMED_YES,&#10;        FT.HELD_AGAINST_WILL, FT.HELD_AGAINST_WILL_YES, FT.DO_WHAT_THEY_DISLIKE,&#10;        FT.DO_WHAT_THEY_DISLIKE_YES, FT.PHYSICALLY_HARMED, FT.PHYSICALLY_HARMED_YES,&#10;        FT.COMMUNICATION_RESTRICTED, FT.PAID_AS_PROMISED, FT.MOVEMENT_RESTRICTED,&#10;        FT.EXPENSES_OUT_OF_PAY, FT.EXPENSES_OUT_OF_PAY_YES, FT.HAPPEN_IF_LEFT_JOB,&#10;        FT.HAPPEN_IF_NOT_PAY_BACK, FT.DEBT_AMOUNT, FT.PERFORM_WORK_TYPE,&#10;        FT.WHEN_DEBT_AMOUNT_INCREASE, FT.FIRST_LIVE_WHERE_WHOM, FT.WHERE_LIVE_WHILE_WORKING,&#10;        FT.WHO_ARRANGE_WORK, FT.WHO_PLAN_JOURNEY, FT.WHY_DEBT_AMOUNT_INCREASE, FT.ADD_INFO_FRAUD_TRAFFICKING,&#10;        -- Tab 12 Case Manager Assessment&#10;        cma.update_date as tab12_update_date, cma.full_name as tab12_full_name, s.case_management_assessment,&#10;        -- Tab 13 Certification&#10;        cth.update_date as tab13_update_date, cth.full_name as tab13_full_name,&#10;        s.date_initiated, s.date_complete, s.signature, s.title&#10;    from &#10;        uac_sponsor_list s&#10;        inner join SPONSOR_INFO si on s.sponsor_id &#61; si.sponsor_id&#10;        left join SPONSOR_ASSESS_TAB_HISTORY h on s.sponsor_id &#61; h.sponsor_id and s.uac_id &#61; h.uac_id and h.assessment_tab &#61; &#39;DemographicInformation&#39;&#10;        left join LIST_PHONE_NUMBER_TYPE lp on lp.phone_type_id &#61; s.BACKUP_PHONE_TYPE&#10;        left join List_Legal_Status lls on lls.legal_status_id &#61; si.legal_status_id&#10;        left join SPONSOR_ASSESS_TAB_HISTORY ci on ci.sponsor_id &#61; s.sponsor_id and ci.uac_id &#61; s.uac_id and ci.assessment_tab &#61; &#39;ContactInformation&#39;&#10;        left join SPONSOR_ASSESS_TAB_HISTORY hRC on hRC.sponsor_id &#61; s.sponsor_id and hRC.uac_id &#61; s.uac_id and hRC.assessment_tab &#61; &#39;RelatioshipToChild&#39;&#10;        left join uac_info u on u.uac_id &#61; s.uac_id&#10;        left join List_Relationship lr on lr.relationship_id &#61; s.sponsor_relationship_to_uac&#10;        left join SPONSOR_ASSESS_TAB_HISTORY hBC on hBC.sponsor_id &#61; s.sponsor_id and hBC.uac_id &#61; s.uac_id and hBC.assessment_tab &#61; &#39;BackGroundChecks&#39;&#10;        left join SPONSOR_CRIMINAL_HISTORY sch on sch.sponsor_id &#61; s.sponsor_id and sch.uac_id &#61; s.uac_id&#10;        left join SPONSOR_ASSESS_TAB_HISTORY hs on hs.sponsor_id &#61; s.sponsor_id and hs.uac_id &#61; s.uac_id and hs.assessment_tab &#61; &#39;SponsorShips&#39;&#10;        left join SPONSOR_ASSESS_TAB_HISTORY hfr on hfr.sponsor_id &#61; s.sponsor_id and hfr.uac_id &#61; s.uac_id and hfr.assessment_tab &#61; &#39;FamilyRelationShips&#39;&#10;        left join SPONSOR_FAMILY_RELATIONSHIPS fr on fr.SPONSOR_ID &#61; s.sponsor_id and s.uac_id &#61; fr.UAC_ID&#10;        left join SPONSOR_ASSESS_TAB_HISTORY hm on hm.sponsor_id &#61; s.sponsor_id and hm.uac_id &#61; s.uac_id and hm.assessment_tab &#61; &#39;HouseHold&#39;&#10;        left join SPONSOR_HOUSEHOLD sh on sh.SPONSOR_ID &#61; s.SPONSOR_ID and sh.UAC_ID &#61; s.uac_id&#10;        left join SPONSOR_ASSESS_TAB_HISTORY e on e.sponsor_id &#61; s.sponsor_id and e.uac_id &#61; s.uac_id and e.assessment_tab &#61; &#39;Employment&#39;&#10;        left join SPONSOR_ASSESS_TAB_HISTORY cp on cp.sponsor_id &#61; s.sponsor_id and cp.uac_id &#61; s.uac_id and cp.assessment_tab &#61; &#39;CarePlan&#39;&#10;        left join SPONSOR_CARE_PLAN SCP on s.SPONSOR_ID &#61; SCP.SPONSOR_ID and s.uac_id &#61; SCP.UAC_ID&#10;        left join SPONSOR_ASSESS_TAB_HISTORY tf on tf.sponsor_id &#61; s.sponsor_id and tf.uac_id &#61; s.uac_id and tf.assessment_tab &#61; &#39;TraffickingAndFraud&#39;&#10;        left join SPONSOR_FRAUD_TRAFFICKING FT ON s.SPONSOR_ID &#61; FT.SPONSOR_ID and s.uac_id &#61; FT.UAC_ID&#10;        left join SPONSOR_ASSESS_TAB_HISTORY cma on cma.sponsor_id &#61; s.sponsor_id and cma.uac_id &#61; s.uac_id and cma.assessment_tab &#61; &#39;CaseManagerAssessment&#39;&#10;        left join SPONSOR_ASSESS_TAB_HISTORY cth on cth.sponsor_id &#61; s.sponsor_id and cth.uac_id &#61; s.uac_id and cth.assessment_tab &#61; &#39;Certification&#39;&#10;    where  &#10;        s.sponsor_id &#61; p_SponsorId and s.uac_id &#61; p_UacId;&#10;END sp_GetSponsorAssessmentDetails;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

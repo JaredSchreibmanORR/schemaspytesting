@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_MASS_ASSIGNMENT</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_UAC_IDS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_PROGID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_CURRENT_STATUS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_UPUSER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_DATE_ORR_APPROVED</td>
+                                    <td>TIMESTAMP</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_MALE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_FEMALE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_STATUS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE SP_MASS_ASSIGNMENT&#10;(&#10;  v_UAC_IDs VARCHAR2, &#10;  v_ProgId  NUMBER,&#10;  v_Current_Status  VARCHAR2,&#10;  v_Upuser  VARCHAR2,&#10;  v_DATE_ORR_APPROVED TIMESTAMP,&#10;  v_Male NUMBER,&#10;  v_Female NUMBER,&#10;  v_status OUT NOCOPY VARCHAR2&#10;) AS &#10;&#10;&#10;&#10;Cursor csVar  is Select regexp_substr(Column_Value ,&#39;[^ ]+&#39;, 1, 1) AS uacId, regexp_substr(Column_Value ,&#39;[^ ]+&#39;, 1, 2) as Gender from Table(Split(v_UAC_IDs));&#10;&#10;csVal  csVar%ROWTYPE;&#10;gender VARCHAR2(2);&#10;bedsM number;&#10;bedsF number;&#10;funded_capacity_M number(4);&#10;funded_capacity_F number(4);&#10;in_care_M number(4);&#10;in_care_F number(4);&#10;in_transfer_M number(4);&#10;in_transfer_F number(4);&#10;beds_unavailable_M number(4);&#10;beds_unavailable_F number(4);&#10;enroute_M number(4);&#10;enroute_F number(4);&#10;uacPID VARCHAR2(10);&#10;n number(2) :&#61; 0;&#10;currStatus  varchar2(50);&#10;BEGIN&#10;SAVEPOINT notEnoughBeds;&#10;&#10;SELECT &#10;    F.FUNDED_CAPACITY_M,&#10;    F.FUNDED_CAPACITY_F,&#10;    (select COUNT(*)&#10;      from UAC_PROGRAM_INFO P&#10;      join UAC_INFO I&#10;      on P.UAC_ID&#61;I.UAC_ID&#10;      where P.CURRENT_STATUS IN (&#39;ADMITTED&#39;, &#39;IN-TRANSFER&#39;)&#10;      and (I.GENDER&#61;&#39;M&#39; or I.GENDER&#61;&#39;Male&#39;)&#10;      and P.PROGRAM_ID&#61;F.PROGRAM_ID &#10;    ) AS IN_CARE_M,&#10;    (select COUNT(*)&#10;      from UAC_PROGRAM_INFO P&#10;      join UAC_INFO I&#10;      on P.UAC_ID&#61;I.UAC_ID&#10;      where P.CURRENT_STATUS IN (&#39;ADMITTED&#39;, &#39;IN-TRANSFER&#39;)&#10;      and (I.GENDER&#61;&#39;F&#39; or I.GENDER&#61;&#39;Female&#39;)&#10;      and P.PROGRAM_ID&#61;F.PROGRAM_ID &#10;    ) AS IN_CARE_F,   &#10;    F.BEDS_UNAVAILABLE_M,&#10;    F.BEDS_UNAVAILABLE_F,&#10;    (Select COUNT(*) &#10;      from UAC_TRANSFER_REQUEST A&#10;      Where NVL(A.PROPOSED_PROGRAM_ID,0) &#61; F.PROGRAM_ID &#10;      And nvl(A.ISDELETED,0) &#61; 0 &#10;      And Exists(Select 1 from UAC_PROGRAM_INFO U&#10;                  JOIN UAC_INFO I&#10;                    ON U.UAC_ID&#61;I.UAC_ID&#10;                  Where U.UAC_PROGRAM_ID &#61; A.UAC_PROGRAM_ID &#10;                  And U.CURRENT_STATUS &#61; &#39;IN-TRANSFER&#39;&#10;                  And (I.GENDER&#61;&#39;M&#39; OR I.GENDER&#61;&#39;Male&#39;))&#10;    ) AS IN_TRANSFER_M,&#10;    (Select COUNT(*) &#10;      from UAC_TRANSFER_REQUEST A&#10;      Where NVL(A.PROPOSED_PROGRAM_ID,0) &#61; F.PROGRAM_ID &#10;      And nvl(A.ISDELETED,0) &#61; 0 &#10;      And Exists(Select 1 from UAC_PROGRAM_INFO U&#10;                  JOIN UAC_INFO I&#10;                    ON U.UAC_ID&#61;I.UAC_ID&#10;                  Where U.UAC_PROGRAM_ID &#61; A.UAC_PROGRAM_ID &#10;                  And U.CURRENT_STATUS &#61; &#39;IN-TRANSFER&#39;&#10;                  And (I.GENDER&#61;&#39;F&#39; OR I.GENDER&#61;&#39;Female&#39;))&#10;    ) AS IN_TRANSFER_F,&#10;    (Select COUNT(*)&#10;      from UAC_PROGRAM_INFO U&#10;      JOIN UAC_INFO I&#10;        ON U.UAC_ID&#61;I.UAC_ID&#10;      Where CURRENT_STATUS&#61;&#39;ENROUTE&#39;&#10;      AND (I.GENDER&#61;&#39;M&#39; OR I.GENDER&#61;&#39;Male&#39;)&#10;      AND U.PROGRAM_ID&#61;F.PROGRAM_ID) AS ENROUTE_M,&#10;    (Select COUNT(*) &#10;      from UAC_PROGRAM_INFO U&#10;      JOIN UAC_INFO I&#10;        ON U.UAC_ID&#61;I.UAC_ID&#10;      Where CURRENT_STATUS&#61;&#39;ENROUTE&#39;&#10;      AND (I.GENDER&#61;&#39;F&#39; OR I.GENDER&#61;&#39;Female&#39;)&#10;      AND U.PROGRAM_ID&#61;F.PROGRAM_ID) AS ENROUTE_F&#10;  into funded_capacity_M,funded_capacity_F,in_care_M,in_care_F,beds_unavailable_M,beds_unavailable_F,in_transfer_M,in_transfer_F,enroute_M,enroute_F&#10;  FROM FACILITY_INFO F&#10;  WHERE F.PROGRAM_ID&#61;v_ProgId;&#10;&#10;   bedsM :&#61; funded_capacity_M - (in_care_M + beds_unavailable_M + in_transfer_M + enroute_M);&#10;   bedsF :&#61; funded_capacity_F - (in_care_F + beds_unavailable_F + in_transfer_F + enroute_F);&#10;&#10;  OPEN csVar;&#10;  If (bedsM &lt; v_Male) Then&#10;      v_status :&#61; &#39;NOT ENOUGH BEDS NOT ENOUGH BEDS&#39;;      &#10;      RETURN;&#10;  End if;&#10;  If (bedsF &lt; v_Female) Then&#10;     v_status :&#61; &#39;NOT ENOUGH BEDS NOT ENOUGH BEDS&#39;;    &#10;      RETURN;&#10;  End if;&#10;&#10;  Loop&#10;    FETCH csVar Into csVal;&#10;    EXIT WHEN csVar%NOTFOUND;    &#10;    If v_CURRENT_STATUS &#61; &#39;PENDING&#39; Then&#10;      Select Count(*) into n from UAC_PROGRAM_INFO where CURRENT_STATUS in (&#39;ENROUTE&#39;, &#39;ADMITTED&#39;) And UAC_ID &#61; csVal.uacId;&#10;      If n &#61; 0 Then&#10;        Update UAC_INFO Set UAC_STATUS &#61; &#39;ENROUTE&#39;, Uptime &#61; Current_TIMESTAMP, Upuser &#61; v_Upuser, DATE_ORR_APPROVED&#61;v_DATE_ORR_APPROVED Where UAC_ID &#61; csVal.uacId;&#10;        Select count(*) into n from UAC_PROGRAM_INFO Where UAC_ID &#61; csVal.uacId And CURRENT_STATUS &#61; &#39;PENDING&#39;;&#10;&#9;&#9;If n &gt; 0 Then&#10;&#9;&#9;&#9;UPDATE UAC_PROGRAM_INFO SET PROGRAM_ID &#61; v_ProgId, CURRENT_STATUS &#61; &#39;ENROUTE&#39;, DATE_REFERRED &#61; Sysdate, Uptime &#61; sysdate, UpUSER &#61; v_Upuser Where UAC_ID &#61; csVal.uacId And CURRENT_STATUS &#61; &#39;PENDING&#39;;&#10;&#9;&#9;Else&#10;&#9;&#9;&#9;Insert Into UAC_PROGRAM_INFO (UAC_PROGRAM_ID, UAC_ID, PROGRAM_ID, CURRENT_STATUS, DATE_REFERRED, DATE_CREATED, USER_CREATED, Uptime, UpUSER)&#10;&#9;&#9;&#9;VALUES (SEQ_UAC_PROGRAM_INFO.nextval, csVal.uacId, v_ProgId, &#39;ENROUTE&#39;, Sysdate, Sysdate, v_UPUSER, sysdate,v_Upuser);&#10;&#9;&#9;END If;&#10;      Else&#10;        Select CURRENT_STATUS into currStatus from UAC_PROGRAM_INFO where CURRENT_STATUS in (&#39;ENROUTE&#39;, &#39;ADMITTED&#39;) And UAC_ID &#61; csVal.uacId;&#10;        Update UAC_INFO Set UAC_STATUS &#61; currStatus, Uptime &#61; Current_TIMESTAMP, Upuser &#61; v_Upuser, DATE_ORR_APPROVED&#61;v_DATE_ORR_APPROVED Where UAC_ID &#61; csVal.uacId;&#10;      End If;&#10;    Elsif v_CURRENT_STATUS &#61; &#39;ENROUTE&#39; Then&#10;      Select CURRENT_STATUS into currStatus from UAC_PROGRAM_INFO where CURRENT_STATUS &#61; &#39;ADMITTED&#39; And UAC_ID &#61; csVal.uacId;&#10;      If currStatus is null Then&#10;        Update UAC_PROGRAM_INFO Set (PROGRAM_ID, CURRENT_STATUS, DATE_REFERRED, UpTime, Upuser) &#61; (select v_ProgId, &#39;ENROUTE&#39;, Sysdate, Sysdate, v_Upuser from dual)&#10;        Where UAC_ID &#61; csVal.uacId and CURRENT_STATUS &#61; &#39;ENROUTE&#39;;&#10;      End If;&#10;    End If;&#10;  End Loop;&#10;  Close csVar;&#10;  v_status :&#61; &#39;SUCCESS SUCCESS&#39;;&#10;&#10; END SP_MASS_ASSIGNMENT;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

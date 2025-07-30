@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_GET_SPONSOR_ASSESSMENT</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>VSPONSOR_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VUACID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CUR_OUT</td>
+                                    <td>REF CURSOR</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_GET_SPONSOR_ASSESSMENT&quot; (&#10;vSPONSOR_ID NUMBER,&#10;vUACID IN NUMBER,&#10;cur_Out  OUT SYS_REFCURSOR&#10;)&#10;AS &#10;LOCKTEST number :&#61;0;&#10;BEGIN&#10;&#10;    SELECT COUNT(*) INTO LOCKTEST FROM UAC_SPONSOR_LIST WHERE SPONSOR_ID &#61; vSPONSOR_ID and UAC_ID &#61; vUACID ;&#10;     if LOCKTEST &#61; 1 Then &#10;  OPEN cur_Out For&#10;            SELECT&#10;            1 As  EXISTINGSPONSOR,&#10;            A.UPTIME,&#10;            A.First_Name,&#10;            A.Last_Name,&#10;            A.ALIEN_NO,                  &#10;            A.DOB,&#10;            A.COB,&#10;            A.GENDER,&#10;            A.LEGAL_STATUS_ID,&#10;            A.COR,&#10;&#9;&#9;&#9;B.SPONSOR_HOME_PHONE ,&#10;&#9;&#9;&#9;B.SPONSOR_WORK_PHONE ,&#10;            B.BACKUP_PHONE_TYPE,&#10;&#9;&#9;&#9;A.EMAIL ,&#10;&#9;&#9;&#9;B.SPONSOR_ADDRESS , &#10;      B.SPONSOR_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;B.SPONSOR_CITY ,&#10;&#9;&#9;&#9;B.SPONSOR_STATE,&#10;&#9;&#9;&#9;B.SPONSOR_ZIPCODE ,&#10;      B.SPONSOR_COUNTY,&#10;      B.SPONSOR_LATITUDE,&#10;      B.SPONSOR_LONGITUDE,&#10;&#9;&#9;&#9;B.ADDRESS_VERIFIED_GOOGLE_EARTH ,&#10;            B.ADDRESS_VERIFIED_GOOGLE_MAPS  ,&#10;            B.HOW_LONG_AT_CURRENT_ADDRESS ,&#10;            B.ADDITIONAL_ADDRESS_INFORMATION  ,&#10;            B.VERIFIED_SMARTY_STREETS,&#10;&#9;&#9;&#9;B.SPONSOR_EMAIL ,&#10;            A.MARRIAGE_STATUS,&#10;            B.IMMIGRATION_STATUS,&#10;            B.LEGAL_STATUS_VERIFIED,&#10;            B.SPONSOR_IDENTITY_VERIFIED,&#10;            B.ADDITIONAL_IDENTITY,&#10;            A.PRIMARY_LANGUAGE,&#10;            A.OTHER_LANGUAGES,&#10;            A.RELIGIOUS_AFFILIATION,&#10;            B.ADDITIONAL_INFORMATION,&#10;            B.CASE_MANAGEMENT_ASSESSMENT,&#10;            A.Flag,&#10;            A.FLAG_NOTE,&#10;            a.Flag_address,&#10;            A.FLAG_ADDRESS_NOTE,&#10;            B.CASE_MANAGEMENT_ASSESSMENT,&#10;            B.ASSESSMENT_STARTED,&#10;            B.DATE_INITIATED,&#10;            B.DATE_COMPLETE,&#10;            B.SIGNATURE,&#10;            B.TITLE,&#10;            B.HAVE_JOB,&#10;            B.WORK_SCHEDULE,&#10;            B.MEET_MONTHLY_EXPENSES,&#10;            B.SPONSOR_RELATIONSHIP_TO_UAC,&#10;            B.OWE_MONEY,&#10;            B.CHILD_JOURNEY,&#10;            B.WHY_CHILD_LEAVE_COUNTRY,&#10;            B.HAS_DNA_BEEN_USED,&#10;            B.RELATIONSHIP_VERIFIED,&#10;            B.SPONSOR_KNOW_CHILD,&#10;            B.PRIMARY_SPONSOR,&#10;            B.CURRENT_SPONSOR,&#10;            B.SPONSOR_CATEGORY,&#10;            B.ADD_REL_TO_CHILD,&#10;            B.ADDITIONAL_FINANCIAL,&#10;            B.SPONSOR_ATTEMPT_SPONSOR_ORR,&#10;&#9;&#9;&#9;B.CHILD_STILL_RESIDING_WITH_SPONSOR ,&#10;&#9;&#9;&#9;B.WHY_CHILD_NOT_RESIDING_WITH_SPONSOR ,&#10;            B.SPONSOR_WITHDRAW_APP ,&#10;            B.WHY_WITHDRAW,&#10;            B.SPONSOR_DENIED_SPOSORSHIP ,&#10;            B.WHY_DENIED ,&#10;            B.ADD_INFO_SPONSORSHIPS ,&#10;            B.SPONSOR_UNDERGO_HOME_STUDY,&#10;            B.CHILD_POSTRELEASE_SERVICE,&#10;            B.CHILD_ENROLLED_ATTENDING_SCHOOL,&#10;            B.CHILD_COURT_DATE,&#10;            B.SPONSOR_ATTEND_LOPC,&#10;            B.FORMTYPE,&#10;           &#9;FT.ADDITIONAL_INFO_ON_COERCION,&#10;&#9;&#9;&#9;FT.ADDITIONAL_INFO_ON_DEBT ,&#10;&#9;&#9;&#9;FT.ADDITIONAL_INFO_ON_JOURNEY ,&#10;            FT.PRESENT_ABUSE_RISK,&#10;            FT.PRESENT_ABUSE_RISK_YES,&#10;            FT.PRESENT_BEING_ABUSED,&#10;            FT.PRESENT_BEING_ABUSED_YES,&#10;            FT.HOW_MUCH_DEBT_INCREASE,&#10;            FT.ARRANGE_WORK,&#10;            FT.ARRANGE_WORK_YES,&#10;            FT.KEEP_DESTROY_DOCUMENTS,&#10;            FT.KEEP_DESTROY_DOCUMENTS_YES,&#10;            FT.THREATEN_TO_REPORT,&#10;            FT.THREATEN_TO_REPORT_YES,&#10;            FT.ANYONE_PAY_FOR_TRAVEL,&#10;            FT.THREATEN_SPONSOR_FAMILY,&#10;            FT.THREATEN_SPONSOR_FAMILY_YES,&#10;            FT.ANYTHING_BAD_IF_LEAVE,&#10;            FT.ANYTHING_BAD_IF_LEAVE_YES,&#10;            FT.ARRANGEMENTS_CHANGE,&#10;            FT.ARRANGEMENTS_CHANGE_YES,&#10;            FT.DEPEND_UPON_NON_FAMILY_MEMBERS,&#10;            FT.EXPERIENCE_ANY_CHALLENGES,&#10;            FT.PERFORM_WORK,&#10;            FT.RECEIVE_PAY,&#10;            FT.WORK_CONDITIONS_CHANGE,&#10;            FT.PAY_BACK,&#10;            FT.FAMILY_FRIEND_OWE_MONEY,&#10;            FT.FAMILY_FRIEND_OWE_MONEY_YES,&#10;            FT.DEBT_AMOUNT_INCREASE, &#10;            FT.PAY_WITHOUT_REPORT_ORR, &#10;            FT.PAY_WITHOUT_REPORT_ORR_YES,&#10;            FT.PAY_ON_RELEASE,&#10;            FT.PAY_ON_RELEASE_YES, &#10;            FT.THREATEN_OVER_PAYMENT,&#10;            FT.TRAVELED_BACK,&#10;            FT.HOW_ARRIVE_WORK_SITE,&#10;            FT.PERFORM_WORK_FREQUENCY,&#10;            FT.THREATEN_OVER_PAYMENT_YES,&#10;            FT.WORRY_FIND,&#10;            FT.WORRY_FIND_YES,&#10;            FT.HAS_DEBT,&#10;            FT.PLAN_FOR_PAY_BACK,&#10;            FT.REFERRED_TO_OTIP, &#10;            FT.ANYONE_AROUND_PHYSICALLY_HARMED,&#10;            FT.ANYONE_AROUND_PHYSICALLY_HARMED_YES,&#10;            FT.HELD_AGAINST_WILL,&#10;            FT.HELD_AGAINST_WILL_YES,&#10;            FT.DO_WHAT_THEY_DISLIKE,&#10;            FT.DO_WHAT_THEY_DISLIKE_YES,&#10;            FT.PHYSICALLY_HARMED,&#10;            FT.PHYSICALLY_HARMED_YES,&#10;            FT.COMMUNICATION_RESTRICTED, &#10;            FT.PAID_AS_PROMISED, &#10;            FT.MOVEMENT_RESTRICTED,&#10;            FT.EXPENSES_OUT_OF_PAY,&#10;            FT.EXPENSES_OUT_OF_PAY_YES,&#10;            FT.HAPPEN_IF_LEFT_JOB,&#10;            FT.HAPPEN_IF_NOT_PAY_BACK,&#10;            FT.DEBT_AMOUNT,&#10;            FT.PERFORM_WORK_TYPE,&#10;            FT.FIRST_DECIDE_TO_US,&#10;            FT.WHEN_DEBT_AMOUNT_INCREASE,&#10;            FT.FIRST_LIVE_WHERE_WHOM,&#10;            FT.WHERE_LIVE_WHILE_WORKING,&#10;            FT.WHO_ARRANGE_WORK,&#10;            FT.WHO_PLAN_JOURNEY,&#10;            FT.WHY_DEBT_AMOUNT_INCREASE,&#10;            FT.ADD_INFO_FRAUD_TRAFFICKING,&#10;            CH.SPONSOR_DISCLOSE_CRIMINAL_HISTORY,&#10;&#9;&#9;&#9;CH.EXPLAIN_CRIMINAL_HISTORY,&#10;&#9;&#9;&#9;CH.FELONY ,&#10;&#9;&#9;&#9;CH.MISDEMEANOR,&#10;&#9;&#9;&#9;CH.PROBATION_PAROLE,&#10;&#9;&#9;&#9;CH.CHILD_ABUSE_NEGLECT ,&#10;&#9;&#9;&#9;CH.SUBSTANCE_ABUSE ,&#10;&#9;&#9;&#9;CH.DOMESTIC_VIOLENCE,&#10;            CH.CRIMINAL_ADDITIONAL_INFORMATION,&#10;            CH.BACKGROUND_ADDITIONAL_INFORMATION,&#10;            FR.SPONSOR_PARTNER,&#10;            FR.LEAGLLY_MARRIED_COHABITATION,&#10;            FR.SPONSOR_HAVE_CHILDREN,&#10;            FR.CHILDREN_BEEN_IN_ORR_CARE,&#10;            FR.WHO_CARING_FOR_CHILDREN,&#10;            FR.COURT_ORDERED_FINANCIAL_SUPPORT,&#10;            FR.SPONSOR_PARTNER_INTERACTED_CPS,&#10;            FR.SPONSOR_PARTNER_CPS_INTERACTION,&#10;            FR.CHILD_REMOVED_FROM_CUSTODY,&#10;            FR.CHILD_REMOVED_EXPLAIN,&#10;            FR.INVOLVED_IN_CHILD_SUPPORT,&#10;            FR.INVOLVED_IN_CHILD_SUPPORT_EXPLAIN,&#10;            FR.FAMILY_FRIENDS_IN_USA,&#10;            FR.HAVE_FAMILY_HOME_COUNTRY,&#10;            FR.RELATIONSHIP_WITH_FAMILY_HOME_COUNTRY,&#10;            FR.FAMILY_RELATIONSHIPS_ADDITION_INFO,&#10;            FR.HOW_SPONSOR_DISCIPLINE,&#10;            FR.ANY_RELATIVES_IN_ORR_CARE,&#10;            FR.WHERE_IN_ORR_CARE,&#10;            SH.DESCRIBE_HOME,&#10;            SH.WHERE_SLEEP,&#10;            SH.CONTRIBUTE_TO_HOUSEHOLD,&#10;            SH.HOUSING_CONDITIONS,&#10;            SH.ADEQUATE_HOUSING,&#10;            SH.ANYONE_ELSE_LIVE,&#10;            SH.CONTAGIOUS_DISEASE,&#10;            SH.CONTAGIOUS_DISEASE_YES,&#10;            SH.CRIMINAL_CONVICTIONS,&#10;            SH.CRIMINAL_CONVICTIONS_YES,&#10;            SH.CHILD_REMOVED,&#10;            SH.CHILD_REMOVED_YES,&#10;            SH.ATTEMPT_TO_SPONSOR,&#10;            SH.RESIDE_WITH_HOUSEHOLD,&#10;            SH.RESIDE_WITH_HOUSEHOLD_NO,&#10;            SH.UNDERGO_HS,&#10;            SH.RECEIVED_PRS,&#10;            SH.ENROLLED_SCHOOL,&#10;            SH.COURT_DATE,&#10;            SH.ATTEND_LOPC,&#10;            SH.WITHDRAWN_APPLICATION,&#10;            SH.WITHDRAWN_APPLICATION_YES,&#10;            SH.DENY_SPONSORSHIP,&#10;            SH.DENY_SPONSORSHIP_YES,&#10;            SH.HOUSEHOLD_IDENTITIES_VERIFIED,&#10;            SH.ADDITIONAL_INFO_HOUSEHOLD,&#10;            SCP.SCHOOL_TO_ATTEND,&#10;            SCP.UNDERSTAND_ENROLLMENT_PROCESS,&#10;            SCP.SPONSOR_AWARE_MEDICAL_CONDITIONS,&#10;            SCP.PLANS_TO_ADDRESS_MEDICAL_NEEDS,&#10;            SCP.PLANS_TO_ADDRESS_MENTAL_HEALTH_NEEDS,&#10;            SCP.SPONSOR_AWARE_CRIMINAL_BEHAVIOR,&#10;            SCP.CHILD_DISCIPLINE_PLAN,&#10;            SCP.CONCERNS_DISCIPLINE_PRACTICE,&#10;            SCP.READ_SPONSOR_HANDBOOK,&#10;            SCP.PLAN_TO_KEEP_SAFE,&#10;            SCP.SPONSOR_SPECIAL_NEEDS_MENTAL_HEALTH,&#10;            SCP.SPONSOR_FAMILY_COMMUNITY_SUPPOT,&#10;            SCP.DESCRIBE_CHILD_SUPERVISION,&#10;            SCP.FAMILY_FRIENDS_HELP_CHILDCARE,&#10;            SCP.CARE_PLAN_ADDITIONAL_INFORMATION,&#10;            SCP.ALTERNATE_CAREGIVER_VERIFIED,&#10;            SCP.WHO_TRANSPORT_CHILD_SCHOOL           &#10;            FROM SPONSOR_INFO A&#10;            INNER JOIN UAC_SPONSOR_LIST B&#10;            ON a.sponsor_id &#61; b.sponsor_id and a.is_deleted &#61; 0 and b.is_deleted &#61; 0&#10;            LEFT OUTER JOIN SPONSOR_FRAUD_TRAFFICKING FT &#10;            ON B.SPONSOR_ID &#61; FT.SPONSOR_ID and B.uac_id &#61; FT.UAC_ID&#10;            LEFT OUTER JOIN SPONSOR_CRIMINAL_HISTORY CH&#10;            ON B.SPONSOR_ID &#61; CH.SPONSOR_ID and B.uac_id &#61; CH.UAC_ID&#10;            LEFT OUTER JOIN SPONSOR_FAMILY_RELATIONSHIPS FR&#10;            ON B.SPONSOR_ID &#61; FR.SPONSOR_ID and B.uac_id &#61; FR.UAC_ID&#10;            LEFT OUTER JOIN SPONSOR_HOUSEHOLD SH&#10;            ON B.SPONSOR_ID &#61; SH.SPONSOR_ID and B.uac_id &#61; SH.UAC_ID&#10;            LEFT OUTER JOIN SPONSOR_CARE_PLAN SCP&#10;            ON B.SPONSOR_ID &#61; SCP.SPONSOR_ID and B.uac_id &#61; SCP.UAC_ID&#10;            WHERE B.SPONSOR_ID &#61; vSPONSOR_ID and b.uac_id &#61; vUACID;&#10;            ELSE&#10;            OPEN cur_Out For&#10;            SELECT&#10;            0 AS EXISTINGSPONSOR,&#10;            UPTIME,&#10;            First_Name,&#10;            Last_Name,&#10;            DOB,&#10;            COB,&#10;            ALIEN_NO,                  &#10;            GENDER,&#10;            LEGAL_STATUS_ID,&#10;            LEGAL_STATUS_VERIFIED,&#10;            IMMIGRATION_STATUS,&#10;            PRIMARY_LANGUAGE,&#10;            OTHER_LANGUAGES,&#10;            RELIGIOUS_AFFILIATION,&#10;            HOME_PHONE ,&#10;            WORK_PHONE ,&#10;            BACKUP_PHONE_TYPE ,&#10;&#9;&#9;&#9;EMAIL ,&#10;            ADDRESS ,&#10;            ADDRESS_SECONDARY,&#10;    &#9;&#9;&#9;COUNTY,&#10;        &#9;LATITUDE,&#10;          LONGITUDE,&#10;            COR,&#10;            CITY ,&#10;            STATE ,&#10;            ZIP_CODE ,&#10;            FLAG,&#10;            FLAG_NOTE,&#10;            FLAG_ADDRESS,&#10;            FLAG_ADDRESS_NOTE&#10;            from sponsor_info where sponsor_id &#61; vSPONSOR_ID;    &#10;         END IF;  &#10;&#10;END SP_GET_SPONSOR_ASSESSMENT;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_UPDATE_DISCHARGE_NTFCT</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>UAC_PROGRAM_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>DISCHARGE_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>DATEOFDISCHARGE</td>
+                                    <td>DATE</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>TYPEOFDISCHARGE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>SPONSORID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>PROVEOFRELATIONSHIP</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>PROGUACTRNSFTO</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>DHSSHELTER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>LAWENFORCEMENTID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>ADDRESS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CITY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>STATE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>ZIPCODE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>PHONE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>FAX</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>LEGALSTATUSID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>CMD_TYPE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>USERID</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE           &quot;SP_UPDATE_DISCHARGE_NTFCT&quot; &#10;(&#10;  UAC_PROGRAM_ID IN NUMERIC&#10;, DISCHARGE_ID IN NUMERIC&#10;, DateOfDischarge IN DATE&#10;, typeOfDischarge IN VARCHAR2  &#10;, sponsorId IN NUMERIC &#10;, proveOfRelationship IN VARCHAR2 &#10;, progUACTrnsfTo IN NUMERIC&#10;, dhsShelter  IN VARCHAR2&#10;, lawEnforcementId  IN NUMBER&#10;, Address IN VARCHAR2 &#10;, City IN VARCHAR2 &#10;, State IN VARCHAR2 &#10;, Zipcode IN VARCHAR2 &#10;, phone IN VARCHAR2 &#10;, fax IN VARCHAR2&#10;, legalStatusId IN NUMBER&#10;, CMD_Type  IN VARCHAR2&#10;, userId IN VARCHAR2&#10;) AS &#10;&#10;uacId_  NUMERIC(10) :&#61; UAC_PROGRAM_ID;&#10;dischargeId_ NUMERIC(10) :&#61; DISCHARGE_ID;&#10;dateOfDischarge_  DATE :&#61; DateOfDischarge;&#10;typeOfDischarge_  VARCHAR2(50) :&#61; typeOfDischarge;&#10;sponsorId_     NUMBER(10) :&#61; sponsorId;&#10;proveOfRelationship_    VARCHAR2(4000) :&#61; proveOfRelationship;&#10;progUACTrnsfTo_  NUMBER(1) :&#61; progUACTrnsfTo;&#10;dhsShelter_     VARCHAR2(112) :&#61; dhsShelter;&#10;lawEnforcementId_  NUMBER(2):&#61; lawEnforcementId;&#10;Address_  VARCHAR2(112) :&#61; Address;&#10;City_  VARCHAR2(50) :&#61; City;&#10;State_        CHAR(2) :&#61; State;&#10;Zipcode_    NUMERIC(1,0) :&#61; Zipcode;&#10;phone_      NUMERIC(1,0) :&#61; phone;&#10;fax_      VARCHAR2(20) :&#61; fax;&#10;legalStatusId_  NUMBER(2) :&#61; legalStatusId;&#10;userId_   VARCHAR2(30) :&#61; userId;&#10;cmdType_  VARCHAR2(30) :&#61; Upper(CMD_Type);&#10;&#10;maxNo     NUMERIC(10);&#10;BEGIN&#10;  if cmdType_ &#61; &#39;INSERT&#39; Then&#10;    maxNo :&#61; SEQ_DISCHARGE_NOTIFICATION.nextval;&#10;    Insert into UAC_DISCHARGE_NOTIFICATION (DISCHARGE_ID, UAC_PROGRAM_ID,&#9;DATE_OF_DISCHARGE, TYPE_OF_DISCHARGE, SPONSOR_ID,&#10;    PROVE_OF_RELATIONSHIP, PROGRAM_UAC_TRANSFER_TO, DHS_FAMILY_SHELTER, LAW_ENFORCEMENT_ID, ADDRESS, CITY, STATE, ZIP_CODE, PHONE, FAX,&#10;    UAC_LEGAL_STATUS_ID, DATE_CREATED, USER_CREATED, UPTIME, UPUSER)&#10;    Values (maxNo,  uacId_, dateOfDischarge_, typeOfDischarge_, sponsorId_,&#10;    proveOfRelationship_, progUACTrnsfTo_, dhsShelter_, lawEnforcementId_, Address_,City_, State_, Zipcode_,phone_, fax_, legalStatusId_,&#10;    sysdate, userId_, sysdate, userId_);&#10;  elsif cmdType_ &#61; &#39;UPDATE&#39; Then&#10;    maxNo :&#61; dischargeId_;&#10;    Update UAC_DISCHARGE_NOTIFICATION Set&#10;        DATE_OF_DISCHARGE &#61; dateOfDischarge_, &#10;        TYPE_OF_DISCHARGE &#61; typeOfDischarge_, &#10;        SPONSOR_ID &#61; sponsorId_,&#10;        PROVE_OF_RELATIONSHIP &#61; proveOfRelationship_, &#10;        PROGRAM_UAC_TRANSFER_TO &#61; progUACTrnsfTo_, &#10;        DHS_FAMILY_SHELTER &#61; dhsShelter_, &#10;        LAW_ENFORCEMENT_ID &#61; lawEnforcementId_, &#10;        ADDRESS &#61; Address_, &#10;        CITY &#61; City_, &#10;        STATE &#61; State_, &#10;        ZIP_CODE &#61; Zipcode_, &#10;        PHONE &#61; phone_, &#10;        FAX &#61; fax_,&#10;        UAC_LEGAL_STATUS_ID &#61; legalStatusId_,&#10;        UPTIME &#61; Sysdate, &#10;        UPUSER &#61; userId_&#10;      Where DISCHARGE_ID &#61; dischargeId_;&#10;  end if;&#10;END SP_UPDATE_DISCHARGE_NTFCT;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

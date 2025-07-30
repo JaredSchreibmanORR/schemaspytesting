@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_INSERT_SPONSOR_ADDRESS_HIST</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>V_UAC_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_ADDRESS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_ADDRESS_SECONDARY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_CITY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_STATE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_SPONSOR_ZIPCODE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>V_COR</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_INSERT_SPONSOR_ADDRESS_HIST&quot; (&#10;v_UAC_ID  IN NUMBER,&#10;v_SPONSOR_ID  IN NUMBER,&#10;v_SPONSOR_ADDRESS IN VARCHAR2,&#10;v_SPONSOR_ADDRESS_SECONDARY IN VARCHAR2,&#10;v_SPONSOR_CITY IN VARCHAR2,&#10;v_SPONSOR_STATE IN VARCHAR2,&#10;v_SPONSOR_ZIPCODE IN VARCHAR2,&#10;v_COR IN VARCHAR2&#10;)&#10;AS &#10;n NUMBER(4);&#10;n1 NUMBER(4);&#10;uac_Status_ VARCHAR2(30);&#10;dischargeID_ NUMBER(4);&#10;current_SPONSOR_ NUMBER(1);&#10;BEGIN&#10;  INSERT INTO UAC_SPONSOR_ADDRESS_HISTORY&#10;   ( &#9;UAC_ID, &#10;&#9;&#9;SPONSOR_ID, &#10;&#9;&#9;SPONSOR_ADDRESS, &#10;&#9;&#9;SPONSOR_ADDRESS_SECONDARY, &#10;&#9;&#9;SPONSOR_CITY,&#10;&#9;&#9;SPONSOR_STATE,&#10;&#9;&#9;SPONSOR_ZIPCODE,&#10;&#9;&#9;COR,&#10;&#9;&#9;DATE_CREATED, &#10;&#9;&#9;USER_CREATED )&#10;  VALUES&#10;  (&#10;    v_UAC_ID,&#10;    v_SPONSOR_ID,&#10;    v_SPONSOR_ADDRESS,&#10;    v_SPONSOR_ADDRESS_SECONDARY,&#10;    v_SPONSOR_CITY,&#10;    v_SPONSOR_STATE,&#10;    v_SPONSOR_ZIPCODE,&#10;    v_COR,&#10;    (SELECT CASE &#10;              WHEN (SELECT UPDATE_DATE FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;) IS NOT NULL&#10;              THEN (SELECT UPDATE_DATE FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;)&#10;              ELSE (SELECT UPTIME FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID and is_deleted &#61; 0)&#10;              END&#10;              FROM dual), &#10;     (SELECT CASE &#10;              WHEN (SELECT UPUSER FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;) IS NOT NULL&#10;              THEN (SELECT UPUSER FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;)&#10;              ELSE (SELECT UPUSER FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID and is_deleted &#61; 0)&#10;              END &#10;              FROM dual)&#10;  );&#10;&#10;  --Check if sponsor is primary sponsor for UC&#10;&#9;SELECT CURRENT_SPONSOR into current_SPONSOR_ from UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID and is_deleted &#61; 0;&#10;&#10;&#9;if current_SPONSOR_ &#61; 1 then&#10;&#10;&#10;&#10;&#9;  --Check if UC is discharged with unified with Sponsor as discharge type&#10;&#10;&#9;&#9;Select UAC_STATUS into uac_Status_ from UAC_INFO WHERE UAC_ID &#61; v_UAC_ID;&#10;&#10;&#9;&#9;if uac_Status_ &#61; &#39;DISCHARGED&#39; then&#10;&#9;&#9;&#9;select count(*) into n from (&#10;&#9;&#9;&#9;  Select 1 from UAC_PROGRAM_EXIT  A&#10;&#9;&#9;&#9;  INNER JOIN UAC_PROGRAM_INFO B ON A.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;&#9;&#9;&#9;  Where B.UAC_ID &#61; v_UAC_ID&#10;&#9;&#9;&#9;  Union&#10;&#9;&#9;&#9;  Select 0 from dual&#10;&#9;&#9;&#9;);&#10;&#10;&#9;&#9;&#9;if n &gt; 1 then&#10;&#9;&#9;&#9;&#9;SELECT A.TYPE_OF_DISCHARGE into dischargeID_&#10;&#9;&#9;&#9;&#9;FROM UAC_PROGRAM_EXIT  A&#10;&#9;&#9;&#9;&#9;INNER JOIN UAC_PROGRAM_INFO B ON A.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;&#9;&#9;&#9;&#9;Where B.UAC_ID &#61; v_UAC_ID&#10;&#9;&#9;&#9;&#9;ORDER BY A.PROGRAM_EXIT_ID DESC FETCH first 1 row only;&#10;&#9;&#9;&#9;End If;&#10;&#10;&#9;&#9;&#9;-- Check if there is a Current Location record for the Child&#10;&#9;&#9;&#9;select count(*) into n from (&#10;&#9;&#9;&#9;  Select 1 from UAC_CHILD_LOCATION_HIST Where UAC_ID &#61; v_UAC_ID AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0 AND (LIVING_WITH_SPONSOR &#61; 0 OR LIVING_WITH_SPONSOR is Null)&#10;&#9;&#9;&#9;  Union&#10;&#9;&#9;&#9;  Select 0 from dual&#10;&#9;&#9;&#9;);&#10;&#10;&#9;&#9;&#9;-- Check if there is a Current Location record for the Child where Living with Sponsor &#61; 1&#10;&#9;&#9;&#9;select count(*) into n1 from (&#10;&#9;&#9;&#9;  Select 1 from UAC_CHILD_LOCATION_HIST Where UAC_ID &#61; v_UAC_ID AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0 AND LIVING_WITH_SPONSOR &#61; 1&#10;&#9;&#9;&#9;  Union&#10;&#9;&#9;&#9;  Select 0 from dual&#10;&#9;&#9;&#9;);&#10;&#10;&#9;&#9;&#9;-- If there is no current Location record for the Child i.e no post release address and Discharge Type is Reunified with Sponsor&#10;&#9;&#9;&#9;-- Or there is a Current Location record where IS_CURRENT &#61; 1 and LIVING_WITH_SPONSOR &#61; 1 ie The UC is currently living with the Sponsor&#10;&#9;&#9;&#9;if (dischargeID_ &#61; 3 AND n &lt; 2) OR n1 &gt; 1 then&#10;&#9;&#9;&#9;&#9;--then current location is with Sponsor and we can insert old sponsor address into location history&#10;&#9;&#9;&#9;&#9;INSERT INTO UAC_CHILD_LOCATION_HIST (&#10;&#9;&#9;&#9;&#9;&#9;UAC_ID, &#10;&#9;&#9;&#9;&#9;&#9;DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;&#9;DISCHARGE_TYPE,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_TYPE_ID, &#10;&#9;&#9;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_ADDRESS, &#10;&#9;&#9;&#9;&#9;&#9;LOCATION_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_CITY, &#10;&#9;&#9;&#9;&#9;&#9;LOCATION_STATE, &#10;&#9;&#9;&#9;&#9;&#9;LOCATION_ZIPCODE,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_COUNTRY,&#10;&#9;&#9;&#9;&#9;&#9;DATE_LAST_UPDATED, &#10;&#9;&#9;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;&#9;ISDELETED,&#10;&#9;&#9;&#9;&#9;&#9;PROGRAM_ID,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_COUNTY,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_LATITUDE,&#10;&#9;&#9;&#9;&#9;&#9;LOCATION_LONGITUDE,&#10;&#9;&#9;&#9;&#9;&#9;SMARTY_STREET_VALIDATION)&#10;&#9;&#9;&#9;&#9;VALUES (&#10;&#9;&#9;&#9;&#9;&#9;v_UAC_ID,&#10;&#9;&#9;&#9;&#9;&#9;3,&#10;&#9;&#9;&#9;&#9;&#9;(SELECT DISCHARGE_TYPE FROM LIST_DISCHARGE_TYPE WHERE DISCHARGE_TYPE_ID &#61; 3),&#10;&#9;&#9;&#9;&#9;&#9;3,&#10;&#9;&#9;&#9;&#9;&#9;(SELECT LOCATION_TYPE FROM LIST_CHILD_LOCATION_TYPE WHERE LOCATION_TYPE_ID &#61; 3),&#10;&#9;&#9;&#9;&#9;&#9;(SELECT FIRST_NAME || &#39; &#39;  || LAST_NAME FROM SPONSOR_INFO WHERE SPONSOR_ID &#61; v_SPONSOR_ID),&#10;&#9;&#9;&#9;&#9;&#9;v_SPONSOR_ADDRESS,&#10;&#9;&#9;&#9;&#9;&#9;v_SPONSOR_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;&#9;v_SPONSOR_CITY,&#10;&#9;&#9;&#9;&#9;&#9;v_SPONSOR_STATE,&#10;&#9;&#9;&#9;&#9;&#9;v_SPONSOR_ZIPCODE,&#10;&#9;&#9;&#9;&#9;&#9;(SELECT LC.COUNTRY_ID FROM SPONSOR_INFO SPI LEFT JOIN LIST_COUNTRIES LC ON SPI.COR &#61; LC.COUNTRY_NAME WHERE SPI.SPONSOR_ID &#61; v_SPONSOR_ID),&#10;&#9;&#9;&#9;&#9;&#9;(SELECT CASE &#10;&#9;&#9;&#9;&#9;&#9;&#9;WHEN (SELECT UPDATE_DATE FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;) IS NOT NULL&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN (SELECT UPDATE_DATE FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;)&#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE (SELECT UPTIME FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID and is_deleted &#61; 0)&#10;&#9;&#9;&#9;&#9;&#9;&#9;END&#10;&#9;&#9;&#9;&#9;&#9;FROM dual), &#10;&#9;&#9;&#9;&#9;&#9;(SELECT CASE &#10;&#9;&#9;&#9;&#9;&#9;&#9;WHEN (SELECT UPUSER FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;) IS NOT NULL&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN (SELECT UPUSER FROm SPONSOR_ASSESS_TAB_HISTORY WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID AND ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;)&#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE (SELECT UPUSER FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID and is_deleted &#61; 0)&#10;&#9;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;&#9;FROM dual),&#10;&#9;&#9;&#9;&#9;&#9;0,&#10;&#9;&#9;&#9;&#9;&#9;Null,&#10;&#9;&#9;&#9;&#9;&#9;(Select SPONSOR_COUNTY FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID),&#10;&#9;&#9;&#9;&#9;&#9;(Select SPONSOR_LATITUDE FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID),&#10;&#9;&#9;&#9;&#9;&#9;(Select SPONSOR_LONGITUDE FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID),&#10;&#9;&#9;&#9;&#9;&#9;(Select SMARTY_STREET_VALIDATION FROM UAC_SPONSOR_LIST WHERE UAC_ID &#61; v_UAC_ID AND SPONSOR_ID &#61; v_SPONSOR_ID)&#10;&#9;&#9;&#9;&#9;);&#10;&#9;&#9;&#9;END If;&#10;&#9;&#9;End If;&#10;&#9;End If;&#10;&#10;END SP_INSERT_SPONSOR_ADDRESS_HIST;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

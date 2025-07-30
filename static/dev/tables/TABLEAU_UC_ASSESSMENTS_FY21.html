@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TABLEAU_UC_ASSESSMENTS_FY21 - ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>TABLEAU_UC_ASSESSMENTS_FY21</h1><p><span id="recordNumber">0</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_ASSESSMENT_ID">UAC_ASSESSMENT_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="TABLEAU_UC_ASSESSMENTS_FY21.UAC_ASSESSMENT_ID&#39;s name implies that it&#39;s a child of UAC_ASSESSMENT.UAC_ASSESSMENT_ID, but it doesn&#39;t reference that column."><a href='UAC_ASSESSMENT.html'>UAC_ASSESSMENT</a><span class='relatedKey'>.UAC_ASSESSMENT_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UAC_PROGRAM_ID">UAC_PROGRAM_ID</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="TABLEAU_UC_ASSESSMENTS_FY21.UAC_PROGRAM_ID&#39;s name implies that it&#39;s a child of UAC_PROGRAM_INFO.UAC_PROGRAM_ID, but it doesn&#39;t reference that column."><a href='UAC_PROGRAM_INFO.html'>UAC_PROGRAM_INFO</a><span class='relatedKey'>.UAC_PROGRAM_ID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_OF_INTAKE">DATE_OF_INTAKE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LOS">LOS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>55</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="BEEN_IN_US_BEFORE">BEEN_IN_US_BEFORE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LASTTIME_TO_BE_IN_US">LASTTIME_TO_BE_IN_US</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAS_FAMILY_IN_HC">HAS_FAMILY_IN_HC</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAS_FAMILY_IN_US">HAS_FAMILY_IN_US</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MARRIED">MARRIED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAS_CHILDREN">HAS_CHILDREN</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HURT_BY_SOMEONE">HURT_BY_SOMEONE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAVE_BEEN_IN_HOSPITAL_BY_HURT">HAVE_BEEN_IN_HOSPITAL_BY_HURT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="KNOW_YOUR_RIGHT_PROVIDED">KNOW_YOUR_RIGHT_PROVIDED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LEGAL_SCREENING_COMPLETED">LEGAL_SCREENING_COMPLETED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="LEGAL_RELIEF_IDENTIFIED">LEGAL_RELIEF_IDENTIFIED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAS_CRIMINAL_HISTORY">HAS_CRIMINAL_HISTORY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ATTITUDE">ATTITUDE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>20</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="BEHAVIOR">BEHAVIOR</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>43</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPEECH">SPEECH</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>23</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="AFFECT">AFFECT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>27</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MOOD">MOOD</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>9</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="THOUGHT_PROCESS">THOUGHT_PROCESS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>25</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUICIDAL_IDEATION">SUICIDAL_IDEATION</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SI_PLAN">SI_PLAN</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SI_INTENT">SI_INTENT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SI_MEANS">SI_MEANS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HOMICIDAL_IDEATION">HOMICIDAL_IDEATION</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HI_PLAN">HI_PLAN</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HI_INTENT">HI_INTENT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HI_MEANS">HI_MEANS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="THOUGHT_CONTENT">THOUGHT_CONTENT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>22</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PERCEPTION">PERCEPTION</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>47</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ORIENTATION_TIME">ORIENTATION_TIME</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ORIENTATION_PLACE">ORIENTATION_PLACE</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ORIENTATION_PERSON">ORIENTATION_PERSON</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ORIENTATION_SELF">ORIENTATION_SELF</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="INSIGHT_JUDGMENT">INSIGHT_JUDGMENT</span></td>
+                                    <td>CHAR</td>
+                                    <td>4</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TALKED_EMOTIONAL_PROBLEM">TALKED_EMOTIONAL_PROBLEM</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="FELT_NEED_HELP">FELT_NEED_HELP</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ADVISED_TO_TAKE_MED">ADVISED_TO_TAKE_MED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SEEN_ER_OR_HOSPITALISED">SEEN_ER_OR_HOSPITALISED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HEARD_VOICES">HEARD_VOICES</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAVE_DEPRESSED">HAVE_DEPRESSED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ATTEMP_TO_KILL_YOURSELF">ATTEMP_TO_KILL_YOURSELF</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAD_NIGHTMARES">HAD_NIGHTMARES</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="URGE_OR_IMPULSE">URGE_OR_IMPULSE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ARRANGEMENT_CHANGE">ARRANGEMENT_CHANGE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="FAMILY_OWE_MONEY_FOR_JOURNEY">FAMILY_OWE_MONEY_FOR_JOURNEY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="OWE_HOWMUCH_MONEY">OWE_HOWMUCH_MONEY</span></td>
+                                    <td>NUMBER</td>
+                                    <td>38</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UAC_FAMILY_THREATENED">UAC_FAMILY_THREATENED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PHYSICALLY_HARMED">PHYSICALLY_HARMED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SOMEONE_PHYSICALLY_HARMED">SOMEONE_PHYSICALLY_HARMED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HELD_AGAINST_WILL">HELD_AGAINST_WILL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ANYTHING_BAD_HAPPENED">ANYTHING_BAD_HAPPENED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SOMEONE_CONTROLLED_DOCUMENT">SOMEONE_CONTROLLED_DOCUMENT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="THREATEN_TO_REPORT">THREATEN_TO_REPORT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="WORRIED_TOBE_FOUND">WORRIED_TOBE_FOUND</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PERFORM_ANYWORK">PERFORM_ANYWORK</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAD_DEBT">HAD_DEBT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DEBT_AMOUNT_INCREASE">DEBT_AMOUNT_INCREASE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="THREATENED_PAY_FORJOURNEY">THREATENED_PAY_FORJOURNEY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DID_WHAT_DIDNT_WANTTO">DID_WHAT_DIDNT_WANTTO</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="EXPENSES_TAKENOF_THEPAY">EXPENSES_TAKENOF_THEPAY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ASKED_TOBE_NAKED">ASKED_TOBE_NAKED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SOMEONE_PAID_FOR">SOMEONE_PAID_FOR</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ASKED_TO_TAKE_PICS">ASKED_TO_TAKE_PICS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ASKED_SEXUAL_ACTS">ASKED_SEXUAL_ACTS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PROMISE_FOR_SEXUAL_ACTS">PROMISE_FOR_SEXUAL_ACTS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TRAFFICKING_CONCERN">TRAFFICKING_CONCERN</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TRAFFICING_REFERAL">TRAFFICING_REFERAL</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SUBSTANCE_ABUSE_CONCERNS">SUBSTANCE_ABUSE_CONCERNS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DOMESTIC_VIOLENCE_CONCERNS">DOMESTIC_VIOLENCE_CONCERNS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CHILD_ABUSE_CONCERNS">CHILD_ABUSE_CONCERNS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MENTAL_HEALTH_ISSUES">MENTAL_HEALTH_ISSUES</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_FAMILY_SUPPORT">SPONSOR_FAMILY_SUPPORT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_IDENTIFIED_NEEDS">SPONSOR_IDENTIFIED_NEEDS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_FINANCIAL_NEEDS">SPONSOR_FINANCIAL_NEEDS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_HOUSING">SPONSOR_HOUSING</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_HAS_CRIMINAL_HIST">SPONSOR_HAS_CRIMINAL_HIST</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="PARENT_CHILD_RELATIONAL_ISSUE">PARENT_CHILD_RELATIONAL_ISSUE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_ORDER_OF_REMOVAL">SPONSOR_ORDER_OF_REMOVAL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPNSR_ORDER_OF_REMOVAL_DATE">SPNSR_ORDER_OF_REMOVAL_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="OTHER_UACS_SPONSORED">OTHER_UACS_SPONSORED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TRAFFICKING_IN_PERSONS">TRAFFICKING_IN_PERSONS</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_ELIGIBILITY_LETTER_ISSUED">DATE_ELIGIBILITY_LETTER_ISSUED</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CHILD_DISABILITY_ACT">CHILD_DISABILITY_ACT</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="VICTIM_OF_PHYSEX_ABUSE">VICTIM_OF_PHYSEX_ABUSE</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SPONSOR_RISK_TO_UAC">SPONSOR_RISK_TO_UAC</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SIGNATURE_DATE">SIGNATURE_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="FEEL_UNWELL">FEEL_UNWELL</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MEMORY_SHORTTERM">MEMORY_SHORTTERM</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MEMORY_LONGTERM">MEMORY_LONGTERM</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="MEMORY_DISTRACTABLE">MEMORY_DISTRACTABLE</span></td>
+                                    <td>CHAR</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SOMEONE_PAYED_FOR_PIC">SOMEONE_PAYED_FOR_PIC</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CITY_OF_ORIGIN">CITY_OF_ORIGIN</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CHILD_MENTION_US_POLICY">CHILD_MENTION_US_POLICY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CHILD_MENTION_US_ECO">CHILD_MENTION_US_ECO</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="THE_DATE_LEFT_HOME_COUNTRY">THE_DATE_LEFT_HOME_COUNTRY</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="FF_PAID_FOR_THIS_TRIP">FF_PAID_FOR_THIS_TRIP</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="NOTICE_TO_APPEAR_FILED">NOTICE_TO_APPEAR_FILED</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="NOTICE_TO_APPEAR_FILED_DATE">NOTICE_TO_APPEAR_FILED_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SCHEDULED_FOR_HEARING">SCHEDULED_FOR_HEARING</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="SCHEDULED_FOR_HEARING_DATE">SCHEDULED_FOR_HEARING_DATE</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HEARING_CITY">HEARING_CITY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="HEARING_STATE">HEARING_STATE</span></td>
+                                    <td>CHAR</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="TABLEAU_UC_ASSESSMENTS_FY21.HEARING_STATE&#39;s name implies that it&#39;s a child of LIST_STATES.STATE, but it doesn&#39;t reference that column."><a href='LIST_STATES.html'>LIST_STATES</a><span class='relatedKey'>.STATE</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HEARING_OUTCOME">HEARING_OUTCOME</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>112</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="HAS_ATTORNEY">HAS_ATTORNEY</span></td>
+                                    <td>VARCHAR2</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DATE_OF_MEETING">DATE_OF_MEETING</span></td>
+                                    <td>DATE</td>
+                                    <td>7</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="5,5,501,3219">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/TABLEAU_UC_ASSESSMENTS_FY21.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="768,5,1264,3219">
+<area shape="rect" id="node2" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="42,1741,241,1859">
+<area shape="rect" id="node3" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="321,8,724,272">
+<area shape="rect" id="node4" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="5,143,277,407">
+</map>
+                                        <a name='diagram'><img id="oneimpliedDegreeImg" src="../diagrams/tables/TABLEAU_UC_ASSESSMENTS_FY21.implied1degrees.png" usemap="#oneDegreeRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
+<area shape="rect" id="node1" href="ADM_LIST_WEB_USER.html" target="_top" title="ADM_LIST_WEB_USER" alt="" coords="814,979,1090,1067">
+<area shape="rect" id="node2" href="LIST_STATES.html" target="_top" title="LIST_STATES" alt="" coords="5,5487,204,5575">
+<area shape="rect" id="node3" href="FACILITY_INFO.html" target="_top" title="FACILITY_INFO" alt="" coords="845,837,1059,925">
+<area shape="rect" id="node4" href="LIST_PROGRAMS.html" target="_top" title="LIST_PROGRAMS" alt="" coords="357,3420,590,3508">
+<area shape="rect" id="node5" href="FACILITY_INFO_ARC.html" target="_top" title="FACILITY_INFO_ARC" alt="" coords="823,1684,1081,1772">
+<area shape="rect" id="node6" href="PRS_CNRE_DOCUMENT.html" target="_top" title="PRS_CNRE_DOCUMENT" alt="" coords="1823,111,2110,199">
+<area shape="rect" id="node7" href="UAC_POST_RELEASE_SERVICE.html" target="_top" title="UAC_POST_RELEASE_SERVICE" alt="" coords="1267,1116,1613,1204">
+<area shape="rect" id="node8" href="UAC_PROGRAM_INFO.html" target="_top" title="UAC_PROGRAM_INFO" alt="" coords="816,4211,1088,4299">
+<area shape="rect" id="node26" href="UAC_INFO.html" target="_top" title="UAC_INFO" alt="" coords="369,5448,577,5536">
+<area shape="rect" id="node9" href="REASON_FOR_TYPEOFFACILITY.html" target="_top" title="REASON_FOR_TYPEOFFACILITY" alt="" coords="1260,4371,1620,4459">
+<area shape="rect" id="node10" href="SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="284,1025,663,1113">
+<area shape="rect" id="node11" href="SPONSOR_INFO.html" target="_top" title="SPONSOR_INFO" alt="" coords="362,4772,585,4860">
+<area shape="rect" id="node12" href="SPONSOR_INFO_ARCHIVE.html" target="_top" title="SPONSOR_INFO_ARCHIVE" alt="" coords="319,1167,628,1255">
+<area shape="rect" id="node13" href="SPONSOR_INFO_BAK.html" target="_top" title="SPONSOR_INFO_BAK" alt="" coords="339,1272,607,1360">
+<area shape="rect" id="node14" href="TABLEAU_RELEASE_REQUESTS_FY21.html" target="_top" title="TABLEAU_RELEASE_REQUESTS_FY21" alt="" coords="271,1377,676,1441">
+<area shape="rect" id="node15" href="TABLEAU_SIRS_FULL.html" target="_top" title="TABLEAU_SIRS_FULL" alt="" coords="1308,4476,1572,4540">
+<area shape="rect" id="node16" href="TABLEAU_SIRS_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_FULL_FY21" alt="" coords="1281,4593,1599,4657">
+<area shape="rect" id="node17" href="TABLEAU_SIRS_FY21.html" target="_top" title="TABLEAU_SIRS_FY21" alt="" coords="1307,4675,1573,4739">
+<area shape="rect" id="node18" href="TABLEAU_SIRS_LEAN.html" target="_top" title="TABLEAU_SIRS_LEAN" alt="" coords="1307,4756,1573,4820">
+<area shape="rect" id="node19" href="TABLEAU_SIRS_LEAN_FY21.html" target="_top" title="TABLEAU_SIRS_LEAN_FY21" alt="" coords="1280,4837,1600,4901">
+<area shape="rect" id="node20" href="TABLEAU_SIRS_WITH_ADDENDA_FULL.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL" alt="" coords="1231,4919,1649,4983">
+<area shape="rect" id="node21" href="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21.html" target="_top" title="TABLEAU_SIRS_WITH_ADDENDA_FULL_FY21" alt="" coords="1205,5000,1675,5064">
+<area shape="rect" id="node22" href="TABLEAU_SPONSOR_APPLICATIONS_FY21.html" target="_top" title="TABLEAU_SPONSOR_APPLICATIONS_FY21" alt="" coords="248,1459,699,1523">
+<area shape="rect" id="node23" href="TABLEAU_UC_ASSESSMENTS_FY21.html" target="_top" title="TABLEAU_UC_ASSESSMENTS_FY21" alt="" coords="1719,1525,2215,4739">
+<area shape="rect" id="node24" href="UAC_ASSESSMENT.html" target="_top" title="UAC_ASSESSMENT" alt="" coords="1315,1257,1565,1345">
+<area shape="rect" id="node25" href="TABLEAU_UC_PROGRAMS_FY21.html" target="_top" title="TABLEAU_UC_PROGRAMS_FY21" alt="" coords="1261,1753,1619,1817">
+<area shape="rect" id="node27" href="TEMP1_1.html" target="_top" title="TEMP1_1" alt="" coords="1360,5869,1520,5933">
+<area shape="rect" id="node28" href="TEMP1_2.html" target="_top" title="TEMP1_2" alt="" coords="1360,5951,1520,6015">
+<area shape="rect" id="node29" href="TEMP1_3.html" target="_top" title="TEMP1_3" alt="" coords="393,1713,553,1777">
+<area shape="rect" id="node30" href="TEMP2.html" target="_top" title="TEMP2" alt="" coords="881,4868,1023,4932">
+<area shape="rect" id="node31" href="TEMP3.html" target="_top" title="TEMP3" alt="" coords="1369,1835,1511,1899">
+<area shape="rect" id="node32" href="TEMP4.html" target="_top" title="TEMP4" alt="" coords="1896,5163,2037,5227">
+<area shape="rect" id="node33" href="UAC_SIR.html" target="_top" title="UAC_SIR" alt="" coords="1341,5081,1539,5169">
+<area shape="rect" id="node34" href="TEMP6.html" target="_top" title="TEMP6" alt="" coords="1896,5000,2037,5064">
+<area shape="rect" id="node35" href="TEMP7.html" target="_top" title="TEMP7" alt="" coords="1369,2096,1511,2160">
+<area shape="rect" id="node36" href="TEMP8.html" target="_top" title="TEMP8" alt="" coords="1369,2177,1511,2241">
+<area shape="rect" id="node37" href="TEMP9.html" target="_top" title="TEMP9" alt="" coords="1369,6068,1511,6132">
+<area shape="rect" id="node38" href="TEMP_3_ENR1.html" target="_top" title="TEMP_3_ENR1" alt="" coords="849,5772,1055,5836">
+<area shape="rect" id="node39" href="TEMP_3_ENR2.html" target="_top" title="TEMP_3_ENR2" alt="" coords="849,5853,1055,5917">
+<area shape="rect" id="node40" href="TEMP_DD_IMPORT2.html" target="_top" title="TEMP_DD_IMPORT2" alt="" coords="1311,5187,1569,5275">
+<area shape="rect" id="node41" href="TEMPORARY1.html" target="_top" title="TEMPORARY1" alt="" coords="1338,5788,1542,5852">
+<area shape="rect" id="node42" href="TT_FACILITY_INFO.html" target="_top" title="TT_FACILITY_INFO" alt="" coords="1317,764,1563,852">
+<area shape="rect" id="node43" href="TT_FOR_UPLD_SPONSOR_INFO.html" target="_top" title="TT_FOR_UPLD_SPONSOR_INFO" alt="" coords="297,4913,650,5001">
+<area shape="rect" id="node44" href="TT_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="TT_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="269,5019,677,5107">
+<area shape="rect" id="node45" href="TT_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_SUBSTANCE_USE_HISTORY" alt="" coords="1791,1384,2143,1472">
+<area shape="rect" id="node46" href="TT_UAC_CASESTATUS_INFO.html" target="_top" title="TT_UAC_CASESTATUS_INFO" alt="" coords="1277,5292,1603,5380">
+<area shape="rect" id="node47" href="TT_UAC_CHILDREN.html" target="_top" title="TT_UAC_CHILDREN" alt="" coords="2301,516,2551,604">
+<area shape="rect" id="node48" href="UAC_CHILDREN.html" target="_top" title="UAC_CHILDREN" alt="" coords="1857,499,2077,587">
+<area shape="rect" id="node49" href="TT_UAC_CRIMINAL_HISTORY.html" target="_top" title="TT_UAC_CRIMINAL_HISTORY" alt="" coords="2259,375,2593,463">
+<area shape="rect" id="node50" href="UAC_CRIMINAL_HISTORY.html" target="_top" title="UAC_CRIMINAL_HISTORY" alt="" coords="1815,393,2119,481">
+<area shape="rect" id="node51" href="TT_UAC_FAMILY_RELATIONS.html" target="_top" title="TT_UAC_FAMILY_RELATIONS" alt="" coords="2259,216,2593,304">
+<area shape="rect" id="node52" href="UAC_FAMILY_RELATIONS.html" target="_top" title="UAC_FAMILY_RELATIONS" alt="" coords="1815,252,2119,340">
+<area shape="rect" id="node53" href="TT_UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="TT_UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1769,604,2165,692">
+<area shape="rect" id="node54" href="UAC_CASE_REVIEW.html" target="_top" title="UAC_CASE_REVIEW" alt="" coords="1313,5397,1567,5485">
+<area shape="rect" id="node55" href="UAC_CHILD_LOCATION_HIST.html" target="_top" title="UAC_CHILD_LOCATION_HIST" alt="" coords="786,4949,1118,5037">
+<area shape="rect" id="node56" href="UAC_DISCHARGE_NOTIFICATION.html" target="_top" title="UAC_DISCHARGE_NOTIFICATION" alt="" coords="1255,1612,1625,1700">
+<area shape="rect" id="node57" href="UAC_DOCTOR_VISIT.html" target="_top" title="UAC_DOCTOR_VISIT" alt="" coords="1311,2944,1569,3032">
+<area shape="rect" id="node58" href="UAC_DOCUMENTS.html" target="_top" title="UAC_DOCUMENTS" alt="" coords="1319,3049,1561,3137">
+<area shape="rect" id="node59" href="UAC_EDUCATION_PLACEMENT.html" target="_top" title="UAC_EDUCATION_PLACEMENT" alt="" coords="1265,3155,1615,3243">
+<area shape="rect" id="node60" href="UAC_EFFORT.html" target="_top" title="UAC_EFFORT" alt="" coords="1341,3260,1539,3348">
+<area shape="rect" id="node61" href="UAC_FOSTER_CARE_TRAVEL_REQUEST.html" target="_top" title="UAC_FOSTER_CARE_TRAVEL_REQUEST" alt="" coords="1229,3365,1651,3453">
+<area shape="rect" id="node62" href="UAC_HOMESTUDY_CASE_REFERRAL.html" target="_top" title="UAC_HOMESTUDY_CASE_REFERRAL" alt="" coords="1241,905,1639,993">
+<area shape="rect" id="node63" href="UAC_HOTLINE_ALERT.html" target="_top" title="UAC_HOTLINE_ALERT" alt="" coords="816,6921,1088,7009">
+<area shape="rect" id="node64" href="UAC_HOTLINE_REPORTING.html" target="_top" title="UAC_HOTLINE_REPORTING" alt="" coords="1281,6967,1599,7055">
+<area shape="rect" id="node65" href="UAC_IMMUNIZATION.html" target="_top" title="UAC_IMMUNIZATION" alt="" coords="1307,3471,1573,3559">
+<area shape="rect" id="node66" href="UAC_INDIVIDUAL_SERVICE_PLAN.html" target="_top" title="UAC_INDIVIDUAL_SERVICE_PLAN" alt="" coords="1253,3576,1627,3664">
+<area shape="rect" id="node67" href="UAC_INFO_BAK.html" target="_top" title="UAC_INFO_BAK" alt="" coords="843,5935,1061,6023">
+<area shape="rect" id="node68" href="UAC_INFO_TMP.html" target="_top" title="UAC_INFO_TMP" alt="" coords="843,6040,1061,6128">
+<area shape="rect" id="node69" href="UAC_INFO_TMP_FROMXML.html" target="_top" title="UAC_INFO_TMP_FROMXML" alt="" coords="793,6145,1111,6233">
+<area shape="rect" id="node70" href="UAC_INITIAL_ASSESSMENT.html" target="_top" title="UAC_INITIAL_ASSESSMENT" alt="" coords="1279,3681,1601,3769">
+<area shape="rect" id="node71" href="UAC_MEDICAL_SCREENING.html" target="_top" title="UAC_MEDICAL_SCREENING" alt="" coords="1280,5647,1600,5735">
+<area shape="rect" id="node72" href="UAC_PROGRAM_INFO_BACKUP.html" target="_top" title="UAC_PROGRAM_INFO_BACKUP" alt="" coords="1263,2364,1617,2452">
+<area shape="rect" id="node73" href="UAC_RELEASE_REQUEST.html" target="_top" title="UAC_RELEASE_REQUEST" alt="" coords="1291,2259,1589,2347">
+<area shape="rect" id="node74" href="UAC_RISK_ASSESSMENT.html" target="_top" title="UAC_RISK_ASSESSMENT" alt="" coords="1291,3787,1589,3875">
+<area shape="rect" id="node75" href="UAC_SCHEDULED_HEARING.html" target="_top" title="UAC_SCHEDULED_HEARING" alt="" coords="1803,5,2130,93">
+<area shape="rect" id="node76" href="UAC_SECURE_REVIEW.html" target="_top" title="UAC_SECURE_REVIEW" alt="" coords="1301,3892,1579,3980">
+<area shape="rect" id="node77" href="UAC_SIR_FOLLOWUP_RPT.html" target="_top" title="UAC_SIR_FOLLOWUP_RPT" alt="" coords="1285,3997,1595,4085">
+<area shape="rect" id="node78" href="UAC_SIR_NEW.html" target="_top" title="UAC_SIR_NEW" alt="" coords="1863,5320,2071,5408">
+<area shape="rect" id="node79" href="UAC_SPONSOR_ADDRESS_HISTORY.html" target="_top" title="UAC_SPONSOR_ADDRESS_HISTORY" alt="" coords="1241,1011,1639,1099">
+<area shape="rect" id="node80" href="UAC_SPONSOR_LIST.html" target="_top" title="UAC_SPONSOR_LIST" alt="" coords="821,5055,1083,5143">
+<area shape="rect" id="node81" href="UAC_SUBSTANCE_USE_HISTORY.html" target="_top" title="UAC_SUBSTANCE_USE_HISTORY" alt="" coords="1783,709,2150,797">
+<area shape="rect" id="node82" href="UAC_TRANSFER_REQUEST.html" target="_top" title="UAC_TRANSFER_REQUEST" alt="" coords="1283,2505,1597,2593">
+<area shape="rect" id="node83" href="UAC_UNLOCKED_HIST.html" target="_top" title="UAC_UNLOCKED_HIST" alt="" coords="1301,4103,1579,4191">
+<area shape="rect" id="node84" href="V_15DAY_ENROUTE.html" target="_top" title="V_15DAY_ENROUTE" alt="" coords="1313,6231,1567,6295">
+<area shape="rect" id="node85" href="V_ADRIANA_SPONSOR_SEARCH_SI.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SI" alt="" coords="1248,6745,1632,6809">
+<area shape="rect" id="node86" href="V_ADRIANA_SPONSOR_SEARCH_SL.html" target="_top" title="V_ADRIANA_SPONSOR_SEARCH_SL" alt="" coords="1245,6501,1635,6565">
+<area shape="rect" id="node87" href="V_ASSESSMENT_RPT.html" target="_top" title="V_ASSESSMENT_RPT" alt="" coords="1835,4756,2099,4820">
+<area shape="rect" id="node88" href="V_ASSESSMENT_RPT_NF_PT1.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT1" alt="" coords="1797,4837,2136,4901">
+<area shape="rect" id="node89" href="V_ASSESSMENT_RPT_NF_PT2.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT2" alt="" coords="1797,815,2136,879">
+<area shape="rect" id="node90" href="V_ASSESSMENT_RPT_NF_PT3.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT3" alt="" coords="1797,896,2136,960">
+<area shape="rect" id="node91" href="V_ASSESSMENT_RPT_NF_PT4.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT4" alt="" coords="1797,977,2136,1041">
+<area shape="rect" id="node92" href="V_ASSESSMENT_RPT_NF_PT5.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT5" alt="" coords="1797,1059,2136,1123">
+<area shape="rect" id="node93" href="V_ASSESSMENT_RPT_NF_PT6.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT6" alt="" coords="1797,1140,2136,1204">
+<area shape="rect" id="node94" href="V_ASSESSMENT_RPT_NF_PT7.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT7" alt="" coords="1797,1221,2136,1285">
+<area shape="rect" id="node95" href="V_ASSESSMENT_RPT_NF_PT8.html" target="_top" title="V_ASSESSMENT_RPT_NF_PT8" alt="" coords="1797,1303,2136,1367">
+<area shape="rect" id="node96" href="V_CR_MEDICAL_HISTORY.html" target="_top" title="V_CR_MEDICAL_HISTORY" alt="" coords="1289,4208,1591,4272">
+<area shape="rect" id="node97" href="V_CR_MEDICATION_HISTORY.html" target="_top" title="V_CR_MEDICATION_HISTORY" alt="" coords="1273,4289,1607,4353">
+<area shape="rect" id="node98" href="V_ENROLLMENT_REPORT.html" target="_top" title="V_ENROLLMENT_REPORT" alt="" coords="801,6251,1103,6315">
+<area shape="rect" id="node99" href="V_ENROLLMENT_REPORT_DUMMY.html" target="_top" title="V_ENROLLMENT_REPORT_DUMMY" alt="" coords="762,6368,1142,6432">
+<area shape="rect" id="node100" href="V_ENTRY_STATES.html" target="_top" title="V_ENTRY_STATES" alt="" coords="355,6189,591,6253">
+<area shape="rect" id="node101" href="V_MEDICAL_RPT.html" target="_top" title="V_MEDICAL_RPT" alt="" coords="1855,6425,2079,6489">
+<area shape="rect" id="node102" href="V_PC_UNDERWRITERS.html" target="_top" title="V_PC_UNDERWRITERS" alt="" coords="335,6307,612,6371">
+<area shape="rect" id="node103" href="V_SIR_ALEXIS.html" target="_top" title="V_SIR_ALEXIS" alt="" coords="1865,5664,2068,5728">
+<area shape="rect" id="node104" href="V_SIR_RPT.html" target="_top" title="V_SIR_RPT" alt="" coords="1880,5583,2053,5647">
+<area shape="rect" id="node105" href="V_SIR_RPT_ALL_FIELDS.html" target="_top" title="V_SIR_RPT_ALL_FIELDS" alt="" coords="1824,5081,2109,5145">
+<area shape="rect" id="node106" href="V_SIR_RPT_SYNOP.html" target="_top" title="V_SIR_RPT_SYNOP" alt="" coords="1845,5501,2089,5565">
+<area shape="rect" id="node107" href="V_SIR_SOHN.html" target="_top" title="V_SIR_SOHN" alt="" coords="1871,4919,2062,4983">
+<area shape="rect" id="node108" href="V_SPONSOR_AFFIDAVITS_SUPPORT.html" target="_top" title="V_SPONSOR_AFFIDAVITS_SUPPORT" alt="" coords="275,6388,671,6452">
+<area shape="rect" id="node109" href="V_SPONSOR_INFO.html" target="_top" title="V_SPONSOR_INFO" alt="" coords="353,6469,593,6533">
+<area shape="rect" id="node110" href="V_SPONSOR_LEGAL_RPT.html" target="_top" title="V_SPONSOR_LEGAL_RPT" alt="" coords="325,6551,621,6615">
+<area shape="rect" id="node111" href="V_SPRTD_UAC_DATA_REFRESH_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_REFRESH_RPT" alt="" coords="754,6449,1150,6513">
+<area shape="rect" id="node112" href="V_SPRTD_UAC_DATA_RFRSH_APP_RPT.html" target="_top" title="V_SPRTD_UAC_DATA_RFRSH_APP_RPT" alt="" coords="743,6619,1161,6683">
+<area shape="rect" id="node113" href="V_UAC_ENROLLMENT_RPT.html" target="_top" title="V_UAC_ENROLLMENT_RPT" alt="" coords="1285,6149,1595,6213">
+<area shape="rect" id="node114" href="V_UAC_ENROLLMENT_RPT_DUMMY.html" target="_top" title="V_UAC_ENROLLMENT_RPT_DUMMY" alt="" coords="1246,6583,1634,6647">
+<area shape="rect" id="node115" href="V_UAC_INACTIVE_ENROUTE.html" target="_top" title="V_UAC_INACTIVE_ENROUTE" alt="" coords="791,6700,1113,6764">
+<area shape="rect" id="node116" href="V_UAC_ORIG_SPONSOR_INFO.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO" alt="" coords="304,6828,643,6892">
+<area shape="rect" id="node117" href="V_UAC_ORIG_SPONSOR_INFO_HS.html" target="_top" title="V_UAC_ORIG_SPONSOR_INFO_HS" alt="" coords="287,6909,659,6973">
+<area shape="rect" id="node118" href="V_UAC_PROG_INFO.html" target="_top" title="V_UAC_PROG_INFO" alt="" coords="1315,2611,1565,2675">
+<area shape="rect" id="node119" href="V_UAC_PROGRAM_INFO_MIR.html" target="_top" title="V_UAC_PROGRAM_INFO_MIR" alt="" coords="1274,6348,1606,6412">
+<area shape="rect" id="node120" href="V_UAC_SPONSOR_HOUSEHOLD.html" target="_top" title="V_UAC_SPONSOR_HOUSEHOLD" alt="" coords="1263,6863,1617,6927">
+<area shape="rect" id="node121" href="V_UAC_SPONSOR_INFO.html" target="_top" title="V_UAC_SPONSOR_INFO" alt="" coords="331,7063,616,7127">
+<area shape="rect" id="node122" href="V_UAC_SPONSOR_RPT.html" target="_top" title="V_UAC_SPONSOR_RPT" alt="" coords="1301,6664,1579,6728">
+<area shape="rect" id="node123" href="V_USERLIST_NOTPROGRAMUSERS.html" target="_top" title="V_USERLIST_NOTPROGRAMUSERS" alt="" coords="281,7180,665,7244">
+<area shape="rect" id="node124" href="V_USERLIST_WPROGRAMS.html" target="_top" title="V_USERLIST_WPROGRAMS" alt="" coords="315,7261,631,7325">
+</map>
+                                        <a name='diagram'><img id="twoimpliedDegreeImg" src="../diagrams/tables/TABLEAU_UC_ASSESSMENTS_FY21.implied2degrees.png" usemap="#twoDegreesRelationshipsDiagramImplied" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="ViewDefinition" class="box-title">View Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">select --count(*) &#10;    asmt.uac_assessment_id, &#10;    asmt.uac_program_id, &#10;    asmt.date_of_intake, &#10;    asmt.los, &#10;    case &#10;        when asmt.been_in_us_before &#61; 0 then &#39;No&#39; &#10;        when asmt.been_in_us_before &#61; 1 then &#39;Yes&#39; &#10;    end as been_in_us_before, &#10;    asmt.lasttime_to_be_in_us, &#10;    case &#10;        when asmt.has_family_in_hc &#61; 0 then &#39;No&#39; &#10;        when asmt.has_family_in_hc &#61; 1 then &#39;Yes&#39; &#10;    end as has_family_in_hc, &#10;    case &#10;        when asmt.has_family_in_us &#61; 0 then &#39;No&#39; &#10;        when asmt.has_family_in_us &#61; 1 then &#39;Yes&#39; &#10;    end as has_family_in_us, &#10;    case &#10;        when asmt.marriage_stus &#61; 0 then &#39;No&#39; &#10;        when asmt.marriage_stus &#61; 1 then &#39;Yes&#39; &#10;    end as married, &#10;    case &#10;        when asmt.has_children &#61; 0 then &#39;No&#39; &#10;        when asmt.has_children &#61; 1 then &#39;Yes&#39; &#10;    end as has_children, &#10;    case &#10;        when asmt.hurt_by_someone &#61; 0 then &#39;No&#39; &#10;        when asmt.hurt_by_someone &#61; 1 then &#39;Yes&#39; &#10;    end as hurt_by_someone, &#10;    case &#10;        when asmt.have_been_in_hospital_by_hurt &#61; 0 then &#39;No&#39; &#10;        when asmt.have_been_in_hospital_by_hurt &#61; 1 then &#39;Yes&#39; &#10;    end as have_been_in_hospital_by_hurt, &#10;    case &#10;        when asmt.know_your_right_provided &#61; 0 then &#39;No&#39; &#10;        when asmt.know_your_right_provided &#61; 1 then &#39;Yes&#39; &#10;    end as know_your_right_provided, &#10;    case &#10;        when asmt.legal_screening_completed &#61; 0 then &#39;No&#39; &#10;        when asmt.legal_screening_completed &#61; 1 then &#39;Yes&#39; &#10;    end as legal_screening_completed, &#10;    case &#10;        when asmt.legal_relief_identified &#61; 0 then &#39;No&#39; &#10;        when asmt.legal_relief_identified &#61; 1 then &#39;Yes&#39; &#10;    end as legal_relief_identified, &#10;    case &#10;        when asmt.has_criminal_history &#61; 0 then &#39;No&#39; &#10;        when asmt.has_criminal_history &#61; 1 then &#39;Yes&#39; &#10;    end as has_criminal_history, &#10;    case &#10;        when asmt.attitude &#61; 0 then &#39;Calm and Cooperative&#39; &#10;        when asmt.attitude &#61; 1 then &#39;Other&#39; &#10;    end as attitude, &#10;    case &#10;        when asmt.behavior &#61; 0 then &#39;No Unusual Movements or Psychomotor Changes&#39; &#10;        when asmt.behavior &#61; 1 then &#39;Other&#39; &#10;    end as behavior, &#10;    case &#10;        when asmt.speech &#61; 0 then &#39;Normal Rate/Tone/Volume&#39; &#10;        when asmt.speech &#61; 1 then &#39;Other&#39; &#10;    end as speech, &#10;    case &#10;        when asmt.affect &#61; 1 then &#39;Reactive and Mood Congruent&#39; &#10;        when asmt.affect &#61; 2 then &#39;Labile&#39; &#10;        when asmt.affect &#61; 3 then &#39;Tearful&#39; &#10;        when asmt.affect &#61; 4 then &#39;Blunted&#39; &#10;        when asmt.affect &#61; 5 then &#39;Normal&#39; &#10;        when asmt.affect &#61; 6 then &#39;Depressed&#39; &#10;        when asmt.affect &#61; 7 then &#39;Constricted&#39; &#10;        when asmt.affect &#61; 8 then &#39;Flat&#39; &#10;        when asmt.affect &#61; 9 then &#39;Other&#39; &#10;    end as affect, &#10;    case &#10;        when asmt.mood &#61; 1 then &#39;Euthymic&#39; &#10;        when asmt.mood &#61; 2 then &#39;Irritable&#39; &#10;        when asmt.mood &#61; 3 then &#39;Elevated&#39; &#10;        when asmt.mood &#61; 4 then &#39;Anxious&#39; &#10;        when asmt.mood &#61; 5 then &#39;Depressed&#39; &#10;        when asmt.mood &#61; 6 then &#39;Other&#39; &#10;    end as mood, &#10;    case &#10;        when asmt.thought_process &#61; 1 then &#39;Goal-oriented and Logical&#39; &#10;        when asmt.thought_process &#61; 2 then &#39;Disorganized&#39; &#10;        when asmt.thought_process &#61; 3 then &#39;Other&#39; &#10;    end as thought_process, &#10;    case &#10;        when asmt.suicidal_ideation &#61; 1 then &#39;None&#39; &#10;        when asmt.suicidal_ideation &#61; 2 then &#39;Passive&#39; &#10;        when asmt.suicidal_ideation &#61; 3 then &#39;Active&#39; &#10;    end as suicidal_ideation, &#10;    case &#10;        when asmt.si_plan &#61; 0 then &#39;No&#39; &#10;        when asmt.si_plan &#61; 1 then &#39;Yes&#39; &#10;    end as si_plan, &#10;    case &#10;        when asmt.si_intent &#61; 0 then &#39;No&#39; &#10;        when asmt.si_intent &#61; 1 then &#39;Yes&#39; &#10;    end as si_intent, &#10;    case &#10;        when asmt.si_means &#61; 0 then &#39;No&#39; &#10;        when asmt.si_means &#61; 1 then &#39;Yes&#39; &#10;    end as si_means, &#10;    case &#10;        when asmt.homicidal_ideation &#61; 1 then &#39;None&#39; &#10;        when asmt.homicidal_ideation &#61; 2 then &#39;Passive&#39; &#10;        when asmt.homicidal_ideation &#61; 3 then &#39;Active&#39; &#10;    end as homicidal_ideation, &#10;    case &#10;        when asmt.hi_plan &#61; 0 then &#39;No&#39; &#10;        when asmt.hi_plan &#61; 1 then &#39;Yes&#39; &#10;    end as hi_plan, &#10;    case &#10;        when asmt.hi_intent &#61; 0 then &#39;No&#39; &#10;        when asmt.hi_intent &#61; 1 then &#39;Yes&#39; &#10;    end as hi_intent, &#10;    case &#10;        when asmt.hi_means &#61; 0 then &#39;No&#39; &#10;        when asmt.hi_means &#61; 1 then &#39;Yes&#39; &#10;    end as hi_means, &#10;    case &#10;        when asmt.thought_content &#61; 1 then &#39;Delusions&#39; &#10;        when asmt.thought_content &#61; 2 then &#39;Obsessions/Compulsions&#39; &#10;        when asmt.thought_content &#61; 3 then &#39;Phobias&#39; &#10;        when asmt.thought_content &#61; 4 then &#39;Other&#39; &#10;    end as thought_content, &#10;    case &#10;        when asmt.perception &#61; 0 then &#39;No Hallucinations or Delusions During Interview&#39; &#10;        when asmt.perception &#61; 1 then &#39;Other&#39; &#10;    end as perception,&#10;    case when asmt.orientation_time &#61; 1 then &#39;Yes&#39; end as orientation_time, &#10;    case when asmt.orientation_place &#61; 1 then &#39;Yes&#39; end as orientation_place, &#10;    case when asmt.orientation_person &#61; 1 then &#39;Yes&#39; end as orientation_person, &#10;    case when asmt.orientation_self &#61; 1 then &#39;Yes&#39; end as orientation_self, &#10;    case &#10;        when asmt.insight_judgment &#61; 1 then &#39;Good&#39; &#10;        when asmt.insight_judgment &#61; 2 then &#39;Fair&#39; &#10;        when asmt.insight_judgment &#61; 3 then &#39;Poor&#39; &#10;    end as insight_judgment, &#10;    case &#10;        when asmt.talked_emotianal_problem &#61; 0 then &#39;No&#39; &#10;        when asmt.talked_emotianal_problem &#61; 1 then &#39;Yes&#39; &#10;    end as talked_emotional_problem, &#10;    case &#10;        when asmt.felt_need_help &#61; 0 then &#39;No&#39; &#10;        when asmt.felt_need_help &#61; 1 then &#39;Yes&#39; &#10;    end as felt_need_help, &#10;    case &#10;        when asmt.advised_to_take_med &#61; 0 then &#39;No&#39; &#10;        when asmt.advised_to_take_med &#61; 1 then &#39;Yes&#39; &#10;    end as advised_to_take_med, &#10;    case &#10;        when asmt.seen_er_or_hospitalised &#61; 0 then &#39;No&#39; &#10;        when asmt.seen_er_or_hospitalised &#61; 1 then &#39;Yes&#39; &#10;    end as seen_er_or_hospitalised, &#10;    case &#10;        when asmt.heard_voises &#61; 0 then &#39;No&#39; &#10;        when asmt.heard_voises &#61; 1 then &#39;Yes&#39; &#10;    end as heard_voices, &#10;    case &#10;        when asmt.have_depressed &#61; 0 then &#39;No&#39; &#10;        when asmt.have_depressed &#61; 1 then &#39;Yes&#39; &#10;    end as have_depressed, &#10;    case &#10;        when asmt.attemp_to_kill_yourself &#61; 0 then &#39;No&#39; &#10;        when asmt.attemp_to_kill_yourself &#61; 1 then &#39;Yes&#39; &#10;    end as attemp_to_kill_yourself, &#10;    case &#10;        when asmt.had_nightmares &#61; 0 then &#39;No&#39; &#10;        when asmt.had_nightmares &#61; 1 then &#39;Yes&#39; &#10;    end as had_nightmares, &#10;    case &#10;        when asmt.urge_or_impulse &#61; 0 then &#39;No&#39; &#10;        when asmt.urge_or_impulse &#61; 1 then &#39;Yes&#39; &#10;    end as urge_or_impulse, &#10;    case &#10;        when asmt.arrangement_change &#61; 0 then &#39;No&#39; &#10;        when asmt.arrangement_change &#61; 1 then &#39;Yes&#39; &#10;    end as arrangement_change, &#10;    case &#10;        when asmt.family_owe_money_for_journey &#61; 0 then &#39;No&#39; &#10;        when asmt.family_owe_money_for_journey &#61; 1 then &#39;Yes&#39; &#10;    end as family_owe_money_for_journey, &#10;    asmt.owe_howmuch_money, &#10;    case &#10;        when asmt.uac_family_threatened &#61; 0 then &#39;No&#39; &#10;        when asmt.uac_family_threatened &#61; 1 then &#39;Yes&#39; &#10;    end as uac_family_threatened, &#10;    case &#10;        when asmt.physically_harmed &#61; 0 then &#39;No&#39; &#10;        when asmt.physically_harmed &#61; 1 then &#39;Yes&#39; &#10;    end as physically_harmed, &#10;    case &#10;        when asmt.someone_physically_harmed &#61; 0 then &#39;No&#39; &#10;        when asmt.someone_physically_harmed &#61; 1 then &#39;Yes&#39; &#10;    end as someone_physically_harmed, &#10;    case &#10;        when asmt.held_against_will &#61; 0 then &#39;No&#39; &#10;        when asmt.held_against_will &#61; 1 then &#39;Yes&#39; &#10;    end as held_against_will, &#10;    case &#10;        when asmt.anything_bad_happened &#61; 0 then &#39;No&#39; &#10;        when asmt.anything_bad_happened &#61; 1 then &#39;Yes&#39; &#10;    end as anything_bad_happened, &#10;    case &#10;        when asmt.someone_controlled_document &#61; 0 then &#39;No&#39; &#10;        when asmt.someone_controlled_document &#61; 1 then &#39;Yes&#39; &#10;    end as someone_controlled_document, &#10;    case &#10;        when asmt.threaten_to_report &#61; 0 then &#39;No&#39; &#10;        when asmt.threaten_to_report &#61; 1 then &#39;Yes&#39; &#10;    end as threaten_to_report, &#10;    case &#10;        when asmt.worried_tobe_found &#61; 0 then &#39;No&#39; &#10;        when asmt.worried_tobe_found &#61; 1 then &#39;Yes&#39; &#10;    end as worried_tobe_found, &#10;    case &#10;        when asmt.perform_anywork &#61; 0 then &#39;No&#39; &#10;        when asmt.perform_anywork &#61; 1 then &#39;Yes&#39; &#10;    end as perform_anywork, &#10;    case &#10;        when asmt.had_debt &#61; 0 then &#39;No&#39; &#10;        when asmt.had_debt &#61; 1 then &#39;Yes&#39; &#10;    end as had_debt, &#10;    case &#10;        when asmt.debt_amount_increase &#61; 0 then &#39;No&#39; &#10;        when asmt.debt_amount_increase &#61; 1 then &#39;Yes&#39; &#10;    end as debt_amount_increase, &#10;    case &#10;        when asmt.thearetened_pay_forjourney &#61; 0 then &#39;No&#39; &#10;        when asmt.thearetened_pay_forjourney &#61; 1 then &#39;Yes&#39; &#10;    end as threatened_pay_forjourney, &#10;    case &#10;        when asmt.did_what_didnt_wantto &#61; 0 then &#39;No&#39; &#10;        when asmt.did_what_didnt_wantto &#61; 1 then &#39;Yes&#39; &#10;    end as did_what_didnt_wantto, &#10;    case &#10;        when asmt.expenses_takenof_thepay &#61; 0 then &#39;No&#39; &#10;        when asmt.expenses_takenof_thepay &#61; 1 then &#39;Yes&#39; &#10;    end as expenses_takenof_thepay, &#10;    case &#10;        when asmt.asked_tobe_naked &#61; 0 then &#39;No&#39; &#10;        when asmt.asked_tobe_naked &#61; 0 then &#39;Yes&#39; &#10;    end as asked_tobe_naked, &#10;    case &#10;        when asmt.someone_payed_for &#61; 0 then &#39;No&#39; &#10;        when asmt.someone_payed_for &#61; 1 then &#39;Yes&#39; &#10;    end as someone_paid_for, &#10;    case &#10;        when asmt.asked_to_take_pics &#61; 0 then &#39;No&#39; &#10;        when asmt.asked_to_take_pics &#61; 1 then &#39;Yes&#39; &#10;    end as asked_to_take_pics, &#10;    case &#10;        when asmt.asked_sexual_acts &#61; 0 then &#39;No&#39; &#10;        when asmt.asked_sexual_acts &#61; 1 then &#39;Yes&#39; &#10;    end as asked_sexual_acts, &#10;    case &#10;        when asmt.promise_for_sexual_acts &#61; 0 then &#39;No&#39; &#10;        when asmt.promise_for_sexual_acts &#61; 1 then &#39;Yes&#39; &#10;    end as promise_for_sexual_acts, &#10;    case &#10;        when asmt.trafficking_concern &#61; 0 then &#39;No&#39; &#10;        when asmt.trafficking_concern &#61; 1 then &#39;Yes&#39; &#10;    end as trafficking_concern, &#10;    asmt.trafficing_referal, &#10;    case &#10;        when asmt.substance_abuse_concerns &#61; 0 then &#39;No&#39; &#10;        when asmt.substance_abuse_concerns &#61; 1 then &#39;Yes&#39; &#10;    end as substance_abuse_concerns, &#10;    case &#10;        when asmt.domistic_violence_concerns &#61; 0 then &#39;No&#39; &#10;        when asmt.domistic_violence_concerns &#61; 1 then &#39;Yes&#39; &#10;    end as domestic_violence_concerns, &#10;    case &#10;        when asmt.child_abuse_concerns &#61; 0 then &#39;No&#39; &#10;        when asmt.child_abuse_concerns &#61; 1 then &#39;Yes&#39; &#10;    end as child_abuse_concerns, &#10;    case &#10;        when asmt.mental_health_issues &#61; 0 then &#39;No&#39; &#10;        when asmt.mental_health_issues &#61; 1 then &#39;Yes&#39; &#10;    end as mental_health_issues, &#10;    case &#10;        when asmt.sponsor_family_support &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_family_support &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_family_support, &#10;    case &#10;        when asmt.sponsor_identified_needs &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_identified_needs &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_identified_needs, &#10;    case &#10;        when asmt.sponsor_financial_needs &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_financial_needs &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_financial_needs, &#10;    case &#10;        when asmt.sponsor_hosing &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_hosing &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_housing, &#10;    case &#10;        when asmt.sponsor_has_criminal_hist &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_has_criminal_hist &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_has_criminal_hist, &#10;    case &#10;        when asmt.parent_child_relational_issue &#61; 0 then &#39;No&#39; &#10;        when asmt.parent_child_relational_issue &#61; 1 then &#39;Yes&#39; &#10;    end as parent_child_relational_issue, &#10;    case &#10;        when asmt.sponsor_order_of_removal &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_order_of_removal &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_order_of_removal, &#10;    asmt.spnsr_order_of_removal_date, &#10;    case &#10;        when asmt.other_uacs_sponsored &#61; 0 then &#39;No&#39; &#10;        when asmt.other_uacs_sponsored &#61; 0 then &#39;Yes&#39; &#10;    end as other_uacs_sponsored, &#10;    case &#10;        when asmt.trafficking_in_persons &#61; 0 then &#39;No&#39; &#10;        when asmt.trafficking_in_persons &#61; 1 then &#39;Yes&#39; &#10;    end as trafficking_in_persons, &#10;    asmt.date_eligibility_letter_issued, &#10;    case &#10;        when asmt.child_disability_act &#61; 0 then &#39;No&#39; &#10;        when asmt.child_disability_act &#61; 1 then &#39;Yes&#39; &#10;    end as child_disability_act, &#10;    case &#10;        when asmt.victim_of_physex_abuse &#61; 0 then &#39;No&#39; &#10;        when asmt.victim_of_physex_abuse &#61; 1 then &#39;Yes&#39; &#10;    end as victim_of_physex_abuse, &#10;    case &#10;        when asmt.sponsor_risk_to_uac &#61; 0 then &#39;No&#39; &#10;        when asmt.sponsor_risk_to_uac &#61; 1 then &#39;Yes&#39; &#10;    end as sponsor_risk_to_uac, &#10;    asmt.signature_date, &#10;    case &#10;        when asmt.feel_unwell &#61; 0 then &#39;No&#39; &#10;        when asmt.feel_unwell &#61; 1 then &#39;Yes&#39; &#10;    end as feel_unwell, &#10;    case when asmt.memory_shortterm &#61; 1 then &#39;Yes&#39; end as memory_shortterm, &#10;    case when asmt.memory_longterm &#61; 1 then &#39;Yes&#39; end as memory_longterm, &#10;    case when asmt.memory_distractable &#61; 1 then &#39;Yes&#39; end as memory_distractable, &#10;    case &#10;        when asmt.someone_payed_for_pic &#61; 0 then &#39;No&#39; &#10;        when asmt.someone_payed_for_pic &#61; 1 then &#39;Yes&#39; &#10;    end as someone_payed_for_pic, &#10;    asmt.city_of_origin, &#10;    case &#10;        when asmt.child_mention_us_policy &#61; 0 then &#39;No&#39; &#10;        when asmt.child_mention_us_policy &#61; 1 then &#39;Yes&#39; &#10;    end as child_mention_us_policy, &#10;    case &#10;        when asmt.child_mention_us_eco &#61; 0 then &#39;No&#39; &#10;        when asmt.child_mention_us_eco &#61; 1 then &#39;Yes&#39; &#10;    end as child_mention_us_eco, &#10;    asmt.the_date_left_home_country, &#10;    case &#10;        when asmt.ff_paid_for_this_trip &#61; 1 then &#39;Yes&#39; &#10;        when asmt.ff_paid_for_this_trip &#61; 2 then &#39;No&#39; &#10;    end as ff_paid_for_this_trip, &#10;    case &#10;        when asmt.notice_to_appear_filed &#61; 0 then &#39;No&#39; &#10;        when asmt.notice_to_appear_filed &#61; 1 then &#39;Yes&#39; &#10;    end as notice_to_appear_filed, &#10;    asmt.notice_to_appear_filed_date, &#10;    case &#10;        when asmt.scheduled_for_hearing &#61; 0 then &#39;No&#39; &#10;        when asmt.scheduled_for_hearing &#61; 1 then &#39;Yes&#39; &#10;    end as scheduled_for_hearing, &#10;    asmt.scheduled_for_hearing_date, &#10;    asmt.hearing_city, &#10;    asmt.hearing_state, &#10;    outcome.hearing_outcome, &#10;    case &#10;        when asmt.has_attorney &#61; 0 then &#39;No&#39; &#10;        when asmt.has_attorney &#61; 1 then &#39;Yes&#39; &#10;    end as has_attorney, &#10;    asmt.date_of_meeting &#10;from &#10;    (select * from uacportal.uac_assessment where (isdeleted &#61; 0 or isdeleted is null) and date_created &gt;&#61; date &#39;2020-10-01&#39;) asmt &#10;    left outer join uacportal.list_hearing_outcome outcome on outcome.hearing_outcome_id &#61; asmt.hearing_outcome</textarea>
+                            <div style="padding-top: 5px;"><hr></div>
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <i class="fa fa-puzzle-piece"></i>
+                                    <h3 class="box-title">Possibly Referenced Tables/Views</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div><!-- /.box-body -->
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

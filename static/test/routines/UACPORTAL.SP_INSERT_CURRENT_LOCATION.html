@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORCL.UACPORTAL</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>ORCL</b></a><span class="navbar-brand" style="padding-left: 0">.UACPORTAL</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>UACPORTAL.SP_INSERT_CURRENT_LOCATION</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>VUAC_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VCHILD_LOCATION_TYPE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLIVING_WITH_SPONSOR</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLIVING_WITH_CAREGIVER</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VADDRESS_KNOWN</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VPRIMARY_CAREGIVER_TYPE</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VPRIMARY_CAREGIVER_OTHER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_ADDRESS</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_ADDRESS_SECONDARY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_CITY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_STATE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_ZIPCODE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_COUNTRY</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_COUNTY</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_LATITUDE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VLOCATION_LONGITUDE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VSMARTY_STREET_VALIDATION</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VCAREGIVER_FIRST_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VCAREGIVER_LAST_NAME</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VCAREGIVER_PHONE</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VNOTES</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VUSER</td>
+                                    <td>VARCHAR2</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>VREASON_FOR_UPDATE_ID</td>
+                                    <td>NUMBER</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">PROCEDURE &quot;SP_INSERT_CURRENT_LOCATION&quot; (&#10;vUAC_ID IN NUMBER,&#10;vCHILD_LOCATION_TYPE IN NUMBER,&#10;vLIVING_WITH_SPONSOR IN NUMBER,&#10;vLIVING_WITH_CAREGIVER IN NUMBER,&#10;vADDRESS_KNOWN IN NUMBER,&#10;vPRIMARY_CAREGIVER_TYPE IN NUMBER,&#10;vPRIMARY_CAREGIVER_OTHER IN VARCHAR2 :&#61; null,&#10;vLOCATION_ADDRESS IN VARCHAR2,&#10;vLOCATION_ADDRESS_SECONDARY IN VARCHAR2 :&#61; null,&#10;vLOCATION_CITY IN VARCHAR2,&#10;vLOCATION_STATE IN VARCHAR2,&#10;vLOCATION_ZIPCODE IN VARCHAR2,&#10;vLOCATION_COUNTRY IN NUMBER,&#10;vLOCATION_COUNTY IN VARCHAR2,&#10;vLOCATION_LATITUDE IN VARCHAR2,&#10;vLOCATION_LONGITUDE IN VARCHAR2,&#10;vSMARTY_STREET_VALIDATION IN VARCHAR2,&#10;vCAREGIVER_FIRST_NAME IN VARCHAR2,&#10;vCAREGIVER_LAST_NAME IN VARCHAR2,&#10;vCAREGIVER_PHONE IN VARCHAR2,&#10;vNOTES IN VARCHAR2 :&#61; null,&#10;vUSER IN VARCHAR2,&#10;vREASON_FOR_UPDATE_ID IN NUMBER&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#10;)&#10;AS&#10;uacId_    NUMBER(10,0) :&#61; vUAC_ID;&#10;childLCTNHIST_Id NUMBER(10,0);&#10;uacProgId_       NUMBER(10,0);&#10;programExitID_    NUMBER(10,0);&#10;dischargeID_ NUMBER(4);&#10;livingWithSponsor_ NUMBER(4);&#10;sponsorName_ VARCHAR2(500);&#10;address_ VARCHAR2(2000);&#10;secondaryAddress_ VARCHAR2(500);&#10;city_ VARCHAR2(2000);&#10;state_ VARCHAR2(4);&#10;zipCode_ VARCHAR2(10);&#10;country_ NUMBER(4);&#10;dateLastUpdated timestamp;&#10;userupdated VARCHAR2(112);&#10;n NUMBER(4);&#10;BEGIN&#10;&#9;--Check if there is a UAC_CHILD_LOCATION_HIST record with &#10;&#9;select count(*) into n from (&#10;      Select 1 from UAC_CHILD_LOCATION_HIST WHERE UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0&#10;      Union&#10;      Select 0 from dual&#10;    );&#10;    if n &gt; 1 then&#10;&#9;&#9;SELECT LIVING_WITH_SPONSOR, DATE_LAST_UPDATED, USER_LAST_UPDATED into livingWithSponsor_, dateLastUpdated, userupdated from UAC_CHILD_LOCATION_HIST WHERE UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0;&#10;&#9;&#9;-- If Current Location is Living with Sponsor, update it with Sponsor address details before moving it into Location History&#10;&#9;&#9;if livingWithSponsor_ &#61; 1 then&#10;&#9;&#9;&#9;UPDATE UAC_CHILD_LOCATION_HIST &#10;&#9;&#9;&#9;SET IS_CURRENT &#61; 0, ISDELETED &#61; 1&#10;&#9;&#9;&#9;WHERE UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0 AND LIVING_WITH_SPONSOR &#61; 1;&#10;&#10;&#9;&#9;&#9;INSERT INTO UAC_CHILD_LOCATION_HIST&#10;&#9;&#9;&#9;(UAC_ID,&#10;&#9;&#9;&#9;LOCATION_TYPE_ID,&#10;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;LOCATION_ADDRESS,&#10;&#9;&#9;&#9;LOCATION_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;LOCATION_CITY,&#10;&#9;&#9;&#9;LOCATION_STATE,&#10;&#9;&#9;&#9;LOCATION_ZIPCODE,&#10;&#9;&#9;&#9;LOCATION_COUNTRY,&#10;&#9;&#9;&#9;LOCATION_COUNTY,&#10;&#9;&#9;&#9;LOCATION_LATITUDE,&#10;&#9;&#9;&#9;LOCATION_LONGITUDE,&#10;&#9;&#9;&#9;SMARTY_STREET_VALIDATION,&#10;&#9;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;IS_CURRENT,&#10;&#9;&#9;&#9;CHILD_LOCATION_TYPE,&#10;&#9;&#9;&#9;LIVING_WITH_SPONSOR,&#10;            REASON_FOR_UPDATE_ID&#10;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;SELECT uacId_,&#10;&#9;&#9;&#9;&#9;3,&#10;&#9;&#9;&#9;&#9;&#39;Sponsor&#39;,&#10;&#9;&#9;&#9;&#9;E.FIRST_NAME || &#39; &#39; || E.LAST_NAME,&#10;                D.SPONSOR_ADDRESS,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_CITY,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_STATE,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_ZIPCODE,&#10;&#9;&#9;&#9;&#9;(SELECT LC.COUNTRY_ID FROM LIST_COUNTRIES LC WHERE E.COR &#61; LC.COUNTRY_NAME),&#10;&#9;&#9;&#9;&#9;D.SPONSOR_COUNTY,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_LATITUDE,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_LONGITUDE,&#10;&#9;&#9;&#9;&#9;D.SMARTY_STREET_VALIDATION,&#10;                --CASE WHEN SATH.UPDATE_DATE IS NULL THEN D.UPTIME ELSE SATH.UPDATE_DATE END,&#10;&#9;&#9;&#9;&#9;--CASE WHEN SATH.UPDATE_DATE IS NULL THEN D.UPUSER ELSE SATH.UPUSER END,&#10;                --dateLastUpdated,&#10;                --userupdated,&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN D.UPTIME &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN SATH.UPDATE_DATE &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;END&#10;                END,&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN D.UPUSER &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE userupdated &#10;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; dateLastUpdated&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN SATH.UPUSER &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE userupdated&#10;&#9;&#9;&#9;&#9;&#9;END&#10;                END,&#10;&#9;&#9;&#9;&#9;0,&#10;&#9;&#9;&#9;&#9;1,&#10;&#9;&#9;&#9;&#9;1,&#10;                vREASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9;&#9; &#10;&#9;&#9;&#9;FROM UAC_SPONSOR_LIST D&#10;                  LEFT JOIN SPONSOR_INFO E On D.SPONSOR_ID &#61; E.SPONSOR_ID and d.is_deleted &#61; 0 and e.is_deleted &#61; 0&#10;                  LEFT JOIN SPONSOR_ASSESS_TAB_HISTORY SATH ON D.UAC_ID &#61; SATH.UAC_ID AND D.SPONSOR_ID &#61; SATH.SPONSOR_ID AND SATH.ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U On UPPER(D.UPUSER) &#61; UPPER(U.USER_ID)&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U1 On UPPER(SATH.UPUSER) &#61; UPPER(U1.USER_ID)&#10;            WHERE D.UAC_ID &#61; uacId_ AND D.CURRENT_SPONSOR &#61; 1;&#10;&#10;&#9;&#9;&#9;/*UPDATE UAC_CHILD_LOCATION_HIST&#10;&#9;&#9;&#9;SET LOCATION_TYPE_ID &#61; 3,&#10;&#9;&#9;&#9;LOCATION_TYPE &#61; &#39;Sponsor&#39;,&#10;&#9;&#9;&#9;LOCATION_NAME &#61; sponsorName_,&#10;&#9;&#9;&#9;LOCATION_ADDRESS &#61; address_,&#10;&#9;&#9;&#9;LOCATION_ADDRESS_SECONDARY &#61; secondaryAddress_,&#10;&#9;&#9;&#9;LOCATION_CITY &#61; city_,&#10;&#9;&#9;&#9;LOCATION_STATE &#61; state_,&#10;&#9;&#9;&#9;LOCATION_ZIPCODE &#61; zipCode_,&#10;&#9;&#9;&#9;LOCATION_COUNTRY &#61; country_,&#10;&#9;&#9;&#9;DATE_LAST_UPDATED &#61; dateLastUpdated,&#10;&#9;&#9;&#9;USER_LAST_UPDATED &#61; userupdated,&#10;&#9;&#9;&#9;IS_CURRENT &#61; 0&#10;&#9;&#9;&#9;WHERE UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0 AND LIVING_WITH_SPONSOR &#61; 1;*/&#10;&#9;&#9;ELSE&#10;&#9;&#9;&#9;UPDATE UAC_CHILD_LOCATION_HIST &#10;&#9;&#9;&#9;SET IS_CURRENT &#61; 0&#10;&#9;&#9;&#9;WHERE UAC_ID &#61; uacId_ AND IS_CURRENT &#61; 1 AND ISDELETED &#61; 0;&#10;&#9;&#9;End If;&#10;&#9;Else&#10;&#9;&#9;--If there is no Current Record in UAC_CHILD_LOCATION_HIST&#10;&#9;&#9;--Move Current Location into UAC_CHILD_LOCATION_HIST&#10;&#9;&#9;SELECT max(UAC_PROGRAM_ID) into uacProgId_&#10;&#9;&#9;&#9;FROM UAC_PROGRAM_INFO&#10;&#9;&#9;&#9;WHERE UAC_ID &#61; uacId_ AND CURRENT_STATUS &lt;&gt; &#39;ENROUTE&#39;;&#10;&#9;&#9;select count(*) into n from (&#10;            Select 1 from UAC_PROGRAM_EXIT Where UAC_PROGRAM_ID &#61; uacProgId_&#10;            Union&#10;            Select 0 from dual&#10;          );&#10;&#9;&#9;if n &gt; 1 then&#10;            SELECT PROGRAM_EXIT_ID, TYPE_OF_DISCHARGE into programExitID_, dischargeID_&#10;            FROM UAC_PROGRAM_EXIT&#10;            WHERE UAC_PROGRAM_ID &#61; uacProgId_&#10;            ORDER BY PROGRAM_EXIT_ID DESC FETCH first 1 row only;&#10;&#10;&#9;&#9;&#9;-- Discharged to Program/Facility&#10;&#9;&#9;&#9;if dischargeID_ &#61; 1 then&#10;&#9;&#9;&#9;&#9;INSERT INTO UAC_CHILD_LOCATION_HIST(&#10;&#9;&#9;&#9;&#9;UAC_ID,&#10;&#9;&#9;&#9;&#9;DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;&#9;LOCATION_ADDRESS,&#10;&#9;&#9;&#9;&#9;LOCATION_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;LOCATION_CITY,&#10;&#9;&#9;&#9;&#9;LOCATION_STATE,&#10;&#9;&#9;&#9;&#9;LOCATION_ZIPCODE,&#10;&#9;&#9;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;IS_CURRENT,&#10;                REASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;SELECT&#10;&#9;&#9;&#9;&#9;uacId_,&#10;                DT.DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;F.LOCATION_TYPE_ID,&#10;                F.LOCATION_TYPE,&#10;                RR.PROGRAM_NAME,&#10;                RR.PROGRAM_ADDRESS1,&#10;&#9;&#9;&#9;&#9;RR.PROGRAM_ADDRESS2,&#10;&#9;&#9;&#9;&#9;RR.PROGRAM_CITY,&#10;&#9;&#9;&#9;&#9;RR.PROGRAM_STATE,&#10;&#9;&#9;&#9;&#9;RR.PROGRAM_ZIPCODE,&#10;&#9;&#9;&#9;&#9;PE.UPTIME,&#10;                PE.UPUSER,&#10;&#9;&#9;&#9;&#9;0,&#10;                vREASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9;&#9; &#10;                FROM UAC_PROGRAM_INFO B&#10;                INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;                INNER JOIN UACPORTAL.UAC_RELEASE_REQUEST RR On RR.UAC_PROGRAM_ID &#61; B.UAC_PROGRAM_ID&#10;                INNER JOIN (SELECT RR1.UAC_PROGRAM_ID, MAX(RR1.RELEASE_ID) as MAX_RR_ID&#10;                  FROM UACPORTAL.UAC_RELEASE_REQUEST RR1&#10;                  WHERE (RR1.ISDELETED &#61; 0 OR RR1.ISDELETED Is NUll)&#10;&#9;&#9;&#9;&#9;  AND RR1.UAC_PROGRAM_ID &#61; uacProgId_&#10;                  GROUP BY RR1.UAC_PROGRAM_ID&#10;                ) Z On RR.RELEASE_ID &#61; Z.MAX_RR_ID&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U On UPPER(PE.UPUSER) &#61; UPPER(U.USER_ID)&#10;&#9;&#9;&#9;&#9;&#9;&#9;WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;&#9;&#9;&#9;ELSIF dischargeID_ in (2,4,7,8,13,14,15,16) then&#10;                INSERT INTO UAC_CHILD_LOCATION_HIST(&#10;&#9;&#9;&#9;&#9;UAC_ID,&#10;&#9;&#9;&#9;&#9;DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;&#9;LOCATION_ADDRESS,&#10;&#9;&#9;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;IS_CURRENT,&#10;                REASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;SELECT&#10;&#9;&#9;&#9;&#9;uacId_,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;F.LOCATION_TYPE_ID,&#10;                F.LOCATION_TYPE,&#10;                F.LOCATION,&#10;                F.LOCATION,&#10;&#9;&#9;&#9;&#9;PE.UPTIME,&#10;&#9;&#9;&#9;&#9;PE.UPUSER,&#10;                0,&#10;                vREASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9; &#10;                FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;&#9;&#9;&#9;-- Reunification (Individual Sponsor)&#10;&#9;&#9;&#9;ELSIF dischargeID_ &#61; 3 then&#10;&#9;&#9;&#9;&#9;INSERT INTO UAC_CHILD_LOCATION_HIST(&#10;&#9;&#9;&#9;&#9;UAC_ID,&#10;&#9;&#9;&#9;&#9;DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;&#9;LOCATION_ADDRESS,&#10;&#9;&#9;&#9;&#9;LOCATION_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;LOCATION_CITY,&#10;&#9;&#9;&#9;&#9;LOCATION_STATE,&#10;&#9;&#9;&#9;&#9;LOCATION_ZIPCODE,&#10;&#9;&#9;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;IS_CURRENT,&#10;                REASON_FOR_UPDATE_ID&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;SELECT &#10;&#9;&#9;&#9;&#9;uacId_,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;F.LOCATION_TYPE_ID,&#10;                F.LOCATION_TYPE,&#10;                E.FIRST_NAME || &#39; &#39; || E.LAST_NAME,&#10;                D.SPONSOR_ADDRESS,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_ADDRESS_SECONDARY,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_CITY,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_STATE,&#10;&#9;&#9;&#9;&#9;D.SPONSOR_ZIPCODE,&#10;&#9;&#9;&#9;&#9;/*CASE WHEN SATH.UPDATE_DATE IS NULL THEN D.UPTIME ELSE SATH.UPDATE_DATE END,&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL THEN D.UPUSER ELSE SATH.UPUSER END,*/&#10;                --Get the SPONSOR_ASSESS_TAB_HISTORY Last Updated Date or Pogram Exit Last Updated Date, which ever is more recent&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN D.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN SATH.UPDATE_DATE&#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;END&#10;                END,&#10;                --Get the SPONSOR_ASSESS_TAB_HISTORY Last Updated User or Pogram Exit Last Updated User, which ever is more recent&#10;                CASE WHEN SATH.UPDATE_DATE IS NULL&#10;&#9;&#9;&#9;&#9;THEN&#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN D.UPTIME &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN D.UPUSER &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE PE.UPUSER&#10;&#9;&#9;&#9;&#9;&#9;END &#10;&#9;&#9;&#9;&#9;ELSE &#10;&#9;&#9;&#9;&#9;&#9;CASE WHEN SATH.UPDATE_DATE &gt; PE.UPTIME&#10;&#9;&#9;&#9;&#9;&#9;&#9;THEN SATH.UPUSER &#10;&#9;&#9;&#9;&#9;&#9;&#9;ELSE PE.UPUSER&#10;&#9;&#9;&#9;&#9;&#9;END&#10;                END,&#10;&#9;&#9;&#9;&#9;0,&#10;                vREASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9; &#10;                FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION DTCL ON DT.DISCHARGE_TYPE_ID &#61; DTCL.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON DTCL.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;                  LEFT JOIN UAC_SPONSOR_LIST D on B.UAC_ID &#61; D.UAC_ID AND D.CURRENT_SPONSOR &#61; 1 and d.is_deleted &#61; 0&#10;                  LEFT JOIN SPONSOR_INFO E On D.SPONSOR_ID &#61; E.SPONSOR_ID and e.is_deleted &#61; 0&#10;                  LEFT JOIN ( SELECT UPE1.PROGRAM_EXIT_ID, UPE1.UAC_PROGRAM_ID, UPE1.TYPE_OF_DISCHARGE, DT1.DISCHARGE_TYPE&#10;                            FROM UAC_PROGRAM_EXIT UPE1&#10;                            INNER JOIN LIST_DISCHARGE_TYPE DT1 On UPE1.TYPE_OF_DISCHARGE &#61; DT1.DISCHARGE_TYPE_ID&#10;&#10;                  ) PE1 ON B.UAC_PROGRAM_ID &#61; PE1.UAC_PROGRAM_ID&#10;                  LEFT JOIN SPONSOR_ASSESS_TAB_HISTORY SATH ON D.UAC_ID &#61; SATH.UAC_ID AND D.SPONSOR_ID &#61; SATH.SPONSOR_ID AND SATH.ASSESSMENT_TAB &#61; &#39;ContactInformation&#39;&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;&#9;&#9;&#9;ELSIF dischargeID_  IN (6,10,11,12) then&#10;              INSERT INTO UAC_CHILD_LOCATION_HIST(&#10;&#9;&#9;&#9;&#9;UAC_ID,&#10;&#9;&#9;&#9;&#9;DISCHARGE_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE_ID,&#10;&#9;&#9;&#9;&#9;LOCATION_TYPE,&#10;&#9;&#9;&#9;&#9;LOCATION_NAME,&#10;&#9;&#9;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;&#9;&#9;IS_CURRENT,&#10;                REASON_FOR_UPDATE_ID&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;)&#10;&#9;&#9;&#9;&#9;SELECT &#10;&#9;&#9;&#9;&#9;uacId_,&#10;&#9;&#9;&#9;&#9;DT.DISCHARGE_TYPE_ID,&#10;                F.LOCATION_TYPE_ID,&#10;                F.LOCATION_TYPE,&#10;                F.LOCATION,&#10;                PE.UPTIME,&#10;&#9;&#9;&#9;&#9;PE.UPUSER,&#10;&#9;&#9;&#9;&#9;0,&#10;                vREASON_FOR_UPDATE_ID&#9;&#9;&#9;&#9;&#9; &#10;                FROM UAC_PROGRAM_INFO B&#10;                  INNER JOIN LIST_PROGRAMS C On B.PROGRAM_ID &#61; C.PROGRAM_ID&#10;                  INNER JOIN UAC_PROGRAM_EXIT PE On B.UAC_PROGRAM_ID &#61; PE.UAC_PROGRAM_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE DT On PE.TYPE_OF_DISCHARGE &#61; DT.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_DISCHARGE_TYPE_CHILD_LOCATION E ON DT.DISCHARGE_TYPE_ID &#61; E.DISCHARGE_TYPE_ID&#10;                  INNER JOIN LIST_CHILD_LOCATION_TYPE F ON E.LOCATION_TYPE_ID &#61; F.LOCATION_TYPE_ID&#10;&#9;&#9;&#9;&#9;  LEFT JOIN ADM_LIST_WEB_USER U On UPPER(PE.UPUSER) &#61; UPPER(U.USER_ID)&#10;                WHERE B.UAC_PROGRAM_ID &#61; uacProgId_ AND PE.PROGRAM_EXIT_ID &#61; programExitID_;&#10;&#9;&#9;&#9;End If;&#10;&#9;&#9;End If;&#9;&#10;&#9;End If;&#10;&#10;&#9;INSERT INTO UAC_CHILD_LOCATION_HIST (&#10;&#9;&#9;UAC_ID,&#10;&#9;&#9;CHILD_LOCATION_TYPE,&#10;&#9;&#9;LIVING_WITH_SPONSOR,&#10;&#9;&#9;LIVING_WITH_CAREGIVER,&#10;&#9;&#9;ADDRESS_KNOWN,&#10;&#9;&#9;PRIMARY_CAREGIVER_TYPE,&#10;&#9;&#9;PRIMARY_CAREGIVER_OTHER,&#10;&#9;&#9;LOCATION_ADDRESS,&#10;&#9;&#9;LOCATION_ADDRESS_SECONDARY,&#10;&#9;&#9;LOCATION_CITY,&#10;&#9;&#9;LOCATION_STATE,&#10;&#9;&#9;LOCATION_ZIPCODE,&#10;&#9;&#9;LOCATION_COUNTRY,&#10;&#9;&#9;LOCATION_COUNTY,&#10;&#9;&#9;LOCATION_LATITUDE,&#10;&#9;&#9;LOCATION_LONGITUDE,&#10;&#9;&#9;SMARTY_STREET_VALIDATION,&#10;&#9;&#9;DATE_LAST_UPDATED,&#10;&#9;&#9;USER_LAST_UPDATED,&#10;&#9;&#9;CAREGIVER_FIRST_NAME,&#10;&#9;&#9;CAREGIVER_LAST_NAME,&#10;&#9;&#9;NOTES,&#10;&#9;&#9;IS_CURRENT,&#10;&#9;&#9;CAREGIVER_PHONE,&#10;        REASON_FOR_UPDATE_ID&#10;&#9;)&#10;&#9;VALUES (&#10;&#9;uacId_,&#10;&#9;vCHILD_LOCATION_TYPE,&#10;&#9;vLIVING_WITH_SPONSOR,&#10;&#9;vLIVING_WITH_CAREGIVER,&#10;&#9;vADDRESS_KNOWN,&#10;&#9;vPRIMARY_CAREGIVER_TYPE,&#10;&#9;vPRIMARY_CAREGIVER_OTHER,&#10;&#9;vLOCATION_ADDRESS,&#10;&#9;vLOCATION_ADDRESS_SECONDARY,&#10;&#9;vLOCATION_CITY,&#10;&#9;vLOCATION_STATE,&#10;&#9;vLOCATION_ZIPCODE,&#10;&#9;vLOCATION_COUNTRY,&#10;&#9;vLOCATION_COUNTY,&#10;&#9;vLOCATION_LATITUDE,&#10;&#9;vLOCATION_LONGITUDE,&#10;&#9;vSMARTY_STREET_VALIDATION,&#10;&#9;SYSDATE,&#10;&#9;vUSER,&#10;&#9;vCAREGIVER_FIRST_NAME,&#10;&#9;vCAREGIVER_LAST_NAME,&#10;&#9;vNOTES,&#10;&#9;1,&#10;&#9;vCAREGIVER_PHONE,&#10;    vREASON_FOR_UPDATE_ID&#10;&#9;);&#10;&#10;&#10;END SP_INSERT_CURRENT_LOCATION;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
